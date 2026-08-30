@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-06-08T12:23:49.632Z",
+  "project": "Pausa AI",
+  "total_videos": 138,
+  "body_movement_count": 116,
+  "classic_mission_count": 22,
+  "visual_policy": "usar_personagem_premium_recorrente__assets_simplificados_apenas_como_referencia_de_pose",
+  "source_image_roles": {
+    "character_reference": 10,
+    "pose_reference": 125,
+    "missing": 3
+  },
+  "waves": [
+    {
+      "wave": 1,
+      "count": 11,
+      "titles": [
+        "Alongamento leve",
+        "Caminhada consciente",
+        "Mobilidade de coluna",
+        "Pausa sem tela",
+        "Reset postural",
+        "Yoga de bolso: coluna leve",
+        "Alongamento leve",
+        "Caminhada consciente",
+        "Pausa sem tela",
+        "Respiracao 4-4-6",
+        "Yoga de bolso: coluna leve"
+      ]
+    },
+    {
+      "wave": 2,
+      "count": 22,
+      "titles": [
+        "Agachamento leve guiado",
+        "Ativacao leve de 3 minutos",
+        "Caminhada consciente curta",
+        "Celular longe da cama",
+        "Funcional em casa iniciante",
+        "Jumping baixo impacto",
+        "Levantar e respirar",
+        "Luta sombra leve",
+        "Marcha leve parada",
+        "Mobilidade de pescoco e ombros",
+        "Mobilidade rapida para coluna",
+        "Pausa consciente no trabalho"
+      ]
+    },
+    {
+      "wave": 3,
+      "count": 88,
+      "titles": [
+        "90/90 de quadril",
+        "Abertura de peito na porta",
+        "Abertura de quadril sentado",
+        "Abertura dos dedos",
+        "Abertura dos dedos do pe",
+        "Abraco das escapulas",
+        "Alcance lateral toracico",
+        "Alfabeto com tornozelo",
+        "Alongamento da frente do tornozelo",
+        "Alongamento de biceps na parede",
+        "Alongamento de pernas",
+        "Alongamento do braquiorradial"
+      ]
+    },
+    {
+      "wave": 4,
+      "count": 17,
+      "titles": [
+        "Caminhada consciente indoor",
+        "Desafio gentil de sono",
+        "Diario de descarrego mental",
+        "Fechamento do dia",
+        "Gratidao rapida",
+        "Mapa pessoal do agora",
+        "Mobilidade corpo inteiro",
+        "Modo reuniao dificil",
+        "Organizacao de 5 minutos",
+        "Pausa de ambiente",
+        "Pausa de foco",
+        "Planejamento gentil do dia"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "Alongamentos Regionais",
+      "count": 89
+    },
+    {
+      "category": "Caminhada",
+      "count": 2
+    },
+    {
+      "category": "Cardio Leve",
+      "count": 2
+    },
+    {
+      "category": "Funcional em Casa",
+      "count": 2
+    },
+    {
+      "category": "Luta Sombra",
+      "count": 1
+    },
+    {
+      "category": "Missoes Classicas",
+      "count": 22
+    },
+    {
+      "category": "Mobilidade",
+      "count": 8
+    },
+    {
+      "category": "Pausas de Trabalho / Telas",
+      "count": 7
+    },
+    {
+      "category": "Pular Corda",
+      "count": 1
+    },
+    {
+      "category": "Yoga Fisico / Instrucional",
+      "count": 4
+    }
+  ],
+  "status": "roteiros_metadados_thumbnails_prontos__mp4_final_pendente"
+}

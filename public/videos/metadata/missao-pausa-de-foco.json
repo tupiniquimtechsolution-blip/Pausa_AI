@@ -1,0 +1,106 @@
+{
+  "slug": "missao-pausa-de-foco",
+  "title": "Pausa de foco",
+  "content_type": "classic_mission",
+  "app_instruction_slug": "pausa-foco-sem-impacto",
+  "category": "CLASSIC_MISSION",
+  "category_label": "Missoes Classicas",
+  "duration_seconds": 90,
+  "video_url": "/videos/missao-pausa-de-foco.mp4",
+  "thumbnail_url": "/videos/thumbs/missao-pausa-de-foco.jpg",
+  "visual_reference_url": "/exercises/organizacao-5-minutos.png",
+  "source_image_url": "/exercises/pausa-foco-sem-impacto.png",
+  "source_image_role": "pose_reference",
+  "source_frame_urls": [
+    "/exercises/pausa-foco-sem-impacto-1.png",
+    "/exercises/pausa-foco-sem-impacto-2.png",
+    "/exercises/pausa-foco-sem-impacto-3.png",
+    "/exercises/pausa-foco-sem-impacto-4.png",
+    "/exercises/pausa-foco-sem-impacto-5.png"
+  ],
+  "character_reference_urls": [
+    "/exercises/organizacao-5-minutos.png",
+    "/exercises/diario-descarrego-mental.png",
+    "/exercises/gratidao-rapida.png"
+  ],
+  "tags": [
+    "pausa",
+    "classic_mission",
+    "ambiente-de-trabalho-narracao",
+    "foco"
+  ],
+  "intensity": "muito_leve",
+  "equipment": "Nenhum",
+  "position": [
+    "em pe",
+    "sentado"
+  ],
+  "benefit_primary": "Reorganizar atencao com movimento leve.",
+  "batch_wave": 4,
+  "scene": "Mesa de trabalho organizada, luz de janela, objetos minimos e cadeira estavel.",
+  "camera_style": [
+    "plano medio com presenca humana",
+    "close em gesto natural",
+    "camera estatica ou pan suave",
+    "fundo levemente fora de foco"
+  ],
+  "narration_script": "[00:00 - 00:05] Que bom que voce parou um momento para Pausa de foco. Pode ser agora, do jeito que voce esta.\n[00:06 - 00:15] Reorganizar atencao com movimento leve.\n[00:16 - 00:25] Voce precisa de nenhum. Nao precisa ser perfeito; so o que for confortavel hoje.\n[00:26 - 01:19] Se quiser, prepare um espaco tranquilo. Pratique pausa de foco sem impacto pelo tempo sugerido. Se for confortavel, mantenha o ritmo confortavel. Finalize percebendo como o corpo esta agora. Se precisar, diminua a amplitude ou pause por alguns segundos.\n[01:20 - 01:30] Isso. Voce acabou de fazer algo por voce. Fica dois segundos em silencio e deixa a tela clarear devagar.",
+  "shot_plan": [
+    "00:00-00:05: plano medio, titulo em tela e movimento minimo de chegada.",
+    "00:06-00:15: texto curto de beneficio com demonstracao suave ou gesto preparatorio.",
+    "00:16-00:25: close em apoio, cadeira, tapete ou objeto necessario; validacao emocional em voz.",
+    "00:26-01:19: execucao guiada com camera estatica, cortes suaves e close lateral quando houver alinhamento postural.",
+    "01:20-01:30: encerramento com frase de reconhecimento, 2s de silencio e fade para off-white."
+  ],
+  "subtitle_cues": [
+    {
+      "start": "00:00",
+      "end": "00:05",
+      "text": "Pausa de foco"
+    },
+    {
+      "start": "00:06",
+      "end": "00:15",
+      "text": "Reorganizar atencao com movimento leve."
+    },
+    {
+      "start": "00:16",
+      "end": "00:25",
+      "text": "Nao precisa ser perfeito. So o que for confortavel."
+    },
+    {
+      "start": "00:26",
+      "end": "01:19",
+      "text": "No seu ritmo, com respiracao tranquila."
+    },
+    {
+      "start": "01:20",
+      "end": "01:30",
+      "text": "Voce se cuidou hoje."
+    }
+  ],
+  "approval_status": "script_ready_needs_final_video",
+  "approval_checklist": {
+    "duracao_dentro_do_range": "done",
+    "abertura_com_nome_em_audio_e_texto": "pending",
+    "beneficio_claro_ate_10s": "done",
+    "narracao_gentil_sem_jargao": "done",
+    "legendas_presentes": "pending",
+    "imagem_1080p": "pending",
+    "audio_limpo": "pending",
+    "musica_sem_sobrepor_narracao": "pending",
+    "encerramento_com_reconhecimento": "done",
+    "fade_suave": "pending",
+    "metadados_json_salvos": "done",
+    "thumbnail_gerada": "done",
+    "mp4_h264_exportado": "blocked",
+    "catalogo_do_app_mapeado": "done"
+  },
+  "notes": [
+    "Missao classica #4: Ambiente de trabalho + narracao.",
+    "Mapeada para ficha existente: pausa-foco-sem-impacto.",
+    "Imagem simplificada da ficha deve servir apenas como referencia tecnica de pose; a personagem final deve vir das referencias premium.",
+    "MP4 final exige filmagem, animacao ou renderizador externo antes de publicacao."
+  ],
+  "production_prompt": "Crie um video vertical 9:16 em 1080x1920 para \"Pausa de foco\". Use obrigatoriamente a mesma personagem recorrente das referencias aprovadas: /exercises/organizacao-5-minutos.png, /exercises/diario-descarrego-mental.png, /exercises/gratidao-rapida.png. A imagem da ficha (/exercises/pausa-foco-sem-impacto.png) e apenas referencia tecnica de pose/composicao; nao reproduza o visual simplificado como personagem final. Cenario: Mesa de trabalho organizada, luz de janela, objetos minimos e cadeira estavel. Tom: humano, acolhedor, sem julgamento, sem performance e sem estetica fitness agressiva. Personagem: mulher adulta com cabelo escuro preso em coque, expressao calma, blusa azul-marinho, estilo premium semi-realista/fotografico consistente com as referencias anteriores. Camera: plano medio com presenca humana; close em gesto natural; camera estatica ou pan suave; fundo levemente fora de foco. Duracao alvo: 90s. Conteudo: missao classica narrativa. Narracao: use exatamente a estrutura com abertura, beneficio, preparacao, execucao guiada e encerramento presentes no campo narration_script. Legendas: sempre presentes, fonte limpa e contraste acessivel. Nao usar: \"Vamos la!\", \"Arrasa!\", \"Forca!\", \"Sente a queimacao\", \"Doi pra crescer\"."
+}

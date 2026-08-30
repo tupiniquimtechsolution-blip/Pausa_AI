@@ -1,0 +1,1350 @@
+{
+  "generated_at": "2026-06-10T18:47:03.391Z",
+  "policy": "internet-researched biomechanics applied to original AI-generated human exercise-girl pose masters; no copied web images",
+  "force": true,
+  "total_exercises": 85,
+  "total_files_updated": 510,
+  "pose_count": 31,
+  "by_pose": {
+    "wrist-flexor": 1,
+    "wrist-extensor": 2,
+    "hand-fingers-thumb": 2,
+    "forearm-rotation": 6,
+    "chest-doorway": 5,
+    "triceps-overhead": 1,
+    "shoulder-crossbody": 5,
+    "hands-behind-back": 2,
+    "shoulder-pendulum": 2,
+    "shoulder-external-rotation": 1,
+    "lat-chair": 2,
+    "child-pose": 2,
+    "cat-cow": 2,
+    "neck-side-bend": 4,
+    "chin-tuck": 1,
+    "thoracic-chair-rotation": 1,
+    "supine-twist": 3,
+    "standing-side-bend": 3,
+    "knees-to-chest": 2,
+    "bridge": 2,
+    "cobra": 1,
+    "standing-extension": 1,
+    "hip-flexor-kneeling": 3,
+    "butterfly": 2,
+    "hip-90-90": 2,
+    "figure-four": 4,
+    "hamstring-seated": 5,
+    "quad-standing": 3,
+    "calf-wall": 4,
+    "ankle-dorsiflexion": 6,
+    "foot-plantar": 5
+  },
+  "sources": [
+    {
+      "label": "Mayo Clinic - A guide to basic stretches",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848",
+      "use": "Padroes gerais de panturrilha, posterior, quadriceps, peitoral/ombros e seguranca de alongamento."
+    },
+    {
+      "label": "AAOS OrthoInfo - Rotator Cuff and Shoulder Conditioning Program",
+      "url": "https://orthoinfo.aaos.org/en/recovery/rotator-cuff-and-shoulder-conditioning-program/",
+      "use": "Pendulo, ombro cruzado, rotacao externa e controle escapular."
+    },
+    {
+      "label": "AAOS OrthoInfo - Foot and Ankle Conditioning Program",
+      "url": "https://orthoinfo.aaos.org/en/recovery/foot-and-ankle-conditioning-program/",
+      "use": "Panturrilha, tornozelo, dorsiflexao e fascia plantar."
+    },
+    {
+      "label": "NHS Inform - Exercises for back pain",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/exercises-for-back-pain/",
+      "use": "Joelhos ao peito, torcao, gato-vaca, bascula pelvica e lombar."
+    },
+    {
+      "label": "NHS Inform - Exercises for neck problems",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/exercises-for-neck-problems",
+      "use": "Flexao lateral cervical, rotacao cervical, retracao/queixo para tras e seguranca cervical."
+    },
+    {
+      "label": "Cleveland Clinic - Piriformis stretch guidance",
+      "url": "https://health.clevelandclinic.org/piriformis-syndrome-stretches-exercises",
+      "use": "Figura quatro, piriforme e gluteos."
+    }
+  ],
+  "results": [
+    {
+      "id": "extensao-flexores-punho",
+      "title": "Extensao dos flexores do punho",
+      "region": "Maos, dedos e punhos",
+      "poseKey": "wrist-flexor",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\extensao-flexores-punho.png",
+        "public\\exercises\\extensao-flexores-punho-1.png",
+        "public\\exercises\\extensao-flexores-punho-2.png",
+        "public\\exercises\\extensao-flexores-punho-3.png",
+        "public\\exercises\\extensao-flexores-punho-4.png",
+        "public\\exercises\\extensao-flexores-punho-5.png"
+      ]
+    },
+    {
+      "id": "flexao-extensores-punho",
+      "title": "Flexao dos extensores do punho",
+      "region": "Maos, dedos e punhos",
+      "poseKey": "wrist-extensor",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\flexao-extensores-punho.png",
+        "public\\exercises\\flexao-extensores-punho-1.png",
+        "public\\exercises\\flexao-extensores-punho-2.png",
+        "public\\exercises\\flexao-extensores-punho-3.png",
+        "public\\exercises\\flexao-extensores-punho-4.png",
+        "public\\exercises\\flexao-extensores-punho-5.png"
+      ]
+    },
+    {
+      "id": "abertura-dedos",
+      "title": "Abertura dos dedos",
+      "region": "Maos, dedos e punhos",
+      "poseKey": "hand-fingers-thumb",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\abertura-dedos.png",
+        "public\\exercises\\abertura-dedos-1.png",
+        "public\\exercises\\abertura-dedos-2.png",
+        "public\\exercises\\abertura-dedos-3.png",
+        "public\\exercises\\abertura-dedos-4.png",
+        "public\\exercises\\abertura-dedos-5.png"
+      ]
+    },
+    {
+      "id": "alongamento-polegar",
+      "title": "Alongamento do polegar",
+      "region": "Maos, dedos e punhos",
+      "poseKey": "hand-fingers-thumb",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alongamento-polegar.png",
+        "public\\exercises\\alongamento-polegar-1.png",
+        "public\\exercises\\alongamento-polegar-2.png",
+        "public\\exercises\\alongamento-polegar-3.png",
+        "public\\exercises\\alongamento-polegar-4.png",
+        "public\\exercises\\alongamento-polegar-5.png"
+      ]
+    },
+    {
+      "id": "circulos-punho-mobilidade",
+      "title": "Circulos de punho",
+      "region": "Maos, dedos e punhos",
+      "poseKey": "forearm-rotation",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\circulos-punho-mobilidade.png",
+        "public\\exercises\\circulos-punho-mobilidade-1.png",
+        "public\\exercises\\circulos-punho-mobilidade-2.png",
+        "public\\exercises\\circulos-punho-mobilidade-3.png",
+        "public\\exercises\\circulos-punho-mobilidade-4.png",
+        "public\\exercises\\circulos-punho-mobilidade-5.png"
+      ]
+    },
+    {
+      "id": "pronacao-supinacao-antebraco",
+      "title": "Pronacao e supinacao do antebraco",
+      "region": "Antebracos e cotovelos",
+      "poseKey": "forearm-rotation",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\pronacao-supinacao-antebraco.png",
+        "public\\exercises\\pronacao-supinacao-antebraco-1.png",
+        "public\\exercises\\pronacao-supinacao-antebraco-2.png",
+        "public\\exercises\\pronacao-supinacao-antebraco-3.png",
+        "public\\exercises\\pronacao-supinacao-antebraco-4.png",
+        "public\\exercises\\pronacao-supinacao-antebraco-5.png"
+      ]
+    },
+    {
+      "id": "alongamento-braquiorradial",
+      "title": "Alongamento do braquiorradial",
+      "region": "Antebracos e cotovelos",
+      "poseKey": "wrist-extensor",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alongamento-braquiorradial.png",
+        "public\\exercises\\alongamento-braquiorradial-1.png",
+        "public\\exercises\\alongamento-braquiorradial-2.png",
+        "public\\exercises\\alongamento-braquiorradial-3.png",
+        "public\\exercises\\alongamento-braquiorradial-4.png",
+        "public\\exercises\\alongamento-braquiorradial-5.png"
+      ]
+    },
+    {
+      "id": "alongamento-pronadores",
+      "title": "Alongamento dos pronadores",
+      "region": "Antebracos e cotovelos",
+      "poseKey": "forearm-rotation",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alongamento-pronadores.png",
+        "public\\exercises\\alongamento-pronadores-1.png",
+        "public\\exercises\\alongamento-pronadores-2.png",
+        "public\\exercises\\alongamento-pronadores-3.png",
+        "public\\exercises\\alongamento-pronadores-4.png",
+        "public\\exercises\\alongamento-pronadores-5.png"
+      ]
+    },
+    {
+      "id": "alongamento-supinadores",
+      "title": "Alongamento dos supinadores",
+      "region": "Antebracos e cotovelos",
+      "poseKey": "forearm-rotation",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alongamento-supinadores.png",
+        "public\\exercises\\alongamento-supinadores-1.png",
+        "public\\exercises\\alongamento-supinadores-2.png",
+        "public\\exercises\\alongamento-supinadores-3.png",
+        "public\\exercises\\alongamento-supinadores-4.png",
+        "public\\exercises\\alongamento-supinadores-5.png"
+      ]
+    },
+    {
+      "id": "mobilidade-cotovelo",
+      "title": "Mobilidade leve de cotovelo",
+      "region": "Antebracos e cotovelos",
+      "poseKey": "forearm-rotation",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\mobilidade-cotovelo.png",
+        "public\\exercises\\mobilidade-cotovelo-1.png",
+        "public\\exercises\\mobilidade-cotovelo-2.png",
+        "public\\exercises\\mobilidade-cotovelo-3.png",
+        "public\\exercises\\mobilidade-cotovelo-4.png",
+        "public\\exercises\\mobilidade-cotovelo-5.png"
+      ]
+    },
+    {
+      "id": "alongamento-biceps-parede",
+      "title": "Alongamento de biceps na parede",
+      "region": "Biceps, triceps e bracos",
+      "poseKey": "chest-doorway",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alongamento-biceps-parede.png",
+        "public\\exercises\\alongamento-biceps-parede-1.png",
+        "public\\exercises\\alongamento-biceps-parede-2.png",
+        "public\\exercises\\alongamento-biceps-parede-3.png",
+        "public\\exercises\\alongamento-biceps-parede-4.png",
+        "public\\exercises\\alongamento-biceps-parede-5.png"
+      ]
+    },
+    {
+      "id": "triceps-acima-cabeca",
+      "title": "Triceps acima da cabeca",
+      "region": "Biceps, triceps e bracos",
+      "poseKey": "triceps-overhead",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\triceps-acima-cabeca.png",
+        "public\\exercises\\triceps-acima-cabeca-1.png",
+        "public\\exercises\\triceps-acima-cabeca-2.png",
+        "public\\exercises\\triceps-acima-cabeca-3.png",
+        "public\\exercises\\triceps-acima-cabeca-4.png",
+        "public\\exercises\\triceps-acima-cabeca-5.png"
+      ]
+    },
+    {
+      "id": "braco-cruzado-suave",
+      "title": "Braco cruzado suave",
+      "region": "Biceps, triceps e bracos",
+      "poseKey": "shoulder-crossbody",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\braco-cruzado-suave.png",
+        "public\\exercises\\braco-cruzado-suave-1.png",
+        "public\\exercises\\braco-cruzado-suave-2.png",
+        "public\\exercises\\braco-cruzado-suave-3.png",
+        "public\\exercises\\braco-cruzado-suave-4.png",
+        "public\\exercises\\braco-cruzado-suave-5.png"
+      ]
+    },
+    {
+      "id": "extensao-bracos-atras",
+      "title": "Extensao dos bracos atras",
+      "region": "Biceps, triceps e bracos",
+      "poseKey": "hands-behind-back",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\extensao-bracos-atras.png",
+        "public\\exercises\\extensao-bracos-atras-1.png",
+        "public\\exercises\\extensao-bracos-atras-2.png",
+        "public\\exercises\\extensao-bracos-atras-3.png",
+        "public\\exercises\\extensao-bracos-atras-4.png",
+        "public\\exercises\\extensao-bracos-atras-5.png"
+      ]
+    },
+    {
+      "id": "mobilidade-braco-cotovelo",
+      "title": "Mobilidade de braco e cotovelo",
+      "region": "Biceps, triceps e bracos",
+      "poseKey": "forearm-rotation",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\mobilidade-braco-cotovelo.png",
+        "public\\exercises\\mobilidade-braco-cotovelo-1.png",
+        "public\\exercises\\mobilidade-braco-cotovelo-2.png",
+        "public\\exercises\\mobilidade-braco-cotovelo-3.png",
+        "public\\exercises\\mobilidade-braco-cotovelo-4.png",
+        "public\\exercises\\mobilidade-braco-cotovelo-5.png"
+      ]
+    },
+    {
+      "id": "deltoide-posterior-cruzado",
+      "title": "Deltoide posterior cruzado",
+      "region": "Ombros e deltoides",
+      "poseKey": "shoulder-crossbody",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\deltoide-posterior-cruzado.png",
+        "public\\exercises\\deltoide-posterior-cruzado-1.png",
+        "public\\exercises\\deltoide-posterior-cruzado-2.png",
+        "public\\exercises\\deltoide-posterior-cruzado-3.png",
+        "public\\exercises\\deltoide-posterior-cruzado-4.png",
+        "public\\exercises\\deltoide-posterior-cruzado-5.png"
+      ]
+    },
+    {
+      "id": "elevacao-ombros-circulos",
+      "title": "Circulos lentos de ombros",
+      "region": "Ombros e deltoides",
+      "poseKey": "shoulder-pendulum",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\elevacao-ombros-circulos.png",
+        "public\\exercises\\elevacao-ombros-circulos-1.png",
+        "public\\exercises\\elevacao-ombros-circulos-2.png",
+        "public\\exercises\\elevacao-ombros-circulos-3.png",
+        "public\\exercises\\elevacao-ombros-circulos-4.png",
+        "public\\exercises\\elevacao-ombros-circulos-5.png"
+      ]
+    },
+    {
+      "id": "rotacao-externa-parede",
+      "title": "Rotacao externa na parede",
+      "region": "Ombros e deltoides",
+      "poseKey": "shoulder-external-rotation",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\rotacao-externa-parede.png",
+        "public\\exercises\\rotacao-externa-parede-1.png",
+        "public\\exercises\\rotacao-externa-parede-2.png",
+        "public\\exercises\\rotacao-externa-parede-3.png",
+        "public\\exercises\\rotacao-externa-parede-4.png",
+        "public\\exercises\\rotacao-externa-parede-5.png"
+      ]
+    },
+    {
+      "id": "capsula-posterior-ombro",
+      "title": "Alongamento posterior do ombro",
+      "region": "Ombros e deltoides",
+      "poseKey": "shoulder-crossbody",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\capsula-posterior-ombro.png",
+        "public\\exercises\\capsula-posterior-ombro-1.png",
+        "public\\exercises\\capsula-posterior-ombro-2.png",
+        "public\\exercises\\capsula-posterior-ombro-3.png",
+        "public\\exercises\\capsula-posterior-ombro-4.png",
+        "public\\exercises\\capsula-posterior-ombro-5.png"
+      ]
+    },
+    {
+      "id": "pendulo-ombro",
+      "title": "Pendulo de ombro",
+      "region": "Ombros e deltoides",
+      "poseKey": "shoulder-pendulum",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\pendulo-ombro.png",
+        "public\\exercises\\pendulo-ombro-1.png",
+        "public\\exercises\\pendulo-ombro-2.png",
+        "public\\exercises\\pendulo-ombro-3.png",
+        "public\\exercises\\pendulo-ombro-4.png",
+        "public\\exercises\\pendulo-ombro-5.png"
+      ]
+    },
+    {
+      "id": "abertura-peito-porta",
+      "title": "Abertura de peito na porta",
+      "region": "Peitoral",
+      "poseKey": "chest-doorway",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\abertura-peito-porta.png",
+        "public\\exercises\\abertura-peito-porta-1.png",
+        "public\\exercises\\abertura-peito-porta-2.png",
+        "public\\exercises\\abertura-peito-porta-3.png",
+        "public\\exercises\\abertura-peito-porta-4.png",
+        "public\\exercises\\abertura-peito-porta-5.png"
+      ]
+    },
+    {
+      "id": "peitoral-parede-um-braco",
+      "title": "Peitoral na parede com um braco",
+      "region": "Peitoral",
+      "poseKey": "chest-doorway",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\peitoral-parede-um-braco.png",
+        "public\\exercises\\peitoral-parede-um-braco-1.png",
+        "public\\exercises\\peitoral-parede-um-braco-2.png",
+        "public\\exercises\\peitoral-parede-um-braco-3.png",
+        "public\\exercises\\peitoral-parede-um-braco-4.png",
+        "public\\exercises\\peitoral-parede-um-braco-5.png"
+      ]
+    },
+    {
+      "id": "maos-atras-costas",
+      "title": "Maos atras das costas",
+      "region": "Peitoral",
+      "poseKey": "hands-behind-back",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\maos-atras-costas.png",
+        "public\\exercises\\maos-atras-costas-1.png",
+        "public\\exercises\\maos-atras-costas-2.png",
+        "public\\exercises\\maos-atras-costas-3.png",
+        "public\\exercises\\maos-atras-costas-4.png",
+        "public\\exercises\\maos-atras-costas-5.png"
+      ]
+    },
+    {
+      "id": "peitoral-no-canto",
+      "title": "Peitoral no canto da parede",
+      "region": "Peitoral",
+      "poseKey": "chest-doorway",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\peitoral-no-canto.png",
+        "public\\exercises\\peitoral-no-canto-1.png",
+        "public\\exercises\\peitoral-no-canto-2.png",
+        "public\\exercises\\peitoral-no-canto-3.png",
+        "public\\exercises\\peitoral-no-canto-4.png",
+        "public\\exercises\\peitoral-no-canto-5.png"
+      ]
+    },
+    {
+      "id": "extensao-toracica-peito",
+      "title": "Extensao toracica com abertura de peito",
+      "region": "Peitoral",
+      "poseKey": "chest-doorway",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\extensao-toracica-peito.png",
+        "public\\exercises\\extensao-toracica-peito-1.png",
+        "public\\exercises\\extensao-toracica-peito-2.png",
+        "public\\exercises\\extensao-toracica-peito-3.png",
+        "public\\exercises\\extensao-toracica-peito-4.png",
+        "public\\exercises\\extensao-toracica-peito-5.png"
+      ]
+    },
+    {
+      "id": "abraco-escapulas",
+      "title": "Abraco das escapulas",
+      "region": "Costas superiores e escapulas",
+      "poseKey": "shoulder-crossbody",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\abraco-escapulas.png",
+        "public\\exercises\\abraco-escapulas-1.png",
+        "public\\exercises\\abraco-escapulas-2.png",
+        "public\\exercises\\abraco-escapulas-3.png",
+        "public\\exercises\\abraco-escapulas-4.png",
+        "public\\exercises\\abraco-escapulas-5.png"
+      ]
+    },
+    {
+      "id": "alongamento-dorsal-cadeira",
+      "title": "Dorsal com apoio na cadeira",
+      "region": "Costas superiores e escapulas",
+      "poseKey": "lat-chair",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alongamento-dorsal-cadeira.png",
+        "public\\exercises\\alongamento-dorsal-cadeira-1.png",
+        "public\\exercises\\alongamento-dorsal-cadeira-2.png",
+        "public\\exercises\\alongamento-dorsal-cadeira-3.png",
+        "public\\exercises\\alongamento-dorsal-cadeira-4.png",
+        "public\\exercises\\alongamento-dorsal-cadeira-5.png"
+      ]
+    },
+    {
+      "id": "retracao-protracao-escapular",
+      "title": "Retracao e protracao escapular",
+      "region": "Costas superiores e escapulas",
+      "poseKey": "shoulder-crossbody",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\retracao-protracao-escapular.png",
+        "public\\exercises\\retracao-protracao-escapular-1.png",
+        "public\\exercises\\retracao-protracao-escapular-2.png",
+        "public\\exercises\\retracao-protracao-escapular-3.png",
+        "public\\exercises\\retracao-protracao-escapular-4.png",
+        "public\\exercises\\retracao-protracao-escapular-5.png"
+      ]
+    },
+    {
+      "id": "postura-crianca-lateral",
+      "title": "Postura da crianca lateral",
+      "region": "Costas superiores e escapulas",
+      "poseKey": "child-pose",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\postura-crianca-lateral.png",
+        "public\\exercises\\postura-crianca-lateral-1.png",
+        "public\\exercises\\postura-crianca-lateral-2.png",
+        "public\\exercises\\postura-crianca-lateral-3.png",
+        "public\\exercises\\postura-crianca-lateral-4.png",
+        "public\\exercises\\postura-crianca-lateral-5.png"
+      ]
+    },
+    {
+      "id": "gato-vaca-escapular",
+      "title": "Gato-vaca escapular",
+      "region": "Costas superiores e escapulas",
+      "poseKey": "cat-cow",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\gato-vaca-escapular.png",
+        "public\\exercises\\gato-vaca-escapular-1.png",
+        "public\\exercises\\gato-vaca-escapular-2.png",
+        "public\\exercises\\gato-vaca-escapular-3.png",
+        "public\\exercises\\gato-vaca-escapular-4.png",
+        "public\\exercises\\gato-vaca-escapular-5.png"
+      ]
+    },
+    {
+      "id": "inclinacao-lateral-pescoco",
+      "title": "Inclinacao lateral do pescoco",
+      "region": "Pescoco e cervical",
+      "poseKey": "neck-side-bend",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\inclinacao-lateral-pescoco.png",
+        "public\\exercises\\inclinacao-lateral-pescoco-1.png",
+        "public\\exercises\\inclinacao-lateral-pescoco-2.png",
+        "public\\exercises\\inclinacao-lateral-pescoco-3.png",
+        "public\\exercises\\inclinacao-lateral-pescoco-4.png",
+        "public\\exercises\\inclinacao-lateral-pescoco-5.png"
+      ]
+    },
+    {
+      "id": "flexao-cervical-suave",
+      "title": "Flexao cervical suave",
+      "region": "Pescoco e cervical",
+      "poseKey": "neck-side-bend",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\flexao-cervical-suave.png",
+        "public\\exercises\\flexao-cervical-suave-1.png",
+        "public\\exercises\\flexao-cervical-suave-2.png",
+        "public\\exercises\\flexao-cervical-suave-3.png",
+        "public\\exercises\\flexao-cervical-suave-4.png",
+        "public\\exercises\\flexao-cervical-suave-5.png"
+      ]
+    },
+    {
+      "id": "rotacao-cervical-controlada",
+      "title": "Rotacao cervical controlada",
+      "region": "Pescoco e cervical",
+      "poseKey": "neck-side-bend",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\rotacao-cervical-controlada.png",
+        "public\\exercises\\rotacao-cervical-controlada-1.png",
+        "public\\exercises\\rotacao-cervical-controlada-2.png",
+        "public\\exercises\\rotacao-cervical-controlada-3.png",
+        "public\\exercises\\rotacao-cervical-controlada-4.png",
+        "public\\exercises\\rotacao-cervical-controlada-5.png"
+      ]
+    },
+    {
+      "id": "elevador-escapula",
+      "title": "Alongamento do elevador da escapula",
+      "region": "Pescoco e cervical",
+      "poseKey": "neck-side-bend",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\elevador-escapula.png",
+        "public\\exercises\\elevador-escapula-1.png",
+        "public\\exercises\\elevador-escapula-2.png",
+        "public\\exercises\\elevador-escapula-3.png",
+        "public\\exercises\\elevador-escapula-4.png",
+        "public\\exercises\\elevador-escapula-5.png"
+      ]
+    },
+    {
+      "id": "queixo-para-tras",
+      "title": "Queixo para tras",
+      "region": "Pescoco e cervical",
+      "poseKey": "chin-tuck",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\queixo-para-tras.png",
+        "public\\exercises\\queixo-para-tras-1.png",
+        "public\\exercises\\queixo-para-tras-2.png",
+        "public\\exercises\\queixo-para-tras-3.png",
+        "public\\exercises\\queixo-para-tras-4.png",
+        "public\\exercises\\queixo-para-tras-5.png"
+      ]
+    },
+    {
+      "id": "rotacao-toracica-sentada",
+      "title": "Rotacao toracica sentada",
+      "region": "Coluna toracica",
+      "poseKey": "thoracic-chair-rotation",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\rotacao-toracica-sentada.png",
+        "public\\exercises\\rotacao-toracica-sentada-1.png",
+        "public\\exercises\\rotacao-toracica-sentada-2.png",
+        "public\\exercises\\rotacao-toracica-sentada-3.png",
+        "public\\exercises\\rotacao-toracica-sentada-4.png",
+        "public\\exercises\\rotacao-toracica-sentada-5.png"
+      ]
+    },
+    {
+      "id": "extensao-toracica-cadeira",
+      "title": "Extensao toracica na cadeira",
+      "region": "Coluna toracica",
+      "poseKey": "lat-chair",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\extensao-toracica-cadeira.png",
+        "public\\exercises\\extensao-toracica-cadeira-1.png",
+        "public\\exercises\\extensao-toracica-cadeira-2.png",
+        "public\\exercises\\extensao-toracica-cadeira-3.png",
+        "public\\exercises\\extensao-toracica-cadeira-4.png",
+        "public\\exercises\\extensao-toracica-cadeira-5.png"
+      ]
+    },
+    {
+      "id": "gato-vaca-toracico",
+      "title": "Gato-vaca toracico",
+      "region": "Coluna toracica",
+      "poseKey": "cat-cow",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\gato-vaca-toracico.png",
+        "public\\exercises\\gato-vaca-toracico-1.png",
+        "public\\exercises\\gato-vaca-toracico-2.png",
+        "public\\exercises\\gato-vaca-toracico-3.png",
+        "public\\exercises\\gato-vaca-toracico-4.png",
+        "public\\exercises\\gato-vaca-toracico-5.png"
+      ]
+    },
+    {
+      "id": "livro-aberto",
+      "title": "Livro aberto",
+      "region": "Coluna toracica",
+      "poseKey": "supine-twist",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\livro-aberto.png",
+        "public\\exercises\\livro-aberto-1.png",
+        "public\\exercises\\livro-aberto-2.png",
+        "public\\exercises\\livro-aberto-3.png",
+        "public\\exercises\\livro-aberto-4.png",
+        "public\\exercises\\livro-aberto-5.png"
+      ]
+    },
+    {
+      "id": "alcance-lateral-toracico",
+      "title": "Alcance lateral toracico",
+      "region": "Coluna toracica",
+      "poseKey": "standing-side-bend",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alcance-lateral-toracico.png",
+        "public\\exercises\\alcance-lateral-toracico-1.png",
+        "public\\exercises\\alcance-lateral-toracico-2.png",
+        "public\\exercises\\alcance-lateral-toracico-3.png",
+        "public\\exercises\\alcance-lateral-toracico-4.png",
+        "public\\exercises\\alcance-lateral-toracico-5.png"
+      ]
+    },
+    {
+      "id": "joelhos-ao-peito",
+      "title": "Joelhos ao peito",
+      "region": "Lombar",
+      "poseKey": "knees-to-chest",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\joelhos-ao-peito.png",
+        "public\\exercises\\joelhos-ao-peito-1.png",
+        "public\\exercises\\joelhos-ao-peito-2.png",
+        "public\\exercises\\joelhos-ao-peito-3.png",
+        "public\\exercises\\joelhos-ao-peito-4.png",
+        "public\\exercises\\joelhos-ao-peito-5.png"
+      ]
+    },
+    {
+      "id": "torcao-lombar-leve",
+      "title": "Torcao lombar leve",
+      "region": "Lombar",
+      "poseKey": "supine-twist",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\torcao-lombar-leve.png",
+        "public\\exercises\\torcao-lombar-leve-1.png",
+        "public\\exercises\\torcao-lombar-leve-2.png",
+        "public\\exercises\\torcao-lombar-leve-3.png",
+        "public\\exercises\\torcao-lombar-leve-4.png",
+        "public\\exercises\\torcao-lombar-leve-5.png"
+      ]
+    },
+    {
+      "id": "postura-crianca",
+      "title": "Postura da crianca",
+      "region": "Lombar",
+      "poseKey": "child-pose",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\postura-crianca.png",
+        "public\\exercises\\postura-crianca-1.png",
+        "public\\exercises\\postura-crianca-2.png",
+        "public\\exercises\\postura-crianca-3.png",
+        "public\\exercises\\postura-crianca-4.png",
+        "public\\exercises\\postura-crianca-5.png"
+      ]
+    },
+    {
+      "id": "bascula-pelvica",
+      "title": "Bascula pelvica",
+      "region": "Lombar",
+      "poseKey": "bridge",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\bascula-pelvica.png",
+        "public\\exercises\\bascula-pelvica-1.png",
+        "public\\exercises\\bascula-pelvica-2.png",
+        "public\\exercises\\bascula-pelvica-3.png",
+        "public\\exercises\\bascula-pelvica-4.png",
+        "public\\exercises\\bascula-pelvica-5.png"
+      ]
+    },
+    {
+      "id": "flexao-lombar-sentada",
+      "title": "Flexao lombar sentada",
+      "region": "Lombar",
+      "poseKey": "knees-to-chest",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\flexao-lombar-sentada.png",
+        "public\\exercises\\flexao-lombar-sentada-1.png",
+        "public\\exercises\\flexao-lombar-sentada-2.png",
+        "public\\exercises\\flexao-lombar-sentada-3.png",
+        "public\\exercises\\flexao-lombar-sentada-4.png",
+        "public\\exercises\\flexao-lombar-sentada-5.png"
+      ]
+    },
+    {
+      "id": "cobra-suave",
+      "title": "Cobra suave",
+      "region": "Abdomen e tronco anterior",
+      "poseKey": "cobra",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\cobra-suave.png",
+        "public\\exercises\\cobra-suave-1.png",
+        "public\\exercises\\cobra-suave-2.png",
+        "public\\exercises\\cobra-suave-3.png",
+        "public\\exercises\\cobra-suave-4.png",
+        "public\\exercises\\cobra-suave-5.png"
+      ]
+    },
+    {
+      "id": "extensao-abdominal-em-pe",
+      "title": "Extensao abdominal em pe",
+      "region": "Abdomen e tronco anterior",
+      "poseKey": "standing-extension",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\extensao-abdominal-em-pe.png",
+        "public\\exercises\\extensao-abdominal-em-pe-1.png",
+        "public\\exercises\\extensao-abdominal-em-pe-2.png",
+        "public\\exercises\\extensao-abdominal-em-pe-3.png",
+        "public\\exercises\\extensao-abdominal-em-pe-4.png",
+        "public\\exercises\\extensao-abdominal-em-pe-5.png"
+      ]
+    },
+    {
+      "id": "alongamento-lateral-tronco",
+      "title": "Alongamento lateral do tronco",
+      "region": "Abdomen e tronco anterior",
+      "poseKey": "standing-side-bend",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alongamento-lateral-tronco.png",
+        "public\\exercises\\alongamento-lateral-tronco-1.png",
+        "public\\exercises\\alongamento-lateral-tronco-2.png",
+        "public\\exercises\\alongamento-lateral-tronco-3.png",
+        "public\\exercises\\alongamento-lateral-tronco-4.png",
+        "public\\exercises\\alongamento-lateral-tronco-5.png"
+      ]
+    },
+    {
+      "id": "ponte-suave-abertura",
+      "title": "Ponte suave com abertura anterior",
+      "region": "Abdomen e tronco anterior",
+      "poseKey": "bridge",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\ponte-suave-abertura.png",
+        "public\\exercises\\ponte-suave-abertura-1.png",
+        "public\\exercises\\ponte-suave-abertura-2.png",
+        "public\\exercises\\ponte-suave-abertura-3.png",
+        "public\\exercises\\ponte-suave-abertura-4.png",
+        "public\\exercises\\ponte-suave-abertura-5.png"
+      ]
+    },
+    {
+      "id": "respiracao-costelas",
+      "title": "Respiracao nas costelas",
+      "region": "Abdomen e tronco anterior",
+      "poseKey": "standing-side-bend",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\respiracao-costelas.png",
+        "public\\exercises\\respiracao-costelas-1.png",
+        "public\\exercises\\respiracao-costelas-2.png",
+        "public\\exercises\\respiracao-costelas-3.png",
+        "public\\exercises\\respiracao-costelas-4.png",
+        "public\\exercises\\respiracao-costelas-5.png"
+      ]
+    },
+    {
+      "id": "flexor-quadril-ajoelhado",
+      "title": "Flexor do quadril ajoelhado",
+      "region": "Quadril",
+      "poseKey": "hip-flexor-kneeling",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\flexor-quadril-ajoelhado.png",
+        "public\\exercises\\flexor-quadril-ajoelhado-1.png",
+        "public\\exercises\\flexor-quadril-ajoelhado-2.png",
+        "public\\exercises\\flexor-quadril-ajoelhado-3.png",
+        "public\\exercises\\flexor-quadril-ajoelhado-4.png",
+        "public\\exercises\\flexor-quadril-ajoelhado-5.png"
+      ]
+    },
+    {
+      "id": "borboleta",
+      "title": "Borboleta",
+      "region": "Quadril",
+      "poseKey": "butterfly",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\borboleta.png",
+        "public\\exercises\\borboleta-1.png",
+        "public\\exercises\\borboleta-2.png",
+        "public\\exercises\\borboleta-3.png",
+        "public\\exercises\\borboleta-4.png",
+        "public\\exercises\\borboleta-5.png"
+      ]
+    },
+    {
+      "id": "noventa-noventa",
+      "title": "90/90 de quadril",
+      "region": "Quadril",
+      "poseKey": "hip-90-90",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\noventa-noventa.png",
+        "public\\exercises\\noventa-noventa-1.png",
+        "public\\exercises\\noventa-noventa-2.png",
+        "public\\exercises\\noventa-noventa-3.png",
+        "public\\exercises\\noventa-noventa-4.png",
+        "public\\exercises\\noventa-noventa-5.png"
+      ]
+    },
+    {
+      "id": "circulos-quadril",
+      "title": "Circulos de quadril",
+      "region": "Quadril",
+      "poseKey": "hip-90-90",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\circulos-quadril.png",
+        "public\\exercises\\circulos-quadril-1.png",
+        "public\\exercises\\circulos-quadril-2.png",
+        "public\\exercises\\circulos-quadril-3.png",
+        "public\\exercises\\circulos-quadril-4.png",
+        "public\\exercises\\circulos-quadril-5.png"
+      ]
+    },
+    {
+      "id": "abertura-quadril-sentado",
+      "title": "Abertura de quadril sentado",
+      "region": "Quadril",
+      "poseKey": "butterfly",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\abertura-quadril-sentado.png",
+        "public\\exercises\\abertura-quadril-sentado-1.png",
+        "public\\exercises\\abertura-quadril-sentado-2.png",
+        "public\\exercises\\abertura-quadril-sentado-3.png",
+        "public\\exercises\\abertura-quadril-sentado-4.png",
+        "public\\exercises\\abertura-quadril-sentado-5.png"
+      ]
+    },
+    {
+      "id": "figura-quatro-sentado",
+      "title": "Figura quatro sentado",
+      "region": "Gluteos",
+      "poseKey": "figure-four",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\figura-quatro-sentado.png",
+        "public\\exercises\\figura-quatro-sentado-1.png",
+        "public\\exercises\\figura-quatro-sentado-2.png",
+        "public\\exercises\\figura-quatro-sentado-3.png",
+        "public\\exercises\\figura-quatro-sentado-4.png",
+        "public\\exercises\\figura-quatro-sentado-5.png"
+      ]
+    },
+    {
+      "id": "piriforme-deitado",
+      "title": "Piriforme deitado",
+      "region": "Gluteos",
+      "poseKey": "figure-four",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\piriforme-deitado.png",
+        "public\\exercises\\piriforme-deitado-1.png",
+        "public\\exercises\\piriforme-deitado-2.png",
+        "public\\exercises\\piriforme-deitado-3.png",
+        "public\\exercises\\piriforme-deitado-4.png",
+        "public\\exercises\\piriforme-deitado-5.png"
+      ]
+    },
+    {
+      "id": "pombo-adaptado",
+      "title": "Pombo adaptado",
+      "region": "Gluteos",
+      "poseKey": "figure-four",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\pombo-adaptado.png",
+        "public\\exercises\\pombo-adaptado-1.png",
+        "public\\exercises\\pombo-adaptado-2.png",
+        "public\\exercises\\pombo-adaptado-3.png",
+        "public\\exercises\\pombo-adaptado-4.png",
+        "public\\exercises\\pombo-adaptado-5.png"
+      ]
+    },
+    {
+      "id": "joelho-ao-peito-cruzado",
+      "title": "Joelho ao peito cruzado",
+      "region": "Gluteos",
+      "poseKey": "supine-twist",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\joelho-ao-peito-cruzado.png",
+        "public\\exercises\\joelho-ao-peito-cruzado-1.png",
+        "public\\exercises\\joelho-ao-peito-cruzado-2.png",
+        "public\\exercises\\joelho-ao-peito-cruzado-3.png",
+        "public\\exercises\\joelho-ao-peito-cruzado-4.png",
+        "public\\exercises\\joelho-ao-peito-cruzado-5.png"
+      ]
+    },
+    {
+      "id": "gluteo-parede",
+      "title": "Gluteo na parede",
+      "region": "Gluteos",
+      "poseKey": "figure-four",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\gluteo-parede.png",
+        "public\\exercises\\gluteo-parede-1.png",
+        "public\\exercises\\gluteo-parede-2.png",
+        "public\\exercises\\gluteo-parede-3.png",
+        "public\\exercises\\gluteo-parede-4.png",
+        "public\\exercises\\gluteo-parede-5.png"
+      ]
+    },
+    {
+      "id": "posterior-sentado",
+      "title": "Posterior sentado",
+      "region": "Posterior de coxa",
+      "poseKey": "hamstring-seated",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\posterior-sentado.png",
+        "public\\exercises\\posterior-sentado-1.png",
+        "public\\exercises\\posterior-sentado-2.png",
+        "public\\exercises\\posterior-sentado-3.png",
+        "public\\exercises\\posterior-sentado-4.png",
+        "public\\exercises\\posterior-sentado-5.png"
+      ]
+    },
+    {
+      "id": "posterior-em-pe-apoio",
+      "title": "Posterior em pe com apoio",
+      "region": "Posterior de coxa",
+      "poseKey": "hamstring-seated",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\posterior-em-pe-apoio.png",
+        "public\\exercises\\posterior-em-pe-apoio-1.png",
+        "public\\exercises\\posterior-em-pe-apoio-2.png",
+        "public\\exercises\\posterior-em-pe-apoio-3.png",
+        "public\\exercises\\posterior-em-pe-apoio-4.png",
+        "public\\exercises\\posterior-em-pe-apoio-5.png"
+      ]
+    },
+    {
+      "id": "toalha-deitado",
+      "title": "Posterior com toalha deitado",
+      "region": "Posterior de coxa",
+      "poseKey": "hamstring-seated",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\toalha-deitado.png",
+        "public\\exercises\\toalha-deitado-1.png",
+        "public\\exercises\\toalha-deitado-2.png",
+        "public\\exercises\\toalha-deitado-3.png",
+        "public\\exercises\\toalha-deitado-4.png",
+        "public\\exercises\\toalha-deitado-5.png"
+      ]
+    },
+    {
+      "id": "bom-dia-mobilidade",
+      "title": "Bom dia de mobilidade",
+      "region": "Posterior de coxa",
+      "poseKey": "hamstring-seated",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\bom-dia-mobilidade.png",
+        "public\\exercises\\bom-dia-mobilidade-1.png",
+        "public\\exercises\\bom-dia-mobilidade-2.png",
+        "public\\exercises\\bom-dia-mobilidade-3.png",
+        "public\\exercises\\bom-dia-mobilidade-4.png",
+        "public\\exercises\\bom-dia-mobilidade-5.png"
+      ]
+    },
+    {
+      "id": "inclinacao-unilateral-cadeira",
+      "title": "Inclinacao unilateral na cadeira",
+      "region": "Posterior de coxa",
+      "poseKey": "hamstring-seated",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\inclinacao-unilateral-cadeira.png",
+        "public\\exercises\\inclinacao-unilateral-cadeira-1.png",
+        "public\\exercises\\inclinacao-unilateral-cadeira-2.png",
+        "public\\exercises\\inclinacao-unilateral-cadeira-3.png",
+        "public\\exercises\\inclinacao-unilateral-cadeira-4.png",
+        "public\\exercises\\inclinacao-unilateral-cadeira-5.png"
+      ]
+    },
+    {
+      "id": "quadriceps-em-pe-apoio",
+      "title": "Quadriceps em pe com apoio",
+      "region": "Anterior de coxa",
+      "poseKey": "quad-standing",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\quadriceps-em-pe-apoio.png",
+        "public\\exercises\\quadriceps-em-pe-apoio-1.png",
+        "public\\exercises\\quadriceps-em-pe-apoio-2.png",
+        "public\\exercises\\quadriceps-em-pe-apoio-3.png",
+        "public\\exercises\\quadriceps-em-pe-apoio-4.png",
+        "public\\exercises\\quadriceps-em-pe-apoio-5.png"
+      ]
+    },
+    {
+      "id": "quadriceps-lateral-deitado",
+      "title": "Quadriceps deitado de lado",
+      "region": "Anterior de coxa",
+      "poseKey": "quad-standing",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\quadriceps-lateral-deitado.png",
+        "public\\exercises\\quadriceps-lateral-deitado-1.png",
+        "public\\exercises\\quadriceps-lateral-deitado-2.png",
+        "public\\exercises\\quadriceps-lateral-deitado-3.png",
+        "public\\exercises\\quadriceps-lateral-deitado-4.png",
+        "public\\exercises\\quadriceps-lateral-deitado-5.png"
+      ]
+    },
+    {
+      "id": "flexor-quadril-com-quadriceps",
+      "title": "Flexor do quadril com quadriceps",
+      "region": "Anterior de coxa",
+      "poseKey": "hip-flexor-kneeling",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\flexor-quadril-com-quadriceps.png",
+        "public\\exercises\\flexor-quadril-com-quadriceps-1.png",
+        "public\\exercises\\flexor-quadril-com-quadriceps-2.png",
+        "public\\exercises\\flexor-quadril-com-quadriceps-3.png",
+        "public\\exercises\\flexor-quadril-com-quadriceps-4.png",
+        "public\\exercises\\flexor-quadril-com-quadriceps-5.png"
+      ]
+    },
+    {
+      "id": "joelho-no-chao-anterior",
+      "title": "Anterior de coxa com joelho no chao",
+      "region": "Anterior de coxa",
+      "poseKey": "hip-flexor-kneeling",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\joelho-no-chao-anterior.png",
+        "public\\exercises\\joelho-no-chao-anterior-1.png",
+        "public\\exercises\\joelho-no-chao-anterior-2.png",
+        "public\\exercises\\joelho-no-chao-anterior-3.png",
+        "public\\exercises\\joelho-no-chao-anterior-4.png",
+        "public\\exercises\\joelho-no-chao-anterior-5.png"
+      ]
+    },
+    {
+      "id": "anterior-coxa-cadeira",
+      "title": "Anterior de coxa na cadeira",
+      "region": "Anterior de coxa",
+      "poseKey": "quad-standing",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\anterior-coxa-cadeira.png",
+        "public\\exercises\\anterior-coxa-cadeira-1.png",
+        "public\\exercises\\anterior-coxa-cadeira-2.png",
+        "public\\exercises\\anterior-coxa-cadeira-3.png",
+        "public\\exercises\\anterior-coxa-cadeira-4.png",
+        "public\\exercises\\anterior-coxa-cadeira-5.png"
+      ]
+    },
+    {
+      "id": "panturrilha-parede",
+      "title": "Panturrilha na parede",
+      "region": "Panturrilhas",
+      "poseKey": "calf-wall",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\panturrilha-parede.png",
+        "public\\exercises\\panturrilha-parede-1.png",
+        "public\\exercises\\panturrilha-parede-2.png",
+        "public\\exercises\\panturrilha-parede-3.png",
+        "public\\exercises\\panturrilha-parede-4.png",
+        "public\\exercises\\panturrilha-parede-5.png"
+      ]
+    },
+    {
+      "id": "soleo-joelho-flexionado",
+      "title": "Soleo com joelho flexionado",
+      "region": "Panturrilhas",
+      "poseKey": "calf-wall",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\soleo-joelho-flexionado.png",
+        "public\\exercises\\soleo-joelho-flexionado-1.png",
+        "public\\exercises\\soleo-joelho-flexionado-2.png",
+        "public\\exercises\\soleo-joelho-flexionado-3.png",
+        "public\\exercises\\soleo-joelho-flexionado-4.png",
+        "public\\exercises\\soleo-joelho-flexionado-5.png"
+      ]
+    },
+    {
+      "id": "degrau-panturrilha",
+      "title": "Panturrilha no degrau",
+      "region": "Panturrilhas",
+      "poseKey": "calf-wall",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\degrau-panturrilha.png",
+        "public\\exercises\\degrau-panturrilha-1.png",
+        "public\\exercises\\degrau-panturrilha-2.png",
+        "public\\exercises\\degrau-panturrilha-3.png",
+        "public\\exercises\\degrau-panturrilha-4.png",
+        "public\\exercises\\degrau-panturrilha-5.png"
+      ]
+    },
+    {
+      "id": "panturrilha-toalha",
+      "title": "Panturrilha com toalha",
+      "region": "Panturrilhas",
+      "poseKey": "calf-wall",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\panturrilha-toalha.png",
+        "public\\exercises\\panturrilha-toalha-1.png",
+        "public\\exercises\\panturrilha-toalha-2.png",
+        "public\\exercises\\panturrilha-toalha-3.png",
+        "public\\exercises\\panturrilha-toalha-4.png",
+        "public\\exercises\\panturrilha-toalha-5.png"
+      ]
+    },
+    {
+      "id": "mobilidade-tornozelo-panturrilha",
+      "title": "Mobilidade tornozelo-panturrilha",
+      "region": "Panturrilhas",
+      "poseKey": "ankle-dorsiflexion",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\mobilidade-tornozelo-panturrilha.png",
+        "public\\exercises\\mobilidade-tornozelo-panturrilha-1.png",
+        "public\\exercises\\mobilidade-tornozelo-panturrilha-2.png",
+        "public\\exercises\\mobilidade-tornozelo-panturrilha-3.png",
+        "public\\exercises\\mobilidade-tornozelo-panturrilha-4.png",
+        "public\\exercises\\mobilidade-tornozelo-panturrilha-5.png"
+      ]
+    },
+    {
+      "id": "dorsiflexao-parede",
+      "title": "Dorsiflexao na parede",
+      "region": "Tornozelos",
+      "poseKey": "ankle-dorsiflexion",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\dorsiflexao-parede.png",
+        "public\\exercises\\dorsiflexao-parede-1.png",
+        "public\\exercises\\dorsiflexao-parede-2.png",
+        "public\\exercises\\dorsiflexao-parede-3.png",
+        "public\\exercises\\dorsiflexao-parede-4.png",
+        "public\\exercises\\dorsiflexao-parede-5.png"
+      ]
+    },
+    {
+      "id": "circulos-tornozelo",
+      "title": "Circulos de tornozelo",
+      "region": "Tornozelos",
+      "poseKey": "ankle-dorsiflexion",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\circulos-tornozelo.png",
+        "public\\exercises\\circulos-tornozelo-1.png",
+        "public\\exercises\\circulos-tornozelo-2.png",
+        "public\\exercises\\circulos-tornozelo-3.png",
+        "public\\exercises\\circulos-tornozelo-4.png",
+        "public\\exercises\\circulos-tornozelo-5.png"
+      ]
+    },
+    {
+      "id": "inversao-eversao-controlada",
+      "title": "Inversao e eversao controlada",
+      "region": "Tornozelos",
+      "poseKey": "ankle-dorsiflexion",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\inversao-eversao-controlada.png",
+        "public\\exercises\\inversao-eversao-controlada-1.png",
+        "public\\exercises\\inversao-eversao-controlada-2.png",
+        "public\\exercises\\inversao-eversao-controlada-3.png",
+        "public\\exercises\\inversao-eversao-controlada-4.png",
+        "public\\exercises\\inversao-eversao-controlada-5.png"
+      ]
+    },
+    {
+      "id": "alongamento-frente-tornozelo",
+      "title": "Alongamento da frente do tornozelo",
+      "region": "Tornozelos",
+      "poseKey": "ankle-dorsiflexion",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alongamento-frente-tornozelo.png",
+        "public\\exercises\\alongamento-frente-tornozelo-1.png",
+        "public\\exercises\\alongamento-frente-tornozelo-2.png",
+        "public\\exercises\\alongamento-frente-tornozelo-3.png",
+        "public\\exercises\\alongamento-frente-tornozelo-4.png",
+        "public\\exercises\\alongamento-frente-tornozelo-5.png"
+      ]
+    },
+    {
+      "id": "alfabeto-tornozelo",
+      "title": "Alfabeto com tornozelo",
+      "region": "Tornozelos",
+      "poseKey": "ankle-dorsiflexion",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\alfabeto-tornozelo.png",
+        "public\\exercises\\alfabeto-tornozelo-1.png",
+        "public\\exercises\\alfabeto-tornozelo-2.png",
+        "public\\exercises\\alfabeto-tornozelo-3.png",
+        "public\\exercises\\alfabeto-tornozelo-4.png",
+        "public\\exercises\\alfabeto-tornozelo-5.png"
+      ]
+    },
+    {
+      "id": "extensao-dedos-pe",
+      "title": "Extensao dos dedos do pe",
+      "region": "Pes e dedos",
+      "poseKey": "foot-plantar",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\extensao-dedos-pe.png",
+        "public\\exercises\\extensao-dedos-pe-1.png",
+        "public\\exercises\\extensao-dedos-pe-2.png",
+        "public\\exercises\\extensao-dedos-pe-3.png",
+        "public\\exercises\\extensao-dedos-pe-4.png",
+        "public\\exercises\\extensao-dedos-pe-5.png"
+      ]
+    },
+    {
+      "id": "flexao-dedos-pe",
+      "title": "Flexao dos dedos do pe",
+      "region": "Pes e dedos",
+      "poseKey": "foot-plantar",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\flexao-dedos-pe.png",
+        "public\\exercises\\flexao-dedos-pe-1.png",
+        "public\\exercises\\flexao-dedos-pe-2.png",
+        "public\\exercises\\flexao-dedos-pe-3.png",
+        "public\\exercises\\flexao-dedos-pe-4.png",
+        "public\\exercises\\flexao-dedos-pe-5.png"
+      ]
+    },
+    {
+      "id": "arco-plantar-bola",
+      "title": "Arco plantar com bola",
+      "region": "Pes e dedos",
+      "poseKey": "foot-plantar",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\arco-plantar-bola.png",
+        "public\\exercises\\arco-plantar-bola-1.png",
+        "public\\exercises\\arco-plantar-bola-2.png",
+        "public\\exercises\\arco-plantar-bola-3.png",
+        "public\\exercises\\arco-plantar-bola-4.png",
+        "public\\exercises\\arco-plantar-bola-5.png"
+      ]
+    },
+    {
+      "id": "fascia-plantar-toalha",
+      "title": "Fascia plantar com toalha",
+      "region": "Pes e dedos",
+      "poseKey": "foot-plantar",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\fascia-plantar-toalha.png",
+        "public\\exercises\\fascia-plantar-toalha-1.png",
+        "public\\exercises\\fascia-plantar-toalha-2.png",
+        "public\\exercises\\fascia-plantar-toalha-3.png",
+        "public\\exercises\\fascia-plantar-toalha-4.png",
+        "public\\exercises\\fascia-plantar-toalha-5.png"
+      ]
+    },
+    {
+      "id": "abertura-dedos-pe",
+      "title": "Abertura dos dedos do pe",
+      "region": "Pes e dedos",
+      "poseKey": "foot-plantar",
+      "files": 6,
+      "rendered": [
+        "public\\exercises\\abertura-dedos-pe.png",
+        "public\\exercises\\abertura-dedos-pe-1.png",
+        "public\\exercises\\abertura-dedos-pe-2.png",
+        "public\\exercises\\abertura-dedos-pe-3.png",
+        "public\\exercises\\abertura-dedos-pe-4.png",
+        "public\\exercises\\abertura-dedos-pe-5.png"
+      ]
+    }
+  ]
+}

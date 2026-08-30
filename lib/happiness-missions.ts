@@ -1,0 +1,312 @@
+export type HappinessMission = {
+  slug: string;
+  title: string;
+  theme: "hormonios" | "mentalidade" | "conexao" | "corpo-natureza" | "criatividade" | "autoconhecimento";
+  presentation: string;
+  purpose: string;
+  level: "Iniciante" | "Intermediario" | "Avancado";
+  duration: string;
+  frequency: string;
+  steps: string[];
+  progression: string[];
+  observations: string[];
+  cautions: string[];
+  tags: string[];
+};
+
+export const happinessThemeLabels: Record<HappinessMission["theme"], string> = {
+  hormonios: "Hormônios da felicidade",
+  mentalidade: "Mentalidade e autocuidado",
+  conexao: "Conexao social e proposito",
+  "corpo-natureza": "Corpo, natureza e presenca",
+  criatividade: "Prazeres manuais e criativos",
+  autoconhecimento: "Reflexao e autoconhecimento"
+};
+
+export const happinessMissions: HappinessMission[] = [
+  {
+    slug: "movimento-para-bem-estar",
+    title: "Exercicios fisicos para bem-estar",
+    theme: "hormonios",
+    presentation: "Caminhada, corrida leve, musculacao ou movimentos livres podem contribuir para bem-estar e reducao do estresse.",
+    purpose: "Usar movimento como treino de humor e energia emocional.",
+    level: "Iniciante",
+    duration: "5 a 20 minutos",
+    frequency: "3 a 5 vezes por semana",
+    steps: ["Escolha um movimento seguro.", "Comece abaixo do seu limite.", "Mantenha ritmo confortavel.", "Observe o humor antes e depois.", "Registre a pratica."],
+    progression: ["5 minutos.", "10 minutos.", "20 minutos com recuperacao adequada."],
+    observations: ["A felicidade aqui e treinada como habilidade, nao como obrigacao de estar bem."],
+    cautions: ["Adapte em caso de dor, lesao, gestacao ou condicao medica."],
+    tags: ["movimento", "bem-estar", "estresse"]
+  },
+  {
+    slug: "exposicao-solar-segura",
+    title: "Exposicao solar segura",
+    theme: "hormonios",
+    presentation: "Alguns minutos de luz natural podem apoiar rotina, alerta e sensacao de vitalidade.",
+    purpose: "Ajudar corpo e mente a se conectarem ao periodo do dia.",
+    level: "Iniciante",
+    duration: "10 a 15 minutos",
+    frequency: "Quando seguro e adequado",
+    steps: ["Escolha horario mais seguro.", "Evite sol forte.", "Use protecao quando necessario.", "Observe luz e temperatura.", "Volte antes de desconforto."],
+    progression: ["5 minutos.", "10 minutos.", "15 minutos em local seguro."],
+    observations: ["Luz natural nao precisa virar exposicao intensa."],
+    cautions: ["Use protecao solar quando necessario e respeite orientacoes dermatologicas."],
+    tags: ["sol", "luz natural", "vitalidade"]
+  },
+  {
+    slug: "rir-mais",
+    title: "Rir mais",
+    theme: "hormonios",
+    presentation: "Comedia, conversa com alguem querido ou conteudo leve podem criar uma pausa emocional positiva.",
+    purpose: "Treinar abertura para prazer simples sem negar dificuldades.",
+    level: "Iniciante",
+    duration: "5 a 15 minutos",
+    frequency: "Algumas vezes por semana",
+    steps: ["Escolha uma fonte leve de humor.", "Assista ou converse sem multitarefa.", "Perceba se o corpo relaxa.", "Evite rolagem infinita.", "Feche com uma pequena acao de cuidado."],
+    progression: ["5 minutos.", "Compartilhar com alguem.", "Criar lista de fontes leves."],
+    observations: ["Rir nao invalida dias dificeis; e uma pausa possivel."],
+    cautions: ["Evite conteudos que aumentem comparacao, agressividade ou ansiedade."],
+    tags: ["riso", "leveza", "prazer"]
+  },
+  {
+    slug: "diario-de-gratidao",
+    title: "Diario de gratidao",
+    theme: "mentalidade",
+    presentation: "Escrever 3 coisas boas do dia treina percepcao positiva concreta.",
+    purpose: "Aumentar atencao para pequenos sinais de apoio e valor.",
+    level: "Iniciante",
+    duration: "3 a 5 minutos",
+    frequency: "Diariamente ou 3 vezes por semana",
+    steps: ["Pegue um caderno.", "Escreva 3 coisas boas do dia.", "Inclua detalhes concretos.", "Repita diariamente quando possivel.", "Leia sem se cobrar."],
+    progression: ["1 coisa boa.", "3 coisas boas.", "Gratidao detalhada uma vez por semana."],
+    observations: ["Pode ser algo pequeno, neutro ou simples."],
+    cautions: ["Nao use a pratica para negar tristeza ou problemas reais."],
+    tags: ["gratidao", "escrita", "humor"]
+  },
+  {
+    slug: "saborear-momentos",
+    title: "Saborear momentos",
+    theme: "mentalidade",
+    presentation: "Depois de uma experiencia boa, parar por 1 minuto ajuda a perceber a sensacao positiva.",
+    purpose: "Alongar a presenca em momentos bons sem tentar prende-los.",
+    level: "Iniciante",
+    duration: "1 minuto",
+    frequency: "Sempre que notar algo bom",
+    steps: ["Perceba uma experiencia boa.", "Pare por 1 minuto.", "Observe corpo, emocao e ambiente.", "Nomeie o que foi bom.", "Siga sem pressa."],
+    progression: ["30 segundos.", "1 minuto.", "Registrar no historico."],
+    observations: ["Funciona bem com cafe, banho, conversa, musica ou natureza."],
+    cautions: ["Evite transformar prazer simples em tarefa obrigatoria."],
+    tags: ["savoring", "presenca", "prazer"]
+  },
+  {
+    slug: "apreciar-natureza",
+    title: "Apreciar a natureza",
+    theme: "mentalidade",
+    presentation: "Observar ceu, plantas, arvores ou sons naturais pode criar uma pausa de bem-estar.",
+    purpose: "Regular atencao por contato com ambiente natural.",
+    level: "Iniciante",
+    duration: "5 a 15 minutos",
+    frequency: "2 a 5 vezes por semana",
+    steps: ["Escolha um local seguro.", "Observe cores e formas.", "Escute sons ao redor.", "Respire sem pressa.", "Volte com uma pequena anotacao se quiser."],
+    progression: ["Janela.", "Quintal ou rua.", "Parque ou area verde."],
+    observations: ["Natureza tambem pode ser uma planta ou uma vista pequena."],
+    cautions: ["Priorize seguranca, clima adequado e acessibilidade."],
+    tags: ["natureza", "presenca", "humor"]
+  },
+  {
+    slug: "atos-de-bondade",
+    title: "Atos de bondade",
+    theme: "conexao",
+    presentation: "Ajudar alguem, enviar mensagem carinhosa, doar algo ou elogiar sinceramente cria conexao e proposito.",
+    purpose: "Treinar bem-estar por meio de acao social simples.",
+    level: "Iniciante",
+    duration: "2 a 10 minutos",
+    frequency: "1 a 3 vezes por semana",
+    steps: ["Escolha uma acao pequena.", "Ajude sem se sobrecarregar.", "Envie uma mensagem ou elogio sincero.", "Perceba como foi agir com bondade.", "Nao espere retorno imediato."],
+    progression: ["Mensagem curta.", "Ajuda pratica.", "Ritual semanal de bondade."],
+    observations: ["Bondade tambem precisa respeitar seus limites."],
+    cautions: ["Evite contatos ou contextos que gerem risco, cobranca ou conflito."],
+    tags: ["bondade", "conexao", "proposito"]
+  },
+  {
+    slug: "encontros-presenciais",
+    title: "Encontros presenciais",
+    theme: "conexao",
+    presentation: "Cafe, caminhada ou conversa sem celular podem fortalecer conexao social.",
+    purpose: "Reduzir isolamento e aumentar presenca com pessoas seguras.",
+    level: "Intermediario",
+    duration: "20 a 60 minutos",
+    frequency: "Semanal ou quinzenal",
+    steps: ["Escolha uma pessoa segura.", "Combine algo simples.", "Reduza uso de celular.", "Converse sem meta de resolver tudo.", "Observe como se sente depois."],
+    progression: ["Mensagem de convite.", "Encontro curto.", "Ritual recorrente."],
+    observations: ["Conexao real pode ser breve e ainda assim importante."],
+    cautions: ["Respeite limites emocionais, financeiros e de seguranca."],
+    tags: ["conexao", "presencial", "sem celular"]
+  },
+  {
+    slug: "equilibrio-digital",
+    title: "Equilibrio digital",
+    theme: "conexao",
+    presentation: "Reduzir redes sociais pode diminuir comparacao excessiva e liberar tempo para experiencias reais.",
+    purpose: "Proteger humor e foco de estimulos que drenam energia.",
+    level: "Iniciante",
+    duration: "10 a 30 minutos sem redes",
+    frequency: "Diariamente",
+    steps: ["Escolha uma janela sem redes.", "Afaste notificacoes.", "Preencha com algo simples: agua, leitura, caminhada ou conversa.", "Observe vontade de checar.", "Registre como se sentiu."],
+    progression: ["10 minutos.", "30 minutos.", "Uma noite com menos redes."],
+    observations: ["O objetivo e uso intencional, nao culpa."],
+    cautions: ["Se o uso digital estiver associado a sofrimento intenso, procure apoio profissional."],
+    tags: ["redes sociais", "comparacao", "foco"]
+  },
+  {
+    slug: "grounding-natureza",
+    title: "Grounding",
+    theme: "corpo-natureza",
+    presentation: "Passear descalco na grama ou terra por 10 a 15 minutos, quando seguro, pode criar presenca sensorial.",
+    purpose: "Aumentar contato corporal com o ambiente.",
+    level: "Iniciante",
+    duration: "10 a 15 minutos",
+    frequency: "Quando seguro",
+    steps: ["Escolha local limpo e seguro.", "Tire os calcados se fizer sentido.", "Caminhe devagar.", "Perceba temperatura e textura.", "Lave os pes depois se necessario."],
+    progression: ["Sentir o solo parado.", "Caminhar por 5 minutos.", "Caminhar por 10 a 15 minutos."],
+    observations: ["Pode ser adaptado para observar textura com as maos."],
+    cautions: ["Evite locais com objetos cortantes, sujeira, risco biologico ou alergias."],
+    tags: ["grounding", "natureza", "sensorial"]
+  },
+  {
+    slug: "caminhada-atenta",
+    title: "Caminhada atenta",
+    theme: "corpo-natureza",
+    presentation: "Caminhar sem celular observando pes, cores, temperatura do ar e sons ao redor.",
+    purpose: "Unir movimento, presenca e reducao de excesso digital.",
+    level: "Iniciante",
+    duration: "5 a 15 minutos",
+    frequency: "2 a 5 vezes por semana",
+    steps: ["Guarde o celular.", "Sinta os pes tocando o chao.", "Observe cores.", "Perceba temperatura do ar.", "Escute sons ao redor."],
+    progression: ["5 minutos.", "10 minutos.", "15 minutos em ambiente seguro."],
+    observations: ["Nao precisa caminhar rapido."],
+    cautions: ["Mantenha atencao a transito, obstaculos e seguranca."],
+    tags: ["caminhada", "presenca", "sem celular"]
+  },
+  {
+    slug: "respiracao-pranayama-humor",
+    title: "Respiracao Pranayama",
+    theme: "corpo-natureza",
+    presentation: "Respiracao simples para regular corpo e apoiar estabilidade emocional.",
+    purpose: "Criar pausa fisiologica e presenca.",
+    level: "Iniciante",
+    duration: "1 a 3 minutos",
+    frequency: "Diariamente ou quando precisar",
+    steps: ["Inspire por 4 segundos.", "Segure por 2 segundos.", "Expire por 6 segundos.", "Repita 5 vezes.", "Volte ao ritmo natural."],
+    progression: ["3 ciclos.", "5 ciclos.", "3 minutos."],
+    observations: ["Respire sem forcar; a expiracao longa tende a desacelerar."],
+    cautions: ["Pare se houver tontura, desconforto ou falta de ar."],
+    tags: ["respiracao", "humor", "presenca"]
+  },
+  {
+    slug: "leitura-livro-fisico",
+    title: "Leitura em livro fisico",
+    theme: "criatividade",
+    presentation: "Ler em livro fisico reduz telas e cria prazer simples de atencao sustentada.",
+    purpose: "Treinar foco tranquilo e descanso digital.",
+    level: "Iniciante",
+    duration: "5 a 20 minutos",
+    frequency: "3 vezes por semana",
+    steps: ["Escolha um livro leve.", "Leia poucas paginas.", "Deixe o celular longe.", "Pare antes de cansar.", "Marque uma frase que gostou."],
+    progression: ["5 minutos.", "10 minutos.", "20 minutos."],
+    observations: ["Pode ser revista ou conto curto."],
+    cautions: ["Evite conteudo que aumente ansiedade perto do sono."],
+    tags: ["leitura", "sem tela", "prazer"]
+  },
+  {
+    slug: "artesanato-criativo",
+    title: "Artesanato",
+    theme: "criatividade",
+    presentation: "Atividade manual simples que envolve textura, repeticao e criacao.",
+    purpose: "Gerar prazer ativo e descanso de telas.",
+    level: "Iniciante",
+    duration: "10 a 30 minutos",
+    frequency: "Semanal",
+    steps: ["Separe material simples.", "Escolha uma parte pequena.", "Trabalhe sem buscar perfeicao.", "Observe textura e ritmo.", "Guarde para continuar depois."],
+    progression: ["10 minutos.", "Projeto pequeno.", "Ritual semanal."],
+    observations: ["Pode ser dobradura, pintura, costura simples ou colagem."],
+    cautions: ["Use ferramentas com seguranca."],
+    tags: ["manual", "criatividade", "prazer"]
+  },
+  {
+    slug: "desenho-livre",
+    title: "Desenho",
+    theme: "criatividade",
+    presentation: "Desenhar sem meta artistica ajuda a expressar e descansar a mente.",
+    purpose: "Criar prazer manual e reduzir autocritica.",
+    level: "Iniciante",
+    duration: "5 a 15 minutos",
+    frequency: "Quando quiser",
+    steps: ["Pegue papel e lapis.", "Desenhe formas simples.", "Nao avalie beleza.", "Preencha com linhas ou cores.", "Observe como ficou sem julgar."],
+    progression: ["Rabiscos.", "Formas.", "Desenho de objeto simples."],
+    observations: ["Desenho aqui e pratica de presenca, nao desempenho."],
+    cautions: ["Evite comparacao com artistas ou redes sociais."],
+    tags: ["desenho", "criatividade", "presenca"]
+  },
+  {
+    slug: "culinaria-simples",
+    title: "Culinaria",
+    theme: "criatividade",
+    presentation: "Preparar algo simples pode unir cuidado, sensorialidade e senso de competencia.",
+    purpose: "Transformar uma atividade comum em prazer manual.",
+    level: "Intermediario",
+    duration: "10 a 30 minutos",
+    frequency: "Semanal",
+    steps: ["Escolha receita simples.", "Separe ingredientes.", "Cozinhe sem pressa.", "Observe cheiros e texturas.", "Saboreie por 1 minuto."],
+    progression: ["Bebida simples.", "Lanche.", "Receita curta."],
+    observations: ["Pode ser preparar cha, fruta ou refeicao pequena."],
+    cautions: ["Use utensilios e fogo com seguranca."],
+    tags: ["culinaria", "sensorial", "autocuidado"]
+  },
+  {
+    slug: "quebra-cabecas-presenca",
+    title: "Quebra-cabecas",
+    theme: "criatividade",
+    presentation: "Atividade de encaixe e busca visual que treina foco leve e prazer de progresso.",
+    purpose: "Dar uma pausa mental ativa sem tela.",
+    level: "Intermediario",
+    duration: "10 a 20 minutos",
+    frequency: "Semanal",
+    steps: ["Escolha um quebra-cabeca simples.", "Separe bordas ou cores.", "Foque em uma area pequena.", "Pare no tempo combinado.", "Observe o progresso sem pressa."],
+    progression: ["Poucas pecas.", "Area pequena.", "Projeto maior em varias sessoes."],
+    observations: ["Tambem pode ser palavra-cruzada ou jogo analogico leve."],
+    cautions: ["Evite virar compulsao ou motivo de irritacao."],
+    tags: ["quebra-cabeca", "foco", "prazer"]
+  },
+  {
+    slug: "meditacao-silenciosa",
+    title: "Meditacao silenciosa",
+    theme: "autoconhecimento",
+    presentation: "5 a 10 minutos diarios em silencio para observar a mente com gentileza.",
+    purpose: "Aumentar presenca e autoconhecimento.",
+    level: "Intermediario",
+    duration: "5 a 10 minutos",
+    frequency: "Diaria ou 3 vezes por semana",
+    steps: ["Sente-se com apoio.", "Silencie notificacoes.", "Observe a respiracao.", "Perceba pensamentos sem seguir todos eles.", "Finalize com uma frase de cuidado."],
+    progression: ["3 minutos.", "5 minutos.", "10 minutos."],
+    observations: ["Distrações sao esperadas; voltar e o treino."],
+    cautions: ["Se o silencio aumentar angustia, abra os olhos e procure apoio."],
+    tags: ["meditacao", "silencio", "autoconhecimento"]
+  },
+  {
+    slug: "roda-da-vida",
+    title: "Roda da vida",
+    theme: "autoconhecimento",
+    presentation: "Ferramenta visual para avaliar areas da vida e escolher uma acao simples.",
+    purpose: "Transformar reflexao em proximo passo possivel.",
+    level: "Intermediario",
+    duration: "10 a 20 minutos",
+    frequency: "Mensal",
+    steps: ["Desenhe um circulo dividido em areas.", "Avalie cada area de 0 a 10.", "Observe a area mais baixa.", "Escolha uma acao simples para melhorar essa area.", "Revise no proximo mes."],
+    progression: ["4 areas.", "8 areas.", "Plano mensal simples."],
+    observations: ["A nota e informacao, nao julgamento."],
+    cautions: ["Evite usar a ferramenta para autocobranca excessiva."],
+    tags: ["reflexao", "proposito", "planejamento"]
+  }
+];

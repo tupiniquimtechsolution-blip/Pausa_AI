@@ -1,0 +1,5640 @@
+{
+  "generated_at": "2026-06-10T10:23:55.715Z",
+  "mode": "all-final-frame-slots",
+  "force": false,
+  "requested_jobs": 1124,
+  "rendered_count": 980,
+  "skipped_count": 144,
+  "rendered_by_wave": {
+    "1": 3,
+    "2": 163,
+    "3": 704,
+    "4": 110
+  },
+  "output": "public/videos/frames/<slug>/<slug>-NN.jpg",
+  "policy": "final editorial wellness art; no text, logo, watermark, clinical look, gym-aggressive styling, or placeholder source art",
+  "rendered": [
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-respiracao-4-4-6\\missao-respiracao-4-4-6-01.jpg"
+    },
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-respiracao-4-4-6\\missao-respiracao-4-4-6-02.jpg"
+    },
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-respiracao-4-4-6\\missao-respiracao-4-4-6-03.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 2,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-02.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 3,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-03.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 4,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-04.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 5,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-05.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 6,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-06.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 7,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-07.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 8,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-08.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 9,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-09.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 10,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-10.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 11,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-11.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 12,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-12.jpg"
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "frame": 1,
+      "path": "public\\videos\\frames\\levantar-e-respirar\\levantar-e-respirar-01.jpg"
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "frame": 2,
+      "path": "public\\videos\\frames\\levantar-e-respirar\\levantar-e-respirar-02.jpg"
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "frame": 3,
+      "path": "public\\videos\\frames\\levantar-e-respirar\\levantar-e-respirar-03.jpg"
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "frame": 4,
+      "path": "public\\videos\\frames\\levantar-e-respirar\\levantar-e-respirar-04.jpg"
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "frame": 5,
+      "path": "public\\videos\\frames\\levantar-e-respirar\\levantar-e-respirar-05.jpg"
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "frame": 6,
+      "path": "public\\videos\\frames\\levantar-e-respirar\\levantar-e-respirar-06.jpg"
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "frame": 7,
+      "path": "public\\videos\\frames\\levantar-e-respirar\\levantar-e-respirar-07.jpg"
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "frame": 8,
+      "path": "public\\videos\\frames\\levantar-e-respirar\\levantar-e-respirar-08.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 1,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-01.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 2,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-02.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 3,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-03.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 4,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-04.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 5,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-05.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 6,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-06.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 7,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-07.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 8,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-08.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 9,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-09.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 10,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-10.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 11,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-11.jpg"
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "frame": 12,
+      "path": "public\\videos\\frames\\luta-sombra-leve\\luta-sombra-leve-12.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 1,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-01.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 2,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-02.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 3,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-03.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 4,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-04.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 5,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-05.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 6,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-06.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 7,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-07.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 8,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-08.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 9,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-09.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 10,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-10.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 11,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-11.jpg"
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "frame": 12,
+      "path": "public\\videos\\frames\\marcha-leve-parada\\marcha-leve-parada-12.jpg"
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "frame": 1,
+      "path": "public\\videos\\frames\\mobilidade-pescoco-ombros\\mobilidade-pescoco-ombros-01.jpg"
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "frame": 2,
+      "path": "public\\videos\\frames\\mobilidade-pescoco-ombros\\mobilidade-pescoco-ombros-02.jpg"
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "frame": 3,
+      "path": "public\\videos\\frames\\mobilidade-pescoco-ombros\\mobilidade-pescoco-ombros-03.jpg"
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "frame": 4,
+      "path": "public\\videos\\frames\\mobilidade-pescoco-ombros\\mobilidade-pescoco-ombros-04.jpg"
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "frame": 5,
+      "path": "public\\videos\\frames\\mobilidade-pescoco-ombros\\mobilidade-pescoco-ombros-05.jpg"
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "frame": 6,
+      "path": "public\\videos\\frames\\mobilidade-pescoco-ombros\\mobilidade-pescoco-ombros-06.jpg"
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "frame": 7,
+      "path": "public\\videos\\frames\\mobilidade-pescoco-ombros\\mobilidade-pescoco-ombros-07.jpg"
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "frame": 8,
+      "path": "public\\videos\\frames\\mobilidade-pescoco-ombros\\mobilidade-pescoco-ombros-08.jpg"
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "frame": 1,
+      "path": "public\\videos\\frames\\mobilidade-rapida-coluna\\mobilidade-rapida-coluna-01.jpg"
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "frame": 2,
+      "path": "public\\videos\\frames\\mobilidade-rapida-coluna\\mobilidade-rapida-coluna-02.jpg"
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "frame": 3,
+      "path": "public\\videos\\frames\\mobilidade-rapida-coluna\\mobilidade-rapida-coluna-03.jpg"
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "frame": 4,
+      "path": "public\\videos\\frames\\mobilidade-rapida-coluna\\mobilidade-rapida-coluna-04.jpg"
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "frame": 5,
+      "path": "public\\videos\\frames\\mobilidade-rapida-coluna\\mobilidade-rapida-coluna-05.jpg"
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "frame": 6,
+      "path": "public\\videos\\frames\\mobilidade-rapida-coluna\\mobilidade-rapida-coluna-06.jpg"
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "frame": 7,
+      "path": "public\\videos\\frames\\mobilidade-rapida-coluna\\mobilidade-rapida-coluna-07.jpg"
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "frame": 8,
+      "path": "public\\videos\\frames\\mobilidade-rapida-coluna\\mobilidade-rapida-coluna-08.jpg"
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "frame": 1,
+      "path": "public\\videos\\frames\\pausa-consciente-trabalho\\pausa-consciente-trabalho-01.jpg"
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "frame": 2,
+      "path": "public\\videos\\frames\\pausa-consciente-trabalho\\pausa-consciente-trabalho-02.jpg"
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "frame": 3,
+      "path": "public\\videos\\frames\\pausa-consciente-trabalho\\pausa-consciente-trabalho-03.jpg"
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "frame": 4,
+      "path": "public\\videos\\frames\\pausa-consciente-trabalho\\pausa-consciente-trabalho-04.jpg"
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "frame": 5,
+      "path": "public\\videos\\frames\\pausa-consciente-trabalho\\pausa-consciente-trabalho-05.jpg"
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "frame": 6,
+      "path": "public\\videos\\frames\\pausa-consciente-trabalho\\pausa-consciente-trabalho-06.jpg"
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "frame": 7,
+      "path": "public\\videos\\frames\\pausa-consciente-trabalho\\pausa-consciente-trabalho-07.jpg"
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "frame": 8,
+      "path": "public\\videos\\frames\\pausa-consciente-trabalho\\pausa-consciente-trabalho-08.jpg"
+    },
+    {
+      "slug": "pausa-de-energia",
+      "frame": 1,
+      "path": "public\\videos\\frames\\pausa-de-energia\\pausa-de-energia-01.jpg"
+    },
+    {
+      "slug": "pausa-de-energia",
+      "frame": 2,
+      "path": "public\\videos\\frames\\pausa-de-energia\\pausa-de-energia-02.jpg"
+    },
+    {
+      "slug": "pausa-de-energia",
+      "frame": 3,
+      "path": "public\\videos\\frames\\pausa-de-energia\\pausa-de-energia-03.jpg"
+    },
+    {
+      "slug": "pausa-de-energia",
+      "frame": 4,
+      "path": "public\\videos\\frames\\pausa-de-energia\\pausa-de-energia-04.jpg"
+    },
+    {
+      "slug": "pausa-de-energia",
+      "frame": 5,
+      "path": "public\\videos\\frames\\pausa-de-energia\\pausa-de-energia-05.jpg"
+    },
+    {
+      "slug": "pausa-de-energia",
+      "frame": 6,
+      "path": "public\\videos\\frames\\pausa-de-energia\\pausa-de-energia-06.jpg"
+    },
+    {
+      "slug": "pausa-de-energia",
+      "frame": 7,
+      "path": "public\\videos\\frames\\pausa-de-energia\\pausa-de-energia-07.jpg"
+    },
+    {
+      "slug": "pausa-de-energia",
+      "frame": 8,
+      "path": "public\\videos\\frames\\pausa-de-energia\\pausa-de-energia-08.jpg"
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "frame": 1,
+      "path": "public\\videos\\frames\\pausa-foco-sem-impacto\\pausa-foco-sem-impacto-01.jpg"
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "frame": 2,
+      "path": "public\\videos\\frames\\pausa-foco-sem-impacto\\pausa-foco-sem-impacto-02.jpg"
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "frame": 3,
+      "path": "public\\videos\\frames\\pausa-foco-sem-impacto\\pausa-foco-sem-impacto-03.jpg"
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "frame": 4,
+      "path": "public\\videos\\frames\\pausa-foco-sem-impacto\\pausa-foco-sem-impacto-04.jpg"
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "frame": 5,
+      "path": "public\\videos\\frames\\pausa-foco-sem-impacto\\pausa-foco-sem-impacto-05.jpg"
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "frame": 6,
+      "path": "public\\videos\\frames\\pausa-foco-sem-impacto\\pausa-foco-sem-impacto-06.jpg"
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "frame": 7,
+      "path": "public\\videos\\frames\\pausa-foco-sem-impacto\\pausa-foco-sem-impacto-07.jpg"
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "frame": 8,
+      "path": "public\\videos\\frames\\pausa-foco-sem-impacto\\pausa-foco-sem-impacto-08.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 1,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-01.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 2,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-02.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 3,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-03.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 4,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-04.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 5,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-05.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 6,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-06.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 7,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-07.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 8,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-08.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 9,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-09.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 10,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-10.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 11,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-11.jpg"
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "frame": 12,
+      "path": "public\\videos\\frames\\pular-corda-iniciante\\pular-corda-iniciante-12.jpg"
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "frame": 1,
+      "path": "public\\videos\\frames\\reset-corporal-trabalho\\reset-corporal-trabalho-01.jpg"
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "frame": 2,
+      "path": "public\\videos\\frames\\reset-corporal-trabalho\\reset-corporal-trabalho-02.jpg"
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "frame": 3,
+      "path": "public\\videos\\frames\\reset-corporal-trabalho\\reset-corporal-trabalho-03.jpg"
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "frame": 4,
+      "path": "public\\videos\\frames\\reset-corporal-trabalho\\reset-corporal-trabalho-04.jpg"
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "frame": 5,
+      "path": "public\\videos\\frames\\reset-corporal-trabalho\\reset-corporal-trabalho-05.jpg"
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "frame": 6,
+      "path": "public\\videos\\frames\\reset-corporal-trabalho\\reset-corporal-trabalho-06.jpg"
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "frame": 7,
+      "path": "public\\videos\\frames\\reset-corporal-trabalho\\reset-corporal-trabalho-07.jpg"
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "frame": 8,
+      "path": "public\\videos\\frames\\reset-corporal-trabalho\\reset-corporal-trabalho-08.jpg"
+    },
+    {
+      "slug": "reset-de-foco",
+      "frame": 1,
+      "path": "public\\videos\\frames\\reset-de-foco\\reset-de-foco-01.jpg"
+    },
+    {
+      "slug": "reset-de-foco",
+      "frame": 2,
+      "path": "public\\videos\\frames\\reset-de-foco\\reset-de-foco-02.jpg"
+    },
+    {
+      "slug": "reset-de-foco",
+      "frame": 3,
+      "path": "public\\videos\\frames\\reset-de-foco\\reset-de-foco-03.jpg"
+    },
+    {
+      "slug": "reset-de-foco",
+      "frame": 4,
+      "path": "public\\videos\\frames\\reset-de-foco\\reset-de-foco-04.jpg"
+    },
+    {
+      "slug": "reset-de-foco",
+      "frame": 5,
+      "path": "public\\videos\\frames\\reset-de-foco\\reset-de-foco-05.jpg"
+    },
+    {
+      "slug": "reset-de-foco",
+      "frame": 6,
+      "path": "public\\videos\\frames\\reset-de-foco\\reset-de-foco-06.jpg"
+    },
+    {
+      "slug": "reset-de-foco",
+      "frame": 7,
+      "path": "public\\videos\\frames\\reset-de-foco\\reset-de-foco-07.jpg"
+    },
+    {
+      "slug": "reset-de-foco",
+      "frame": 8,
+      "path": "public\\videos\\frames\\reset-de-foco\\reset-de-foco-08.jpg"
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "frame": 1,
+      "path": "public\\videos\\frames\\respiracao-mobilidade\\respiracao-mobilidade-01.jpg"
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "frame": 2,
+      "path": "public\\videos\\frames\\respiracao-mobilidade\\respiracao-mobilidade-02.jpg"
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "frame": 3,
+      "path": "public\\videos\\frames\\respiracao-mobilidade\\respiracao-mobilidade-03.jpg"
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "frame": 4,
+      "path": "public\\videos\\frames\\respiracao-mobilidade\\respiracao-mobilidade-04.jpg"
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "frame": 5,
+      "path": "public\\videos\\frames\\respiracao-mobilidade\\respiracao-mobilidade-05.jpg"
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "frame": 6,
+      "path": "public\\videos\\frames\\respiracao-mobilidade\\respiracao-mobilidade-06.jpg"
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "frame": 7,
+      "path": "public\\videos\\frames\\respiracao-mobilidade\\respiracao-mobilidade-07.jpg"
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "frame": 8,
+      "path": "public\\videos\\frames\\respiracao-mobilidade\\respiracao-mobilidade-08.jpg"
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "frame": 1,
+      "path": "public\\videos\\frames\\uma-tarefa-apenas\\uma-tarefa-apenas-01.jpg"
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "frame": 2,
+      "path": "public\\videos\\frames\\uma-tarefa-apenas\\uma-tarefa-apenas-02.jpg"
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "frame": 3,
+      "path": "public\\videos\\frames\\uma-tarefa-apenas\\uma-tarefa-apenas-03.jpg"
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "frame": 4,
+      "path": "public\\videos\\frames\\uma-tarefa-apenas\\uma-tarefa-apenas-04.jpg"
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "frame": 5,
+      "path": "public\\videos\\frames\\uma-tarefa-apenas\\uma-tarefa-apenas-05.jpg"
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "frame": 6,
+      "path": "public\\videos\\frames\\uma-tarefa-apenas\\uma-tarefa-apenas-06.jpg"
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "frame": 7,
+      "path": "public\\videos\\frames\\uma-tarefa-apenas\\uma-tarefa-apenas-07.jpg"
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "frame": 8,
+      "path": "public\\videos\\frames\\uma-tarefa-apenas\\uma-tarefa-apenas-08.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 1,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-01.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 2,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-02.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 3,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-03.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 4,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-04.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 5,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-05.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 6,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-06.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 7,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-07.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 8,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-08.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 9,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-09.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 10,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-10.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 11,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-11.jpg"
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "frame": 12,
+      "path": "public\\videos\\frames\\yoga-bolso-pausa-no-chao\\yoga-bolso-pausa-no-chao-12.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 1,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-01.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 2,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-02.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 3,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-03.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 4,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-04.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 5,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-05.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 6,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-06.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 7,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-07.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 8,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-08.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 9,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-09.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 10,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-10.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 11,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-11.jpg"
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "frame": 12,
+      "path": "public\\videos\\frames\\yoga-energia-leve\\yoga-energia-leve-12.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 1,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-01.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 2,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-02.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 3,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-03.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 4,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-04.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 5,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-05.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 6,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-06.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 7,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-07.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 8,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-08.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 9,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-09.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 10,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-10.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 11,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-11.jpg"
+    },
+    {
+      "slug": "yoga-leve",
+      "frame": 12,
+      "path": "public\\videos\\frames\\yoga-leve\\yoga-leve-12.jpg"
+    },
+    {
+      "slug": "noventa-noventa",
+      "frame": 1,
+      "path": "public\\videos\\frames\\noventa-noventa\\noventa-noventa-01.jpg"
+    },
+    {
+      "slug": "noventa-noventa",
+      "frame": 2,
+      "path": "public\\videos\\frames\\noventa-noventa\\noventa-noventa-02.jpg"
+    },
+    {
+      "slug": "noventa-noventa",
+      "frame": 3,
+      "path": "public\\videos\\frames\\noventa-noventa\\noventa-noventa-03.jpg"
+    },
+    {
+      "slug": "noventa-noventa",
+      "frame": 4,
+      "path": "public\\videos\\frames\\noventa-noventa\\noventa-noventa-04.jpg"
+    },
+    {
+      "slug": "noventa-noventa",
+      "frame": 5,
+      "path": "public\\videos\\frames\\noventa-noventa\\noventa-noventa-05.jpg"
+    },
+    {
+      "slug": "noventa-noventa",
+      "frame": 6,
+      "path": "public\\videos\\frames\\noventa-noventa\\noventa-noventa-06.jpg"
+    },
+    {
+      "slug": "noventa-noventa",
+      "frame": 7,
+      "path": "public\\videos\\frames\\noventa-noventa\\noventa-noventa-07.jpg"
+    },
+    {
+      "slug": "noventa-noventa",
+      "frame": 8,
+      "path": "public\\videos\\frames\\noventa-noventa\\noventa-noventa-08.jpg"
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "frame": 1,
+      "path": "public\\videos\\frames\\abertura-peito-porta\\abertura-peito-porta-01.jpg"
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "frame": 2,
+      "path": "public\\videos\\frames\\abertura-peito-porta\\abertura-peito-porta-02.jpg"
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "frame": 3,
+      "path": "public\\videos\\frames\\abertura-peito-porta\\abertura-peito-porta-03.jpg"
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "frame": 4,
+      "path": "public\\videos\\frames\\abertura-peito-porta\\abertura-peito-porta-04.jpg"
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "frame": 5,
+      "path": "public\\videos\\frames\\abertura-peito-porta\\abertura-peito-porta-05.jpg"
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "frame": 6,
+      "path": "public\\videos\\frames\\abertura-peito-porta\\abertura-peito-porta-06.jpg"
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "frame": 7,
+      "path": "public\\videos\\frames\\abertura-peito-porta\\abertura-peito-porta-07.jpg"
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "frame": 8,
+      "path": "public\\videos\\frames\\abertura-peito-porta\\abertura-peito-porta-08.jpg"
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\abertura-quadril-sentado\\abertura-quadril-sentado-01.jpg"
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\abertura-quadril-sentado\\abertura-quadril-sentado-02.jpg"
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\abertura-quadril-sentado\\abertura-quadril-sentado-03.jpg"
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\abertura-quadril-sentado\\abertura-quadril-sentado-04.jpg"
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\abertura-quadril-sentado\\abertura-quadril-sentado-05.jpg"
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\abertura-quadril-sentado\\abertura-quadril-sentado-06.jpg"
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\abertura-quadril-sentado\\abertura-quadril-sentado-07.jpg"
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\abertura-quadril-sentado\\abertura-quadril-sentado-08.jpg"
+    },
+    {
+      "slug": "abertura-dedos",
+      "frame": 1,
+      "path": "public\\videos\\frames\\abertura-dedos\\abertura-dedos-01.jpg"
+    },
+    {
+      "slug": "abertura-dedos",
+      "frame": 2,
+      "path": "public\\videos\\frames\\abertura-dedos\\abertura-dedos-02.jpg"
+    },
+    {
+      "slug": "abertura-dedos",
+      "frame": 3,
+      "path": "public\\videos\\frames\\abertura-dedos\\abertura-dedos-03.jpg"
+    },
+    {
+      "slug": "abertura-dedos",
+      "frame": 4,
+      "path": "public\\videos\\frames\\abertura-dedos\\abertura-dedos-04.jpg"
+    },
+    {
+      "slug": "abertura-dedos",
+      "frame": 5,
+      "path": "public\\videos\\frames\\abertura-dedos\\abertura-dedos-05.jpg"
+    },
+    {
+      "slug": "abertura-dedos",
+      "frame": 6,
+      "path": "public\\videos\\frames\\abertura-dedos\\abertura-dedos-06.jpg"
+    },
+    {
+      "slug": "abertura-dedos",
+      "frame": 7,
+      "path": "public\\videos\\frames\\abertura-dedos\\abertura-dedos-07.jpg"
+    },
+    {
+      "slug": "abertura-dedos",
+      "frame": 8,
+      "path": "public\\videos\\frames\\abertura-dedos\\abertura-dedos-08.jpg"
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "frame": 1,
+      "path": "public\\videos\\frames\\abertura-dedos-pe\\abertura-dedos-pe-01.jpg"
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "frame": 2,
+      "path": "public\\videos\\frames\\abertura-dedos-pe\\abertura-dedos-pe-02.jpg"
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "frame": 3,
+      "path": "public\\videos\\frames\\abertura-dedos-pe\\abertura-dedos-pe-03.jpg"
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "frame": 4,
+      "path": "public\\videos\\frames\\abertura-dedos-pe\\abertura-dedos-pe-04.jpg"
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "frame": 5,
+      "path": "public\\videos\\frames\\abertura-dedos-pe\\abertura-dedos-pe-05.jpg"
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "frame": 6,
+      "path": "public\\videos\\frames\\abertura-dedos-pe\\abertura-dedos-pe-06.jpg"
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "frame": 7,
+      "path": "public\\videos\\frames\\abertura-dedos-pe\\abertura-dedos-pe-07.jpg"
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "frame": 8,
+      "path": "public\\videos\\frames\\abertura-dedos-pe\\abertura-dedos-pe-08.jpg"
+    },
+    {
+      "slug": "abraco-escapulas",
+      "frame": 1,
+      "path": "public\\videos\\frames\\abraco-escapulas\\abraco-escapulas-01.jpg"
+    },
+    {
+      "slug": "abraco-escapulas",
+      "frame": 2,
+      "path": "public\\videos\\frames\\abraco-escapulas\\abraco-escapulas-02.jpg"
+    },
+    {
+      "slug": "abraco-escapulas",
+      "frame": 3,
+      "path": "public\\videos\\frames\\abraco-escapulas\\abraco-escapulas-03.jpg"
+    },
+    {
+      "slug": "abraco-escapulas",
+      "frame": 4,
+      "path": "public\\videos\\frames\\abraco-escapulas\\abraco-escapulas-04.jpg"
+    },
+    {
+      "slug": "abraco-escapulas",
+      "frame": 5,
+      "path": "public\\videos\\frames\\abraco-escapulas\\abraco-escapulas-05.jpg"
+    },
+    {
+      "slug": "abraco-escapulas",
+      "frame": 6,
+      "path": "public\\videos\\frames\\abraco-escapulas\\abraco-escapulas-06.jpg"
+    },
+    {
+      "slug": "abraco-escapulas",
+      "frame": 7,
+      "path": "public\\videos\\frames\\abraco-escapulas\\abraco-escapulas-07.jpg"
+    },
+    {
+      "slug": "abraco-escapulas",
+      "frame": 8,
+      "path": "public\\videos\\frames\\abraco-escapulas\\abraco-escapulas-08.jpg"
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alcance-lateral-toracico\\alcance-lateral-toracico-01.jpg"
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alcance-lateral-toracico\\alcance-lateral-toracico-02.jpg"
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alcance-lateral-toracico\\alcance-lateral-toracico-03.jpg"
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alcance-lateral-toracico\\alcance-lateral-toracico-04.jpg"
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alcance-lateral-toracico\\alcance-lateral-toracico-05.jpg"
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alcance-lateral-toracico\\alcance-lateral-toracico-06.jpg"
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alcance-lateral-toracico\\alcance-lateral-toracico-07.jpg"
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alcance-lateral-toracico\\alcance-lateral-toracico-08.jpg"
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alfabeto-tornozelo\\alfabeto-tornozelo-01.jpg"
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alfabeto-tornozelo\\alfabeto-tornozelo-02.jpg"
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alfabeto-tornozelo\\alfabeto-tornozelo-03.jpg"
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alfabeto-tornozelo\\alfabeto-tornozelo-04.jpg"
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alfabeto-tornozelo\\alfabeto-tornozelo-05.jpg"
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alfabeto-tornozelo\\alfabeto-tornozelo-06.jpg"
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alfabeto-tornozelo\\alfabeto-tornozelo-07.jpg"
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alfabeto-tornozelo\\alfabeto-tornozelo-08.jpg"
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-frente-tornozelo\\alongamento-frente-tornozelo-01.jpg"
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-frente-tornozelo\\alongamento-frente-tornozelo-02.jpg"
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-frente-tornozelo\\alongamento-frente-tornozelo-03.jpg"
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-frente-tornozelo\\alongamento-frente-tornozelo-04.jpg"
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-frente-tornozelo\\alongamento-frente-tornozelo-05.jpg"
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-frente-tornozelo\\alongamento-frente-tornozelo-06.jpg"
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-frente-tornozelo\\alongamento-frente-tornozelo-07.jpg"
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-frente-tornozelo\\alongamento-frente-tornozelo-08.jpg"
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-biceps-parede\\alongamento-biceps-parede-01.jpg"
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-biceps-parede\\alongamento-biceps-parede-02.jpg"
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-biceps-parede\\alongamento-biceps-parede-03.jpg"
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-biceps-parede\\alongamento-biceps-parede-04.jpg"
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-biceps-parede\\alongamento-biceps-parede-05.jpg"
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-biceps-parede\\alongamento-biceps-parede-06.jpg"
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-biceps-parede\\alongamento-biceps-parede-07.jpg"
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-biceps-parede\\alongamento-biceps-parede-08.jpg"
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-de-pernas\\alongamento-de-pernas-01.jpg"
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-de-pernas\\alongamento-de-pernas-02.jpg"
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-de-pernas\\alongamento-de-pernas-03.jpg"
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-de-pernas\\alongamento-de-pernas-04.jpg"
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-de-pernas\\alongamento-de-pernas-05.jpg"
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-de-pernas\\alongamento-de-pernas-06.jpg"
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-de-pernas\\alongamento-de-pernas-07.jpg"
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-de-pernas\\alongamento-de-pernas-08.jpg"
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-braquiorradial\\alongamento-braquiorradial-01.jpg"
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-braquiorradial\\alongamento-braquiorradial-02.jpg"
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-braquiorradial\\alongamento-braquiorradial-03.jpg"
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-braquiorradial\\alongamento-braquiorradial-04.jpg"
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-braquiorradial\\alongamento-braquiorradial-05.jpg"
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-braquiorradial\\alongamento-braquiorradial-06.jpg"
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-braquiorradial\\alongamento-braquiorradial-07.jpg"
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-braquiorradial\\alongamento-braquiorradial-08.jpg"
+    },
+    {
+      "slug": "elevador-escapula",
+      "frame": 1,
+      "path": "public\\videos\\frames\\elevador-escapula\\elevador-escapula-01.jpg"
+    },
+    {
+      "slug": "elevador-escapula",
+      "frame": 2,
+      "path": "public\\videos\\frames\\elevador-escapula\\elevador-escapula-02.jpg"
+    },
+    {
+      "slug": "elevador-escapula",
+      "frame": 3,
+      "path": "public\\videos\\frames\\elevador-escapula\\elevador-escapula-03.jpg"
+    },
+    {
+      "slug": "elevador-escapula",
+      "frame": 4,
+      "path": "public\\videos\\frames\\elevador-escapula\\elevador-escapula-04.jpg"
+    },
+    {
+      "slug": "elevador-escapula",
+      "frame": 5,
+      "path": "public\\videos\\frames\\elevador-escapula\\elevador-escapula-05.jpg"
+    },
+    {
+      "slug": "elevador-escapula",
+      "frame": 6,
+      "path": "public\\videos\\frames\\elevador-escapula\\elevador-escapula-06.jpg"
+    },
+    {
+      "slug": "elevador-escapula",
+      "frame": 7,
+      "path": "public\\videos\\frames\\elevador-escapula\\elevador-escapula-07.jpg"
+    },
+    {
+      "slug": "elevador-escapula",
+      "frame": 8,
+      "path": "public\\videos\\frames\\elevador-escapula\\elevador-escapula-08.jpg"
+    },
+    {
+      "slug": "alongamento-polegar",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-polegar\\alongamento-polegar-01.jpg"
+    },
+    {
+      "slug": "alongamento-polegar",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-polegar\\alongamento-polegar-02.jpg"
+    },
+    {
+      "slug": "alongamento-polegar",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-polegar\\alongamento-polegar-03.jpg"
+    },
+    {
+      "slug": "alongamento-polegar",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-polegar\\alongamento-polegar-04.jpg"
+    },
+    {
+      "slug": "alongamento-polegar",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-polegar\\alongamento-polegar-05.jpg"
+    },
+    {
+      "slug": "alongamento-polegar",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-polegar\\alongamento-polegar-06.jpg"
+    },
+    {
+      "slug": "alongamento-polegar",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-polegar\\alongamento-polegar-07.jpg"
+    },
+    {
+      "slug": "alongamento-polegar",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-polegar\\alongamento-polegar-08.jpg"
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-pronadores\\alongamento-pronadores-01.jpg"
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-pronadores\\alongamento-pronadores-02.jpg"
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-pronadores\\alongamento-pronadores-03.jpg"
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-pronadores\\alongamento-pronadores-04.jpg"
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-pronadores\\alongamento-pronadores-05.jpg"
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-pronadores\\alongamento-pronadores-06.jpg"
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-pronadores\\alongamento-pronadores-07.jpg"
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-pronadores\\alongamento-pronadores-08.jpg"
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-supinadores\\alongamento-supinadores-01.jpg"
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-supinadores\\alongamento-supinadores-02.jpg"
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-supinadores\\alongamento-supinadores-03.jpg"
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-supinadores\\alongamento-supinadores-04.jpg"
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-supinadores\\alongamento-supinadores-05.jpg"
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-supinadores\\alongamento-supinadores-06.jpg"
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-supinadores\\alongamento-supinadores-07.jpg"
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-supinadores\\alongamento-supinadores-08.jpg"
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-lateral-tronco\\alongamento-lateral-tronco-01.jpg"
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-lateral-tronco\\alongamento-lateral-tronco-02.jpg"
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-lateral-tronco\\alongamento-lateral-tronco-03.jpg"
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-lateral-tronco\\alongamento-lateral-tronco-04.jpg"
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-lateral-tronco\\alongamento-lateral-tronco-05.jpg"
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-lateral-tronco\\alongamento-lateral-tronco-06.jpg"
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-lateral-tronco\\alongamento-lateral-tronco-07.jpg"
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-lateral-tronco\\alongamento-lateral-tronco-08.jpg"
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-leve-pernas\\alongamento-leve-pernas-01.jpg"
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-leve-pernas\\alongamento-leve-pernas-02.jpg"
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-leve-pernas\\alongamento-leve-pernas-03.jpg"
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-leve-pernas\\alongamento-leve-pernas-04.jpg"
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-leve-pernas\\alongamento-leve-pernas-05.jpg"
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-leve-pernas\\alongamento-leve-pernas-06.jpg"
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-leve-pernas\\alongamento-leve-pernas-07.jpg"
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-leve-pernas\\alongamento-leve-pernas-08.jpg"
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "frame": 1,
+      "path": "public\\videos\\frames\\capsula-posterior-ombro\\capsula-posterior-ombro-01.jpg"
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "frame": 2,
+      "path": "public\\videos\\frames\\capsula-posterior-ombro\\capsula-posterior-ombro-02.jpg"
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "frame": 3,
+      "path": "public\\videos\\frames\\capsula-posterior-ombro\\capsula-posterior-ombro-03.jpg"
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "frame": 4,
+      "path": "public\\videos\\frames\\capsula-posterior-ombro\\capsula-posterior-ombro-04.jpg"
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "frame": 5,
+      "path": "public\\videos\\frames\\capsula-posterior-ombro\\capsula-posterior-ombro-05.jpg"
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "frame": 6,
+      "path": "public\\videos\\frames\\capsula-posterior-ombro\\capsula-posterior-ombro-06.jpg"
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "frame": 7,
+      "path": "public\\videos\\frames\\capsula-posterior-ombro\\capsula-posterior-ombro-07.jpg"
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "frame": 8,
+      "path": "public\\videos\\frames\\capsula-posterior-ombro\\capsula-posterior-ombro-08.jpg"
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "frame": 1,
+      "path": "public\\videos\\frames\\joelho-no-chao-anterior\\joelho-no-chao-anterior-01.jpg"
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "frame": 2,
+      "path": "public\\videos\\frames\\joelho-no-chao-anterior\\joelho-no-chao-anterior-02.jpg"
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "frame": 3,
+      "path": "public\\videos\\frames\\joelho-no-chao-anterior\\joelho-no-chao-anterior-03.jpg"
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "frame": 4,
+      "path": "public\\videos\\frames\\joelho-no-chao-anterior\\joelho-no-chao-anterior-04.jpg"
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "frame": 5,
+      "path": "public\\videos\\frames\\joelho-no-chao-anterior\\joelho-no-chao-anterior-05.jpg"
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "frame": 6,
+      "path": "public\\videos\\frames\\joelho-no-chao-anterior\\joelho-no-chao-anterior-06.jpg"
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "frame": 7,
+      "path": "public\\videos\\frames\\joelho-no-chao-anterior\\joelho-no-chao-anterior-07.jpg"
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "frame": 8,
+      "path": "public\\videos\\frames\\joelho-no-chao-anterior\\joelho-no-chao-anterior-08.jpg"
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "frame": 1,
+      "path": "public\\videos\\frames\\anterior-coxa-cadeira\\anterior-coxa-cadeira-01.jpg"
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "frame": 2,
+      "path": "public\\videos\\frames\\anterior-coxa-cadeira\\anterior-coxa-cadeira-02.jpg"
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "frame": 3,
+      "path": "public\\videos\\frames\\anterior-coxa-cadeira\\anterior-coxa-cadeira-03.jpg"
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "frame": 4,
+      "path": "public\\videos\\frames\\anterior-coxa-cadeira\\anterior-coxa-cadeira-04.jpg"
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "frame": 5,
+      "path": "public\\videos\\frames\\anterior-coxa-cadeira\\anterior-coxa-cadeira-05.jpg"
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "frame": 6,
+      "path": "public\\videos\\frames\\anterior-coxa-cadeira\\anterior-coxa-cadeira-06.jpg"
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "frame": 7,
+      "path": "public\\videos\\frames\\anterior-coxa-cadeira\\anterior-coxa-cadeira-07.jpg"
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "frame": 8,
+      "path": "public\\videos\\frames\\anterior-coxa-cadeira\\anterior-coxa-cadeira-08.jpg"
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "frame": 1,
+      "path": "public\\videos\\frames\\arco-plantar-bola\\arco-plantar-bola-01.jpg"
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "frame": 2,
+      "path": "public\\videos\\frames\\arco-plantar-bola\\arco-plantar-bola-02.jpg"
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "frame": 3,
+      "path": "public\\videos\\frames\\arco-plantar-bola\\arco-plantar-bola-03.jpg"
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "frame": 4,
+      "path": "public\\videos\\frames\\arco-plantar-bola\\arco-plantar-bola-04.jpg"
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "frame": 5,
+      "path": "public\\videos\\frames\\arco-plantar-bola\\arco-plantar-bola-05.jpg"
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "frame": 6,
+      "path": "public\\videos\\frames\\arco-plantar-bola\\arco-plantar-bola-06.jpg"
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "frame": 7,
+      "path": "public\\videos\\frames\\arco-plantar-bola\\arco-plantar-bola-07.jpg"
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "frame": 8,
+      "path": "public\\videos\\frames\\arco-plantar-bola\\arco-plantar-bola-08.jpg"
+    },
+    {
+      "slug": "bascula-pelvica",
+      "frame": 1,
+      "path": "public\\videos\\frames\\bascula-pelvica\\bascula-pelvica-01.jpg"
+    },
+    {
+      "slug": "bascula-pelvica",
+      "frame": 2,
+      "path": "public\\videos\\frames\\bascula-pelvica\\bascula-pelvica-02.jpg"
+    },
+    {
+      "slug": "bascula-pelvica",
+      "frame": 3,
+      "path": "public\\videos\\frames\\bascula-pelvica\\bascula-pelvica-03.jpg"
+    },
+    {
+      "slug": "bascula-pelvica",
+      "frame": 4,
+      "path": "public\\videos\\frames\\bascula-pelvica\\bascula-pelvica-04.jpg"
+    },
+    {
+      "slug": "bascula-pelvica",
+      "frame": 5,
+      "path": "public\\videos\\frames\\bascula-pelvica\\bascula-pelvica-05.jpg"
+    },
+    {
+      "slug": "bascula-pelvica",
+      "frame": 6,
+      "path": "public\\videos\\frames\\bascula-pelvica\\bascula-pelvica-06.jpg"
+    },
+    {
+      "slug": "bascula-pelvica",
+      "frame": 7,
+      "path": "public\\videos\\frames\\bascula-pelvica\\bascula-pelvica-07.jpg"
+    },
+    {
+      "slug": "bascula-pelvica",
+      "frame": 8,
+      "path": "public\\videos\\frames\\bascula-pelvica\\bascula-pelvica-08.jpg"
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "frame": 1,
+      "path": "public\\videos\\frames\\bom-dia-mobilidade\\bom-dia-mobilidade-01.jpg"
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "frame": 2,
+      "path": "public\\videos\\frames\\bom-dia-mobilidade\\bom-dia-mobilidade-02.jpg"
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "frame": 3,
+      "path": "public\\videos\\frames\\bom-dia-mobilidade\\bom-dia-mobilidade-03.jpg"
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "frame": 4,
+      "path": "public\\videos\\frames\\bom-dia-mobilidade\\bom-dia-mobilidade-04.jpg"
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "frame": 5,
+      "path": "public\\videos\\frames\\bom-dia-mobilidade\\bom-dia-mobilidade-05.jpg"
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "frame": 6,
+      "path": "public\\videos\\frames\\bom-dia-mobilidade\\bom-dia-mobilidade-06.jpg"
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "frame": 7,
+      "path": "public\\videos\\frames\\bom-dia-mobilidade\\bom-dia-mobilidade-07.jpg"
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "frame": 8,
+      "path": "public\\videos\\frames\\bom-dia-mobilidade\\bom-dia-mobilidade-08.jpg"
+    },
+    {
+      "slug": "borboleta",
+      "frame": 1,
+      "path": "public\\videos\\frames\\borboleta\\borboleta-01.jpg"
+    },
+    {
+      "slug": "borboleta",
+      "frame": 2,
+      "path": "public\\videos\\frames\\borboleta\\borboleta-02.jpg"
+    },
+    {
+      "slug": "borboleta",
+      "frame": 3,
+      "path": "public\\videos\\frames\\borboleta\\borboleta-03.jpg"
+    },
+    {
+      "slug": "borboleta",
+      "frame": 4,
+      "path": "public\\videos\\frames\\borboleta\\borboleta-04.jpg"
+    },
+    {
+      "slug": "borboleta",
+      "frame": 5,
+      "path": "public\\videos\\frames\\borboleta\\borboleta-05.jpg"
+    },
+    {
+      "slug": "borboleta",
+      "frame": 6,
+      "path": "public\\videos\\frames\\borboleta\\borboleta-06.jpg"
+    },
+    {
+      "slug": "borboleta",
+      "frame": 7,
+      "path": "public\\videos\\frames\\borboleta\\borboleta-07.jpg"
+    },
+    {
+      "slug": "borboleta",
+      "frame": 8,
+      "path": "public\\videos\\frames\\borboleta\\borboleta-08.jpg"
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "frame": 1,
+      "path": "public\\videos\\frames\\braco-cruzado-suave\\braco-cruzado-suave-01.jpg"
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "frame": 2,
+      "path": "public\\videos\\frames\\braco-cruzado-suave\\braco-cruzado-suave-02.jpg"
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "frame": 3,
+      "path": "public\\videos\\frames\\braco-cruzado-suave\\braco-cruzado-suave-03.jpg"
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "frame": 4,
+      "path": "public\\videos\\frames\\braco-cruzado-suave\\braco-cruzado-suave-04.jpg"
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "frame": 5,
+      "path": "public\\videos\\frames\\braco-cruzado-suave\\braco-cruzado-suave-05.jpg"
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "frame": 6,
+      "path": "public\\videos\\frames\\braco-cruzado-suave\\braco-cruzado-suave-06.jpg"
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "frame": 7,
+      "path": "public\\videos\\frames\\braco-cruzado-suave\\braco-cruzado-suave-07.jpg"
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "frame": 8,
+      "path": "public\\videos\\frames\\braco-cruzado-suave\\braco-cruzado-suave-08.jpg"
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "frame": 1,
+      "path": "public\\videos\\frames\\circulos-punho-mobilidade\\circulos-punho-mobilidade-01.jpg"
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "frame": 2,
+      "path": "public\\videos\\frames\\circulos-punho-mobilidade\\circulos-punho-mobilidade-02.jpg"
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "frame": 3,
+      "path": "public\\videos\\frames\\circulos-punho-mobilidade\\circulos-punho-mobilidade-03.jpg"
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "frame": 4,
+      "path": "public\\videos\\frames\\circulos-punho-mobilidade\\circulos-punho-mobilidade-04.jpg"
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "frame": 5,
+      "path": "public\\videos\\frames\\circulos-punho-mobilidade\\circulos-punho-mobilidade-05.jpg"
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "frame": 6,
+      "path": "public\\videos\\frames\\circulos-punho-mobilidade\\circulos-punho-mobilidade-06.jpg"
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "frame": 7,
+      "path": "public\\videos\\frames\\circulos-punho-mobilidade\\circulos-punho-mobilidade-07.jpg"
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "frame": 8,
+      "path": "public\\videos\\frames\\circulos-punho-mobilidade\\circulos-punho-mobilidade-08.jpg"
+    },
+    {
+      "slug": "circulos-quadril",
+      "frame": 1,
+      "path": "public\\videos\\frames\\circulos-quadril\\circulos-quadril-01.jpg"
+    },
+    {
+      "slug": "circulos-quadril",
+      "frame": 2,
+      "path": "public\\videos\\frames\\circulos-quadril\\circulos-quadril-02.jpg"
+    },
+    {
+      "slug": "circulos-quadril",
+      "frame": 3,
+      "path": "public\\videos\\frames\\circulos-quadril\\circulos-quadril-03.jpg"
+    },
+    {
+      "slug": "circulos-quadril",
+      "frame": 4,
+      "path": "public\\videos\\frames\\circulos-quadril\\circulos-quadril-04.jpg"
+    },
+    {
+      "slug": "circulos-quadril",
+      "frame": 5,
+      "path": "public\\videos\\frames\\circulos-quadril\\circulos-quadril-05.jpg"
+    },
+    {
+      "slug": "circulos-quadril",
+      "frame": 6,
+      "path": "public\\videos\\frames\\circulos-quadril\\circulos-quadril-06.jpg"
+    },
+    {
+      "slug": "circulos-quadril",
+      "frame": 7,
+      "path": "public\\videos\\frames\\circulos-quadril\\circulos-quadril-07.jpg"
+    },
+    {
+      "slug": "circulos-quadril",
+      "frame": 8,
+      "path": "public\\videos\\frames\\circulos-quadril\\circulos-quadril-08.jpg"
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "frame": 1,
+      "path": "public\\videos\\frames\\circulos-tornozelo\\circulos-tornozelo-01.jpg"
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "frame": 2,
+      "path": "public\\videos\\frames\\circulos-tornozelo\\circulos-tornozelo-02.jpg"
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "frame": 3,
+      "path": "public\\videos\\frames\\circulos-tornozelo\\circulos-tornozelo-03.jpg"
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "frame": 4,
+      "path": "public\\videos\\frames\\circulos-tornozelo\\circulos-tornozelo-04.jpg"
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "frame": 5,
+      "path": "public\\videos\\frames\\circulos-tornozelo\\circulos-tornozelo-05.jpg"
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "frame": 6,
+      "path": "public\\videos\\frames\\circulos-tornozelo\\circulos-tornozelo-06.jpg"
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "frame": 7,
+      "path": "public\\videos\\frames\\circulos-tornozelo\\circulos-tornozelo-07.jpg"
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "frame": 8,
+      "path": "public\\videos\\frames\\circulos-tornozelo\\circulos-tornozelo-08.jpg"
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "frame": 1,
+      "path": "public\\videos\\frames\\elevacao-ombros-circulos\\elevacao-ombros-circulos-01.jpg"
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "frame": 2,
+      "path": "public\\videos\\frames\\elevacao-ombros-circulos\\elevacao-ombros-circulos-02.jpg"
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "frame": 3,
+      "path": "public\\videos\\frames\\elevacao-ombros-circulos\\elevacao-ombros-circulos-03.jpg"
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "frame": 4,
+      "path": "public\\videos\\frames\\elevacao-ombros-circulos\\elevacao-ombros-circulos-04.jpg"
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "frame": 5,
+      "path": "public\\videos\\frames\\elevacao-ombros-circulos\\elevacao-ombros-circulos-05.jpg"
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "frame": 6,
+      "path": "public\\videos\\frames\\elevacao-ombros-circulos\\elevacao-ombros-circulos-06.jpg"
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "frame": 7,
+      "path": "public\\videos\\frames\\elevacao-ombros-circulos\\elevacao-ombros-circulos-07.jpg"
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "frame": 8,
+      "path": "public\\videos\\frames\\elevacao-ombros-circulos\\elevacao-ombros-circulos-08.jpg"
+    },
+    {
+      "slug": "cobra-suave",
+      "frame": 1,
+      "path": "public\\videos\\frames\\cobra-suave\\cobra-suave-01.jpg"
+    },
+    {
+      "slug": "cobra-suave",
+      "frame": 2,
+      "path": "public\\videos\\frames\\cobra-suave\\cobra-suave-02.jpg"
+    },
+    {
+      "slug": "cobra-suave",
+      "frame": 3,
+      "path": "public\\videos\\frames\\cobra-suave\\cobra-suave-03.jpg"
+    },
+    {
+      "slug": "cobra-suave",
+      "frame": 4,
+      "path": "public\\videos\\frames\\cobra-suave\\cobra-suave-04.jpg"
+    },
+    {
+      "slug": "cobra-suave",
+      "frame": 5,
+      "path": "public\\videos\\frames\\cobra-suave\\cobra-suave-05.jpg"
+    },
+    {
+      "slug": "cobra-suave",
+      "frame": 6,
+      "path": "public\\videos\\frames\\cobra-suave\\cobra-suave-06.jpg"
+    },
+    {
+      "slug": "cobra-suave",
+      "frame": 7,
+      "path": "public\\videos\\frames\\cobra-suave\\cobra-suave-07.jpg"
+    },
+    {
+      "slug": "cobra-suave",
+      "frame": 8,
+      "path": "public\\videos\\frames\\cobra-suave\\cobra-suave-08.jpg"
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\deltoide-posterior-cruzado\\deltoide-posterior-cruzado-01.jpg"
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\deltoide-posterior-cruzado\\deltoide-posterior-cruzado-02.jpg"
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\deltoide-posterior-cruzado\\deltoide-posterior-cruzado-03.jpg"
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\deltoide-posterior-cruzado\\deltoide-posterior-cruzado-04.jpg"
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\deltoide-posterior-cruzado\\deltoide-posterior-cruzado-05.jpg"
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\deltoide-posterior-cruzado\\deltoide-posterior-cruzado-06.jpg"
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\deltoide-posterior-cruzado\\deltoide-posterior-cruzado-07.jpg"
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\deltoide-posterior-cruzado\\deltoide-posterior-cruzado-08.jpg"
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-dorsal-cadeira\\alongamento-dorsal-cadeira-01.jpg"
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-dorsal-cadeira\\alongamento-dorsal-cadeira-02.jpg"
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-dorsal-cadeira\\alongamento-dorsal-cadeira-03.jpg"
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-dorsal-cadeira\\alongamento-dorsal-cadeira-04.jpg"
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-dorsal-cadeira\\alongamento-dorsal-cadeira-05.jpg"
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-dorsal-cadeira\\alongamento-dorsal-cadeira-06.jpg"
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-dorsal-cadeira\\alongamento-dorsal-cadeira-07.jpg"
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-dorsal-cadeira\\alongamento-dorsal-cadeira-08.jpg"
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "frame": 1,
+      "path": "public\\videos\\frames\\dorsiflexao-parede\\dorsiflexao-parede-01.jpg"
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "frame": 2,
+      "path": "public\\videos\\frames\\dorsiflexao-parede\\dorsiflexao-parede-02.jpg"
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "frame": 3,
+      "path": "public\\videos\\frames\\dorsiflexao-parede\\dorsiflexao-parede-03.jpg"
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "frame": 4,
+      "path": "public\\videos\\frames\\dorsiflexao-parede\\dorsiflexao-parede-04.jpg"
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "frame": 5,
+      "path": "public\\videos\\frames\\dorsiflexao-parede\\dorsiflexao-parede-05.jpg"
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "frame": 6,
+      "path": "public\\videos\\frames\\dorsiflexao-parede\\dorsiflexao-parede-06.jpg"
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "frame": 7,
+      "path": "public\\videos\\frames\\dorsiflexao-parede\\dorsiflexao-parede-07.jpg"
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "frame": 8,
+      "path": "public\\videos\\frames\\dorsiflexao-parede\\dorsiflexao-parede-08.jpg"
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "frame": 1,
+      "path": "public\\videos\\frames\\extensao-abdominal-em-pe\\extensao-abdominal-em-pe-01.jpg"
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "frame": 2,
+      "path": "public\\videos\\frames\\extensao-abdominal-em-pe\\extensao-abdominal-em-pe-02.jpg"
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "frame": 3,
+      "path": "public\\videos\\frames\\extensao-abdominal-em-pe\\extensao-abdominal-em-pe-03.jpg"
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "frame": 4,
+      "path": "public\\videos\\frames\\extensao-abdominal-em-pe\\extensao-abdominal-em-pe-04.jpg"
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "frame": 5,
+      "path": "public\\videos\\frames\\extensao-abdominal-em-pe\\extensao-abdominal-em-pe-05.jpg"
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "frame": 6,
+      "path": "public\\videos\\frames\\extensao-abdominal-em-pe\\extensao-abdominal-em-pe-06.jpg"
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "frame": 7,
+      "path": "public\\videos\\frames\\extensao-abdominal-em-pe\\extensao-abdominal-em-pe-07.jpg"
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "frame": 8,
+      "path": "public\\videos\\frames\\extensao-abdominal-em-pe\\extensao-abdominal-em-pe-08.jpg"
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "frame": 1,
+      "path": "public\\videos\\frames\\extensao-bracos-atras\\extensao-bracos-atras-01.jpg"
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "frame": 2,
+      "path": "public\\videos\\frames\\extensao-bracos-atras\\extensao-bracos-atras-02.jpg"
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "frame": 3,
+      "path": "public\\videos\\frames\\extensao-bracos-atras\\extensao-bracos-atras-03.jpg"
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "frame": 4,
+      "path": "public\\videos\\frames\\extensao-bracos-atras\\extensao-bracos-atras-04.jpg"
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "frame": 5,
+      "path": "public\\videos\\frames\\extensao-bracos-atras\\extensao-bracos-atras-05.jpg"
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "frame": 6,
+      "path": "public\\videos\\frames\\extensao-bracos-atras\\extensao-bracos-atras-06.jpg"
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "frame": 7,
+      "path": "public\\videos\\frames\\extensao-bracos-atras\\extensao-bracos-atras-07.jpg"
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "frame": 8,
+      "path": "public\\videos\\frames\\extensao-bracos-atras\\extensao-bracos-atras-08.jpg"
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "frame": 1,
+      "path": "public\\videos\\frames\\extensao-dedos-pe\\extensao-dedos-pe-01.jpg"
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "frame": 2,
+      "path": "public\\videos\\frames\\extensao-dedos-pe\\extensao-dedos-pe-02.jpg"
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "frame": 3,
+      "path": "public\\videos\\frames\\extensao-dedos-pe\\extensao-dedos-pe-03.jpg"
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "frame": 4,
+      "path": "public\\videos\\frames\\extensao-dedos-pe\\extensao-dedos-pe-04.jpg"
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "frame": 5,
+      "path": "public\\videos\\frames\\extensao-dedos-pe\\extensao-dedos-pe-05.jpg"
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "frame": 6,
+      "path": "public\\videos\\frames\\extensao-dedos-pe\\extensao-dedos-pe-06.jpg"
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "frame": 7,
+      "path": "public\\videos\\frames\\extensao-dedos-pe\\extensao-dedos-pe-07.jpg"
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "frame": 8,
+      "path": "public\\videos\\frames\\extensao-dedos-pe\\extensao-dedos-pe-08.jpg"
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "frame": 1,
+      "path": "public\\videos\\frames\\extensao-flexores-punho\\extensao-flexores-punho-01.jpg"
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "frame": 2,
+      "path": "public\\videos\\frames\\extensao-flexores-punho\\extensao-flexores-punho-02.jpg"
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "frame": 3,
+      "path": "public\\videos\\frames\\extensao-flexores-punho\\extensao-flexores-punho-03.jpg"
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "frame": 4,
+      "path": "public\\videos\\frames\\extensao-flexores-punho\\extensao-flexores-punho-04.jpg"
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "frame": 5,
+      "path": "public\\videos\\frames\\extensao-flexores-punho\\extensao-flexores-punho-05.jpg"
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "frame": 6,
+      "path": "public\\videos\\frames\\extensao-flexores-punho\\extensao-flexores-punho-06.jpg"
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "frame": 7,
+      "path": "public\\videos\\frames\\extensao-flexores-punho\\extensao-flexores-punho-07.jpg"
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "frame": 8,
+      "path": "public\\videos\\frames\\extensao-flexores-punho\\extensao-flexores-punho-08.jpg"
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "frame": 1,
+      "path": "public\\videos\\frames\\extensao-toracica-peito\\extensao-toracica-peito-01.jpg"
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "frame": 2,
+      "path": "public\\videos\\frames\\extensao-toracica-peito\\extensao-toracica-peito-02.jpg"
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "frame": 3,
+      "path": "public\\videos\\frames\\extensao-toracica-peito\\extensao-toracica-peito-03.jpg"
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "frame": 4,
+      "path": "public\\videos\\frames\\extensao-toracica-peito\\extensao-toracica-peito-04.jpg"
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "frame": 5,
+      "path": "public\\videos\\frames\\extensao-toracica-peito\\extensao-toracica-peito-05.jpg"
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "frame": 6,
+      "path": "public\\videos\\frames\\extensao-toracica-peito\\extensao-toracica-peito-06.jpg"
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "frame": 7,
+      "path": "public\\videos\\frames\\extensao-toracica-peito\\extensao-toracica-peito-07.jpg"
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "frame": 8,
+      "path": "public\\videos\\frames\\extensao-toracica-peito\\extensao-toracica-peito-08.jpg"
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "frame": 1,
+      "path": "public\\videos\\frames\\extensao-toracica-cadeira\\extensao-toracica-cadeira-01.jpg"
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "frame": 2,
+      "path": "public\\videos\\frames\\extensao-toracica-cadeira\\extensao-toracica-cadeira-02.jpg"
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "frame": 3,
+      "path": "public\\videos\\frames\\extensao-toracica-cadeira\\extensao-toracica-cadeira-03.jpg"
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "frame": 4,
+      "path": "public\\videos\\frames\\extensao-toracica-cadeira\\extensao-toracica-cadeira-04.jpg"
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "frame": 5,
+      "path": "public\\videos\\frames\\extensao-toracica-cadeira\\extensao-toracica-cadeira-05.jpg"
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "frame": 6,
+      "path": "public\\videos\\frames\\extensao-toracica-cadeira\\extensao-toracica-cadeira-06.jpg"
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "frame": 7,
+      "path": "public\\videos\\frames\\extensao-toracica-cadeira\\extensao-toracica-cadeira-07.jpg"
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "frame": 8,
+      "path": "public\\videos\\frames\\extensao-toracica-cadeira\\extensao-toracica-cadeira-08.jpg"
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "frame": 1,
+      "path": "public\\videos\\frames\\fascia-plantar-toalha\\fascia-plantar-toalha-01.jpg"
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "frame": 2,
+      "path": "public\\videos\\frames\\fascia-plantar-toalha\\fascia-plantar-toalha-02.jpg"
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "frame": 3,
+      "path": "public\\videos\\frames\\fascia-plantar-toalha\\fascia-plantar-toalha-03.jpg"
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "frame": 4,
+      "path": "public\\videos\\frames\\fascia-plantar-toalha\\fascia-plantar-toalha-04.jpg"
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "frame": 5,
+      "path": "public\\videos\\frames\\fascia-plantar-toalha\\fascia-plantar-toalha-05.jpg"
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "frame": 6,
+      "path": "public\\videos\\frames\\fascia-plantar-toalha\\fascia-plantar-toalha-06.jpg"
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "frame": 7,
+      "path": "public\\videos\\frames\\fascia-plantar-toalha\\fascia-plantar-toalha-07.jpg"
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "frame": 8,
+      "path": "public\\videos\\frames\\fascia-plantar-toalha\\fascia-plantar-toalha-08.jpg"
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\figura-quatro-sentado\\figura-quatro-sentado-01.jpg"
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\figura-quatro-sentado\\figura-quatro-sentado-02.jpg"
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\figura-quatro-sentado\\figura-quatro-sentado-03.jpg"
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\figura-quatro-sentado\\figura-quatro-sentado-04.jpg"
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\figura-quatro-sentado\\figura-quatro-sentado-05.jpg"
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\figura-quatro-sentado\\figura-quatro-sentado-06.jpg"
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\figura-quatro-sentado\\figura-quatro-sentado-07.jpg"
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\figura-quatro-sentado\\figura-quatro-sentado-08.jpg"
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "frame": 1,
+      "path": "public\\videos\\frames\\flexao-cervical-suave\\flexao-cervical-suave-01.jpg"
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "frame": 2,
+      "path": "public\\videos\\frames\\flexao-cervical-suave\\flexao-cervical-suave-02.jpg"
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "frame": 3,
+      "path": "public\\videos\\frames\\flexao-cervical-suave\\flexao-cervical-suave-03.jpg"
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "frame": 4,
+      "path": "public\\videos\\frames\\flexao-cervical-suave\\flexao-cervical-suave-04.jpg"
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "frame": 5,
+      "path": "public\\videos\\frames\\flexao-cervical-suave\\flexao-cervical-suave-05.jpg"
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "frame": 6,
+      "path": "public\\videos\\frames\\flexao-cervical-suave\\flexao-cervical-suave-06.jpg"
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "frame": 7,
+      "path": "public\\videos\\frames\\flexao-cervical-suave\\flexao-cervical-suave-07.jpg"
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "frame": 8,
+      "path": "public\\videos\\frames\\flexao-cervical-suave\\flexao-cervical-suave-08.jpg"
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "frame": 1,
+      "path": "public\\videos\\frames\\flexao-dedos-pe\\flexao-dedos-pe-01.jpg"
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "frame": 2,
+      "path": "public\\videos\\frames\\flexao-dedos-pe\\flexao-dedos-pe-02.jpg"
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "frame": 3,
+      "path": "public\\videos\\frames\\flexao-dedos-pe\\flexao-dedos-pe-03.jpg"
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "frame": 4,
+      "path": "public\\videos\\frames\\flexao-dedos-pe\\flexao-dedos-pe-04.jpg"
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "frame": 5,
+      "path": "public\\videos\\frames\\flexao-dedos-pe\\flexao-dedos-pe-05.jpg"
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "frame": 6,
+      "path": "public\\videos\\frames\\flexao-dedos-pe\\flexao-dedos-pe-06.jpg"
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "frame": 7,
+      "path": "public\\videos\\frames\\flexao-dedos-pe\\flexao-dedos-pe-07.jpg"
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "frame": 8,
+      "path": "public\\videos\\frames\\flexao-dedos-pe\\flexao-dedos-pe-08.jpg"
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "frame": 1,
+      "path": "public\\videos\\frames\\flexao-extensores-punho\\flexao-extensores-punho-01.jpg"
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "frame": 2,
+      "path": "public\\videos\\frames\\flexao-extensores-punho\\flexao-extensores-punho-02.jpg"
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "frame": 3,
+      "path": "public\\videos\\frames\\flexao-extensores-punho\\flexao-extensores-punho-03.jpg"
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "frame": 4,
+      "path": "public\\videos\\frames\\flexao-extensores-punho\\flexao-extensores-punho-04.jpg"
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "frame": 5,
+      "path": "public\\videos\\frames\\flexao-extensores-punho\\flexao-extensores-punho-05.jpg"
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "frame": 6,
+      "path": "public\\videos\\frames\\flexao-extensores-punho\\flexao-extensores-punho-06.jpg"
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "frame": 7,
+      "path": "public\\videos\\frames\\flexao-extensores-punho\\flexao-extensores-punho-07.jpg"
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "frame": 8,
+      "path": "public\\videos\\frames\\flexao-extensores-punho\\flexao-extensores-punho-08.jpg"
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "frame": 1,
+      "path": "public\\videos\\frames\\flexao-lombar-sentada\\flexao-lombar-sentada-01.jpg"
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "frame": 2,
+      "path": "public\\videos\\frames\\flexao-lombar-sentada\\flexao-lombar-sentada-02.jpg"
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "frame": 3,
+      "path": "public\\videos\\frames\\flexao-lombar-sentada\\flexao-lombar-sentada-03.jpg"
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "frame": 4,
+      "path": "public\\videos\\frames\\flexao-lombar-sentada\\flexao-lombar-sentada-04.jpg"
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "frame": 5,
+      "path": "public\\videos\\frames\\flexao-lombar-sentada\\flexao-lombar-sentada-05.jpg"
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "frame": 6,
+      "path": "public\\videos\\frames\\flexao-lombar-sentada\\flexao-lombar-sentada-06.jpg"
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "frame": 7,
+      "path": "public\\videos\\frames\\flexao-lombar-sentada\\flexao-lombar-sentada-07.jpg"
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "frame": 8,
+      "path": "public\\videos\\frames\\flexao-lombar-sentada\\flexao-lombar-sentada-08.jpg"
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\flexor-quadril-ajoelhado\\flexor-quadril-ajoelhado-01.jpg"
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\flexor-quadril-ajoelhado\\flexor-quadril-ajoelhado-02.jpg"
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\flexor-quadril-ajoelhado\\flexor-quadril-ajoelhado-03.jpg"
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\flexor-quadril-ajoelhado\\flexor-quadril-ajoelhado-04.jpg"
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\flexor-quadril-ajoelhado\\flexor-quadril-ajoelhado-05.jpg"
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\flexor-quadril-ajoelhado\\flexor-quadril-ajoelhado-06.jpg"
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\flexor-quadril-ajoelhado\\flexor-quadril-ajoelhado-07.jpg"
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\flexor-quadril-ajoelhado\\flexor-quadril-ajoelhado-08.jpg"
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "frame": 1,
+      "path": "public\\videos\\frames\\flexor-quadril-com-quadriceps\\flexor-quadril-com-quadriceps-01.jpg"
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "frame": 2,
+      "path": "public\\videos\\frames\\flexor-quadril-com-quadriceps\\flexor-quadril-com-quadriceps-02.jpg"
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "frame": 3,
+      "path": "public\\videos\\frames\\flexor-quadril-com-quadriceps\\flexor-quadril-com-quadriceps-03.jpg"
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "frame": 4,
+      "path": "public\\videos\\frames\\flexor-quadril-com-quadriceps\\flexor-quadril-com-quadriceps-04.jpg"
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "frame": 5,
+      "path": "public\\videos\\frames\\flexor-quadril-com-quadriceps\\flexor-quadril-com-quadriceps-05.jpg"
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "frame": 6,
+      "path": "public\\videos\\frames\\flexor-quadril-com-quadriceps\\flexor-quadril-com-quadriceps-06.jpg"
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "frame": 7,
+      "path": "public\\videos\\frames\\flexor-quadril-com-quadriceps\\flexor-quadril-com-quadriceps-07.jpg"
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "frame": 8,
+      "path": "public\\videos\\frames\\flexor-quadril-com-quadriceps\\flexor-quadril-com-quadriceps-08.jpg"
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "frame": 1,
+      "path": "public\\videos\\frames\\gato-vaca-escapular\\gato-vaca-escapular-01.jpg"
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "frame": 2,
+      "path": "public\\videos\\frames\\gato-vaca-escapular\\gato-vaca-escapular-02.jpg"
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "frame": 3,
+      "path": "public\\videos\\frames\\gato-vaca-escapular\\gato-vaca-escapular-03.jpg"
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "frame": 4,
+      "path": "public\\videos\\frames\\gato-vaca-escapular\\gato-vaca-escapular-04.jpg"
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "frame": 5,
+      "path": "public\\videos\\frames\\gato-vaca-escapular\\gato-vaca-escapular-05.jpg"
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "frame": 6,
+      "path": "public\\videos\\frames\\gato-vaca-escapular\\gato-vaca-escapular-06.jpg"
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "frame": 7,
+      "path": "public\\videos\\frames\\gato-vaca-escapular\\gato-vaca-escapular-07.jpg"
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "frame": 8,
+      "path": "public\\videos\\frames\\gato-vaca-escapular\\gato-vaca-escapular-08.jpg"
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "frame": 1,
+      "path": "public\\videos\\frames\\gato-vaca-toracico\\gato-vaca-toracico-01.jpg"
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "frame": 2,
+      "path": "public\\videos\\frames\\gato-vaca-toracico\\gato-vaca-toracico-02.jpg"
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "frame": 3,
+      "path": "public\\videos\\frames\\gato-vaca-toracico\\gato-vaca-toracico-03.jpg"
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "frame": 4,
+      "path": "public\\videos\\frames\\gato-vaca-toracico\\gato-vaca-toracico-04.jpg"
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "frame": 5,
+      "path": "public\\videos\\frames\\gato-vaca-toracico\\gato-vaca-toracico-05.jpg"
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "frame": 6,
+      "path": "public\\videos\\frames\\gato-vaca-toracico\\gato-vaca-toracico-06.jpg"
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "frame": 7,
+      "path": "public\\videos\\frames\\gato-vaca-toracico\\gato-vaca-toracico-07.jpg"
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "frame": 8,
+      "path": "public\\videos\\frames\\gato-vaca-toracico\\gato-vaca-toracico-08.jpg"
+    },
+    {
+      "slug": "gluteo-parede",
+      "frame": 1,
+      "path": "public\\videos\\frames\\gluteo-parede\\gluteo-parede-01.jpg"
+    },
+    {
+      "slug": "gluteo-parede",
+      "frame": 2,
+      "path": "public\\videos\\frames\\gluteo-parede\\gluteo-parede-02.jpg"
+    },
+    {
+      "slug": "gluteo-parede",
+      "frame": 3,
+      "path": "public\\videos\\frames\\gluteo-parede\\gluteo-parede-03.jpg"
+    },
+    {
+      "slug": "gluteo-parede",
+      "frame": 4,
+      "path": "public\\videos\\frames\\gluteo-parede\\gluteo-parede-04.jpg"
+    },
+    {
+      "slug": "gluteo-parede",
+      "frame": 5,
+      "path": "public\\videos\\frames\\gluteo-parede\\gluteo-parede-05.jpg"
+    },
+    {
+      "slug": "gluteo-parede",
+      "frame": 6,
+      "path": "public\\videos\\frames\\gluteo-parede\\gluteo-parede-06.jpg"
+    },
+    {
+      "slug": "gluteo-parede",
+      "frame": 7,
+      "path": "public\\videos\\frames\\gluteo-parede\\gluteo-parede-07.jpg"
+    },
+    {
+      "slug": "gluteo-parede",
+      "frame": 8,
+      "path": "public\\videos\\frames\\gluteo-parede\\gluteo-parede-08.jpg"
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "frame": 1,
+      "path": "public\\videos\\frames\\inclinacao-lateral-pescoco\\inclinacao-lateral-pescoco-01.jpg"
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "frame": 2,
+      "path": "public\\videos\\frames\\inclinacao-lateral-pescoco\\inclinacao-lateral-pescoco-02.jpg"
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "frame": 3,
+      "path": "public\\videos\\frames\\inclinacao-lateral-pescoco\\inclinacao-lateral-pescoco-03.jpg"
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "frame": 4,
+      "path": "public\\videos\\frames\\inclinacao-lateral-pescoco\\inclinacao-lateral-pescoco-04.jpg"
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "frame": 5,
+      "path": "public\\videos\\frames\\inclinacao-lateral-pescoco\\inclinacao-lateral-pescoco-05.jpg"
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "frame": 6,
+      "path": "public\\videos\\frames\\inclinacao-lateral-pescoco\\inclinacao-lateral-pescoco-06.jpg"
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "frame": 7,
+      "path": "public\\videos\\frames\\inclinacao-lateral-pescoco\\inclinacao-lateral-pescoco-07.jpg"
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "frame": 8,
+      "path": "public\\videos\\frames\\inclinacao-lateral-pescoco\\inclinacao-lateral-pescoco-08.jpg"
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "frame": 1,
+      "path": "public\\videos\\frames\\inclinacao-unilateral-cadeira\\inclinacao-unilateral-cadeira-01.jpg"
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "frame": 2,
+      "path": "public\\videos\\frames\\inclinacao-unilateral-cadeira\\inclinacao-unilateral-cadeira-02.jpg"
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "frame": 3,
+      "path": "public\\videos\\frames\\inclinacao-unilateral-cadeira\\inclinacao-unilateral-cadeira-03.jpg"
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "frame": 4,
+      "path": "public\\videos\\frames\\inclinacao-unilateral-cadeira\\inclinacao-unilateral-cadeira-04.jpg"
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "frame": 5,
+      "path": "public\\videos\\frames\\inclinacao-unilateral-cadeira\\inclinacao-unilateral-cadeira-05.jpg"
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "frame": 6,
+      "path": "public\\videos\\frames\\inclinacao-unilateral-cadeira\\inclinacao-unilateral-cadeira-06.jpg"
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "frame": 7,
+      "path": "public\\videos\\frames\\inclinacao-unilateral-cadeira\\inclinacao-unilateral-cadeira-07.jpg"
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "frame": 8,
+      "path": "public\\videos\\frames\\inclinacao-unilateral-cadeira\\inclinacao-unilateral-cadeira-08.jpg"
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "frame": 1,
+      "path": "public\\videos\\frames\\inversao-eversao-controlada\\inversao-eversao-controlada-01.jpg"
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "frame": 2,
+      "path": "public\\videos\\frames\\inversao-eversao-controlada\\inversao-eversao-controlada-02.jpg"
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "frame": 3,
+      "path": "public\\videos\\frames\\inversao-eversao-controlada\\inversao-eversao-controlada-03.jpg"
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "frame": 4,
+      "path": "public\\videos\\frames\\inversao-eversao-controlada\\inversao-eversao-controlada-04.jpg"
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "frame": 5,
+      "path": "public\\videos\\frames\\inversao-eversao-controlada\\inversao-eversao-controlada-05.jpg"
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "frame": 6,
+      "path": "public\\videos\\frames\\inversao-eversao-controlada\\inversao-eversao-controlada-06.jpg"
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "frame": 7,
+      "path": "public\\videos\\frames\\inversao-eversao-controlada\\inversao-eversao-controlada-07.jpg"
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "frame": 8,
+      "path": "public\\videos\\frames\\inversao-eversao-controlada\\inversao-eversao-controlada-08.jpg"
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\joelho-ao-peito-cruzado\\joelho-ao-peito-cruzado-01.jpg"
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\joelho-ao-peito-cruzado\\joelho-ao-peito-cruzado-02.jpg"
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\joelho-ao-peito-cruzado\\joelho-ao-peito-cruzado-03.jpg"
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\joelho-ao-peito-cruzado\\joelho-ao-peito-cruzado-04.jpg"
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\joelho-ao-peito-cruzado\\joelho-ao-peito-cruzado-05.jpg"
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\joelho-ao-peito-cruzado\\joelho-ao-peito-cruzado-06.jpg"
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\joelho-ao-peito-cruzado\\joelho-ao-peito-cruzado-07.jpg"
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\joelho-ao-peito-cruzado\\joelho-ao-peito-cruzado-08.jpg"
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "frame": 1,
+      "path": "public\\videos\\frames\\joelhos-ao-peito\\joelhos-ao-peito-01.jpg"
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "frame": 2,
+      "path": "public\\videos\\frames\\joelhos-ao-peito\\joelhos-ao-peito-02.jpg"
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "frame": 3,
+      "path": "public\\videos\\frames\\joelhos-ao-peito\\joelhos-ao-peito-03.jpg"
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "frame": 4,
+      "path": "public\\videos\\frames\\joelhos-ao-peito\\joelhos-ao-peito-04.jpg"
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "frame": 5,
+      "path": "public\\videos\\frames\\joelhos-ao-peito\\joelhos-ao-peito-05.jpg"
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "frame": 6,
+      "path": "public\\videos\\frames\\joelhos-ao-peito\\joelhos-ao-peito-06.jpg"
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "frame": 7,
+      "path": "public\\videos\\frames\\joelhos-ao-peito\\joelhos-ao-peito-07.jpg"
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "frame": 8,
+      "path": "public\\videos\\frames\\joelhos-ao-peito\\joelhos-ao-peito-08.jpg"
+    },
+    {
+      "slug": "livro-aberto",
+      "frame": 1,
+      "path": "public\\videos\\frames\\livro-aberto\\livro-aberto-01.jpg"
+    },
+    {
+      "slug": "livro-aberto",
+      "frame": 2,
+      "path": "public\\videos\\frames\\livro-aberto\\livro-aberto-02.jpg"
+    },
+    {
+      "slug": "livro-aberto",
+      "frame": 3,
+      "path": "public\\videos\\frames\\livro-aberto\\livro-aberto-03.jpg"
+    },
+    {
+      "slug": "livro-aberto",
+      "frame": 4,
+      "path": "public\\videos\\frames\\livro-aberto\\livro-aberto-04.jpg"
+    },
+    {
+      "slug": "livro-aberto",
+      "frame": 5,
+      "path": "public\\videos\\frames\\livro-aberto\\livro-aberto-05.jpg"
+    },
+    {
+      "slug": "livro-aberto",
+      "frame": 6,
+      "path": "public\\videos\\frames\\livro-aberto\\livro-aberto-06.jpg"
+    },
+    {
+      "slug": "livro-aberto",
+      "frame": 7,
+      "path": "public\\videos\\frames\\livro-aberto\\livro-aberto-07.jpg"
+    },
+    {
+      "slug": "livro-aberto",
+      "frame": 8,
+      "path": "public\\videos\\frames\\livro-aberto\\livro-aberto-08.jpg"
+    },
+    {
+      "slug": "maos-atras-costas",
+      "frame": 1,
+      "path": "public\\videos\\frames\\maos-atras-costas\\maos-atras-costas-01.jpg"
+    },
+    {
+      "slug": "maos-atras-costas",
+      "frame": 2,
+      "path": "public\\videos\\frames\\maos-atras-costas\\maos-atras-costas-02.jpg"
+    },
+    {
+      "slug": "maos-atras-costas",
+      "frame": 3,
+      "path": "public\\videos\\frames\\maos-atras-costas\\maos-atras-costas-03.jpg"
+    },
+    {
+      "slug": "maos-atras-costas",
+      "frame": 4,
+      "path": "public\\videos\\frames\\maos-atras-costas\\maos-atras-costas-04.jpg"
+    },
+    {
+      "slug": "maos-atras-costas",
+      "frame": 5,
+      "path": "public\\videos\\frames\\maos-atras-costas\\maos-atras-costas-05.jpg"
+    },
+    {
+      "slug": "maos-atras-costas",
+      "frame": 6,
+      "path": "public\\videos\\frames\\maos-atras-costas\\maos-atras-costas-06.jpg"
+    },
+    {
+      "slug": "maos-atras-costas",
+      "frame": 7,
+      "path": "public\\videos\\frames\\maos-atras-costas\\maos-atras-costas-07.jpg"
+    },
+    {
+      "slug": "maos-atras-costas",
+      "frame": 8,
+      "path": "public\\videos\\frames\\maos-atras-costas\\maos-atras-costas-08.jpg"
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "frame": 1,
+      "path": "public\\videos\\frames\\mobilidade-braco-cotovelo\\mobilidade-braco-cotovelo-01.jpg"
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "frame": 2,
+      "path": "public\\videos\\frames\\mobilidade-braco-cotovelo\\mobilidade-braco-cotovelo-02.jpg"
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "frame": 3,
+      "path": "public\\videos\\frames\\mobilidade-braco-cotovelo\\mobilidade-braco-cotovelo-03.jpg"
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "frame": 4,
+      "path": "public\\videos\\frames\\mobilidade-braco-cotovelo\\mobilidade-braco-cotovelo-04.jpg"
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "frame": 5,
+      "path": "public\\videos\\frames\\mobilidade-braco-cotovelo\\mobilidade-braco-cotovelo-05.jpg"
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "frame": 6,
+      "path": "public\\videos\\frames\\mobilidade-braco-cotovelo\\mobilidade-braco-cotovelo-06.jpg"
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "frame": 7,
+      "path": "public\\videos\\frames\\mobilidade-braco-cotovelo\\mobilidade-braco-cotovelo-07.jpg"
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "frame": 8,
+      "path": "public\\videos\\frames\\mobilidade-braco-cotovelo\\mobilidade-braco-cotovelo-08.jpg"
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "frame": 1,
+      "path": "public\\videos\\frames\\mobilidade-cotovelo\\mobilidade-cotovelo-01.jpg"
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "frame": 2,
+      "path": "public\\videos\\frames\\mobilidade-cotovelo\\mobilidade-cotovelo-02.jpg"
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "frame": 3,
+      "path": "public\\videos\\frames\\mobilidade-cotovelo\\mobilidade-cotovelo-03.jpg"
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "frame": 4,
+      "path": "public\\videos\\frames\\mobilidade-cotovelo\\mobilidade-cotovelo-04.jpg"
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "frame": 5,
+      "path": "public\\videos\\frames\\mobilidade-cotovelo\\mobilidade-cotovelo-05.jpg"
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "frame": 6,
+      "path": "public\\videos\\frames\\mobilidade-cotovelo\\mobilidade-cotovelo-06.jpg"
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "frame": 7,
+      "path": "public\\videos\\frames\\mobilidade-cotovelo\\mobilidade-cotovelo-07.jpg"
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "frame": 8,
+      "path": "public\\videos\\frames\\mobilidade-cotovelo\\mobilidade-cotovelo-08.jpg"
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "frame": 1,
+      "path": "public\\videos\\frames\\mobilidade-tornozelo-panturrilha\\mobilidade-tornozelo-panturrilha-01.jpg"
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "frame": 2,
+      "path": "public\\videos\\frames\\mobilidade-tornozelo-panturrilha\\mobilidade-tornozelo-panturrilha-02.jpg"
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "frame": 3,
+      "path": "public\\videos\\frames\\mobilidade-tornozelo-panturrilha\\mobilidade-tornozelo-panturrilha-03.jpg"
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "frame": 4,
+      "path": "public\\videos\\frames\\mobilidade-tornozelo-panturrilha\\mobilidade-tornozelo-panturrilha-04.jpg"
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "frame": 5,
+      "path": "public\\videos\\frames\\mobilidade-tornozelo-panturrilha\\mobilidade-tornozelo-panturrilha-05.jpg"
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "frame": 6,
+      "path": "public\\videos\\frames\\mobilidade-tornozelo-panturrilha\\mobilidade-tornozelo-panturrilha-06.jpg"
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "frame": 7,
+      "path": "public\\videos\\frames\\mobilidade-tornozelo-panturrilha\\mobilidade-tornozelo-panturrilha-07.jpg"
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "frame": 8,
+      "path": "public\\videos\\frames\\mobilidade-tornozelo-panturrilha\\mobilidade-tornozelo-panturrilha-08.jpg"
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "frame": 1,
+      "path": "public\\videos\\frames\\panturrilha-toalha\\panturrilha-toalha-01.jpg"
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "frame": 2,
+      "path": "public\\videos\\frames\\panturrilha-toalha\\panturrilha-toalha-02.jpg"
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "frame": 3,
+      "path": "public\\videos\\frames\\panturrilha-toalha\\panturrilha-toalha-03.jpg"
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "frame": 4,
+      "path": "public\\videos\\frames\\panturrilha-toalha\\panturrilha-toalha-04.jpg"
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "frame": 5,
+      "path": "public\\videos\\frames\\panturrilha-toalha\\panturrilha-toalha-05.jpg"
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "frame": 6,
+      "path": "public\\videos\\frames\\panturrilha-toalha\\panturrilha-toalha-06.jpg"
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "frame": 7,
+      "path": "public\\videos\\frames\\panturrilha-toalha\\panturrilha-toalha-07.jpg"
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "frame": 8,
+      "path": "public\\videos\\frames\\panturrilha-toalha\\panturrilha-toalha-08.jpg"
+    },
+    {
+      "slug": "panturrilha-parede",
+      "frame": 1,
+      "path": "public\\videos\\frames\\panturrilha-parede\\panturrilha-parede-01.jpg"
+    },
+    {
+      "slug": "panturrilha-parede",
+      "frame": 2,
+      "path": "public\\videos\\frames\\panturrilha-parede\\panturrilha-parede-02.jpg"
+    },
+    {
+      "slug": "panturrilha-parede",
+      "frame": 3,
+      "path": "public\\videos\\frames\\panturrilha-parede\\panturrilha-parede-03.jpg"
+    },
+    {
+      "slug": "panturrilha-parede",
+      "frame": 4,
+      "path": "public\\videos\\frames\\panturrilha-parede\\panturrilha-parede-04.jpg"
+    },
+    {
+      "slug": "panturrilha-parede",
+      "frame": 5,
+      "path": "public\\videos\\frames\\panturrilha-parede\\panturrilha-parede-05.jpg"
+    },
+    {
+      "slug": "panturrilha-parede",
+      "frame": 6,
+      "path": "public\\videos\\frames\\panturrilha-parede\\panturrilha-parede-06.jpg"
+    },
+    {
+      "slug": "panturrilha-parede",
+      "frame": 7,
+      "path": "public\\videos\\frames\\panturrilha-parede\\panturrilha-parede-07.jpg"
+    },
+    {
+      "slug": "panturrilha-parede",
+      "frame": 8,
+      "path": "public\\videos\\frames\\panturrilha-parede\\panturrilha-parede-08.jpg"
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "frame": 1,
+      "path": "public\\videos\\frames\\degrau-panturrilha\\degrau-panturrilha-01.jpg"
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "frame": 2,
+      "path": "public\\videos\\frames\\degrau-panturrilha\\degrau-panturrilha-02.jpg"
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "frame": 3,
+      "path": "public\\videos\\frames\\degrau-panturrilha\\degrau-panturrilha-03.jpg"
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "frame": 4,
+      "path": "public\\videos\\frames\\degrau-panturrilha\\degrau-panturrilha-04.jpg"
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "frame": 5,
+      "path": "public\\videos\\frames\\degrau-panturrilha\\degrau-panturrilha-05.jpg"
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "frame": 6,
+      "path": "public\\videos\\frames\\degrau-panturrilha\\degrau-panturrilha-06.jpg"
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "frame": 7,
+      "path": "public\\videos\\frames\\degrau-panturrilha\\degrau-panturrilha-07.jpg"
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "frame": 8,
+      "path": "public\\videos\\frames\\degrau-panturrilha\\degrau-panturrilha-08.jpg"
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "frame": 1,
+      "path": "public\\videos\\frames\\peitoral-parede-um-braco\\peitoral-parede-um-braco-01.jpg"
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "frame": 2,
+      "path": "public\\videos\\frames\\peitoral-parede-um-braco\\peitoral-parede-um-braco-02.jpg"
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "frame": 3,
+      "path": "public\\videos\\frames\\peitoral-parede-um-braco\\peitoral-parede-um-braco-03.jpg"
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "frame": 4,
+      "path": "public\\videos\\frames\\peitoral-parede-um-braco\\peitoral-parede-um-braco-04.jpg"
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "frame": 5,
+      "path": "public\\videos\\frames\\peitoral-parede-um-braco\\peitoral-parede-um-braco-05.jpg"
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "frame": 6,
+      "path": "public\\videos\\frames\\peitoral-parede-um-braco\\peitoral-parede-um-braco-06.jpg"
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "frame": 7,
+      "path": "public\\videos\\frames\\peitoral-parede-um-braco\\peitoral-parede-um-braco-07.jpg"
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "frame": 8,
+      "path": "public\\videos\\frames\\peitoral-parede-um-braco\\peitoral-parede-um-braco-08.jpg"
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "frame": 1,
+      "path": "public\\videos\\frames\\peitoral-no-canto\\peitoral-no-canto-01.jpg"
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "frame": 2,
+      "path": "public\\videos\\frames\\peitoral-no-canto\\peitoral-no-canto-02.jpg"
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "frame": 3,
+      "path": "public\\videos\\frames\\peitoral-no-canto\\peitoral-no-canto-03.jpg"
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "frame": 4,
+      "path": "public\\videos\\frames\\peitoral-no-canto\\peitoral-no-canto-04.jpg"
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "frame": 5,
+      "path": "public\\videos\\frames\\peitoral-no-canto\\peitoral-no-canto-05.jpg"
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "frame": 6,
+      "path": "public\\videos\\frames\\peitoral-no-canto\\peitoral-no-canto-06.jpg"
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "frame": 7,
+      "path": "public\\videos\\frames\\peitoral-no-canto\\peitoral-no-canto-07.jpg"
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "frame": 8,
+      "path": "public\\videos\\frames\\peitoral-no-canto\\peitoral-no-canto-08.jpg"
+    },
+    {
+      "slug": "pendulo-ombro",
+      "frame": 1,
+      "path": "public\\videos\\frames\\pendulo-ombro\\pendulo-ombro-01.jpg"
+    },
+    {
+      "slug": "pendulo-ombro",
+      "frame": 2,
+      "path": "public\\videos\\frames\\pendulo-ombro\\pendulo-ombro-02.jpg"
+    },
+    {
+      "slug": "pendulo-ombro",
+      "frame": 3,
+      "path": "public\\videos\\frames\\pendulo-ombro\\pendulo-ombro-03.jpg"
+    },
+    {
+      "slug": "pendulo-ombro",
+      "frame": 4,
+      "path": "public\\videos\\frames\\pendulo-ombro\\pendulo-ombro-04.jpg"
+    },
+    {
+      "slug": "pendulo-ombro",
+      "frame": 5,
+      "path": "public\\videos\\frames\\pendulo-ombro\\pendulo-ombro-05.jpg"
+    },
+    {
+      "slug": "pendulo-ombro",
+      "frame": 6,
+      "path": "public\\videos\\frames\\pendulo-ombro\\pendulo-ombro-06.jpg"
+    },
+    {
+      "slug": "pendulo-ombro",
+      "frame": 7,
+      "path": "public\\videos\\frames\\pendulo-ombro\\pendulo-ombro-07.jpg"
+    },
+    {
+      "slug": "pendulo-ombro",
+      "frame": 8,
+      "path": "public\\videos\\frames\\pendulo-ombro\\pendulo-ombro-08.jpg"
+    },
+    {
+      "slug": "piriforme-deitado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\piriforme-deitado\\piriforme-deitado-01.jpg"
+    },
+    {
+      "slug": "piriforme-deitado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\piriforme-deitado\\piriforme-deitado-02.jpg"
+    },
+    {
+      "slug": "piriforme-deitado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\piriforme-deitado\\piriforme-deitado-03.jpg"
+    },
+    {
+      "slug": "piriforme-deitado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\piriforme-deitado\\piriforme-deitado-04.jpg"
+    },
+    {
+      "slug": "piriforme-deitado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\piriforme-deitado\\piriforme-deitado-05.jpg"
+    },
+    {
+      "slug": "piriforme-deitado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\piriforme-deitado\\piriforme-deitado-06.jpg"
+    },
+    {
+      "slug": "piriforme-deitado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\piriforme-deitado\\piriforme-deitado-07.jpg"
+    },
+    {
+      "slug": "piriforme-deitado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\piriforme-deitado\\piriforme-deitado-08.jpg"
+    },
+    {
+      "slug": "pombo-adaptado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\pombo-adaptado\\pombo-adaptado-01.jpg"
+    },
+    {
+      "slug": "pombo-adaptado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\pombo-adaptado\\pombo-adaptado-02.jpg"
+    },
+    {
+      "slug": "pombo-adaptado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\pombo-adaptado\\pombo-adaptado-03.jpg"
+    },
+    {
+      "slug": "pombo-adaptado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\pombo-adaptado\\pombo-adaptado-04.jpg"
+    },
+    {
+      "slug": "pombo-adaptado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\pombo-adaptado\\pombo-adaptado-05.jpg"
+    },
+    {
+      "slug": "pombo-adaptado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\pombo-adaptado\\pombo-adaptado-06.jpg"
+    },
+    {
+      "slug": "pombo-adaptado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\pombo-adaptado\\pombo-adaptado-07.jpg"
+    },
+    {
+      "slug": "pombo-adaptado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\pombo-adaptado\\pombo-adaptado-08.jpg"
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "frame": 1,
+      "path": "public\\videos\\frames\\ponte-suave-abertura\\ponte-suave-abertura-01.jpg"
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "frame": 2,
+      "path": "public\\videos\\frames\\ponte-suave-abertura\\ponte-suave-abertura-02.jpg"
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "frame": 3,
+      "path": "public\\videos\\frames\\ponte-suave-abertura\\ponte-suave-abertura-03.jpg"
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "frame": 4,
+      "path": "public\\videos\\frames\\ponte-suave-abertura\\ponte-suave-abertura-04.jpg"
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "frame": 5,
+      "path": "public\\videos\\frames\\ponte-suave-abertura\\ponte-suave-abertura-05.jpg"
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "frame": 6,
+      "path": "public\\videos\\frames\\ponte-suave-abertura\\ponte-suave-abertura-06.jpg"
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "frame": 7,
+      "path": "public\\videos\\frames\\ponte-suave-abertura\\ponte-suave-abertura-07.jpg"
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "frame": 8,
+      "path": "public\\videos\\frames\\ponte-suave-abertura\\ponte-suave-abertura-08.jpg"
+    },
+    {
+      "slug": "toalha-deitado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\toalha-deitado\\toalha-deitado-01.jpg"
+    },
+    {
+      "slug": "toalha-deitado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\toalha-deitado\\toalha-deitado-02.jpg"
+    },
+    {
+      "slug": "toalha-deitado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\toalha-deitado\\toalha-deitado-03.jpg"
+    },
+    {
+      "slug": "toalha-deitado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\toalha-deitado\\toalha-deitado-04.jpg"
+    },
+    {
+      "slug": "toalha-deitado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\toalha-deitado\\toalha-deitado-05.jpg"
+    },
+    {
+      "slug": "toalha-deitado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\toalha-deitado\\toalha-deitado-06.jpg"
+    },
+    {
+      "slug": "toalha-deitado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\toalha-deitado\\toalha-deitado-07.jpg"
+    },
+    {
+      "slug": "toalha-deitado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\toalha-deitado\\toalha-deitado-08.jpg"
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "frame": 1,
+      "path": "public\\videos\\frames\\posterior-em-pe-apoio\\posterior-em-pe-apoio-01.jpg"
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "frame": 2,
+      "path": "public\\videos\\frames\\posterior-em-pe-apoio\\posterior-em-pe-apoio-02.jpg"
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "frame": 3,
+      "path": "public\\videos\\frames\\posterior-em-pe-apoio\\posterior-em-pe-apoio-03.jpg"
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "frame": 4,
+      "path": "public\\videos\\frames\\posterior-em-pe-apoio\\posterior-em-pe-apoio-04.jpg"
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "frame": 5,
+      "path": "public\\videos\\frames\\posterior-em-pe-apoio\\posterior-em-pe-apoio-05.jpg"
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "frame": 6,
+      "path": "public\\videos\\frames\\posterior-em-pe-apoio\\posterior-em-pe-apoio-06.jpg"
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "frame": 7,
+      "path": "public\\videos\\frames\\posterior-em-pe-apoio\\posterior-em-pe-apoio-07.jpg"
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "frame": 8,
+      "path": "public\\videos\\frames\\posterior-em-pe-apoio\\posterior-em-pe-apoio-08.jpg"
+    },
+    {
+      "slug": "posterior-sentado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\posterior-sentado\\posterior-sentado-01.jpg"
+    },
+    {
+      "slug": "posterior-sentado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\posterior-sentado\\posterior-sentado-02.jpg"
+    },
+    {
+      "slug": "posterior-sentado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\posterior-sentado\\posterior-sentado-03.jpg"
+    },
+    {
+      "slug": "posterior-sentado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\posterior-sentado\\posterior-sentado-04.jpg"
+    },
+    {
+      "slug": "posterior-sentado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\posterior-sentado\\posterior-sentado-05.jpg"
+    },
+    {
+      "slug": "posterior-sentado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\posterior-sentado\\posterior-sentado-06.jpg"
+    },
+    {
+      "slug": "posterior-sentado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\posterior-sentado\\posterior-sentado-07.jpg"
+    },
+    {
+      "slug": "posterior-sentado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\posterior-sentado\\posterior-sentado-08.jpg"
+    },
+    {
+      "slug": "postura-crianca",
+      "frame": 1,
+      "path": "public\\videos\\frames\\postura-crianca\\postura-crianca-01.jpg"
+    },
+    {
+      "slug": "postura-crianca",
+      "frame": 2,
+      "path": "public\\videos\\frames\\postura-crianca\\postura-crianca-02.jpg"
+    },
+    {
+      "slug": "postura-crianca",
+      "frame": 3,
+      "path": "public\\videos\\frames\\postura-crianca\\postura-crianca-03.jpg"
+    },
+    {
+      "slug": "postura-crianca",
+      "frame": 4,
+      "path": "public\\videos\\frames\\postura-crianca\\postura-crianca-04.jpg"
+    },
+    {
+      "slug": "postura-crianca",
+      "frame": 5,
+      "path": "public\\videos\\frames\\postura-crianca\\postura-crianca-05.jpg"
+    },
+    {
+      "slug": "postura-crianca",
+      "frame": 6,
+      "path": "public\\videos\\frames\\postura-crianca\\postura-crianca-06.jpg"
+    },
+    {
+      "slug": "postura-crianca",
+      "frame": 7,
+      "path": "public\\videos\\frames\\postura-crianca\\postura-crianca-07.jpg"
+    },
+    {
+      "slug": "postura-crianca",
+      "frame": 8,
+      "path": "public\\videos\\frames\\postura-crianca\\postura-crianca-08.jpg"
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "frame": 1,
+      "path": "public\\videos\\frames\\postura-crianca-lateral\\postura-crianca-lateral-01.jpg"
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "frame": 2,
+      "path": "public\\videos\\frames\\postura-crianca-lateral\\postura-crianca-lateral-02.jpg"
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "frame": 3,
+      "path": "public\\videos\\frames\\postura-crianca-lateral\\postura-crianca-lateral-03.jpg"
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "frame": 4,
+      "path": "public\\videos\\frames\\postura-crianca-lateral\\postura-crianca-lateral-04.jpg"
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "frame": 5,
+      "path": "public\\videos\\frames\\postura-crianca-lateral\\postura-crianca-lateral-05.jpg"
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "frame": 6,
+      "path": "public\\videos\\frames\\postura-crianca-lateral\\postura-crianca-lateral-06.jpg"
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "frame": 7,
+      "path": "public\\videos\\frames\\postura-crianca-lateral\\postura-crianca-lateral-07.jpg"
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "frame": 8,
+      "path": "public\\videos\\frames\\postura-crianca-lateral\\postura-crianca-lateral-08.jpg"
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "frame": 1,
+      "path": "public\\videos\\frames\\pronacao-supinacao-antebraco\\pronacao-supinacao-antebraco-01.jpg"
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "frame": 2,
+      "path": "public\\videos\\frames\\pronacao-supinacao-antebraco\\pronacao-supinacao-antebraco-02.jpg"
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "frame": 3,
+      "path": "public\\videos\\frames\\pronacao-supinacao-antebraco\\pronacao-supinacao-antebraco-03.jpg"
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "frame": 4,
+      "path": "public\\videos\\frames\\pronacao-supinacao-antebraco\\pronacao-supinacao-antebraco-04.jpg"
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "frame": 5,
+      "path": "public\\videos\\frames\\pronacao-supinacao-antebraco\\pronacao-supinacao-antebraco-05.jpg"
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "frame": 6,
+      "path": "public\\videos\\frames\\pronacao-supinacao-antebraco\\pronacao-supinacao-antebraco-06.jpg"
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "frame": 7,
+      "path": "public\\videos\\frames\\pronacao-supinacao-antebraco\\pronacao-supinacao-antebraco-07.jpg"
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "frame": 8,
+      "path": "public\\videos\\frames\\pronacao-supinacao-antebraco\\pronacao-supinacao-antebraco-08.jpg"
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\quadriceps-lateral-deitado\\quadriceps-lateral-deitado-01.jpg"
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\quadriceps-lateral-deitado\\quadriceps-lateral-deitado-02.jpg"
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\quadriceps-lateral-deitado\\quadriceps-lateral-deitado-03.jpg"
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\quadriceps-lateral-deitado\\quadriceps-lateral-deitado-04.jpg"
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\quadriceps-lateral-deitado\\quadriceps-lateral-deitado-05.jpg"
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\quadriceps-lateral-deitado\\quadriceps-lateral-deitado-06.jpg"
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\quadriceps-lateral-deitado\\quadriceps-lateral-deitado-07.jpg"
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\quadriceps-lateral-deitado\\quadriceps-lateral-deitado-08.jpg"
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "frame": 1,
+      "path": "public\\videos\\frames\\quadriceps-em-pe-apoio\\quadriceps-em-pe-apoio-01.jpg"
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "frame": 2,
+      "path": "public\\videos\\frames\\quadriceps-em-pe-apoio\\quadriceps-em-pe-apoio-02.jpg"
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "frame": 3,
+      "path": "public\\videos\\frames\\quadriceps-em-pe-apoio\\quadriceps-em-pe-apoio-03.jpg"
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "frame": 4,
+      "path": "public\\videos\\frames\\quadriceps-em-pe-apoio\\quadriceps-em-pe-apoio-04.jpg"
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "frame": 5,
+      "path": "public\\videos\\frames\\quadriceps-em-pe-apoio\\quadriceps-em-pe-apoio-05.jpg"
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "frame": 6,
+      "path": "public\\videos\\frames\\quadriceps-em-pe-apoio\\quadriceps-em-pe-apoio-06.jpg"
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "frame": 7,
+      "path": "public\\videos\\frames\\quadriceps-em-pe-apoio\\quadriceps-em-pe-apoio-07.jpg"
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "frame": 8,
+      "path": "public\\videos\\frames\\quadriceps-em-pe-apoio\\quadriceps-em-pe-apoio-08.jpg"
+    },
+    {
+      "slug": "queixo-para-tras",
+      "frame": 1,
+      "path": "public\\videos\\frames\\queixo-para-tras\\queixo-para-tras-01.jpg"
+    },
+    {
+      "slug": "queixo-para-tras",
+      "frame": 2,
+      "path": "public\\videos\\frames\\queixo-para-tras\\queixo-para-tras-02.jpg"
+    },
+    {
+      "slug": "queixo-para-tras",
+      "frame": 3,
+      "path": "public\\videos\\frames\\queixo-para-tras\\queixo-para-tras-03.jpg"
+    },
+    {
+      "slug": "queixo-para-tras",
+      "frame": 4,
+      "path": "public\\videos\\frames\\queixo-para-tras\\queixo-para-tras-04.jpg"
+    },
+    {
+      "slug": "queixo-para-tras",
+      "frame": 5,
+      "path": "public\\videos\\frames\\queixo-para-tras\\queixo-para-tras-05.jpg"
+    },
+    {
+      "slug": "queixo-para-tras",
+      "frame": 6,
+      "path": "public\\videos\\frames\\queixo-para-tras\\queixo-para-tras-06.jpg"
+    },
+    {
+      "slug": "queixo-para-tras",
+      "frame": 7,
+      "path": "public\\videos\\frames\\queixo-para-tras\\queixo-para-tras-07.jpg"
+    },
+    {
+      "slug": "queixo-para-tras",
+      "frame": 8,
+      "path": "public\\videos\\frames\\queixo-para-tras\\queixo-para-tras-08.jpg"
+    },
+    {
+      "slug": "respiracao-costelas",
+      "frame": 1,
+      "path": "public\\videos\\frames\\respiracao-costelas\\respiracao-costelas-01.jpg"
+    },
+    {
+      "slug": "respiracao-costelas",
+      "frame": 2,
+      "path": "public\\videos\\frames\\respiracao-costelas\\respiracao-costelas-02.jpg"
+    },
+    {
+      "slug": "respiracao-costelas",
+      "frame": 3,
+      "path": "public\\videos\\frames\\respiracao-costelas\\respiracao-costelas-03.jpg"
+    },
+    {
+      "slug": "respiracao-costelas",
+      "frame": 4,
+      "path": "public\\videos\\frames\\respiracao-costelas\\respiracao-costelas-04.jpg"
+    },
+    {
+      "slug": "respiracao-costelas",
+      "frame": 5,
+      "path": "public\\videos\\frames\\respiracao-costelas\\respiracao-costelas-05.jpg"
+    },
+    {
+      "slug": "respiracao-costelas",
+      "frame": 6,
+      "path": "public\\videos\\frames\\respiracao-costelas\\respiracao-costelas-06.jpg"
+    },
+    {
+      "slug": "respiracao-costelas",
+      "frame": 7,
+      "path": "public\\videos\\frames\\respiracao-costelas\\respiracao-costelas-07.jpg"
+    },
+    {
+      "slug": "respiracao-costelas",
+      "frame": 8,
+      "path": "public\\videos\\frames\\respiracao-costelas\\respiracao-costelas-08.jpg"
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "frame": 1,
+      "path": "public\\videos\\frames\\retracao-protracao-escapular\\retracao-protracao-escapular-01.jpg"
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "frame": 2,
+      "path": "public\\videos\\frames\\retracao-protracao-escapular\\retracao-protracao-escapular-02.jpg"
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "frame": 3,
+      "path": "public\\videos\\frames\\retracao-protracao-escapular\\retracao-protracao-escapular-03.jpg"
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "frame": 4,
+      "path": "public\\videos\\frames\\retracao-protracao-escapular\\retracao-protracao-escapular-04.jpg"
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "frame": 5,
+      "path": "public\\videos\\frames\\retracao-protracao-escapular\\retracao-protracao-escapular-05.jpg"
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "frame": 6,
+      "path": "public\\videos\\frames\\retracao-protracao-escapular\\retracao-protracao-escapular-06.jpg"
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "frame": 7,
+      "path": "public\\videos\\frames\\retracao-protracao-escapular\\retracao-protracao-escapular-07.jpg"
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "frame": 8,
+      "path": "public\\videos\\frames\\retracao-protracao-escapular\\retracao-protracao-escapular-08.jpg"
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "frame": 1,
+      "path": "public\\videos\\frames\\rotacao-cervical-controlada\\rotacao-cervical-controlada-01.jpg"
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "frame": 2,
+      "path": "public\\videos\\frames\\rotacao-cervical-controlada\\rotacao-cervical-controlada-02.jpg"
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "frame": 3,
+      "path": "public\\videos\\frames\\rotacao-cervical-controlada\\rotacao-cervical-controlada-03.jpg"
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "frame": 4,
+      "path": "public\\videos\\frames\\rotacao-cervical-controlada\\rotacao-cervical-controlada-04.jpg"
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "frame": 5,
+      "path": "public\\videos\\frames\\rotacao-cervical-controlada\\rotacao-cervical-controlada-05.jpg"
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "frame": 6,
+      "path": "public\\videos\\frames\\rotacao-cervical-controlada\\rotacao-cervical-controlada-06.jpg"
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "frame": 7,
+      "path": "public\\videos\\frames\\rotacao-cervical-controlada\\rotacao-cervical-controlada-07.jpg"
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "frame": 8,
+      "path": "public\\videos\\frames\\rotacao-cervical-controlada\\rotacao-cervical-controlada-08.jpg"
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "frame": 1,
+      "path": "public\\videos\\frames\\rotacao-externa-parede\\rotacao-externa-parede-01.jpg"
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "frame": 2,
+      "path": "public\\videos\\frames\\rotacao-externa-parede\\rotacao-externa-parede-02.jpg"
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "frame": 3,
+      "path": "public\\videos\\frames\\rotacao-externa-parede\\rotacao-externa-parede-03.jpg"
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "frame": 4,
+      "path": "public\\videos\\frames\\rotacao-externa-parede\\rotacao-externa-parede-04.jpg"
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "frame": 5,
+      "path": "public\\videos\\frames\\rotacao-externa-parede\\rotacao-externa-parede-05.jpg"
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "frame": 6,
+      "path": "public\\videos\\frames\\rotacao-externa-parede\\rotacao-externa-parede-06.jpg"
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "frame": 7,
+      "path": "public\\videos\\frames\\rotacao-externa-parede\\rotacao-externa-parede-07.jpg"
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "frame": 8,
+      "path": "public\\videos\\frames\\rotacao-externa-parede\\rotacao-externa-parede-08.jpg"
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "frame": 1,
+      "path": "public\\videos\\frames\\rotacao-toracica-sentada\\rotacao-toracica-sentada-01.jpg"
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "frame": 2,
+      "path": "public\\videos\\frames\\rotacao-toracica-sentada\\rotacao-toracica-sentada-02.jpg"
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "frame": 3,
+      "path": "public\\videos\\frames\\rotacao-toracica-sentada\\rotacao-toracica-sentada-03.jpg"
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "frame": 4,
+      "path": "public\\videos\\frames\\rotacao-toracica-sentada\\rotacao-toracica-sentada-04.jpg"
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "frame": 5,
+      "path": "public\\videos\\frames\\rotacao-toracica-sentada\\rotacao-toracica-sentada-05.jpg"
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "frame": 6,
+      "path": "public\\videos\\frames\\rotacao-toracica-sentada\\rotacao-toracica-sentada-06.jpg"
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "frame": 7,
+      "path": "public\\videos\\frames\\rotacao-toracica-sentada\\rotacao-toracica-sentada-07.jpg"
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "frame": 8,
+      "path": "public\\videos\\frames\\rotacao-toracica-sentada\\rotacao-toracica-sentada-08.jpg"
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\soleo-joelho-flexionado\\soleo-joelho-flexionado-01.jpg"
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\soleo-joelho-flexionado\\soleo-joelho-flexionado-02.jpg"
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\soleo-joelho-flexionado\\soleo-joelho-flexionado-03.jpg"
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\soleo-joelho-flexionado\\soleo-joelho-flexionado-04.jpg"
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\soleo-joelho-flexionado\\soleo-joelho-flexionado-05.jpg"
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\soleo-joelho-flexionado\\soleo-joelho-flexionado-06.jpg"
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\soleo-joelho-flexionado\\soleo-joelho-flexionado-07.jpg"
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\soleo-joelho-flexionado\\soleo-joelho-flexionado-08.jpg"
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "frame": 1,
+      "path": "public\\videos\\frames\\soltar-tensao-pescoco-ombros\\soltar-tensao-pescoco-ombros-01.jpg"
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "frame": 2,
+      "path": "public\\videos\\frames\\soltar-tensao-pescoco-ombros\\soltar-tensao-pescoco-ombros-02.jpg"
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "frame": 3,
+      "path": "public\\videos\\frames\\soltar-tensao-pescoco-ombros\\soltar-tensao-pescoco-ombros-03.jpg"
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "frame": 4,
+      "path": "public\\videos\\frames\\soltar-tensao-pescoco-ombros\\soltar-tensao-pescoco-ombros-04.jpg"
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "frame": 5,
+      "path": "public\\videos\\frames\\soltar-tensao-pescoco-ombros\\soltar-tensao-pescoco-ombros-05.jpg"
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "frame": 6,
+      "path": "public\\videos\\frames\\soltar-tensao-pescoco-ombros\\soltar-tensao-pescoco-ombros-06.jpg"
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "frame": 7,
+      "path": "public\\videos\\frames\\soltar-tensao-pescoco-ombros\\soltar-tensao-pescoco-ombros-07.jpg"
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "frame": 8,
+      "path": "public\\videos\\frames\\soltar-tensao-pescoco-ombros\\soltar-tensao-pescoco-ombros-08.jpg"
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "frame": 1,
+      "path": "public\\videos\\frames\\torcao-lombar-leve\\torcao-lombar-leve-01.jpg"
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "frame": 2,
+      "path": "public\\videos\\frames\\torcao-lombar-leve\\torcao-lombar-leve-02.jpg"
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "frame": 3,
+      "path": "public\\videos\\frames\\torcao-lombar-leve\\torcao-lombar-leve-03.jpg"
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "frame": 4,
+      "path": "public\\videos\\frames\\torcao-lombar-leve\\torcao-lombar-leve-04.jpg"
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "frame": 5,
+      "path": "public\\videos\\frames\\torcao-lombar-leve\\torcao-lombar-leve-05.jpg"
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "frame": 6,
+      "path": "public\\videos\\frames\\torcao-lombar-leve\\torcao-lombar-leve-06.jpg"
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "frame": 7,
+      "path": "public\\videos\\frames\\torcao-lombar-leve\\torcao-lombar-leve-07.jpg"
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "frame": 8,
+      "path": "public\\videos\\frames\\torcao-lombar-leve\\torcao-lombar-leve-08.jpg"
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "frame": 1,
+      "path": "public\\videos\\frames\\triceps-acima-cabeca\\triceps-acima-cabeca-01.jpg"
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "frame": 2,
+      "path": "public\\videos\\frames\\triceps-acima-cabeca\\triceps-acima-cabeca-02.jpg"
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "frame": 3,
+      "path": "public\\videos\\frames\\triceps-acima-cabeca\\triceps-acima-cabeca-03.jpg"
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "frame": 4,
+      "path": "public\\videos\\frames\\triceps-acima-cabeca\\triceps-acima-cabeca-04.jpg"
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "frame": 5,
+      "path": "public\\videos\\frames\\triceps-acima-cabeca\\triceps-acima-cabeca-05.jpg"
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "frame": 6,
+      "path": "public\\videos\\frames\\triceps-acima-cabeca\\triceps-acima-cabeca-06.jpg"
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "frame": 7,
+      "path": "public\\videos\\frames\\triceps-acima-cabeca\\triceps-acima-cabeca-07.jpg"
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "frame": 8,
+      "path": "public\\videos\\frames\\triceps-acima-cabeca\\triceps-acima-cabeca-08.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente-indoor\\missao-caminhada-consciente-indoor-01.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente-indoor\\missao-caminhada-consciente-indoor-02.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente-indoor\\missao-caminhada-consciente-indoor-03.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente-indoor\\missao-caminhada-consciente-indoor-04.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente-indoor\\missao-caminhada-consciente-indoor-05.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente-indoor\\missao-caminhada-consciente-indoor-06.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "frame": 7,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente-indoor\\missao-caminhada-consciente-indoor-07.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "frame": 8,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente-indoor\\missao-caminhada-consciente-indoor-08.jpg"
+    },
+    {
+      "slug": "missao-desafio-gentil-de-sono",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-desafio-gentil-de-sono\\missao-desafio-gentil-de-sono-01.jpg"
+    },
+    {
+      "slug": "missao-desafio-gentil-de-sono",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-desafio-gentil-de-sono\\missao-desafio-gentil-de-sono-02.jpg"
+    },
+    {
+      "slug": "missao-desafio-gentil-de-sono",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-desafio-gentil-de-sono\\missao-desafio-gentil-de-sono-03.jpg"
+    },
+    {
+      "slug": "missao-desafio-gentil-de-sono",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-desafio-gentil-de-sono\\missao-desafio-gentil-de-sono-04.jpg"
+    },
+    {
+      "slug": "missao-desafio-gentil-de-sono",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-desafio-gentil-de-sono\\missao-desafio-gentil-de-sono-05.jpg"
+    },
+    {
+      "slug": "missao-desafio-gentil-de-sono",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-desafio-gentil-de-sono\\missao-desafio-gentil-de-sono-06.jpg"
+    },
+    {
+      "slug": "missao-diario-de-descarrego-mental",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-diario-de-descarrego-mental\\missao-diario-de-descarrego-mental-01.jpg"
+    },
+    {
+      "slug": "missao-diario-de-descarrego-mental",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-diario-de-descarrego-mental\\missao-diario-de-descarrego-mental-02.jpg"
+    },
+    {
+      "slug": "missao-diario-de-descarrego-mental",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-diario-de-descarrego-mental\\missao-diario-de-descarrego-mental-03.jpg"
+    },
+    {
+      "slug": "missao-diario-de-descarrego-mental",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-diario-de-descarrego-mental\\missao-diario-de-descarrego-mental-04.jpg"
+    },
+    {
+      "slug": "missao-diario-de-descarrego-mental",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-diario-de-descarrego-mental\\missao-diario-de-descarrego-mental-05.jpg"
+    },
+    {
+      "slug": "missao-diario-de-descarrego-mental",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-diario-de-descarrego-mental\\missao-diario-de-descarrego-mental-06.jpg"
+    },
+    {
+      "slug": "missao-fechamento-do-dia",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-fechamento-do-dia\\missao-fechamento-do-dia-01.jpg"
+    },
+    {
+      "slug": "missao-fechamento-do-dia",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-fechamento-do-dia\\missao-fechamento-do-dia-02.jpg"
+    },
+    {
+      "slug": "missao-fechamento-do-dia",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-fechamento-do-dia\\missao-fechamento-do-dia-03.jpg"
+    },
+    {
+      "slug": "missao-fechamento-do-dia",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-fechamento-do-dia\\missao-fechamento-do-dia-04.jpg"
+    },
+    {
+      "slug": "missao-fechamento-do-dia",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-fechamento-do-dia\\missao-fechamento-do-dia-05.jpg"
+    },
+    {
+      "slug": "missao-fechamento-do-dia",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-fechamento-do-dia\\missao-fechamento-do-dia-06.jpg"
+    },
+    {
+      "slug": "missao-gratidao-rapida",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-gratidao-rapida\\missao-gratidao-rapida-01.jpg"
+    },
+    {
+      "slug": "missao-gratidao-rapida",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-gratidao-rapida\\missao-gratidao-rapida-02.jpg"
+    },
+    {
+      "slug": "missao-gratidao-rapida",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-gratidao-rapida\\missao-gratidao-rapida-03.jpg"
+    },
+    {
+      "slug": "missao-gratidao-rapida",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-gratidao-rapida\\missao-gratidao-rapida-04.jpg"
+    },
+    {
+      "slug": "missao-gratidao-rapida",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-gratidao-rapida\\missao-gratidao-rapida-05.jpg"
+    },
+    {
+      "slug": "missao-gratidao-rapida",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-gratidao-rapida\\missao-gratidao-rapida-06.jpg"
+    },
+    {
+      "slug": "missao-mapa-pessoal-do-agora",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-mapa-pessoal-do-agora\\missao-mapa-pessoal-do-agora-01.jpg"
+    },
+    {
+      "slug": "missao-mapa-pessoal-do-agora",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-mapa-pessoal-do-agora\\missao-mapa-pessoal-do-agora-02.jpg"
+    },
+    {
+      "slug": "missao-mapa-pessoal-do-agora",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-mapa-pessoal-do-agora\\missao-mapa-pessoal-do-agora-03.jpg"
+    },
+    {
+      "slug": "missao-mapa-pessoal-do-agora",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-mapa-pessoal-do-agora\\missao-mapa-pessoal-do-agora-04.jpg"
+    },
+    {
+      "slug": "missao-mapa-pessoal-do-agora",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-mapa-pessoal-do-agora\\missao-mapa-pessoal-do-agora-05.jpg"
+    },
+    {
+      "slug": "missao-mapa-pessoal-do-agora",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-mapa-pessoal-do-agora\\missao-mapa-pessoal-do-agora-06.jpg"
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-mobilidade-corpo-inteiro\\missao-mobilidade-corpo-inteiro-01.jpg"
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-mobilidade-corpo-inteiro\\missao-mobilidade-corpo-inteiro-02.jpg"
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-mobilidade-corpo-inteiro\\missao-mobilidade-corpo-inteiro-03.jpg"
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-mobilidade-corpo-inteiro\\missao-mobilidade-corpo-inteiro-04.jpg"
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-mobilidade-corpo-inteiro\\missao-mobilidade-corpo-inteiro-05.jpg"
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-mobilidade-corpo-inteiro\\missao-mobilidade-corpo-inteiro-06.jpg"
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "frame": 7,
+      "path": "public\\videos\\frames\\missao-mobilidade-corpo-inteiro\\missao-mobilidade-corpo-inteiro-07.jpg"
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "frame": 8,
+      "path": "public\\videos\\frames\\missao-mobilidade-corpo-inteiro\\missao-mobilidade-corpo-inteiro-08.jpg"
+    },
+    {
+      "slug": "missao-modo-reuniao-dificil",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-modo-reuniao-dificil\\missao-modo-reuniao-dificil-01.jpg"
+    },
+    {
+      "slug": "missao-modo-reuniao-dificil",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-modo-reuniao-dificil\\missao-modo-reuniao-dificil-02.jpg"
+    },
+    {
+      "slug": "missao-modo-reuniao-dificil",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-modo-reuniao-dificil\\missao-modo-reuniao-dificil-03.jpg"
+    },
+    {
+      "slug": "missao-modo-reuniao-dificil",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-modo-reuniao-dificil\\missao-modo-reuniao-dificil-04.jpg"
+    },
+    {
+      "slug": "missao-modo-reuniao-dificil",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-modo-reuniao-dificil\\missao-modo-reuniao-dificil-05.jpg"
+    },
+    {
+      "slug": "missao-modo-reuniao-dificil",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-modo-reuniao-dificil\\missao-modo-reuniao-dificil-06.jpg"
+    },
+    {
+      "slug": "missao-organizacao-de-5-minutos",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-organizacao-de-5-minutos\\missao-organizacao-de-5-minutos-01.jpg"
+    },
+    {
+      "slug": "missao-organizacao-de-5-minutos",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-organizacao-de-5-minutos\\missao-organizacao-de-5-minutos-02.jpg"
+    },
+    {
+      "slug": "missao-organizacao-de-5-minutos",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-organizacao-de-5-minutos\\missao-organizacao-de-5-minutos-03.jpg"
+    },
+    {
+      "slug": "missao-organizacao-de-5-minutos",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-organizacao-de-5-minutos\\missao-organizacao-de-5-minutos-04.jpg"
+    },
+    {
+      "slug": "missao-organizacao-de-5-minutos",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-organizacao-de-5-minutos\\missao-organizacao-de-5-minutos-05.jpg"
+    },
+    {
+      "slug": "missao-organizacao-de-5-minutos",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-organizacao-de-5-minutos\\missao-organizacao-de-5-minutos-06.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-ambiente",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-pausa-de-ambiente\\missao-pausa-de-ambiente-01.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-ambiente",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-pausa-de-ambiente\\missao-pausa-de-ambiente-02.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-ambiente",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-pausa-de-ambiente\\missao-pausa-de-ambiente-03.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-ambiente",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-pausa-de-ambiente\\missao-pausa-de-ambiente-04.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-ambiente",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-pausa-de-ambiente\\missao-pausa-de-ambiente-05.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-ambiente",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-pausa-de-ambiente\\missao-pausa-de-ambiente-06.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-foco",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-pausa-de-foco\\missao-pausa-de-foco-01.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-foco",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-pausa-de-foco\\missao-pausa-de-foco-02.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-foco",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-pausa-de-foco\\missao-pausa-de-foco-03.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-foco",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-pausa-de-foco\\missao-pausa-de-foco-04.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-foco",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-pausa-de-foco\\missao-pausa-de-foco-05.jpg"
+    },
+    {
+      "slug": "missao-pausa-de-foco",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-pausa-de-foco\\missao-pausa-de-foco-06.jpg"
+    },
+    {
+      "slug": "missao-planejamento-gentil-do-dia",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-planejamento-gentil-do-dia\\missao-planejamento-gentil-do-dia-01.jpg"
+    },
+    {
+      "slug": "missao-planejamento-gentil-do-dia",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-planejamento-gentil-do-dia\\missao-planejamento-gentil-do-dia-02.jpg"
+    },
+    {
+      "slug": "missao-planejamento-gentil-do-dia",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-planejamento-gentil-do-dia\\missao-planejamento-gentil-do-dia-03.jpg"
+    },
+    {
+      "slug": "missao-planejamento-gentil-do-dia",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-planejamento-gentil-do-dia\\missao-planejamento-gentil-do-dia-04.jpg"
+    },
+    {
+      "slug": "missao-planejamento-gentil-do-dia",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-planejamento-gentil-do-dia\\missao-planejamento-gentil-do-dia-05.jpg"
+    },
+    {
+      "slug": "missao-planejamento-gentil-do-dia",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-planejamento-gentil-do-dia\\missao-planejamento-gentil-do-dia-06.jpg"
+    },
+    {
+      "slug": "missao-reset-de-foco",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-reset-de-foco\\missao-reset-de-foco-01.jpg"
+    },
+    {
+      "slug": "missao-reset-de-foco",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-reset-de-foco\\missao-reset-de-foco-02.jpg"
+    },
+    {
+      "slug": "missao-reset-de-foco",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-reset-de-foco\\missao-reset-de-foco-03.jpg"
+    },
+    {
+      "slug": "missao-reset-de-foco",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-reset-de-foco\\missao-reset-de-foco-04.jpg"
+    },
+    {
+      "slug": "missao-reset-de-foco",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-reset-de-foco\\missao-reset-de-foco-05.jpg"
+    },
+    {
+      "slug": "missao-reset-de-foco",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-reset-de-foco\\missao-reset-de-foco-06.jpg"
+    },
+    {
+      "slug": "missao-ritual-de-sono-sem-tela",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-ritual-de-sono-sem-tela\\missao-ritual-de-sono-sem-tela-01.jpg"
+    },
+    {
+      "slug": "missao-ritual-de-sono-sem-tela",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-ritual-de-sono-sem-tela\\missao-ritual-de-sono-sem-tela-02.jpg"
+    },
+    {
+      "slug": "missao-ritual-de-sono-sem-tela",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-ritual-de-sono-sem-tela\\missao-ritual-de-sono-sem-tela-03.jpg"
+    },
+    {
+      "slug": "missao-ritual-de-sono-sem-tela",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-ritual-de-sono-sem-tela\\missao-ritual-de-sono-sem-tela-04.jpg"
+    },
+    {
+      "slug": "missao-ritual-de-sono-sem-tela",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-ritual-de-sono-sem-tela\\missao-ritual-de-sono-sem-tela-05.jpg"
+    },
+    {
+      "slug": "missao-ritual-de-sono-sem-tela",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-ritual-de-sono-sem-tela\\missao-ritual-de-sono-sem-tela-06.jpg"
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-treino-casa-calma\\missao-treino-casa-calma-01.jpg"
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-treino-casa-calma\\missao-treino-casa-calma-02.jpg"
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-treino-casa-calma\\missao-treino-casa-calma-03.jpg"
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-treino-casa-calma\\missao-treino-casa-calma-04.jpg"
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-treino-casa-calma\\missao-treino-casa-calma-05.jpg"
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-treino-casa-calma\\missao-treino-casa-calma-06.jpg"
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "frame": 7,
+      "path": "public\\videos\\frames\\missao-treino-casa-calma\\missao-treino-casa-calma-07.jpg"
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "frame": 8,
+      "path": "public\\videos\\frames\\missao-treino-casa-calma\\missao-treino-casa-calma-08.jpg"
+    },
+    {
+      "slug": "missao-trilha-voltar-ao-foco",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-trilha-voltar-ao-foco\\missao-trilha-voltar-ao-foco-01.jpg"
+    },
+    {
+      "slug": "missao-trilha-voltar-ao-foco",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-trilha-voltar-ao-foco\\missao-trilha-voltar-ao-foco-02.jpg"
+    },
+    {
+      "slug": "missao-trilha-voltar-ao-foco",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-trilha-voltar-ao-foco\\missao-trilha-voltar-ao-foco-03.jpg"
+    },
+    {
+      "slug": "missao-trilha-voltar-ao-foco",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-trilha-voltar-ao-foco\\missao-trilha-voltar-ao-foco-04.jpg"
+    },
+    {
+      "slug": "missao-trilha-voltar-ao-foco",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-trilha-voltar-ao-foco\\missao-trilha-voltar-ao-foco-05.jpg"
+    },
+    {
+      "slug": "missao-trilha-voltar-ao-foco",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-trilha-voltar-ao-foco\\missao-trilha-voltar-ao-foco-06.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-desacelerar\\missao-yoga-de-bolso-desacelerar-01.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-desacelerar\\missao-yoga-de-bolso-desacelerar-02.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-desacelerar\\missao-yoga-de-bolso-desacelerar-03.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-desacelerar\\missao-yoga-de-bolso-desacelerar-04.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-desacelerar\\missao-yoga-de-bolso-desacelerar-05.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-desacelerar\\missao-yoga-de-bolso-desacelerar-06.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "frame": 7,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-desacelerar\\missao-yoga-de-bolso-desacelerar-07.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "frame": 8,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-desacelerar\\missao-yoga-de-bolso-desacelerar-08.jpg"
+    }
+  ],
+  "skipped": [
+    {
+      "slug": "alongamento-leve",
+      "frame": 1,
+      "path": "public\\videos\\frames\\alongamento-leve\\alongamento-leve-01.jpg"
+    },
+    {
+      "slug": "alongamento-leve",
+      "frame": 2,
+      "path": "public\\videos\\frames\\alongamento-leve\\alongamento-leve-02.jpg"
+    },
+    {
+      "slug": "alongamento-leve",
+      "frame": 3,
+      "path": "public\\videos\\frames\\alongamento-leve\\alongamento-leve-03.jpg"
+    },
+    {
+      "slug": "alongamento-leve",
+      "frame": 4,
+      "path": "public\\videos\\frames\\alongamento-leve\\alongamento-leve-04.jpg"
+    },
+    {
+      "slug": "alongamento-leve",
+      "frame": 5,
+      "path": "public\\videos\\frames\\alongamento-leve\\alongamento-leve-05.jpg"
+    },
+    {
+      "slug": "alongamento-leve",
+      "frame": 6,
+      "path": "public\\videos\\frames\\alongamento-leve\\alongamento-leve-06.jpg"
+    },
+    {
+      "slug": "alongamento-leve",
+      "frame": 7,
+      "path": "public\\videos\\frames\\alongamento-leve\\alongamento-leve-07.jpg"
+    },
+    {
+      "slug": "alongamento-leve",
+      "frame": 8,
+      "path": "public\\videos\\frames\\alongamento-leve\\alongamento-leve-08.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 1,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-01.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 2,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-02.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 3,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-03.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 4,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-04.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 5,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-05.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 6,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-06.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 7,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-07.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 8,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-08.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 9,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-09.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 10,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-10.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 11,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-11.jpg"
+    },
+    {
+      "slug": "caminhada-consciente",
+      "frame": 12,
+      "path": "public\\videos\\frames\\caminhada-consciente\\caminhada-consciente-12.jpg"
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "frame": 1,
+      "path": "public\\videos\\frames\\mobilidade-de-coluna\\mobilidade-de-coluna-01.jpg"
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "frame": 2,
+      "path": "public\\videos\\frames\\mobilidade-de-coluna\\mobilidade-de-coluna-02.jpg"
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "frame": 3,
+      "path": "public\\videos\\frames\\mobilidade-de-coluna\\mobilidade-de-coluna-03.jpg"
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "frame": 4,
+      "path": "public\\videos\\frames\\mobilidade-de-coluna\\mobilidade-de-coluna-04.jpg"
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "frame": 5,
+      "path": "public\\videos\\frames\\mobilidade-de-coluna\\mobilidade-de-coluna-05.jpg"
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "frame": 6,
+      "path": "public\\videos\\frames\\mobilidade-de-coluna\\mobilidade-de-coluna-06.jpg"
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "frame": 7,
+      "path": "public\\videos\\frames\\mobilidade-de-coluna\\mobilidade-de-coluna-07.jpg"
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "frame": 8,
+      "path": "public\\videos\\frames\\mobilidade-de-coluna\\mobilidade-de-coluna-08.jpg"
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "frame": 1,
+      "path": "public\\videos\\frames\\pausa-sem-tela\\pausa-sem-tela-01.jpg"
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "frame": 2,
+      "path": "public\\videos\\frames\\pausa-sem-tela\\pausa-sem-tela-02.jpg"
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "frame": 3,
+      "path": "public\\videos\\frames\\pausa-sem-tela\\pausa-sem-tela-03.jpg"
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "frame": 4,
+      "path": "public\\videos\\frames\\pausa-sem-tela\\pausa-sem-tela-04.jpg"
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "frame": 5,
+      "path": "public\\videos\\frames\\pausa-sem-tela\\pausa-sem-tela-05.jpg"
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "frame": 6,
+      "path": "public\\videos\\frames\\pausa-sem-tela\\pausa-sem-tela-06.jpg"
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "frame": 7,
+      "path": "public\\videos\\frames\\pausa-sem-tela\\pausa-sem-tela-07.jpg"
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "frame": 8,
+      "path": "public\\videos\\frames\\pausa-sem-tela\\pausa-sem-tela-08.jpg"
+    },
+    {
+      "slug": "reset-postural",
+      "frame": 1,
+      "path": "public\\videos\\frames\\reset-postural\\reset-postural-01.jpg"
+    },
+    {
+      "slug": "reset-postural",
+      "frame": 2,
+      "path": "public\\videos\\frames\\reset-postural\\reset-postural-02.jpg"
+    },
+    {
+      "slug": "reset-postural",
+      "frame": 3,
+      "path": "public\\videos\\frames\\reset-postural\\reset-postural-03.jpg"
+    },
+    {
+      "slug": "reset-postural",
+      "frame": 4,
+      "path": "public\\videos\\frames\\reset-postural\\reset-postural-04.jpg"
+    },
+    {
+      "slug": "reset-postural",
+      "frame": 5,
+      "path": "public\\videos\\frames\\reset-postural\\reset-postural-05.jpg"
+    },
+    {
+      "slug": "reset-postural",
+      "frame": 6,
+      "path": "public\\videos\\frames\\reset-postural\\reset-postural-06.jpg"
+    },
+    {
+      "slug": "reset-postural",
+      "frame": 7,
+      "path": "public\\videos\\frames\\reset-postural\\reset-postural-07.jpg"
+    },
+    {
+      "slug": "reset-postural",
+      "frame": 8,
+      "path": "public\\videos\\frames\\reset-postural\\reset-postural-08.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 1,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-01.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 2,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-02.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 3,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-03.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 4,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-04.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 5,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-05.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 6,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-06.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 7,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-07.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 8,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-08.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 9,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-09.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 10,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-10.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 11,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-11.jpg"
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "frame": 12,
+      "path": "public\\videos\\frames\\yoga-bolso-coluna-leve\\yoga-bolso-coluna-leve-12.jpg"
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-alongamento-leve\\missao-alongamento-leve-01.jpg"
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-alongamento-leve\\missao-alongamento-leve-02.jpg"
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-alongamento-leve\\missao-alongamento-leve-03.jpg"
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-alongamento-leve\\missao-alongamento-leve-04.jpg"
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-alongamento-leve\\missao-alongamento-leve-05.jpg"
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-alongamento-leve\\missao-alongamento-leve-06.jpg"
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "frame": 7,
+      "path": "public\\videos\\frames\\missao-alongamento-leve\\missao-alongamento-leve-07.jpg"
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "frame": 8,
+      "path": "public\\videos\\frames\\missao-alongamento-leve\\missao-alongamento-leve-08.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente\\missao-caminhada-consciente-01.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente\\missao-caminhada-consciente-02.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente\\missao-caminhada-consciente-03.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente\\missao-caminhada-consciente-04.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente\\missao-caminhada-consciente-05.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente\\missao-caminhada-consciente-06.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "frame": 7,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente\\missao-caminhada-consciente-07.jpg"
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "frame": 8,
+      "path": "public\\videos\\frames\\missao-caminhada-consciente\\missao-caminhada-consciente-08.jpg"
+    },
+    {
+      "slug": "missao-pausa-sem-tela",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-pausa-sem-tela\\missao-pausa-sem-tela-01.jpg"
+    },
+    {
+      "slug": "missao-pausa-sem-tela",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-pausa-sem-tela\\missao-pausa-sem-tela-02.jpg"
+    },
+    {
+      "slug": "missao-pausa-sem-tela",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-pausa-sem-tela\\missao-pausa-sem-tela-03.jpg"
+    },
+    {
+      "slug": "missao-pausa-sem-tela",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-pausa-sem-tela\\missao-pausa-sem-tela-04.jpg"
+    },
+    {
+      "slug": "missao-pausa-sem-tela",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-pausa-sem-tela\\missao-pausa-sem-tela-05.jpg"
+    },
+    {
+      "slug": "missao-pausa-sem-tela",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-pausa-sem-tela\\missao-pausa-sem-tela-06.jpg"
+    },
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-respiracao-4-4-6\\missao-respiracao-4-4-6-04.jpg"
+    },
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-respiracao-4-4-6\\missao-respiracao-4-4-6-05.jpg"
+    },
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-respiracao-4-4-6\\missao-respiracao-4-4-6-06.jpg"
+    },
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "frame": 7,
+      "path": "public\\videos\\frames\\missao-respiracao-4-4-6\\missao-respiracao-4-4-6-07.jpg"
+    },
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "frame": 8,
+      "path": "public\\videos\\frames\\missao-respiracao-4-4-6\\missao-respiracao-4-4-6-08.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "frame": 1,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-coluna-leve\\missao-yoga-de-bolso-coluna-leve-01.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "frame": 2,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-coluna-leve\\missao-yoga-de-bolso-coluna-leve-02.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "frame": 3,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-coluna-leve\\missao-yoga-de-bolso-coluna-leve-03.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "frame": 4,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-coluna-leve\\missao-yoga-de-bolso-coluna-leve-04.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "frame": 5,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-coluna-leve\\missao-yoga-de-bolso-coluna-leve-05.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "frame": 6,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-coluna-leve\\missao-yoga-de-bolso-coluna-leve-06.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "frame": 7,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-coluna-leve\\missao-yoga-de-bolso-coluna-leve-07.jpg"
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "frame": 8,
+      "path": "public\\videos\\frames\\missao-yoga-de-bolso-coluna-leve\\missao-yoga-de-bolso-coluna-leve-08.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 1,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-01.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 2,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-02.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 3,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-03.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 4,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-04.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 5,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-05.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 6,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-06.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 7,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-07.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 8,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-08.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 9,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-09.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 10,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-10.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 11,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-11.jpg"
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "frame": 12,
+      "path": "public\\videos\\frames\\agachamento-leve-guiado\\agachamento-leve-guiado-12.jpg"
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "frame": 1,
+      "path": "public\\videos\\frames\\ativacao-leve-3-minutos\\ativacao-leve-3-minutos-01.jpg"
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "frame": 2,
+      "path": "public\\videos\\frames\\ativacao-leve-3-minutos\\ativacao-leve-3-minutos-02.jpg"
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "frame": 3,
+      "path": "public\\videos\\frames\\ativacao-leve-3-minutos\\ativacao-leve-3-minutos-03.jpg"
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "frame": 4,
+      "path": "public\\videos\\frames\\ativacao-leve-3-minutos\\ativacao-leve-3-minutos-04.jpg"
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "frame": 5,
+      "path": "public\\videos\\frames\\ativacao-leve-3-minutos\\ativacao-leve-3-minutos-05.jpg"
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "frame": 6,
+      "path": "public\\videos\\frames\\ativacao-leve-3-minutos\\ativacao-leve-3-minutos-06.jpg"
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "frame": 7,
+      "path": "public\\videos\\frames\\ativacao-leve-3-minutos\\ativacao-leve-3-minutos-07.jpg"
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "frame": 8,
+      "path": "public\\videos\\frames\\ativacao-leve-3-minutos\\ativacao-leve-3-minutos-08.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 1,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-01.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 2,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-02.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 3,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-03.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 4,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-04.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 5,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-05.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 6,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-06.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 7,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-07.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 8,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-08.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 9,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-09.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 10,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-10.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 11,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-11.jpg"
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "frame": 12,
+      "path": "public\\videos\\frames\\caminhada-consciente-curta\\caminhada-consciente-curta-12.jpg"
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "frame": 1,
+      "path": "public\\videos\\frames\\celular-longe-da-cama\\celular-longe-da-cama-01.jpg"
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "frame": 2,
+      "path": "public\\videos\\frames\\celular-longe-da-cama\\celular-longe-da-cama-02.jpg"
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "frame": 3,
+      "path": "public\\videos\\frames\\celular-longe-da-cama\\celular-longe-da-cama-03.jpg"
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "frame": 4,
+      "path": "public\\videos\\frames\\celular-longe-da-cama\\celular-longe-da-cama-04.jpg"
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "frame": 5,
+      "path": "public\\videos\\frames\\celular-longe-da-cama\\celular-longe-da-cama-05.jpg"
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "frame": 6,
+      "path": "public\\videos\\frames\\celular-longe-da-cama\\celular-longe-da-cama-06.jpg"
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "frame": 7,
+      "path": "public\\videos\\frames\\celular-longe-da-cama\\celular-longe-da-cama-07.jpg"
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "frame": 8,
+      "path": "public\\videos\\frames\\celular-longe-da-cama\\celular-longe-da-cama-08.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 1,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-01.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 2,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-02.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 3,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-03.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 4,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-04.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 5,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-05.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 6,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-06.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 7,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-07.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 8,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-08.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 9,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-09.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 10,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-10.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 11,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-11.jpg"
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "frame": 12,
+      "path": "public\\videos\\frames\\funcional-em-casa-iniciante\\funcional-em-casa-iniciante-12.jpg"
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "frame": 1,
+      "path": "public\\videos\\frames\\jumping-baixo-impacto\\jumping-baixo-impacto-01.jpg"
+    }
+  ]
+}

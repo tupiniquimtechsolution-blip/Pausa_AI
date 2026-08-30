@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-08T22:06:34.788Z",
+  "requested_videos": 1,
+  "rendered_count": 1,
+  "skipped_count": 0,
+  "motion_style": "zoompan_por_frame_30fps",
+  "rendered": [
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "output": "public\\videos\\funcional-em-casa-iniciante.mp4",
+      "frames": 12
+    }
+  ],
+  "skipped": []
+}

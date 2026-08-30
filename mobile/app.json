@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Pausa AI",
+    "slug": "pausa-ai-mobile",
+    "version": "0.1.6",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "pausaai",
+    "plugins": ["./plugins/with-android-cleartext"],
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F8FAFC"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "O Pausa AI usa o calendario apenas quando voce escolhe sincronizar uma tarefa.",
+        "NSRemindersUsageDescription": "O Pausa AI pode criar lembretes quando voce autorizar.",
+        "NSLocationWhenInUseUsageDescription": "O Pausa AI usa sua localizacao apenas quando voce inicia uma caminhada com GPS.",
+        "NSMotionUsageDescription": "O Pausa AI pode usar movimento e fitness quando voce autorizar recursos de atividade.",
+        "NSUserNotificationUsageDescription": "O Pausa AI usa notificacoes apenas para lembretes e alertas escolhidos por voce."
+      }
+    },
+    "android": {
+      "package": "com.pausaai.mobile",
+      "versionCode": 7,
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F8FAFC"
+      },
+      "permissions": [
+        "VIBRATE",
+        "POST_NOTIFICATIONS",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACTIVITY_RECOGNITION",
+        "READ_CALENDAR",
+        "WRITE_CALENDAR",
+        "SET_ALARM",
+        "SCHEDULE_EXACT_ALARM",
+        "android.permission.health.READ_HEART_RATE",
+        "android.permission.health.READ_SLEEP",
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.WRITE_EXERCISE"
+      ]
+    },
+    "extra": {
+      "defaultWebBaseUrl": "http://localhost:3000"
+    }
+  }
+}

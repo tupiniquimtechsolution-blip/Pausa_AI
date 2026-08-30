@@ -1,0 +1,46 @@
+node_modules/
+
+# Next.js and build outputs
+.next/
+.next-*/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# Environment and local data
+.env
+.env.local
+.env.*.local
+*.db
+*.db-journal
+*.sqlite
+*.sqlite-journal
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+.cache/
+.turbo/
+.vercel/
+
+# Local visual-asset caches
+public/instructional-images/
+.codex/asset-name-quarantine/
+
+# Expo / React Native / Android local artifacts
+.expo/
+.expo-shared/
+mobile/.expo/
+mobile/.tmp/
+mobile/android/.gradle/
+mobile/android/.kotlin/
+mobile/android/build/
+mobile/android/app/.cxx/
+mobile/android/app/build/
+*.keystore
+
+# Local APK distribution artifacts
+public/apk/*.apk

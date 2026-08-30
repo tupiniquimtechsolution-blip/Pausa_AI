@@ -1,0 +1,2798 @@
+{
+  "summary": {
+    "generated_at": "2026-06-10T10:24:26.347Z",
+    "total_videos": 138,
+    "total_required_frames": 1124,
+    "existing_premium_frames": 1124,
+    "missing_premium_frames": 0,
+    "frame_count_distribution": {
+      "6": 14,
+      "8": 112,
+      "12": 12
+    },
+    "ready_without_generation": 138,
+    "needs_generation": 0
+  },
+  "videos": [
+    {
+      "slug": "alongamento-leve",
+      "title": "Alongamento leve",
+      "video_url": "/videos/alongamento-leve.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-leve/alongamento-leve-01.jpg",
+        "/videos/frames/alongamento-leve/alongamento-leve-02.jpg",
+        "/videos/frames/alongamento-leve/alongamento-leve-03.jpg",
+        "/videos/frames/alongamento-leve/alongamento-leve-04.jpg",
+        "/videos/frames/alongamento-leve/alongamento-leve-05.jpg",
+        "/videos/frames/alongamento-leve/alongamento-leve-06.jpg",
+        "/videos/frames/alongamento-leve/alongamento-leve-07.jpg",
+        "/videos/frames/alongamento-leve/alongamento-leve-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "caminhada-consciente",
+      "title": "Caminhada consciente",
+      "video_url": "/videos/caminhada-consciente.mp4",
+      "duration_seconds": 210,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/caminhada-consciente/caminhada-consciente-01.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-02.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-03.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-04.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-05.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-06.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-07.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-08.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-09.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-10.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-11.jpg",
+        "/videos/frames/caminhada-consciente/caminhada-consciente-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "mobilidade-de-coluna",
+      "title": "Mobilidade de coluna",
+      "video_url": "/videos/mobilidade-de-coluna.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/mobilidade-de-coluna/mobilidade-de-coluna-01.jpg",
+        "/videos/frames/mobilidade-de-coluna/mobilidade-de-coluna-02.jpg",
+        "/videos/frames/mobilidade-de-coluna/mobilidade-de-coluna-03.jpg",
+        "/videos/frames/mobilidade-de-coluna/mobilidade-de-coluna-04.jpg",
+        "/videos/frames/mobilidade-de-coluna/mobilidade-de-coluna-05.jpg",
+        "/videos/frames/mobilidade-de-coluna/mobilidade-de-coluna-06.jpg",
+        "/videos/frames/mobilidade-de-coluna/mobilidade-de-coluna-07.jpg",
+        "/videos/frames/mobilidade-de-coluna/mobilidade-de-coluna-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "pausa-sem-tela",
+      "title": "Pausa sem tela",
+      "video_url": "/videos/pausa-sem-tela.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/pausa-sem-tela/pausa-sem-tela-01.jpg",
+        "/videos/frames/pausa-sem-tela/pausa-sem-tela-02.jpg",
+        "/videos/frames/pausa-sem-tela/pausa-sem-tela-03.jpg",
+        "/videos/frames/pausa-sem-tela/pausa-sem-tela-04.jpg",
+        "/videos/frames/pausa-sem-tela/pausa-sem-tela-05.jpg",
+        "/videos/frames/pausa-sem-tela/pausa-sem-tela-06.jpg",
+        "/videos/frames/pausa-sem-tela/pausa-sem-tela-07.jpg",
+        "/videos/frames/pausa-sem-tela/pausa-sem-tela-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "reset-postural",
+      "title": "Reset postural",
+      "video_url": "/videos/reset-postural.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/reset-postural/reset-postural-01.jpg",
+        "/videos/frames/reset-postural/reset-postural-02.jpg",
+        "/videos/frames/reset-postural/reset-postural-03.jpg",
+        "/videos/frames/reset-postural/reset-postural-04.jpg",
+        "/videos/frames/reset-postural/reset-postural-05.jpg",
+        "/videos/frames/reset-postural/reset-postural-06.jpg",
+        "/videos/frames/reset-postural/reset-postural-07.jpg",
+        "/videos/frames/reset-postural/reset-postural-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "yoga-bolso-coluna-leve",
+      "title": "Yoga de bolso: coluna leve",
+      "video_url": "/videos/yoga-bolso-coluna-leve.mp4",
+      "duration_seconds": 240,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-01.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-02.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-03.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-04.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-05.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-06.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-07.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-08.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-09.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-10.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-11.jpg",
+        "/videos/frames/yoga-bolso-coluna-leve/yoga-bolso-coluna-leve-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-alongamento-leve",
+      "title": "Alongamento leve",
+      "video_url": "/videos/missao-alongamento-leve.mp4",
+      "duration_seconds": 180,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-alongamento-leve/missao-alongamento-leve-01.jpg",
+        "/videos/frames/missao-alongamento-leve/missao-alongamento-leve-02.jpg",
+        "/videos/frames/missao-alongamento-leve/missao-alongamento-leve-03.jpg",
+        "/videos/frames/missao-alongamento-leve/missao-alongamento-leve-04.jpg",
+        "/videos/frames/missao-alongamento-leve/missao-alongamento-leve-05.jpg",
+        "/videos/frames/missao-alongamento-leve/missao-alongamento-leve-06.jpg",
+        "/videos/frames/missao-alongamento-leve/missao-alongamento-leve-07.jpg",
+        "/videos/frames/missao-alongamento-leve/missao-alongamento-leve-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-caminhada-consciente",
+      "title": "Caminhada consciente",
+      "video_url": "/videos/missao-caminhada-consciente.mp4",
+      "duration_seconds": 180,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-caminhada-consciente/missao-caminhada-consciente-01.jpg",
+        "/videos/frames/missao-caminhada-consciente/missao-caminhada-consciente-02.jpg",
+        "/videos/frames/missao-caminhada-consciente/missao-caminhada-consciente-03.jpg",
+        "/videos/frames/missao-caminhada-consciente/missao-caminhada-consciente-04.jpg",
+        "/videos/frames/missao-caminhada-consciente/missao-caminhada-consciente-05.jpg",
+        "/videos/frames/missao-caminhada-consciente/missao-caminhada-consciente-06.jpg",
+        "/videos/frames/missao-caminhada-consciente/missao-caminhada-consciente-07.jpg",
+        "/videos/frames/missao-caminhada-consciente/missao-caminhada-consciente-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-pausa-sem-tela",
+      "title": "Pausa sem tela",
+      "video_url": "/videos/missao-pausa-sem-tela.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-pausa-sem-tela/missao-pausa-sem-tela-01.jpg",
+        "/videos/frames/missao-pausa-sem-tela/missao-pausa-sem-tela-02.jpg",
+        "/videos/frames/missao-pausa-sem-tela/missao-pausa-sem-tela-03.jpg",
+        "/videos/frames/missao-pausa-sem-tela/missao-pausa-sem-tela-04.jpg",
+        "/videos/frames/missao-pausa-sem-tela/missao-pausa-sem-tela-05.jpg",
+        "/videos/frames/missao-pausa-sem-tela/missao-pausa-sem-tela-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-respiracao-4-4-6",
+      "title": "Respiracao 4-4-6",
+      "video_url": "/videos/missao-respiracao-4-4-6.mp4",
+      "duration_seconds": 240,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-respiracao-4-4-6/missao-respiracao-4-4-6-01.jpg",
+        "/videos/frames/missao-respiracao-4-4-6/missao-respiracao-4-4-6-02.jpg",
+        "/videos/frames/missao-respiracao-4-4-6/missao-respiracao-4-4-6-03.jpg",
+        "/videos/frames/missao-respiracao-4-4-6/missao-respiracao-4-4-6-04.jpg",
+        "/videos/frames/missao-respiracao-4-4-6/missao-respiracao-4-4-6-05.jpg",
+        "/videos/frames/missao-respiracao-4-4-6/missao-respiracao-4-4-6-06.jpg",
+        "/videos/frames/missao-respiracao-4-4-6/missao-respiracao-4-4-6-07.jpg",
+        "/videos/frames/missao-respiracao-4-4-6/missao-respiracao-4-4-6-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-yoga-de-bolso-coluna-leve",
+      "title": "Yoga de bolso: coluna leve",
+      "video_url": "/videos/missao-yoga-de-bolso-coluna-leve.mp4",
+      "duration_seconds": 240,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-yoga-de-bolso-coluna-leve/missao-yoga-de-bolso-coluna-leve-01.jpg",
+        "/videos/frames/missao-yoga-de-bolso-coluna-leve/missao-yoga-de-bolso-coluna-leve-02.jpg",
+        "/videos/frames/missao-yoga-de-bolso-coluna-leve/missao-yoga-de-bolso-coluna-leve-03.jpg",
+        "/videos/frames/missao-yoga-de-bolso-coluna-leve/missao-yoga-de-bolso-coluna-leve-04.jpg",
+        "/videos/frames/missao-yoga-de-bolso-coluna-leve/missao-yoga-de-bolso-coluna-leve-05.jpg",
+        "/videos/frames/missao-yoga-de-bolso-coluna-leve/missao-yoga-de-bolso-coluna-leve-06.jpg",
+        "/videos/frames/missao-yoga-de-bolso-coluna-leve/missao-yoga-de-bolso-coluna-leve-07.jpg",
+        "/videos/frames/missao-yoga-de-bolso-coluna-leve/missao-yoga-de-bolso-coluna-leve-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "agachamento-leve-guiado",
+      "title": "Agachamento leve guiado",
+      "video_url": "/videos/agachamento-leve-guiado.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-01.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-02.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-03.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-04.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-05.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-06.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-07.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-08.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-09.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-10.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-11.jpg",
+        "/videos/frames/agachamento-leve-guiado/agachamento-leve-guiado-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "ativacao-leve-3-minutos",
+      "title": "Ativacao leve de 3 minutos",
+      "video_url": "/videos/ativacao-leve-3-minutos.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/ativacao-leve-3-minutos/ativacao-leve-3-minutos-01.jpg",
+        "/videos/frames/ativacao-leve-3-minutos/ativacao-leve-3-minutos-02.jpg",
+        "/videos/frames/ativacao-leve-3-minutos/ativacao-leve-3-minutos-03.jpg",
+        "/videos/frames/ativacao-leve-3-minutos/ativacao-leve-3-minutos-04.jpg",
+        "/videos/frames/ativacao-leve-3-minutos/ativacao-leve-3-minutos-05.jpg",
+        "/videos/frames/ativacao-leve-3-minutos/ativacao-leve-3-minutos-06.jpg",
+        "/videos/frames/ativacao-leve-3-minutos/ativacao-leve-3-minutos-07.jpg",
+        "/videos/frames/ativacao-leve-3-minutos/ativacao-leve-3-minutos-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "caminhada-consciente-curta",
+      "title": "Caminhada consciente curta",
+      "video_url": "/videos/caminhada-consciente-curta.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-01.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-02.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-03.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-04.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-05.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-06.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-07.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-08.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-09.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-10.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-11.jpg",
+        "/videos/frames/caminhada-consciente-curta/caminhada-consciente-curta-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "celular-longe-da-cama",
+      "title": "Celular longe da cama",
+      "video_url": "/videos/celular-longe-da-cama.mp4",
+      "duration_seconds": 60,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/celular-longe-da-cama/celular-longe-da-cama-01.jpg",
+        "/videos/frames/celular-longe-da-cama/celular-longe-da-cama-02.jpg",
+        "/videos/frames/celular-longe-da-cama/celular-longe-da-cama-03.jpg",
+        "/videos/frames/celular-longe-da-cama/celular-longe-da-cama-04.jpg",
+        "/videos/frames/celular-longe-da-cama/celular-longe-da-cama-05.jpg",
+        "/videos/frames/celular-longe-da-cama/celular-longe-da-cama-06.jpg",
+        "/videos/frames/celular-longe-da-cama/celular-longe-da-cama-07.jpg",
+        "/videos/frames/celular-longe-da-cama/celular-longe-da-cama-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "funcional-em-casa-iniciante",
+      "title": "Funcional em casa iniciante",
+      "video_url": "/videos/funcional-em-casa-iniciante.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-01.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-02.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-03.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-04.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-05.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-06.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-07.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-08.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-09.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-10.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-11.jpg",
+        "/videos/frames/funcional-em-casa-iniciante/funcional-em-casa-iniciante-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "jumping-baixo-impacto",
+      "title": "Jumping baixo impacto",
+      "video_url": "/videos/jumping-baixo-impacto.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-01.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-02.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-03.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-04.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-05.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-06.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-07.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-08.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-09.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-10.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-11.jpg",
+        "/videos/frames/jumping-baixo-impacto/jumping-baixo-impacto-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "levantar-e-respirar",
+      "title": "Levantar e respirar",
+      "video_url": "/videos/levantar-e-respirar.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/levantar-e-respirar/levantar-e-respirar-01.jpg",
+        "/videos/frames/levantar-e-respirar/levantar-e-respirar-02.jpg",
+        "/videos/frames/levantar-e-respirar/levantar-e-respirar-03.jpg",
+        "/videos/frames/levantar-e-respirar/levantar-e-respirar-04.jpg",
+        "/videos/frames/levantar-e-respirar/levantar-e-respirar-05.jpg",
+        "/videos/frames/levantar-e-respirar/levantar-e-respirar-06.jpg",
+        "/videos/frames/levantar-e-respirar/levantar-e-respirar-07.jpg",
+        "/videos/frames/levantar-e-respirar/levantar-e-respirar-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "luta-sombra-leve",
+      "title": "Luta sombra leve",
+      "video_url": "/videos/luta-sombra-leve.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-01.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-02.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-03.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-04.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-05.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-06.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-07.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-08.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-09.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-10.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-11.jpg",
+        "/videos/frames/luta-sombra-leve/luta-sombra-leve-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "marcha-leve-parada",
+      "title": "Marcha leve parada",
+      "video_url": "/videos/marcha-leve-parada.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-01.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-02.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-03.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-04.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-05.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-06.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-07.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-08.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-09.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-10.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-11.jpg",
+        "/videos/frames/marcha-leve-parada/marcha-leve-parada-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "mobilidade-pescoco-ombros",
+      "title": "Mobilidade de pescoco e ombros",
+      "video_url": "/videos/mobilidade-pescoco-ombros.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/mobilidade-pescoco-ombros/mobilidade-pescoco-ombros-01.jpg",
+        "/videos/frames/mobilidade-pescoco-ombros/mobilidade-pescoco-ombros-02.jpg",
+        "/videos/frames/mobilidade-pescoco-ombros/mobilidade-pescoco-ombros-03.jpg",
+        "/videos/frames/mobilidade-pescoco-ombros/mobilidade-pescoco-ombros-04.jpg",
+        "/videos/frames/mobilidade-pescoco-ombros/mobilidade-pescoco-ombros-05.jpg",
+        "/videos/frames/mobilidade-pescoco-ombros/mobilidade-pescoco-ombros-06.jpg",
+        "/videos/frames/mobilidade-pescoco-ombros/mobilidade-pescoco-ombros-07.jpg",
+        "/videos/frames/mobilidade-pescoco-ombros/mobilidade-pescoco-ombros-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "mobilidade-rapida-coluna",
+      "title": "Mobilidade rapida para coluna",
+      "video_url": "/videos/mobilidade-rapida-coluna.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/mobilidade-rapida-coluna/mobilidade-rapida-coluna-01.jpg",
+        "/videos/frames/mobilidade-rapida-coluna/mobilidade-rapida-coluna-02.jpg",
+        "/videos/frames/mobilidade-rapida-coluna/mobilidade-rapida-coluna-03.jpg",
+        "/videos/frames/mobilidade-rapida-coluna/mobilidade-rapida-coluna-04.jpg",
+        "/videos/frames/mobilidade-rapida-coluna/mobilidade-rapida-coluna-05.jpg",
+        "/videos/frames/mobilidade-rapida-coluna/mobilidade-rapida-coluna-06.jpg",
+        "/videos/frames/mobilidade-rapida-coluna/mobilidade-rapida-coluna-07.jpg",
+        "/videos/frames/mobilidade-rapida-coluna/mobilidade-rapida-coluna-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "pausa-consciente-trabalho",
+      "title": "Pausa consciente no trabalho",
+      "video_url": "/videos/pausa-consciente-trabalho.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/pausa-consciente-trabalho/pausa-consciente-trabalho-01.jpg",
+        "/videos/frames/pausa-consciente-trabalho/pausa-consciente-trabalho-02.jpg",
+        "/videos/frames/pausa-consciente-trabalho/pausa-consciente-trabalho-03.jpg",
+        "/videos/frames/pausa-consciente-trabalho/pausa-consciente-trabalho-04.jpg",
+        "/videos/frames/pausa-consciente-trabalho/pausa-consciente-trabalho-05.jpg",
+        "/videos/frames/pausa-consciente-trabalho/pausa-consciente-trabalho-06.jpg",
+        "/videos/frames/pausa-consciente-trabalho/pausa-consciente-trabalho-07.jpg",
+        "/videos/frames/pausa-consciente-trabalho/pausa-consciente-trabalho-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "pausa-de-energia",
+      "title": "Pausa de energia",
+      "video_url": "/videos/pausa-de-energia.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/pausa-de-energia/pausa-de-energia-01.jpg",
+        "/videos/frames/pausa-de-energia/pausa-de-energia-02.jpg",
+        "/videos/frames/pausa-de-energia/pausa-de-energia-03.jpg",
+        "/videos/frames/pausa-de-energia/pausa-de-energia-04.jpg",
+        "/videos/frames/pausa-de-energia/pausa-de-energia-05.jpg",
+        "/videos/frames/pausa-de-energia/pausa-de-energia-06.jpg",
+        "/videos/frames/pausa-de-energia/pausa-de-energia-07.jpg",
+        "/videos/frames/pausa-de-energia/pausa-de-energia-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "pausa-foco-sem-impacto",
+      "title": "Pausa de foco sem impacto",
+      "video_url": "/videos/pausa-foco-sem-impacto.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/pausa-foco-sem-impacto/pausa-foco-sem-impacto-01.jpg",
+        "/videos/frames/pausa-foco-sem-impacto/pausa-foco-sem-impacto-02.jpg",
+        "/videos/frames/pausa-foco-sem-impacto/pausa-foco-sem-impacto-03.jpg",
+        "/videos/frames/pausa-foco-sem-impacto/pausa-foco-sem-impacto-04.jpg",
+        "/videos/frames/pausa-foco-sem-impacto/pausa-foco-sem-impacto-05.jpg",
+        "/videos/frames/pausa-foco-sem-impacto/pausa-foco-sem-impacto-06.jpg",
+        "/videos/frames/pausa-foco-sem-impacto/pausa-foco-sem-impacto-07.jpg",
+        "/videos/frames/pausa-foco-sem-impacto/pausa-foco-sem-impacto-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "pular-corda-iniciante",
+      "title": "Pular corda iniciante",
+      "video_url": "/videos/pular-corda-iniciante.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-01.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-02.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-03.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-04.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-05.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-06.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-07.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-08.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-09.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-10.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-11.jpg",
+        "/videos/frames/pular-corda-iniciante/pular-corda-iniciante-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "reset-corporal-trabalho",
+      "title": "Reset corporal no trabalho",
+      "video_url": "/videos/reset-corporal-trabalho.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/reset-corporal-trabalho/reset-corporal-trabalho-01.jpg",
+        "/videos/frames/reset-corporal-trabalho/reset-corporal-trabalho-02.jpg",
+        "/videos/frames/reset-corporal-trabalho/reset-corporal-trabalho-03.jpg",
+        "/videos/frames/reset-corporal-trabalho/reset-corporal-trabalho-04.jpg",
+        "/videos/frames/reset-corporal-trabalho/reset-corporal-trabalho-05.jpg",
+        "/videos/frames/reset-corporal-trabalho/reset-corporal-trabalho-06.jpg",
+        "/videos/frames/reset-corporal-trabalho/reset-corporal-trabalho-07.jpg",
+        "/videos/frames/reset-corporal-trabalho/reset-corporal-trabalho-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "reset-de-foco",
+      "title": "Reset de foco",
+      "video_url": "/videos/reset-de-foco.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/reset-de-foco/reset-de-foco-01.jpg",
+        "/videos/frames/reset-de-foco/reset-de-foco-02.jpg",
+        "/videos/frames/reset-de-foco/reset-de-foco-03.jpg",
+        "/videos/frames/reset-de-foco/reset-de-foco-04.jpg",
+        "/videos/frames/reset-de-foco/reset-de-foco-05.jpg",
+        "/videos/frames/reset-de-foco/reset-de-foco-06.jpg",
+        "/videos/frames/reset-de-foco/reset-de-foco-07.jpg",
+        "/videos/frames/reset-de-foco/reset-de-foco-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "respiracao-mobilidade",
+      "title": "Respiracao + mobilidade",
+      "video_url": "/videos/respiracao-mobilidade.mp4",
+      "duration_seconds": 150,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/respiracao-mobilidade/respiracao-mobilidade-01.jpg",
+        "/videos/frames/respiracao-mobilidade/respiracao-mobilidade-02.jpg",
+        "/videos/frames/respiracao-mobilidade/respiracao-mobilidade-03.jpg",
+        "/videos/frames/respiracao-mobilidade/respiracao-mobilidade-04.jpg",
+        "/videos/frames/respiracao-mobilidade/respiracao-mobilidade-05.jpg",
+        "/videos/frames/respiracao-mobilidade/respiracao-mobilidade-06.jpg",
+        "/videos/frames/respiracao-mobilidade/respiracao-mobilidade-07.jpg",
+        "/videos/frames/respiracao-mobilidade/respiracao-mobilidade-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "uma-tarefa-apenas",
+      "title": "Uma tarefa apenas",
+      "video_url": "/videos/uma-tarefa-apenas.mp4",
+      "duration_seconds": 120,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/uma-tarefa-apenas/uma-tarefa-apenas-01.jpg",
+        "/videos/frames/uma-tarefa-apenas/uma-tarefa-apenas-02.jpg",
+        "/videos/frames/uma-tarefa-apenas/uma-tarefa-apenas-03.jpg",
+        "/videos/frames/uma-tarefa-apenas/uma-tarefa-apenas-04.jpg",
+        "/videos/frames/uma-tarefa-apenas/uma-tarefa-apenas-05.jpg",
+        "/videos/frames/uma-tarefa-apenas/uma-tarefa-apenas-06.jpg",
+        "/videos/frames/uma-tarefa-apenas/uma-tarefa-apenas-07.jpg",
+        "/videos/frames/uma-tarefa-apenas/uma-tarefa-apenas-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "yoga-bolso-pausa-no-chao",
+      "title": "Yoga de bolso: pausa no chao",
+      "video_url": "/videos/yoga-bolso-pausa-no-chao.mp4",
+      "duration_seconds": 240,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-01.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-02.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-03.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-04.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-05.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-06.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-07.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-08.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-09.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-10.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-11.jpg",
+        "/videos/frames/yoga-bolso-pausa-no-chao/yoga-bolso-pausa-no-chao-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "yoga-energia-leve",
+      "title": "Yoga de energia leve",
+      "video_url": "/videos/yoga-energia-leve.mp4",
+      "duration_seconds": 240,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-01.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-02.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-03.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-04.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-05.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-06.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-07.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-08.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-09.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-10.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-11.jpg",
+        "/videos/frames/yoga-energia-leve/yoga-energia-leve-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "yoga-leve",
+      "title": "Yoga leve",
+      "video_url": "/videos/yoga-leve.mp4",
+      "duration_seconds": 240,
+      "required_frame_count": 12,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/yoga-leve/yoga-leve-01.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-02.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-03.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-04.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-05.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-06.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-07.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-08.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-09.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-10.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-11.jpg",
+        "/videos/frames/yoga-leve/yoga-leve-12.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "noventa-noventa",
+      "title": "90/90 de quadril",
+      "video_url": "/videos/noventa-noventa.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/noventa-noventa/noventa-noventa-01.jpg",
+        "/videos/frames/noventa-noventa/noventa-noventa-02.jpg",
+        "/videos/frames/noventa-noventa/noventa-noventa-03.jpg",
+        "/videos/frames/noventa-noventa/noventa-noventa-04.jpg",
+        "/videos/frames/noventa-noventa/noventa-noventa-05.jpg",
+        "/videos/frames/noventa-noventa/noventa-noventa-06.jpg",
+        "/videos/frames/noventa-noventa/noventa-noventa-07.jpg",
+        "/videos/frames/noventa-noventa/noventa-noventa-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "abertura-peito-porta",
+      "title": "Abertura de peito na porta",
+      "video_url": "/videos/abertura-peito-porta.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/abertura-peito-porta/abertura-peito-porta-01.jpg",
+        "/videos/frames/abertura-peito-porta/abertura-peito-porta-02.jpg",
+        "/videos/frames/abertura-peito-porta/abertura-peito-porta-03.jpg",
+        "/videos/frames/abertura-peito-porta/abertura-peito-porta-04.jpg",
+        "/videos/frames/abertura-peito-porta/abertura-peito-porta-05.jpg",
+        "/videos/frames/abertura-peito-porta/abertura-peito-porta-06.jpg",
+        "/videos/frames/abertura-peito-porta/abertura-peito-porta-07.jpg",
+        "/videos/frames/abertura-peito-porta/abertura-peito-porta-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "abertura-quadril-sentado",
+      "title": "Abertura de quadril sentado",
+      "video_url": "/videos/abertura-quadril-sentado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/abertura-quadril-sentado/abertura-quadril-sentado-01.jpg",
+        "/videos/frames/abertura-quadril-sentado/abertura-quadril-sentado-02.jpg",
+        "/videos/frames/abertura-quadril-sentado/abertura-quadril-sentado-03.jpg",
+        "/videos/frames/abertura-quadril-sentado/abertura-quadril-sentado-04.jpg",
+        "/videos/frames/abertura-quadril-sentado/abertura-quadril-sentado-05.jpg",
+        "/videos/frames/abertura-quadril-sentado/abertura-quadril-sentado-06.jpg",
+        "/videos/frames/abertura-quadril-sentado/abertura-quadril-sentado-07.jpg",
+        "/videos/frames/abertura-quadril-sentado/abertura-quadril-sentado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "abertura-dedos",
+      "title": "Abertura dos dedos",
+      "video_url": "/videos/abertura-dedos.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/abertura-dedos/abertura-dedos-01.jpg",
+        "/videos/frames/abertura-dedos/abertura-dedos-02.jpg",
+        "/videos/frames/abertura-dedos/abertura-dedos-03.jpg",
+        "/videos/frames/abertura-dedos/abertura-dedos-04.jpg",
+        "/videos/frames/abertura-dedos/abertura-dedos-05.jpg",
+        "/videos/frames/abertura-dedos/abertura-dedos-06.jpg",
+        "/videos/frames/abertura-dedos/abertura-dedos-07.jpg",
+        "/videos/frames/abertura-dedos/abertura-dedos-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "abertura-dedos-pe",
+      "title": "Abertura dos dedos do pe",
+      "video_url": "/videos/abertura-dedos-pe.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/abertura-dedos-pe/abertura-dedos-pe-01.jpg",
+        "/videos/frames/abertura-dedos-pe/abertura-dedos-pe-02.jpg",
+        "/videos/frames/abertura-dedos-pe/abertura-dedos-pe-03.jpg",
+        "/videos/frames/abertura-dedos-pe/abertura-dedos-pe-04.jpg",
+        "/videos/frames/abertura-dedos-pe/abertura-dedos-pe-05.jpg",
+        "/videos/frames/abertura-dedos-pe/abertura-dedos-pe-06.jpg",
+        "/videos/frames/abertura-dedos-pe/abertura-dedos-pe-07.jpg",
+        "/videos/frames/abertura-dedos-pe/abertura-dedos-pe-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "abraco-escapulas",
+      "title": "Abraco das escapulas",
+      "video_url": "/videos/abraco-escapulas.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/abraco-escapulas/abraco-escapulas-01.jpg",
+        "/videos/frames/abraco-escapulas/abraco-escapulas-02.jpg",
+        "/videos/frames/abraco-escapulas/abraco-escapulas-03.jpg",
+        "/videos/frames/abraco-escapulas/abraco-escapulas-04.jpg",
+        "/videos/frames/abraco-escapulas/abraco-escapulas-05.jpg",
+        "/videos/frames/abraco-escapulas/abraco-escapulas-06.jpg",
+        "/videos/frames/abraco-escapulas/abraco-escapulas-07.jpg",
+        "/videos/frames/abraco-escapulas/abraco-escapulas-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alcance-lateral-toracico",
+      "title": "Alcance lateral toracico",
+      "video_url": "/videos/alcance-lateral-toracico.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alcance-lateral-toracico/alcance-lateral-toracico-01.jpg",
+        "/videos/frames/alcance-lateral-toracico/alcance-lateral-toracico-02.jpg",
+        "/videos/frames/alcance-lateral-toracico/alcance-lateral-toracico-03.jpg",
+        "/videos/frames/alcance-lateral-toracico/alcance-lateral-toracico-04.jpg",
+        "/videos/frames/alcance-lateral-toracico/alcance-lateral-toracico-05.jpg",
+        "/videos/frames/alcance-lateral-toracico/alcance-lateral-toracico-06.jpg",
+        "/videos/frames/alcance-lateral-toracico/alcance-lateral-toracico-07.jpg",
+        "/videos/frames/alcance-lateral-toracico/alcance-lateral-toracico-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alfabeto-tornozelo",
+      "title": "Alfabeto com tornozelo",
+      "video_url": "/videos/alfabeto-tornozelo.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alfabeto-tornozelo/alfabeto-tornozelo-01.jpg",
+        "/videos/frames/alfabeto-tornozelo/alfabeto-tornozelo-02.jpg",
+        "/videos/frames/alfabeto-tornozelo/alfabeto-tornozelo-03.jpg",
+        "/videos/frames/alfabeto-tornozelo/alfabeto-tornozelo-04.jpg",
+        "/videos/frames/alfabeto-tornozelo/alfabeto-tornozelo-05.jpg",
+        "/videos/frames/alfabeto-tornozelo/alfabeto-tornozelo-06.jpg",
+        "/videos/frames/alfabeto-tornozelo/alfabeto-tornozelo-07.jpg",
+        "/videos/frames/alfabeto-tornozelo/alfabeto-tornozelo-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-frente-tornozelo",
+      "title": "Alongamento da frente do tornozelo",
+      "video_url": "/videos/alongamento-frente-tornozelo.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-frente-tornozelo/alongamento-frente-tornozelo-01.jpg",
+        "/videos/frames/alongamento-frente-tornozelo/alongamento-frente-tornozelo-02.jpg",
+        "/videos/frames/alongamento-frente-tornozelo/alongamento-frente-tornozelo-03.jpg",
+        "/videos/frames/alongamento-frente-tornozelo/alongamento-frente-tornozelo-04.jpg",
+        "/videos/frames/alongamento-frente-tornozelo/alongamento-frente-tornozelo-05.jpg",
+        "/videos/frames/alongamento-frente-tornozelo/alongamento-frente-tornozelo-06.jpg",
+        "/videos/frames/alongamento-frente-tornozelo/alongamento-frente-tornozelo-07.jpg",
+        "/videos/frames/alongamento-frente-tornozelo/alongamento-frente-tornozelo-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-biceps-parede",
+      "title": "Alongamento de biceps na parede",
+      "video_url": "/videos/alongamento-biceps-parede.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-biceps-parede/alongamento-biceps-parede-01.jpg",
+        "/videos/frames/alongamento-biceps-parede/alongamento-biceps-parede-02.jpg",
+        "/videos/frames/alongamento-biceps-parede/alongamento-biceps-parede-03.jpg",
+        "/videos/frames/alongamento-biceps-parede/alongamento-biceps-parede-04.jpg",
+        "/videos/frames/alongamento-biceps-parede/alongamento-biceps-parede-05.jpg",
+        "/videos/frames/alongamento-biceps-parede/alongamento-biceps-parede-06.jpg",
+        "/videos/frames/alongamento-biceps-parede/alongamento-biceps-parede-07.jpg",
+        "/videos/frames/alongamento-biceps-parede/alongamento-biceps-parede-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-de-pernas",
+      "title": "Alongamento de pernas",
+      "video_url": "/videos/alongamento-de-pernas.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-de-pernas/alongamento-de-pernas-01.jpg",
+        "/videos/frames/alongamento-de-pernas/alongamento-de-pernas-02.jpg",
+        "/videos/frames/alongamento-de-pernas/alongamento-de-pernas-03.jpg",
+        "/videos/frames/alongamento-de-pernas/alongamento-de-pernas-04.jpg",
+        "/videos/frames/alongamento-de-pernas/alongamento-de-pernas-05.jpg",
+        "/videos/frames/alongamento-de-pernas/alongamento-de-pernas-06.jpg",
+        "/videos/frames/alongamento-de-pernas/alongamento-de-pernas-07.jpg",
+        "/videos/frames/alongamento-de-pernas/alongamento-de-pernas-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-braquiorradial",
+      "title": "Alongamento do braquiorradial",
+      "video_url": "/videos/alongamento-braquiorradial.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-braquiorradial/alongamento-braquiorradial-01.jpg",
+        "/videos/frames/alongamento-braquiorradial/alongamento-braquiorradial-02.jpg",
+        "/videos/frames/alongamento-braquiorradial/alongamento-braquiorradial-03.jpg",
+        "/videos/frames/alongamento-braquiorradial/alongamento-braquiorradial-04.jpg",
+        "/videos/frames/alongamento-braquiorradial/alongamento-braquiorradial-05.jpg",
+        "/videos/frames/alongamento-braquiorradial/alongamento-braquiorradial-06.jpg",
+        "/videos/frames/alongamento-braquiorradial/alongamento-braquiorradial-07.jpg",
+        "/videos/frames/alongamento-braquiorradial/alongamento-braquiorradial-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "elevador-escapula",
+      "title": "Alongamento do elevador da escapula",
+      "video_url": "/videos/elevador-escapula.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/elevador-escapula/elevador-escapula-01.jpg",
+        "/videos/frames/elevador-escapula/elevador-escapula-02.jpg",
+        "/videos/frames/elevador-escapula/elevador-escapula-03.jpg",
+        "/videos/frames/elevador-escapula/elevador-escapula-04.jpg",
+        "/videos/frames/elevador-escapula/elevador-escapula-05.jpg",
+        "/videos/frames/elevador-escapula/elevador-escapula-06.jpg",
+        "/videos/frames/elevador-escapula/elevador-escapula-07.jpg",
+        "/videos/frames/elevador-escapula/elevador-escapula-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-polegar",
+      "title": "Alongamento do polegar",
+      "video_url": "/videos/alongamento-polegar.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-polegar/alongamento-polegar-01.jpg",
+        "/videos/frames/alongamento-polegar/alongamento-polegar-02.jpg",
+        "/videos/frames/alongamento-polegar/alongamento-polegar-03.jpg",
+        "/videos/frames/alongamento-polegar/alongamento-polegar-04.jpg",
+        "/videos/frames/alongamento-polegar/alongamento-polegar-05.jpg",
+        "/videos/frames/alongamento-polegar/alongamento-polegar-06.jpg",
+        "/videos/frames/alongamento-polegar/alongamento-polegar-07.jpg",
+        "/videos/frames/alongamento-polegar/alongamento-polegar-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-pronadores",
+      "title": "Alongamento dos pronadores",
+      "video_url": "/videos/alongamento-pronadores.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-pronadores/alongamento-pronadores-01.jpg",
+        "/videos/frames/alongamento-pronadores/alongamento-pronadores-02.jpg",
+        "/videos/frames/alongamento-pronadores/alongamento-pronadores-03.jpg",
+        "/videos/frames/alongamento-pronadores/alongamento-pronadores-04.jpg",
+        "/videos/frames/alongamento-pronadores/alongamento-pronadores-05.jpg",
+        "/videos/frames/alongamento-pronadores/alongamento-pronadores-06.jpg",
+        "/videos/frames/alongamento-pronadores/alongamento-pronadores-07.jpg",
+        "/videos/frames/alongamento-pronadores/alongamento-pronadores-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-supinadores",
+      "title": "Alongamento dos supinadores",
+      "video_url": "/videos/alongamento-supinadores.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-supinadores/alongamento-supinadores-01.jpg",
+        "/videos/frames/alongamento-supinadores/alongamento-supinadores-02.jpg",
+        "/videos/frames/alongamento-supinadores/alongamento-supinadores-03.jpg",
+        "/videos/frames/alongamento-supinadores/alongamento-supinadores-04.jpg",
+        "/videos/frames/alongamento-supinadores/alongamento-supinadores-05.jpg",
+        "/videos/frames/alongamento-supinadores/alongamento-supinadores-06.jpg",
+        "/videos/frames/alongamento-supinadores/alongamento-supinadores-07.jpg",
+        "/videos/frames/alongamento-supinadores/alongamento-supinadores-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-lateral-tronco",
+      "title": "Alongamento lateral do tronco",
+      "video_url": "/videos/alongamento-lateral-tronco.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-lateral-tronco/alongamento-lateral-tronco-01.jpg",
+        "/videos/frames/alongamento-lateral-tronco/alongamento-lateral-tronco-02.jpg",
+        "/videos/frames/alongamento-lateral-tronco/alongamento-lateral-tronco-03.jpg",
+        "/videos/frames/alongamento-lateral-tronco/alongamento-lateral-tronco-04.jpg",
+        "/videos/frames/alongamento-lateral-tronco/alongamento-lateral-tronco-05.jpg",
+        "/videos/frames/alongamento-lateral-tronco/alongamento-lateral-tronco-06.jpg",
+        "/videos/frames/alongamento-lateral-tronco/alongamento-lateral-tronco-07.jpg",
+        "/videos/frames/alongamento-lateral-tronco/alongamento-lateral-tronco-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-leve-pernas",
+      "title": "Alongamento leve de pernas",
+      "video_url": "/videos/alongamento-leve-pernas.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-leve-pernas/alongamento-leve-pernas-01.jpg",
+        "/videos/frames/alongamento-leve-pernas/alongamento-leve-pernas-02.jpg",
+        "/videos/frames/alongamento-leve-pernas/alongamento-leve-pernas-03.jpg",
+        "/videos/frames/alongamento-leve-pernas/alongamento-leve-pernas-04.jpg",
+        "/videos/frames/alongamento-leve-pernas/alongamento-leve-pernas-05.jpg",
+        "/videos/frames/alongamento-leve-pernas/alongamento-leve-pernas-06.jpg",
+        "/videos/frames/alongamento-leve-pernas/alongamento-leve-pernas-07.jpg",
+        "/videos/frames/alongamento-leve-pernas/alongamento-leve-pernas-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "capsula-posterior-ombro",
+      "title": "Alongamento posterior do ombro",
+      "video_url": "/videos/capsula-posterior-ombro.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/capsula-posterior-ombro/capsula-posterior-ombro-01.jpg",
+        "/videos/frames/capsula-posterior-ombro/capsula-posterior-ombro-02.jpg",
+        "/videos/frames/capsula-posterior-ombro/capsula-posterior-ombro-03.jpg",
+        "/videos/frames/capsula-posterior-ombro/capsula-posterior-ombro-04.jpg",
+        "/videos/frames/capsula-posterior-ombro/capsula-posterior-ombro-05.jpg",
+        "/videos/frames/capsula-posterior-ombro/capsula-posterior-ombro-06.jpg",
+        "/videos/frames/capsula-posterior-ombro/capsula-posterior-ombro-07.jpg",
+        "/videos/frames/capsula-posterior-ombro/capsula-posterior-ombro-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "joelho-no-chao-anterior",
+      "title": "Anterior de coxa com joelho no chao",
+      "video_url": "/videos/joelho-no-chao-anterior.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/joelho-no-chao-anterior/joelho-no-chao-anterior-01.jpg",
+        "/videos/frames/joelho-no-chao-anterior/joelho-no-chao-anterior-02.jpg",
+        "/videos/frames/joelho-no-chao-anterior/joelho-no-chao-anterior-03.jpg",
+        "/videos/frames/joelho-no-chao-anterior/joelho-no-chao-anterior-04.jpg",
+        "/videos/frames/joelho-no-chao-anterior/joelho-no-chao-anterior-05.jpg",
+        "/videos/frames/joelho-no-chao-anterior/joelho-no-chao-anterior-06.jpg",
+        "/videos/frames/joelho-no-chao-anterior/joelho-no-chao-anterior-07.jpg",
+        "/videos/frames/joelho-no-chao-anterior/joelho-no-chao-anterior-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "anterior-coxa-cadeira",
+      "title": "Anterior de coxa na cadeira",
+      "video_url": "/videos/anterior-coxa-cadeira.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/anterior-coxa-cadeira/anterior-coxa-cadeira-01.jpg",
+        "/videos/frames/anterior-coxa-cadeira/anterior-coxa-cadeira-02.jpg",
+        "/videos/frames/anterior-coxa-cadeira/anterior-coxa-cadeira-03.jpg",
+        "/videos/frames/anterior-coxa-cadeira/anterior-coxa-cadeira-04.jpg",
+        "/videos/frames/anterior-coxa-cadeira/anterior-coxa-cadeira-05.jpg",
+        "/videos/frames/anterior-coxa-cadeira/anterior-coxa-cadeira-06.jpg",
+        "/videos/frames/anterior-coxa-cadeira/anterior-coxa-cadeira-07.jpg",
+        "/videos/frames/anterior-coxa-cadeira/anterior-coxa-cadeira-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "arco-plantar-bola",
+      "title": "Arco plantar com bola",
+      "video_url": "/videos/arco-plantar-bola.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/arco-plantar-bola/arco-plantar-bola-01.jpg",
+        "/videos/frames/arco-plantar-bola/arco-plantar-bola-02.jpg",
+        "/videos/frames/arco-plantar-bola/arco-plantar-bola-03.jpg",
+        "/videos/frames/arco-plantar-bola/arco-plantar-bola-04.jpg",
+        "/videos/frames/arco-plantar-bola/arco-plantar-bola-05.jpg",
+        "/videos/frames/arco-plantar-bola/arco-plantar-bola-06.jpg",
+        "/videos/frames/arco-plantar-bola/arco-plantar-bola-07.jpg",
+        "/videos/frames/arco-plantar-bola/arco-plantar-bola-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "bascula-pelvica",
+      "title": "Bascula pelvica",
+      "video_url": "/videos/bascula-pelvica.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/bascula-pelvica/bascula-pelvica-01.jpg",
+        "/videos/frames/bascula-pelvica/bascula-pelvica-02.jpg",
+        "/videos/frames/bascula-pelvica/bascula-pelvica-03.jpg",
+        "/videos/frames/bascula-pelvica/bascula-pelvica-04.jpg",
+        "/videos/frames/bascula-pelvica/bascula-pelvica-05.jpg",
+        "/videos/frames/bascula-pelvica/bascula-pelvica-06.jpg",
+        "/videos/frames/bascula-pelvica/bascula-pelvica-07.jpg",
+        "/videos/frames/bascula-pelvica/bascula-pelvica-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "bom-dia-mobilidade",
+      "title": "Bom dia de mobilidade",
+      "video_url": "/videos/bom-dia-mobilidade.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/bom-dia-mobilidade/bom-dia-mobilidade-01.jpg",
+        "/videos/frames/bom-dia-mobilidade/bom-dia-mobilidade-02.jpg",
+        "/videos/frames/bom-dia-mobilidade/bom-dia-mobilidade-03.jpg",
+        "/videos/frames/bom-dia-mobilidade/bom-dia-mobilidade-04.jpg",
+        "/videos/frames/bom-dia-mobilidade/bom-dia-mobilidade-05.jpg",
+        "/videos/frames/bom-dia-mobilidade/bom-dia-mobilidade-06.jpg",
+        "/videos/frames/bom-dia-mobilidade/bom-dia-mobilidade-07.jpg",
+        "/videos/frames/bom-dia-mobilidade/bom-dia-mobilidade-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "borboleta",
+      "title": "Borboleta",
+      "video_url": "/videos/borboleta.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/borboleta/borboleta-01.jpg",
+        "/videos/frames/borboleta/borboleta-02.jpg",
+        "/videos/frames/borboleta/borboleta-03.jpg",
+        "/videos/frames/borboleta/borboleta-04.jpg",
+        "/videos/frames/borboleta/borboleta-05.jpg",
+        "/videos/frames/borboleta/borboleta-06.jpg",
+        "/videos/frames/borboleta/borboleta-07.jpg",
+        "/videos/frames/borboleta/borboleta-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "braco-cruzado-suave",
+      "title": "Braco cruzado suave",
+      "video_url": "/videos/braco-cruzado-suave.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/braco-cruzado-suave/braco-cruzado-suave-01.jpg",
+        "/videos/frames/braco-cruzado-suave/braco-cruzado-suave-02.jpg",
+        "/videos/frames/braco-cruzado-suave/braco-cruzado-suave-03.jpg",
+        "/videos/frames/braco-cruzado-suave/braco-cruzado-suave-04.jpg",
+        "/videos/frames/braco-cruzado-suave/braco-cruzado-suave-05.jpg",
+        "/videos/frames/braco-cruzado-suave/braco-cruzado-suave-06.jpg",
+        "/videos/frames/braco-cruzado-suave/braco-cruzado-suave-07.jpg",
+        "/videos/frames/braco-cruzado-suave/braco-cruzado-suave-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "circulos-punho-mobilidade",
+      "title": "Circulos de punho",
+      "video_url": "/videos/circulos-punho-mobilidade.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/circulos-punho-mobilidade/circulos-punho-mobilidade-01.jpg",
+        "/videos/frames/circulos-punho-mobilidade/circulos-punho-mobilidade-02.jpg",
+        "/videos/frames/circulos-punho-mobilidade/circulos-punho-mobilidade-03.jpg",
+        "/videos/frames/circulos-punho-mobilidade/circulos-punho-mobilidade-04.jpg",
+        "/videos/frames/circulos-punho-mobilidade/circulos-punho-mobilidade-05.jpg",
+        "/videos/frames/circulos-punho-mobilidade/circulos-punho-mobilidade-06.jpg",
+        "/videos/frames/circulos-punho-mobilidade/circulos-punho-mobilidade-07.jpg",
+        "/videos/frames/circulos-punho-mobilidade/circulos-punho-mobilidade-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "circulos-quadril",
+      "title": "Circulos de quadril",
+      "video_url": "/videos/circulos-quadril.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/circulos-quadril/circulos-quadril-01.jpg",
+        "/videos/frames/circulos-quadril/circulos-quadril-02.jpg",
+        "/videos/frames/circulos-quadril/circulos-quadril-03.jpg",
+        "/videos/frames/circulos-quadril/circulos-quadril-04.jpg",
+        "/videos/frames/circulos-quadril/circulos-quadril-05.jpg",
+        "/videos/frames/circulos-quadril/circulos-quadril-06.jpg",
+        "/videos/frames/circulos-quadril/circulos-quadril-07.jpg",
+        "/videos/frames/circulos-quadril/circulos-quadril-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "circulos-tornozelo",
+      "title": "Circulos de tornozelo",
+      "video_url": "/videos/circulos-tornozelo.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/circulos-tornozelo/circulos-tornozelo-01.jpg",
+        "/videos/frames/circulos-tornozelo/circulos-tornozelo-02.jpg",
+        "/videos/frames/circulos-tornozelo/circulos-tornozelo-03.jpg",
+        "/videos/frames/circulos-tornozelo/circulos-tornozelo-04.jpg",
+        "/videos/frames/circulos-tornozelo/circulos-tornozelo-05.jpg",
+        "/videos/frames/circulos-tornozelo/circulos-tornozelo-06.jpg",
+        "/videos/frames/circulos-tornozelo/circulos-tornozelo-07.jpg",
+        "/videos/frames/circulos-tornozelo/circulos-tornozelo-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "elevacao-ombros-circulos",
+      "title": "Circulos lentos de ombros",
+      "video_url": "/videos/elevacao-ombros-circulos.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/elevacao-ombros-circulos/elevacao-ombros-circulos-01.jpg",
+        "/videos/frames/elevacao-ombros-circulos/elevacao-ombros-circulos-02.jpg",
+        "/videos/frames/elevacao-ombros-circulos/elevacao-ombros-circulos-03.jpg",
+        "/videos/frames/elevacao-ombros-circulos/elevacao-ombros-circulos-04.jpg",
+        "/videos/frames/elevacao-ombros-circulos/elevacao-ombros-circulos-05.jpg",
+        "/videos/frames/elevacao-ombros-circulos/elevacao-ombros-circulos-06.jpg",
+        "/videos/frames/elevacao-ombros-circulos/elevacao-ombros-circulos-07.jpg",
+        "/videos/frames/elevacao-ombros-circulos/elevacao-ombros-circulos-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "cobra-suave",
+      "title": "Cobra suave",
+      "video_url": "/videos/cobra-suave.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/cobra-suave/cobra-suave-01.jpg",
+        "/videos/frames/cobra-suave/cobra-suave-02.jpg",
+        "/videos/frames/cobra-suave/cobra-suave-03.jpg",
+        "/videos/frames/cobra-suave/cobra-suave-04.jpg",
+        "/videos/frames/cobra-suave/cobra-suave-05.jpg",
+        "/videos/frames/cobra-suave/cobra-suave-06.jpg",
+        "/videos/frames/cobra-suave/cobra-suave-07.jpg",
+        "/videos/frames/cobra-suave/cobra-suave-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "deltoide-posterior-cruzado",
+      "title": "Deltoide posterior cruzado",
+      "video_url": "/videos/deltoide-posterior-cruzado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/deltoide-posterior-cruzado/deltoide-posterior-cruzado-01.jpg",
+        "/videos/frames/deltoide-posterior-cruzado/deltoide-posterior-cruzado-02.jpg",
+        "/videos/frames/deltoide-posterior-cruzado/deltoide-posterior-cruzado-03.jpg",
+        "/videos/frames/deltoide-posterior-cruzado/deltoide-posterior-cruzado-04.jpg",
+        "/videos/frames/deltoide-posterior-cruzado/deltoide-posterior-cruzado-05.jpg",
+        "/videos/frames/deltoide-posterior-cruzado/deltoide-posterior-cruzado-06.jpg",
+        "/videos/frames/deltoide-posterior-cruzado/deltoide-posterior-cruzado-07.jpg",
+        "/videos/frames/deltoide-posterior-cruzado/deltoide-posterior-cruzado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "alongamento-dorsal-cadeira",
+      "title": "Dorsal com apoio na cadeira",
+      "video_url": "/videos/alongamento-dorsal-cadeira.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/alongamento-dorsal-cadeira/alongamento-dorsal-cadeira-01.jpg",
+        "/videos/frames/alongamento-dorsal-cadeira/alongamento-dorsal-cadeira-02.jpg",
+        "/videos/frames/alongamento-dorsal-cadeira/alongamento-dorsal-cadeira-03.jpg",
+        "/videos/frames/alongamento-dorsal-cadeira/alongamento-dorsal-cadeira-04.jpg",
+        "/videos/frames/alongamento-dorsal-cadeira/alongamento-dorsal-cadeira-05.jpg",
+        "/videos/frames/alongamento-dorsal-cadeira/alongamento-dorsal-cadeira-06.jpg",
+        "/videos/frames/alongamento-dorsal-cadeira/alongamento-dorsal-cadeira-07.jpg",
+        "/videos/frames/alongamento-dorsal-cadeira/alongamento-dorsal-cadeira-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "dorsiflexao-parede",
+      "title": "Dorsiflexao na parede",
+      "video_url": "/videos/dorsiflexao-parede.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/dorsiflexao-parede/dorsiflexao-parede-01.jpg",
+        "/videos/frames/dorsiflexao-parede/dorsiflexao-parede-02.jpg",
+        "/videos/frames/dorsiflexao-parede/dorsiflexao-parede-03.jpg",
+        "/videos/frames/dorsiflexao-parede/dorsiflexao-parede-04.jpg",
+        "/videos/frames/dorsiflexao-parede/dorsiflexao-parede-05.jpg",
+        "/videos/frames/dorsiflexao-parede/dorsiflexao-parede-06.jpg",
+        "/videos/frames/dorsiflexao-parede/dorsiflexao-parede-07.jpg",
+        "/videos/frames/dorsiflexao-parede/dorsiflexao-parede-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "extensao-abdominal-em-pe",
+      "title": "Extensao abdominal em pe",
+      "video_url": "/videos/extensao-abdominal-em-pe.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/extensao-abdominal-em-pe/extensao-abdominal-em-pe-01.jpg",
+        "/videos/frames/extensao-abdominal-em-pe/extensao-abdominal-em-pe-02.jpg",
+        "/videos/frames/extensao-abdominal-em-pe/extensao-abdominal-em-pe-03.jpg",
+        "/videos/frames/extensao-abdominal-em-pe/extensao-abdominal-em-pe-04.jpg",
+        "/videos/frames/extensao-abdominal-em-pe/extensao-abdominal-em-pe-05.jpg",
+        "/videos/frames/extensao-abdominal-em-pe/extensao-abdominal-em-pe-06.jpg",
+        "/videos/frames/extensao-abdominal-em-pe/extensao-abdominal-em-pe-07.jpg",
+        "/videos/frames/extensao-abdominal-em-pe/extensao-abdominal-em-pe-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "extensao-bracos-atras",
+      "title": "Extensao dos bracos atras",
+      "video_url": "/videos/extensao-bracos-atras.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/extensao-bracos-atras/extensao-bracos-atras-01.jpg",
+        "/videos/frames/extensao-bracos-atras/extensao-bracos-atras-02.jpg",
+        "/videos/frames/extensao-bracos-atras/extensao-bracos-atras-03.jpg",
+        "/videos/frames/extensao-bracos-atras/extensao-bracos-atras-04.jpg",
+        "/videos/frames/extensao-bracos-atras/extensao-bracos-atras-05.jpg",
+        "/videos/frames/extensao-bracos-atras/extensao-bracos-atras-06.jpg",
+        "/videos/frames/extensao-bracos-atras/extensao-bracos-atras-07.jpg",
+        "/videos/frames/extensao-bracos-atras/extensao-bracos-atras-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "extensao-dedos-pe",
+      "title": "Extensao dos dedos do pe",
+      "video_url": "/videos/extensao-dedos-pe.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/extensao-dedos-pe/extensao-dedos-pe-01.jpg",
+        "/videos/frames/extensao-dedos-pe/extensao-dedos-pe-02.jpg",
+        "/videos/frames/extensao-dedos-pe/extensao-dedos-pe-03.jpg",
+        "/videos/frames/extensao-dedos-pe/extensao-dedos-pe-04.jpg",
+        "/videos/frames/extensao-dedos-pe/extensao-dedos-pe-05.jpg",
+        "/videos/frames/extensao-dedos-pe/extensao-dedos-pe-06.jpg",
+        "/videos/frames/extensao-dedos-pe/extensao-dedos-pe-07.jpg",
+        "/videos/frames/extensao-dedos-pe/extensao-dedos-pe-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "extensao-flexores-punho",
+      "title": "Extensao dos flexores do punho",
+      "video_url": "/videos/extensao-flexores-punho.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/extensao-flexores-punho/extensao-flexores-punho-01.jpg",
+        "/videos/frames/extensao-flexores-punho/extensao-flexores-punho-02.jpg",
+        "/videos/frames/extensao-flexores-punho/extensao-flexores-punho-03.jpg",
+        "/videos/frames/extensao-flexores-punho/extensao-flexores-punho-04.jpg",
+        "/videos/frames/extensao-flexores-punho/extensao-flexores-punho-05.jpg",
+        "/videos/frames/extensao-flexores-punho/extensao-flexores-punho-06.jpg",
+        "/videos/frames/extensao-flexores-punho/extensao-flexores-punho-07.jpg",
+        "/videos/frames/extensao-flexores-punho/extensao-flexores-punho-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "extensao-toracica-peito",
+      "title": "Extensao toracica com abertura de peito",
+      "video_url": "/videos/extensao-toracica-peito.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/extensao-toracica-peito/extensao-toracica-peito-01.jpg",
+        "/videos/frames/extensao-toracica-peito/extensao-toracica-peito-02.jpg",
+        "/videos/frames/extensao-toracica-peito/extensao-toracica-peito-03.jpg",
+        "/videos/frames/extensao-toracica-peito/extensao-toracica-peito-04.jpg",
+        "/videos/frames/extensao-toracica-peito/extensao-toracica-peito-05.jpg",
+        "/videos/frames/extensao-toracica-peito/extensao-toracica-peito-06.jpg",
+        "/videos/frames/extensao-toracica-peito/extensao-toracica-peito-07.jpg",
+        "/videos/frames/extensao-toracica-peito/extensao-toracica-peito-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "extensao-toracica-cadeira",
+      "title": "Extensao toracica na cadeira",
+      "video_url": "/videos/extensao-toracica-cadeira.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/extensao-toracica-cadeira/extensao-toracica-cadeira-01.jpg",
+        "/videos/frames/extensao-toracica-cadeira/extensao-toracica-cadeira-02.jpg",
+        "/videos/frames/extensao-toracica-cadeira/extensao-toracica-cadeira-03.jpg",
+        "/videos/frames/extensao-toracica-cadeira/extensao-toracica-cadeira-04.jpg",
+        "/videos/frames/extensao-toracica-cadeira/extensao-toracica-cadeira-05.jpg",
+        "/videos/frames/extensao-toracica-cadeira/extensao-toracica-cadeira-06.jpg",
+        "/videos/frames/extensao-toracica-cadeira/extensao-toracica-cadeira-07.jpg",
+        "/videos/frames/extensao-toracica-cadeira/extensao-toracica-cadeira-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "fascia-plantar-toalha",
+      "title": "Fascia plantar com toalha",
+      "video_url": "/videos/fascia-plantar-toalha.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/fascia-plantar-toalha/fascia-plantar-toalha-01.jpg",
+        "/videos/frames/fascia-plantar-toalha/fascia-plantar-toalha-02.jpg",
+        "/videos/frames/fascia-plantar-toalha/fascia-plantar-toalha-03.jpg",
+        "/videos/frames/fascia-plantar-toalha/fascia-plantar-toalha-04.jpg",
+        "/videos/frames/fascia-plantar-toalha/fascia-plantar-toalha-05.jpg",
+        "/videos/frames/fascia-plantar-toalha/fascia-plantar-toalha-06.jpg",
+        "/videos/frames/fascia-plantar-toalha/fascia-plantar-toalha-07.jpg",
+        "/videos/frames/fascia-plantar-toalha/fascia-plantar-toalha-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "figura-quatro-sentado",
+      "title": "Figura quatro sentado",
+      "video_url": "/videos/figura-quatro-sentado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/figura-quatro-sentado/figura-quatro-sentado-01.jpg",
+        "/videos/frames/figura-quatro-sentado/figura-quatro-sentado-02.jpg",
+        "/videos/frames/figura-quatro-sentado/figura-quatro-sentado-03.jpg",
+        "/videos/frames/figura-quatro-sentado/figura-quatro-sentado-04.jpg",
+        "/videos/frames/figura-quatro-sentado/figura-quatro-sentado-05.jpg",
+        "/videos/frames/figura-quatro-sentado/figura-quatro-sentado-06.jpg",
+        "/videos/frames/figura-quatro-sentado/figura-quatro-sentado-07.jpg",
+        "/videos/frames/figura-quatro-sentado/figura-quatro-sentado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "flexao-cervical-suave",
+      "title": "Flexao cervical suave",
+      "video_url": "/videos/flexao-cervical-suave.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/flexao-cervical-suave/flexao-cervical-suave-01.jpg",
+        "/videos/frames/flexao-cervical-suave/flexao-cervical-suave-02.jpg",
+        "/videos/frames/flexao-cervical-suave/flexao-cervical-suave-03.jpg",
+        "/videos/frames/flexao-cervical-suave/flexao-cervical-suave-04.jpg",
+        "/videos/frames/flexao-cervical-suave/flexao-cervical-suave-05.jpg",
+        "/videos/frames/flexao-cervical-suave/flexao-cervical-suave-06.jpg",
+        "/videos/frames/flexao-cervical-suave/flexao-cervical-suave-07.jpg",
+        "/videos/frames/flexao-cervical-suave/flexao-cervical-suave-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "flexao-dedos-pe",
+      "title": "Flexao dos dedos do pe",
+      "video_url": "/videos/flexao-dedos-pe.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/flexao-dedos-pe/flexao-dedos-pe-01.jpg",
+        "/videos/frames/flexao-dedos-pe/flexao-dedos-pe-02.jpg",
+        "/videos/frames/flexao-dedos-pe/flexao-dedos-pe-03.jpg",
+        "/videos/frames/flexao-dedos-pe/flexao-dedos-pe-04.jpg",
+        "/videos/frames/flexao-dedos-pe/flexao-dedos-pe-05.jpg",
+        "/videos/frames/flexao-dedos-pe/flexao-dedos-pe-06.jpg",
+        "/videos/frames/flexao-dedos-pe/flexao-dedos-pe-07.jpg",
+        "/videos/frames/flexao-dedos-pe/flexao-dedos-pe-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "flexao-extensores-punho",
+      "title": "Flexao dos extensores do punho",
+      "video_url": "/videos/flexao-extensores-punho.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/flexao-extensores-punho/flexao-extensores-punho-01.jpg",
+        "/videos/frames/flexao-extensores-punho/flexao-extensores-punho-02.jpg",
+        "/videos/frames/flexao-extensores-punho/flexao-extensores-punho-03.jpg",
+        "/videos/frames/flexao-extensores-punho/flexao-extensores-punho-04.jpg",
+        "/videos/frames/flexao-extensores-punho/flexao-extensores-punho-05.jpg",
+        "/videos/frames/flexao-extensores-punho/flexao-extensores-punho-06.jpg",
+        "/videos/frames/flexao-extensores-punho/flexao-extensores-punho-07.jpg",
+        "/videos/frames/flexao-extensores-punho/flexao-extensores-punho-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "flexao-lombar-sentada",
+      "title": "Flexao lombar sentada",
+      "video_url": "/videos/flexao-lombar-sentada.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/flexao-lombar-sentada/flexao-lombar-sentada-01.jpg",
+        "/videos/frames/flexao-lombar-sentada/flexao-lombar-sentada-02.jpg",
+        "/videos/frames/flexao-lombar-sentada/flexao-lombar-sentada-03.jpg",
+        "/videos/frames/flexao-lombar-sentada/flexao-lombar-sentada-04.jpg",
+        "/videos/frames/flexao-lombar-sentada/flexao-lombar-sentada-05.jpg",
+        "/videos/frames/flexao-lombar-sentada/flexao-lombar-sentada-06.jpg",
+        "/videos/frames/flexao-lombar-sentada/flexao-lombar-sentada-07.jpg",
+        "/videos/frames/flexao-lombar-sentada/flexao-lombar-sentada-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "flexor-quadril-ajoelhado",
+      "title": "Flexor do quadril ajoelhado",
+      "video_url": "/videos/flexor-quadril-ajoelhado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/flexor-quadril-ajoelhado/flexor-quadril-ajoelhado-01.jpg",
+        "/videos/frames/flexor-quadril-ajoelhado/flexor-quadril-ajoelhado-02.jpg",
+        "/videos/frames/flexor-quadril-ajoelhado/flexor-quadril-ajoelhado-03.jpg",
+        "/videos/frames/flexor-quadril-ajoelhado/flexor-quadril-ajoelhado-04.jpg",
+        "/videos/frames/flexor-quadril-ajoelhado/flexor-quadril-ajoelhado-05.jpg",
+        "/videos/frames/flexor-quadril-ajoelhado/flexor-quadril-ajoelhado-06.jpg",
+        "/videos/frames/flexor-quadril-ajoelhado/flexor-quadril-ajoelhado-07.jpg",
+        "/videos/frames/flexor-quadril-ajoelhado/flexor-quadril-ajoelhado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "flexor-quadril-com-quadriceps",
+      "title": "Flexor do quadril com quadriceps",
+      "video_url": "/videos/flexor-quadril-com-quadriceps.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/flexor-quadril-com-quadriceps/flexor-quadril-com-quadriceps-01.jpg",
+        "/videos/frames/flexor-quadril-com-quadriceps/flexor-quadril-com-quadriceps-02.jpg",
+        "/videos/frames/flexor-quadril-com-quadriceps/flexor-quadril-com-quadriceps-03.jpg",
+        "/videos/frames/flexor-quadril-com-quadriceps/flexor-quadril-com-quadriceps-04.jpg",
+        "/videos/frames/flexor-quadril-com-quadriceps/flexor-quadril-com-quadriceps-05.jpg",
+        "/videos/frames/flexor-quadril-com-quadriceps/flexor-quadril-com-quadriceps-06.jpg",
+        "/videos/frames/flexor-quadril-com-quadriceps/flexor-quadril-com-quadriceps-07.jpg",
+        "/videos/frames/flexor-quadril-com-quadriceps/flexor-quadril-com-quadriceps-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "gato-vaca-escapular",
+      "title": "Gato-vaca escapular",
+      "video_url": "/videos/gato-vaca-escapular.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/gato-vaca-escapular/gato-vaca-escapular-01.jpg",
+        "/videos/frames/gato-vaca-escapular/gato-vaca-escapular-02.jpg",
+        "/videos/frames/gato-vaca-escapular/gato-vaca-escapular-03.jpg",
+        "/videos/frames/gato-vaca-escapular/gato-vaca-escapular-04.jpg",
+        "/videos/frames/gato-vaca-escapular/gato-vaca-escapular-05.jpg",
+        "/videos/frames/gato-vaca-escapular/gato-vaca-escapular-06.jpg",
+        "/videos/frames/gato-vaca-escapular/gato-vaca-escapular-07.jpg",
+        "/videos/frames/gato-vaca-escapular/gato-vaca-escapular-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "gato-vaca-toracico",
+      "title": "Gato-vaca toracico",
+      "video_url": "/videos/gato-vaca-toracico.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/gato-vaca-toracico/gato-vaca-toracico-01.jpg",
+        "/videos/frames/gato-vaca-toracico/gato-vaca-toracico-02.jpg",
+        "/videos/frames/gato-vaca-toracico/gato-vaca-toracico-03.jpg",
+        "/videos/frames/gato-vaca-toracico/gato-vaca-toracico-04.jpg",
+        "/videos/frames/gato-vaca-toracico/gato-vaca-toracico-05.jpg",
+        "/videos/frames/gato-vaca-toracico/gato-vaca-toracico-06.jpg",
+        "/videos/frames/gato-vaca-toracico/gato-vaca-toracico-07.jpg",
+        "/videos/frames/gato-vaca-toracico/gato-vaca-toracico-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "gluteo-parede",
+      "title": "Gluteo na parede",
+      "video_url": "/videos/gluteo-parede.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/gluteo-parede/gluteo-parede-01.jpg",
+        "/videos/frames/gluteo-parede/gluteo-parede-02.jpg",
+        "/videos/frames/gluteo-parede/gluteo-parede-03.jpg",
+        "/videos/frames/gluteo-parede/gluteo-parede-04.jpg",
+        "/videos/frames/gluteo-parede/gluteo-parede-05.jpg",
+        "/videos/frames/gluteo-parede/gluteo-parede-06.jpg",
+        "/videos/frames/gluteo-parede/gluteo-parede-07.jpg",
+        "/videos/frames/gluteo-parede/gluteo-parede-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "inclinacao-lateral-pescoco",
+      "title": "Inclinacao lateral do pescoco",
+      "video_url": "/videos/inclinacao-lateral-pescoco.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/inclinacao-lateral-pescoco/inclinacao-lateral-pescoco-01.jpg",
+        "/videos/frames/inclinacao-lateral-pescoco/inclinacao-lateral-pescoco-02.jpg",
+        "/videos/frames/inclinacao-lateral-pescoco/inclinacao-lateral-pescoco-03.jpg",
+        "/videos/frames/inclinacao-lateral-pescoco/inclinacao-lateral-pescoco-04.jpg",
+        "/videos/frames/inclinacao-lateral-pescoco/inclinacao-lateral-pescoco-05.jpg",
+        "/videos/frames/inclinacao-lateral-pescoco/inclinacao-lateral-pescoco-06.jpg",
+        "/videos/frames/inclinacao-lateral-pescoco/inclinacao-lateral-pescoco-07.jpg",
+        "/videos/frames/inclinacao-lateral-pescoco/inclinacao-lateral-pescoco-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "inclinacao-unilateral-cadeira",
+      "title": "Inclinacao unilateral na cadeira",
+      "video_url": "/videos/inclinacao-unilateral-cadeira.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/inclinacao-unilateral-cadeira/inclinacao-unilateral-cadeira-01.jpg",
+        "/videos/frames/inclinacao-unilateral-cadeira/inclinacao-unilateral-cadeira-02.jpg",
+        "/videos/frames/inclinacao-unilateral-cadeira/inclinacao-unilateral-cadeira-03.jpg",
+        "/videos/frames/inclinacao-unilateral-cadeira/inclinacao-unilateral-cadeira-04.jpg",
+        "/videos/frames/inclinacao-unilateral-cadeira/inclinacao-unilateral-cadeira-05.jpg",
+        "/videos/frames/inclinacao-unilateral-cadeira/inclinacao-unilateral-cadeira-06.jpg",
+        "/videos/frames/inclinacao-unilateral-cadeira/inclinacao-unilateral-cadeira-07.jpg",
+        "/videos/frames/inclinacao-unilateral-cadeira/inclinacao-unilateral-cadeira-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "inversao-eversao-controlada",
+      "title": "Inversao e eversao controlada",
+      "video_url": "/videos/inversao-eversao-controlada.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/inversao-eversao-controlada/inversao-eversao-controlada-01.jpg",
+        "/videos/frames/inversao-eversao-controlada/inversao-eversao-controlada-02.jpg",
+        "/videos/frames/inversao-eversao-controlada/inversao-eversao-controlada-03.jpg",
+        "/videos/frames/inversao-eversao-controlada/inversao-eversao-controlada-04.jpg",
+        "/videos/frames/inversao-eversao-controlada/inversao-eversao-controlada-05.jpg",
+        "/videos/frames/inversao-eversao-controlada/inversao-eversao-controlada-06.jpg",
+        "/videos/frames/inversao-eversao-controlada/inversao-eversao-controlada-07.jpg",
+        "/videos/frames/inversao-eversao-controlada/inversao-eversao-controlada-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "joelho-ao-peito-cruzado",
+      "title": "Joelho ao peito cruzado",
+      "video_url": "/videos/joelho-ao-peito-cruzado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/joelho-ao-peito-cruzado/joelho-ao-peito-cruzado-01.jpg",
+        "/videos/frames/joelho-ao-peito-cruzado/joelho-ao-peito-cruzado-02.jpg",
+        "/videos/frames/joelho-ao-peito-cruzado/joelho-ao-peito-cruzado-03.jpg",
+        "/videos/frames/joelho-ao-peito-cruzado/joelho-ao-peito-cruzado-04.jpg",
+        "/videos/frames/joelho-ao-peito-cruzado/joelho-ao-peito-cruzado-05.jpg",
+        "/videos/frames/joelho-ao-peito-cruzado/joelho-ao-peito-cruzado-06.jpg",
+        "/videos/frames/joelho-ao-peito-cruzado/joelho-ao-peito-cruzado-07.jpg",
+        "/videos/frames/joelho-ao-peito-cruzado/joelho-ao-peito-cruzado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "joelhos-ao-peito",
+      "title": "Joelhos ao peito",
+      "video_url": "/videos/joelhos-ao-peito.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/joelhos-ao-peito/joelhos-ao-peito-01.jpg",
+        "/videos/frames/joelhos-ao-peito/joelhos-ao-peito-02.jpg",
+        "/videos/frames/joelhos-ao-peito/joelhos-ao-peito-03.jpg",
+        "/videos/frames/joelhos-ao-peito/joelhos-ao-peito-04.jpg",
+        "/videos/frames/joelhos-ao-peito/joelhos-ao-peito-05.jpg",
+        "/videos/frames/joelhos-ao-peito/joelhos-ao-peito-06.jpg",
+        "/videos/frames/joelhos-ao-peito/joelhos-ao-peito-07.jpg",
+        "/videos/frames/joelhos-ao-peito/joelhos-ao-peito-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "livro-aberto",
+      "title": "Livro aberto",
+      "video_url": "/videos/livro-aberto.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/livro-aberto/livro-aberto-01.jpg",
+        "/videos/frames/livro-aberto/livro-aberto-02.jpg",
+        "/videos/frames/livro-aberto/livro-aberto-03.jpg",
+        "/videos/frames/livro-aberto/livro-aberto-04.jpg",
+        "/videos/frames/livro-aberto/livro-aberto-05.jpg",
+        "/videos/frames/livro-aberto/livro-aberto-06.jpg",
+        "/videos/frames/livro-aberto/livro-aberto-07.jpg",
+        "/videos/frames/livro-aberto/livro-aberto-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "maos-atras-costas",
+      "title": "Maos atras das costas",
+      "video_url": "/videos/maos-atras-costas.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/maos-atras-costas/maos-atras-costas-01.jpg",
+        "/videos/frames/maos-atras-costas/maos-atras-costas-02.jpg",
+        "/videos/frames/maos-atras-costas/maos-atras-costas-03.jpg",
+        "/videos/frames/maos-atras-costas/maos-atras-costas-04.jpg",
+        "/videos/frames/maos-atras-costas/maos-atras-costas-05.jpg",
+        "/videos/frames/maos-atras-costas/maos-atras-costas-06.jpg",
+        "/videos/frames/maos-atras-costas/maos-atras-costas-07.jpg",
+        "/videos/frames/maos-atras-costas/maos-atras-costas-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "mobilidade-braco-cotovelo",
+      "title": "Mobilidade de braco e cotovelo",
+      "video_url": "/videos/mobilidade-braco-cotovelo.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/mobilidade-braco-cotovelo/mobilidade-braco-cotovelo-01.jpg",
+        "/videos/frames/mobilidade-braco-cotovelo/mobilidade-braco-cotovelo-02.jpg",
+        "/videos/frames/mobilidade-braco-cotovelo/mobilidade-braco-cotovelo-03.jpg",
+        "/videos/frames/mobilidade-braco-cotovelo/mobilidade-braco-cotovelo-04.jpg",
+        "/videos/frames/mobilidade-braco-cotovelo/mobilidade-braco-cotovelo-05.jpg",
+        "/videos/frames/mobilidade-braco-cotovelo/mobilidade-braco-cotovelo-06.jpg",
+        "/videos/frames/mobilidade-braco-cotovelo/mobilidade-braco-cotovelo-07.jpg",
+        "/videos/frames/mobilidade-braco-cotovelo/mobilidade-braco-cotovelo-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "mobilidade-cotovelo",
+      "title": "Mobilidade leve de cotovelo",
+      "video_url": "/videos/mobilidade-cotovelo.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/mobilidade-cotovelo/mobilidade-cotovelo-01.jpg",
+        "/videos/frames/mobilidade-cotovelo/mobilidade-cotovelo-02.jpg",
+        "/videos/frames/mobilidade-cotovelo/mobilidade-cotovelo-03.jpg",
+        "/videos/frames/mobilidade-cotovelo/mobilidade-cotovelo-04.jpg",
+        "/videos/frames/mobilidade-cotovelo/mobilidade-cotovelo-05.jpg",
+        "/videos/frames/mobilidade-cotovelo/mobilidade-cotovelo-06.jpg",
+        "/videos/frames/mobilidade-cotovelo/mobilidade-cotovelo-07.jpg",
+        "/videos/frames/mobilidade-cotovelo/mobilidade-cotovelo-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "mobilidade-tornozelo-panturrilha",
+      "title": "Mobilidade tornozelo-panturrilha",
+      "video_url": "/videos/mobilidade-tornozelo-panturrilha.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/mobilidade-tornozelo-panturrilha/mobilidade-tornozelo-panturrilha-01.jpg",
+        "/videos/frames/mobilidade-tornozelo-panturrilha/mobilidade-tornozelo-panturrilha-02.jpg",
+        "/videos/frames/mobilidade-tornozelo-panturrilha/mobilidade-tornozelo-panturrilha-03.jpg",
+        "/videos/frames/mobilidade-tornozelo-panturrilha/mobilidade-tornozelo-panturrilha-04.jpg",
+        "/videos/frames/mobilidade-tornozelo-panturrilha/mobilidade-tornozelo-panturrilha-05.jpg",
+        "/videos/frames/mobilidade-tornozelo-panturrilha/mobilidade-tornozelo-panturrilha-06.jpg",
+        "/videos/frames/mobilidade-tornozelo-panturrilha/mobilidade-tornozelo-panturrilha-07.jpg",
+        "/videos/frames/mobilidade-tornozelo-panturrilha/mobilidade-tornozelo-panturrilha-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "panturrilha-toalha",
+      "title": "Panturrilha com toalha",
+      "video_url": "/videos/panturrilha-toalha.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/panturrilha-toalha/panturrilha-toalha-01.jpg",
+        "/videos/frames/panturrilha-toalha/panturrilha-toalha-02.jpg",
+        "/videos/frames/panturrilha-toalha/panturrilha-toalha-03.jpg",
+        "/videos/frames/panturrilha-toalha/panturrilha-toalha-04.jpg",
+        "/videos/frames/panturrilha-toalha/panturrilha-toalha-05.jpg",
+        "/videos/frames/panturrilha-toalha/panturrilha-toalha-06.jpg",
+        "/videos/frames/panturrilha-toalha/panturrilha-toalha-07.jpg",
+        "/videos/frames/panturrilha-toalha/panturrilha-toalha-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "panturrilha-parede",
+      "title": "Panturrilha na parede",
+      "video_url": "/videos/panturrilha-parede.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/panturrilha-parede/panturrilha-parede-01.jpg",
+        "/videos/frames/panturrilha-parede/panturrilha-parede-02.jpg",
+        "/videos/frames/panturrilha-parede/panturrilha-parede-03.jpg",
+        "/videos/frames/panturrilha-parede/panturrilha-parede-04.jpg",
+        "/videos/frames/panturrilha-parede/panturrilha-parede-05.jpg",
+        "/videos/frames/panturrilha-parede/panturrilha-parede-06.jpg",
+        "/videos/frames/panturrilha-parede/panturrilha-parede-07.jpg",
+        "/videos/frames/panturrilha-parede/panturrilha-parede-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "degrau-panturrilha",
+      "title": "Panturrilha no degrau",
+      "video_url": "/videos/degrau-panturrilha.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/degrau-panturrilha/degrau-panturrilha-01.jpg",
+        "/videos/frames/degrau-panturrilha/degrau-panturrilha-02.jpg",
+        "/videos/frames/degrau-panturrilha/degrau-panturrilha-03.jpg",
+        "/videos/frames/degrau-panturrilha/degrau-panturrilha-04.jpg",
+        "/videos/frames/degrau-panturrilha/degrau-panturrilha-05.jpg",
+        "/videos/frames/degrau-panturrilha/degrau-panturrilha-06.jpg",
+        "/videos/frames/degrau-panturrilha/degrau-panturrilha-07.jpg",
+        "/videos/frames/degrau-panturrilha/degrau-panturrilha-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "peitoral-parede-um-braco",
+      "title": "Peitoral na parede com um braco",
+      "video_url": "/videos/peitoral-parede-um-braco.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/peitoral-parede-um-braco/peitoral-parede-um-braco-01.jpg",
+        "/videos/frames/peitoral-parede-um-braco/peitoral-parede-um-braco-02.jpg",
+        "/videos/frames/peitoral-parede-um-braco/peitoral-parede-um-braco-03.jpg",
+        "/videos/frames/peitoral-parede-um-braco/peitoral-parede-um-braco-04.jpg",
+        "/videos/frames/peitoral-parede-um-braco/peitoral-parede-um-braco-05.jpg",
+        "/videos/frames/peitoral-parede-um-braco/peitoral-parede-um-braco-06.jpg",
+        "/videos/frames/peitoral-parede-um-braco/peitoral-parede-um-braco-07.jpg",
+        "/videos/frames/peitoral-parede-um-braco/peitoral-parede-um-braco-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "peitoral-no-canto",
+      "title": "Peitoral no canto da parede",
+      "video_url": "/videos/peitoral-no-canto.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/peitoral-no-canto/peitoral-no-canto-01.jpg",
+        "/videos/frames/peitoral-no-canto/peitoral-no-canto-02.jpg",
+        "/videos/frames/peitoral-no-canto/peitoral-no-canto-03.jpg",
+        "/videos/frames/peitoral-no-canto/peitoral-no-canto-04.jpg",
+        "/videos/frames/peitoral-no-canto/peitoral-no-canto-05.jpg",
+        "/videos/frames/peitoral-no-canto/peitoral-no-canto-06.jpg",
+        "/videos/frames/peitoral-no-canto/peitoral-no-canto-07.jpg",
+        "/videos/frames/peitoral-no-canto/peitoral-no-canto-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "pendulo-ombro",
+      "title": "Pendulo de ombro",
+      "video_url": "/videos/pendulo-ombro.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/pendulo-ombro/pendulo-ombro-01.jpg",
+        "/videos/frames/pendulo-ombro/pendulo-ombro-02.jpg",
+        "/videos/frames/pendulo-ombro/pendulo-ombro-03.jpg",
+        "/videos/frames/pendulo-ombro/pendulo-ombro-04.jpg",
+        "/videos/frames/pendulo-ombro/pendulo-ombro-05.jpg",
+        "/videos/frames/pendulo-ombro/pendulo-ombro-06.jpg",
+        "/videos/frames/pendulo-ombro/pendulo-ombro-07.jpg",
+        "/videos/frames/pendulo-ombro/pendulo-ombro-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "piriforme-deitado",
+      "title": "Piriforme deitado",
+      "video_url": "/videos/piriforme-deitado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/piriforme-deitado/piriforme-deitado-01.jpg",
+        "/videos/frames/piriforme-deitado/piriforme-deitado-02.jpg",
+        "/videos/frames/piriforme-deitado/piriforme-deitado-03.jpg",
+        "/videos/frames/piriforme-deitado/piriforme-deitado-04.jpg",
+        "/videos/frames/piriforme-deitado/piriforme-deitado-05.jpg",
+        "/videos/frames/piriforme-deitado/piriforme-deitado-06.jpg",
+        "/videos/frames/piriforme-deitado/piriforme-deitado-07.jpg",
+        "/videos/frames/piriforme-deitado/piriforme-deitado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "pombo-adaptado",
+      "title": "Pombo adaptado",
+      "video_url": "/videos/pombo-adaptado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/pombo-adaptado/pombo-adaptado-01.jpg",
+        "/videos/frames/pombo-adaptado/pombo-adaptado-02.jpg",
+        "/videos/frames/pombo-adaptado/pombo-adaptado-03.jpg",
+        "/videos/frames/pombo-adaptado/pombo-adaptado-04.jpg",
+        "/videos/frames/pombo-adaptado/pombo-adaptado-05.jpg",
+        "/videos/frames/pombo-adaptado/pombo-adaptado-06.jpg",
+        "/videos/frames/pombo-adaptado/pombo-adaptado-07.jpg",
+        "/videos/frames/pombo-adaptado/pombo-adaptado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "ponte-suave-abertura",
+      "title": "Ponte suave com abertura anterior",
+      "video_url": "/videos/ponte-suave-abertura.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/ponte-suave-abertura/ponte-suave-abertura-01.jpg",
+        "/videos/frames/ponte-suave-abertura/ponte-suave-abertura-02.jpg",
+        "/videos/frames/ponte-suave-abertura/ponte-suave-abertura-03.jpg",
+        "/videos/frames/ponte-suave-abertura/ponte-suave-abertura-04.jpg",
+        "/videos/frames/ponte-suave-abertura/ponte-suave-abertura-05.jpg",
+        "/videos/frames/ponte-suave-abertura/ponte-suave-abertura-06.jpg",
+        "/videos/frames/ponte-suave-abertura/ponte-suave-abertura-07.jpg",
+        "/videos/frames/ponte-suave-abertura/ponte-suave-abertura-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "toalha-deitado",
+      "title": "Posterior com toalha deitado",
+      "video_url": "/videos/toalha-deitado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/toalha-deitado/toalha-deitado-01.jpg",
+        "/videos/frames/toalha-deitado/toalha-deitado-02.jpg",
+        "/videos/frames/toalha-deitado/toalha-deitado-03.jpg",
+        "/videos/frames/toalha-deitado/toalha-deitado-04.jpg",
+        "/videos/frames/toalha-deitado/toalha-deitado-05.jpg",
+        "/videos/frames/toalha-deitado/toalha-deitado-06.jpg",
+        "/videos/frames/toalha-deitado/toalha-deitado-07.jpg",
+        "/videos/frames/toalha-deitado/toalha-deitado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "posterior-em-pe-apoio",
+      "title": "Posterior em pe com apoio",
+      "video_url": "/videos/posterior-em-pe-apoio.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/posterior-em-pe-apoio/posterior-em-pe-apoio-01.jpg",
+        "/videos/frames/posterior-em-pe-apoio/posterior-em-pe-apoio-02.jpg",
+        "/videos/frames/posterior-em-pe-apoio/posterior-em-pe-apoio-03.jpg",
+        "/videos/frames/posterior-em-pe-apoio/posterior-em-pe-apoio-04.jpg",
+        "/videos/frames/posterior-em-pe-apoio/posterior-em-pe-apoio-05.jpg",
+        "/videos/frames/posterior-em-pe-apoio/posterior-em-pe-apoio-06.jpg",
+        "/videos/frames/posterior-em-pe-apoio/posterior-em-pe-apoio-07.jpg",
+        "/videos/frames/posterior-em-pe-apoio/posterior-em-pe-apoio-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "posterior-sentado",
+      "title": "Posterior sentado",
+      "video_url": "/videos/posterior-sentado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/posterior-sentado/posterior-sentado-01.jpg",
+        "/videos/frames/posterior-sentado/posterior-sentado-02.jpg",
+        "/videos/frames/posterior-sentado/posterior-sentado-03.jpg",
+        "/videos/frames/posterior-sentado/posterior-sentado-04.jpg",
+        "/videos/frames/posterior-sentado/posterior-sentado-05.jpg",
+        "/videos/frames/posterior-sentado/posterior-sentado-06.jpg",
+        "/videos/frames/posterior-sentado/posterior-sentado-07.jpg",
+        "/videos/frames/posterior-sentado/posterior-sentado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "postura-crianca",
+      "title": "Postura da crianca",
+      "video_url": "/videos/postura-crianca.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/postura-crianca/postura-crianca-01.jpg",
+        "/videos/frames/postura-crianca/postura-crianca-02.jpg",
+        "/videos/frames/postura-crianca/postura-crianca-03.jpg",
+        "/videos/frames/postura-crianca/postura-crianca-04.jpg",
+        "/videos/frames/postura-crianca/postura-crianca-05.jpg",
+        "/videos/frames/postura-crianca/postura-crianca-06.jpg",
+        "/videos/frames/postura-crianca/postura-crianca-07.jpg",
+        "/videos/frames/postura-crianca/postura-crianca-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "postura-crianca-lateral",
+      "title": "Postura da crianca lateral",
+      "video_url": "/videos/postura-crianca-lateral.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/postura-crianca-lateral/postura-crianca-lateral-01.jpg",
+        "/videos/frames/postura-crianca-lateral/postura-crianca-lateral-02.jpg",
+        "/videos/frames/postura-crianca-lateral/postura-crianca-lateral-03.jpg",
+        "/videos/frames/postura-crianca-lateral/postura-crianca-lateral-04.jpg",
+        "/videos/frames/postura-crianca-lateral/postura-crianca-lateral-05.jpg",
+        "/videos/frames/postura-crianca-lateral/postura-crianca-lateral-06.jpg",
+        "/videos/frames/postura-crianca-lateral/postura-crianca-lateral-07.jpg",
+        "/videos/frames/postura-crianca-lateral/postura-crianca-lateral-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "pronacao-supinacao-antebraco",
+      "title": "Pronacao e supinacao do antebraco",
+      "video_url": "/videos/pronacao-supinacao-antebraco.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/pronacao-supinacao-antebraco/pronacao-supinacao-antebraco-01.jpg",
+        "/videos/frames/pronacao-supinacao-antebraco/pronacao-supinacao-antebraco-02.jpg",
+        "/videos/frames/pronacao-supinacao-antebraco/pronacao-supinacao-antebraco-03.jpg",
+        "/videos/frames/pronacao-supinacao-antebraco/pronacao-supinacao-antebraco-04.jpg",
+        "/videos/frames/pronacao-supinacao-antebraco/pronacao-supinacao-antebraco-05.jpg",
+        "/videos/frames/pronacao-supinacao-antebraco/pronacao-supinacao-antebraco-06.jpg",
+        "/videos/frames/pronacao-supinacao-antebraco/pronacao-supinacao-antebraco-07.jpg",
+        "/videos/frames/pronacao-supinacao-antebraco/pronacao-supinacao-antebraco-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "quadriceps-lateral-deitado",
+      "title": "Quadriceps deitado de lado",
+      "video_url": "/videos/quadriceps-lateral-deitado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/quadriceps-lateral-deitado/quadriceps-lateral-deitado-01.jpg",
+        "/videos/frames/quadriceps-lateral-deitado/quadriceps-lateral-deitado-02.jpg",
+        "/videos/frames/quadriceps-lateral-deitado/quadriceps-lateral-deitado-03.jpg",
+        "/videos/frames/quadriceps-lateral-deitado/quadriceps-lateral-deitado-04.jpg",
+        "/videos/frames/quadriceps-lateral-deitado/quadriceps-lateral-deitado-05.jpg",
+        "/videos/frames/quadriceps-lateral-deitado/quadriceps-lateral-deitado-06.jpg",
+        "/videos/frames/quadriceps-lateral-deitado/quadriceps-lateral-deitado-07.jpg",
+        "/videos/frames/quadriceps-lateral-deitado/quadriceps-lateral-deitado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "quadriceps-em-pe-apoio",
+      "title": "Quadriceps em pe com apoio",
+      "video_url": "/videos/quadriceps-em-pe-apoio.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/quadriceps-em-pe-apoio/quadriceps-em-pe-apoio-01.jpg",
+        "/videos/frames/quadriceps-em-pe-apoio/quadriceps-em-pe-apoio-02.jpg",
+        "/videos/frames/quadriceps-em-pe-apoio/quadriceps-em-pe-apoio-03.jpg",
+        "/videos/frames/quadriceps-em-pe-apoio/quadriceps-em-pe-apoio-04.jpg",
+        "/videos/frames/quadriceps-em-pe-apoio/quadriceps-em-pe-apoio-05.jpg",
+        "/videos/frames/quadriceps-em-pe-apoio/quadriceps-em-pe-apoio-06.jpg",
+        "/videos/frames/quadriceps-em-pe-apoio/quadriceps-em-pe-apoio-07.jpg",
+        "/videos/frames/quadriceps-em-pe-apoio/quadriceps-em-pe-apoio-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "queixo-para-tras",
+      "title": "Queixo para tras",
+      "video_url": "/videos/queixo-para-tras.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/queixo-para-tras/queixo-para-tras-01.jpg",
+        "/videos/frames/queixo-para-tras/queixo-para-tras-02.jpg",
+        "/videos/frames/queixo-para-tras/queixo-para-tras-03.jpg",
+        "/videos/frames/queixo-para-tras/queixo-para-tras-04.jpg",
+        "/videos/frames/queixo-para-tras/queixo-para-tras-05.jpg",
+        "/videos/frames/queixo-para-tras/queixo-para-tras-06.jpg",
+        "/videos/frames/queixo-para-tras/queixo-para-tras-07.jpg",
+        "/videos/frames/queixo-para-tras/queixo-para-tras-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "respiracao-costelas",
+      "title": "Respiracao nas costelas",
+      "video_url": "/videos/respiracao-costelas.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/respiracao-costelas/respiracao-costelas-01.jpg",
+        "/videos/frames/respiracao-costelas/respiracao-costelas-02.jpg",
+        "/videos/frames/respiracao-costelas/respiracao-costelas-03.jpg",
+        "/videos/frames/respiracao-costelas/respiracao-costelas-04.jpg",
+        "/videos/frames/respiracao-costelas/respiracao-costelas-05.jpg",
+        "/videos/frames/respiracao-costelas/respiracao-costelas-06.jpg",
+        "/videos/frames/respiracao-costelas/respiracao-costelas-07.jpg",
+        "/videos/frames/respiracao-costelas/respiracao-costelas-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "retracao-protracao-escapular",
+      "title": "Retracao e protracao escapular",
+      "video_url": "/videos/retracao-protracao-escapular.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/retracao-protracao-escapular/retracao-protracao-escapular-01.jpg",
+        "/videos/frames/retracao-protracao-escapular/retracao-protracao-escapular-02.jpg",
+        "/videos/frames/retracao-protracao-escapular/retracao-protracao-escapular-03.jpg",
+        "/videos/frames/retracao-protracao-escapular/retracao-protracao-escapular-04.jpg",
+        "/videos/frames/retracao-protracao-escapular/retracao-protracao-escapular-05.jpg",
+        "/videos/frames/retracao-protracao-escapular/retracao-protracao-escapular-06.jpg",
+        "/videos/frames/retracao-protracao-escapular/retracao-protracao-escapular-07.jpg",
+        "/videos/frames/retracao-protracao-escapular/retracao-protracao-escapular-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "rotacao-cervical-controlada",
+      "title": "Rotacao cervical controlada",
+      "video_url": "/videos/rotacao-cervical-controlada.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/rotacao-cervical-controlada/rotacao-cervical-controlada-01.jpg",
+        "/videos/frames/rotacao-cervical-controlada/rotacao-cervical-controlada-02.jpg",
+        "/videos/frames/rotacao-cervical-controlada/rotacao-cervical-controlada-03.jpg",
+        "/videos/frames/rotacao-cervical-controlada/rotacao-cervical-controlada-04.jpg",
+        "/videos/frames/rotacao-cervical-controlada/rotacao-cervical-controlada-05.jpg",
+        "/videos/frames/rotacao-cervical-controlada/rotacao-cervical-controlada-06.jpg",
+        "/videos/frames/rotacao-cervical-controlada/rotacao-cervical-controlada-07.jpg",
+        "/videos/frames/rotacao-cervical-controlada/rotacao-cervical-controlada-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "rotacao-externa-parede",
+      "title": "Rotacao externa na parede",
+      "video_url": "/videos/rotacao-externa-parede.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/rotacao-externa-parede/rotacao-externa-parede-01.jpg",
+        "/videos/frames/rotacao-externa-parede/rotacao-externa-parede-02.jpg",
+        "/videos/frames/rotacao-externa-parede/rotacao-externa-parede-03.jpg",
+        "/videos/frames/rotacao-externa-parede/rotacao-externa-parede-04.jpg",
+        "/videos/frames/rotacao-externa-parede/rotacao-externa-parede-05.jpg",
+        "/videos/frames/rotacao-externa-parede/rotacao-externa-parede-06.jpg",
+        "/videos/frames/rotacao-externa-parede/rotacao-externa-parede-07.jpg",
+        "/videos/frames/rotacao-externa-parede/rotacao-externa-parede-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "rotacao-toracica-sentada",
+      "title": "Rotacao toracica sentada",
+      "video_url": "/videos/rotacao-toracica-sentada.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/rotacao-toracica-sentada/rotacao-toracica-sentada-01.jpg",
+        "/videos/frames/rotacao-toracica-sentada/rotacao-toracica-sentada-02.jpg",
+        "/videos/frames/rotacao-toracica-sentada/rotacao-toracica-sentada-03.jpg",
+        "/videos/frames/rotacao-toracica-sentada/rotacao-toracica-sentada-04.jpg",
+        "/videos/frames/rotacao-toracica-sentada/rotacao-toracica-sentada-05.jpg",
+        "/videos/frames/rotacao-toracica-sentada/rotacao-toracica-sentada-06.jpg",
+        "/videos/frames/rotacao-toracica-sentada/rotacao-toracica-sentada-07.jpg",
+        "/videos/frames/rotacao-toracica-sentada/rotacao-toracica-sentada-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "soleo-joelho-flexionado",
+      "title": "Soleo com joelho flexionado",
+      "video_url": "/videos/soleo-joelho-flexionado.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/soleo-joelho-flexionado/soleo-joelho-flexionado-01.jpg",
+        "/videos/frames/soleo-joelho-flexionado/soleo-joelho-flexionado-02.jpg",
+        "/videos/frames/soleo-joelho-flexionado/soleo-joelho-flexionado-03.jpg",
+        "/videos/frames/soleo-joelho-flexionado/soleo-joelho-flexionado-04.jpg",
+        "/videos/frames/soleo-joelho-flexionado/soleo-joelho-flexionado-05.jpg",
+        "/videos/frames/soleo-joelho-flexionado/soleo-joelho-flexionado-06.jpg",
+        "/videos/frames/soleo-joelho-flexionado/soleo-joelho-flexionado-07.jpg",
+        "/videos/frames/soleo-joelho-flexionado/soleo-joelho-flexionado-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "soltar-tensao-pescoco-ombros",
+      "title": "Soltar tensao de pescoco e ombros",
+      "video_url": "/videos/soltar-tensao-pescoco-ombros.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/soltar-tensao-pescoco-ombros/soltar-tensao-pescoco-ombros-01.jpg",
+        "/videos/frames/soltar-tensao-pescoco-ombros/soltar-tensao-pescoco-ombros-02.jpg",
+        "/videos/frames/soltar-tensao-pescoco-ombros/soltar-tensao-pescoco-ombros-03.jpg",
+        "/videos/frames/soltar-tensao-pescoco-ombros/soltar-tensao-pescoco-ombros-04.jpg",
+        "/videos/frames/soltar-tensao-pescoco-ombros/soltar-tensao-pescoco-ombros-05.jpg",
+        "/videos/frames/soltar-tensao-pescoco-ombros/soltar-tensao-pescoco-ombros-06.jpg",
+        "/videos/frames/soltar-tensao-pescoco-ombros/soltar-tensao-pescoco-ombros-07.jpg",
+        "/videos/frames/soltar-tensao-pescoco-ombros/soltar-tensao-pescoco-ombros-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "torcao-lombar-leve",
+      "title": "Torcao lombar leve",
+      "video_url": "/videos/torcao-lombar-leve.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/torcao-lombar-leve/torcao-lombar-leve-01.jpg",
+        "/videos/frames/torcao-lombar-leve/torcao-lombar-leve-02.jpg",
+        "/videos/frames/torcao-lombar-leve/torcao-lombar-leve-03.jpg",
+        "/videos/frames/torcao-lombar-leve/torcao-lombar-leve-04.jpg",
+        "/videos/frames/torcao-lombar-leve/torcao-lombar-leve-05.jpg",
+        "/videos/frames/torcao-lombar-leve/torcao-lombar-leve-06.jpg",
+        "/videos/frames/torcao-lombar-leve/torcao-lombar-leve-07.jpg",
+        "/videos/frames/torcao-lombar-leve/torcao-lombar-leve-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "triceps-acima-cabeca",
+      "title": "Triceps acima da cabeca",
+      "video_url": "/videos/triceps-acima-cabeca.mp4",
+      "duration_seconds": 75,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/triceps-acima-cabeca/triceps-acima-cabeca-01.jpg",
+        "/videos/frames/triceps-acima-cabeca/triceps-acima-cabeca-02.jpg",
+        "/videos/frames/triceps-acima-cabeca/triceps-acima-cabeca-03.jpg",
+        "/videos/frames/triceps-acima-cabeca/triceps-acima-cabeca-04.jpg",
+        "/videos/frames/triceps-acima-cabeca/triceps-acima-cabeca-05.jpg",
+        "/videos/frames/triceps-acima-cabeca/triceps-acima-cabeca-06.jpg",
+        "/videos/frames/triceps-acima-cabeca/triceps-acima-cabeca-07.jpg",
+        "/videos/frames/triceps-acima-cabeca/triceps-acima-cabeca-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-caminhada-consciente-indoor",
+      "title": "Caminhada consciente indoor",
+      "video_url": "/videos/missao-caminhada-consciente-indoor.mp4",
+      "duration_seconds": 180,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-caminhada-consciente-indoor/missao-caminhada-consciente-indoor-01.jpg",
+        "/videos/frames/missao-caminhada-consciente-indoor/missao-caminhada-consciente-indoor-02.jpg",
+        "/videos/frames/missao-caminhada-consciente-indoor/missao-caminhada-consciente-indoor-03.jpg",
+        "/videos/frames/missao-caminhada-consciente-indoor/missao-caminhada-consciente-indoor-04.jpg",
+        "/videos/frames/missao-caminhada-consciente-indoor/missao-caminhada-consciente-indoor-05.jpg",
+        "/videos/frames/missao-caminhada-consciente-indoor/missao-caminhada-consciente-indoor-06.jpg",
+        "/videos/frames/missao-caminhada-consciente-indoor/missao-caminhada-consciente-indoor-07.jpg",
+        "/videos/frames/missao-caminhada-consciente-indoor/missao-caminhada-consciente-indoor-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-desafio-gentil-de-sono",
+      "title": "Desafio gentil de sono",
+      "video_url": "/videos/missao-desafio-gentil-de-sono.mp4",
+      "duration_seconds": 120,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-desafio-gentil-de-sono/missao-desafio-gentil-de-sono-01.jpg",
+        "/videos/frames/missao-desafio-gentil-de-sono/missao-desafio-gentil-de-sono-02.jpg",
+        "/videos/frames/missao-desafio-gentil-de-sono/missao-desafio-gentil-de-sono-03.jpg",
+        "/videos/frames/missao-desafio-gentil-de-sono/missao-desafio-gentil-de-sono-04.jpg",
+        "/videos/frames/missao-desafio-gentil-de-sono/missao-desafio-gentil-de-sono-05.jpg",
+        "/videos/frames/missao-desafio-gentil-de-sono/missao-desafio-gentil-de-sono-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-diario-de-descarrego-mental",
+      "title": "Diario de descarrego mental",
+      "video_url": "/videos/missao-diario-de-descarrego-mental.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-diario-de-descarrego-mental/missao-diario-de-descarrego-mental-01.jpg",
+        "/videos/frames/missao-diario-de-descarrego-mental/missao-diario-de-descarrego-mental-02.jpg",
+        "/videos/frames/missao-diario-de-descarrego-mental/missao-diario-de-descarrego-mental-03.jpg",
+        "/videos/frames/missao-diario-de-descarrego-mental/missao-diario-de-descarrego-mental-04.jpg",
+        "/videos/frames/missao-diario-de-descarrego-mental/missao-diario-de-descarrego-mental-05.jpg",
+        "/videos/frames/missao-diario-de-descarrego-mental/missao-diario-de-descarrego-mental-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-fechamento-do-dia",
+      "title": "Fechamento do dia",
+      "video_url": "/videos/missao-fechamento-do-dia.mp4",
+      "duration_seconds": 120,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-fechamento-do-dia/missao-fechamento-do-dia-01.jpg",
+        "/videos/frames/missao-fechamento-do-dia/missao-fechamento-do-dia-02.jpg",
+        "/videos/frames/missao-fechamento-do-dia/missao-fechamento-do-dia-03.jpg",
+        "/videos/frames/missao-fechamento-do-dia/missao-fechamento-do-dia-04.jpg",
+        "/videos/frames/missao-fechamento-do-dia/missao-fechamento-do-dia-05.jpg",
+        "/videos/frames/missao-fechamento-do-dia/missao-fechamento-do-dia-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-gratidao-rapida",
+      "title": "Gratidao rapida",
+      "video_url": "/videos/missao-gratidao-rapida.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-gratidao-rapida/missao-gratidao-rapida-01.jpg",
+        "/videos/frames/missao-gratidao-rapida/missao-gratidao-rapida-02.jpg",
+        "/videos/frames/missao-gratidao-rapida/missao-gratidao-rapida-03.jpg",
+        "/videos/frames/missao-gratidao-rapida/missao-gratidao-rapida-04.jpg",
+        "/videos/frames/missao-gratidao-rapida/missao-gratidao-rapida-05.jpg",
+        "/videos/frames/missao-gratidao-rapida/missao-gratidao-rapida-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-mapa-pessoal-do-agora",
+      "title": "Mapa pessoal do agora",
+      "video_url": "/videos/missao-mapa-pessoal-do-agora.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-mapa-pessoal-do-agora/missao-mapa-pessoal-do-agora-01.jpg",
+        "/videos/frames/missao-mapa-pessoal-do-agora/missao-mapa-pessoal-do-agora-02.jpg",
+        "/videos/frames/missao-mapa-pessoal-do-agora/missao-mapa-pessoal-do-agora-03.jpg",
+        "/videos/frames/missao-mapa-pessoal-do-agora/missao-mapa-pessoal-do-agora-04.jpg",
+        "/videos/frames/missao-mapa-pessoal-do-agora/missao-mapa-pessoal-do-agora-05.jpg",
+        "/videos/frames/missao-mapa-pessoal-do-agora/missao-mapa-pessoal-do-agora-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-mobilidade-corpo-inteiro",
+      "title": "Mobilidade corpo inteiro",
+      "video_url": "/videos/missao-mobilidade-corpo-inteiro.mp4",
+      "duration_seconds": 240,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-mobilidade-corpo-inteiro/missao-mobilidade-corpo-inteiro-01.jpg",
+        "/videos/frames/missao-mobilidade-corpo-inteiro/missao-mobilidade-corpo-inteiro-02.jpg",
+        "/videos/frames/missao-mobilidade-corpo-inteiro/missao-mobilidade-corpo-inteiro-03.jpg",
+        "/videos/frames/missao-mobilidade-corpo-inteiro/missao-mobilidade-corpo-inteiro-04.jpg",
+        "/videos/frames/missao-mobilidade-corpo-inteiro/missao-mobilidade-corpo-inteiro-05.jpg",
+        "/videos/frames/missao-mobilidade-corpo-inteiro/missao-mobilidade-corpo-inteiro-06.jpg",
+        "/videos/frames/missao-mobilidade-corpo-inteiro/missao-mobilidade-corpo-inteiro-07.jpg",
+        "/videos/frames/missao-mobilidade-corpo-inteiro/missao-mobilidade-corpo-inteiro-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-modo-reuniao-dificil",
+      "title": "Modo reuniao dificil",
+      "video_url": "/videos/missao-modo-reuniao-dificil.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-modo-reuniao-dificil/missao-modo-reuniao-dificil-01.jpg",
+        "/videos/frames/missao-modo-reuniao-dificil/missao-modo-reuniao-dificil-02.jpg",
+        "/videos/frames/missao-modo-reuniao-dificil/missao-modo-reuniao-dificil-03.jpg",
+        "/videos/frames/missao-modo-reuniao-dificil/missao-modo-reuniao-dificil-04.jpg",
+        "/videos/frames/missao-modo-reuniao-dificil/missao-modo-reuniao-dificil-05.jpg",
+        "/videos/frames/missao-modo-reuniao-dificil/missao-modo-reuniao-dificil-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-organizacao-de-5-minutos",
+      "title": "Organizacao de 5 minutos",
+      "video_url": "/videos/missao-organizacao-de-5-minutos.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-organizacao-de-5-minutos/missao-organizacao-de-5-minutos-01.jpg",
+        "/videos/frames/missao-organizacao-de-5-minutos/missao-organizacao-de-5-minutos-02.jpg",
+        "/videos/frames/missao-organizacao-de-5-minutos/missao-organizacao-de-5-minutos-03.jpg",
+        "/videos/frames/missao-organizacao-de-5-minutos/missao-organizacao-de-5-minutos-04.jpg",
+        "/videos/frames/missao-organizacao-de-5-minutos/missao-organizacao-de-5-minutos-05.jpg",
+        "/videos/frames/missao-organizacao-de-5-minutos/missao-organizacao-de-5-minutos-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-pausa-de-ambiente",
+      "title": "Pausa de ambiente",
+      "video_url": "/videos/missao-pausa-de-ambiente.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-pausa-de-ambiente/missao-pausa-de-ambiente-01.jpg",
+        "/videos/frames/missao-pausa-de-ambiente/missao-pausa-de-ambiente-02.jpg",
+        "/videos/frames/missao-pausa-de-ambiente/missao-pausa-de-ambiente-03.jpg",
+        "/videos/frames/missao-pausa-de-ambiente/missao-pausa-de-ambiente-04.jpg",
+        "/videos/frames/missao-pausa-de-ambiente/missao-pausa-de-ambiente-05.jpg",
+        "/videos/frames/missao-pausa-de-ambiente/missao-pausa-de-ambiente-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-pausa-de-foco",
+      "title": "Pausa de foco",
+      "video_url": "/videos/missao-pausa-de-foco.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-pausa-de-foco/missao-pausa-de-foco-01.jpg",
+        "/videos/frames/missao-pausa-de-foco/missao-pausa-de-foco-02.jpg",
+        "/videos/frames/missao-pausa-de-foco/missao-pausa-de-foco-03.jpg",
+        "/videos/frames/missao-pausa-de-foco/missao-pausa-de-foco-04.jpg",
+        "/videos/frames/missao-pausa-de-foco/missao-pausa-de-foco-05.jpg",
+        "/videos/frames/missao-pausa-de-foco/missao-pausa-de-foco-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-planejamento-gentil-do-dia",
+      "title": "Planejamento gentil do dia",
+      "video_url": "/videos/missao-planejamento-gentil-do-dia.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-planejamento-gentil-do-dia/missao-planejamento-gentil-do-dia-01.jpg",
+        "/videos/frames/missao-planejamento-gentil-do-dia/missao-planejamento-gentil-do-dia-02.jpg",
+        "/videos/frames/missao-planejamento-gentil-do-dia/missao-planejamento-gentil-do-dia-03.jpg",
+        "/videos/frames/missao-planejamento-gentil-do-dia/missao-planejamento-gentil-do-dia-04.jpg",
+        "/videos/frames/missao-planejamento-gentil-do-dia/missao-planejamento-gentil-do-dia-05.jpg",
+        "/videos/frames/missao-planejamento-gentil-do-dia/missao-planejamento-gentil-do-dia-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-reset-de-foco",
+      "title": "Reset de foco",
+      "video_url": "/videos/missao-reset-de-foco.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-reset-de-foco/missao-reset-de-foco-01.jpg",
+        "/videos/frames/missao-reset-de-foco/missao-reset-de-foco-02.jpg",
+        "/videos/frames/missao-reset-de-foco/missao-reset-de-foco-03.jpg",
+        "/videos/frames/missao-reset-de-foco/missao-reset-de-foco-04.jpg",
+        "/videos/frames/missao-reset-de-foco/missao-reset-de-foco-05.jpg",
+        "/videos/frames/missao-reset-de-foco/missao-reset-de-foco-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-ritual-de-sono-sem-tela",
+      "title": "Ritual de sono sem tela",
+      "video_url": "/videos/missao-ritual-de-sono-sem-tela.mp4",
+      "duration_seconds": 120,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-ritual-de-sono-sem-tela/missao-ritual-de-sono-sem-tela-01.jpg",
+        "/videos/frames/missao-ritual-de-sono-sem-tela/missao-ritual-de-sono-sem-tela-02.jpg",
+        "/videos/frames/missao-ritual-de-sono-sem-tela/missao-ritual-de-sono-sem-tela-03.jpg",
+        "/videos/frames/missao-ritual-de-sono-sem-tela/missao-ritual-de-sono-sem-tela-04.jpg",
+        "/videos/frames/missao-ritual-de-sono-sem-tela/missao-ritual-de-sono-sem-tela-05.jpg",
+        "/videos/frames/missao-ritual-de-sono-sem-tela/missao-ritual-de-sono-sem-tela-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-treino-casa-calma",
+      "title": "Treino casa-calma",
+      "video_url": "/videos/missao-treino-casa-calma.mp4",
+      "duration_seconds": 180,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-treino-casa-calma/missao-treino-casa-calma-01.jpg",
+        "/videos/frames/missao-treino-casa-calma/missao-treino-casa-calma-02.jpg",
+        "/videos/frames/missao-treino-casa-calma/missao-treino-casa-calma-03.jpg",
+        "/videos/frames/missao-treino-casa-calma/missao-treino-casa-calma-04.jpg",
+        "/videos/frames/missao-treino-casa-calma/missao-treino-casa-calma-05.jpg",
+        "/videos/frames/missao-treino-casa-calma/missao-treino-casa-calma-06.jpg",
+        "/videos/frames/missao-treino-casa-calma/missao-treino-casa-calma-07.jpg",
+        "/videos/frames/missao-treino-casa-calma/missao-treino-casa-calma-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-trilha-voltar-ao-foco",
+      "title": "Trilha voltar ao foco",
+      "video_url": "/videos/missao-trilha-voltar-ao-foco.mp4",
+      "duration_seconds": 90,
+      "required_frame_count": 6,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-trilha-voltar-ao-foco/missao-trilha-voltar-ao-foco-01.jpg",
+        "/videos/frames/missao-trilha-voltar-ao-foco/missao-trilha-voltar-ao-foco-02.jpg",
+        "/videos/frames/missao-trilha-voltar-ao-foco/missao-trilha-voltar-ao-foco-03.jpg",
+        "/videos/frames/missao-trilha-voltar-ao-foco/missao-trilha-voltar-ao-foco-04.jpg",
+        "/videos/frames/missao-trilha-voltar-ao-foco/missao-trilha-voltar-ao-foco-05.jpg",
+        "/videos/frames/missao-trilha-voltar-ao-foco/missao-trilha-voltar-ao-foco-06.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    },
+    {
+      "slug": "missao-yoga-de-bolso-desacelerar",
+      "title": "Yoga de bolso: desacelerar",
+      "video_url": "/videos/missao-yoga-de-bolso-desacelerar.mp4",
+      "duration_seconds": 240,
+      "required_frame_count": 8,
+      "existing_premium_frame_urls": [],
+      "existing_generated_frame_urls": [
+        "/videos/frames/missao-yoga-de-bolso-desacelerar/missao-yoga-de-bolso-desacelerar-01.jpg",
+        "/videos/frames/missao-yoga-de-bolso-desacelerar/missao-yoga-de-bolso-desacelerar-02.jpg",
+        "/videos/frames/missao-yoga-de-bolso-desacelerar/missao-yoga-de-bolso-desacelerar-03.jpg",
+        "/videos/frames/missao-yoga-de-bolso-desacelerar/missao-yoga-de-bolso-desacelerar-04.jpg",
+        "/videos/frames/missao-yoga-de-bolso-desacelerar/missao-yoga-de-bolso-desacelerar-05.jpg",
+        "/videos/frames/missao-yoga-de-bolso-desacelerar/missao-yoga-de-bolso-desacelerar-06.jpg",
+        "/videos/frames/missao-yoga-de-bolso-desacelerar/missao-yoga-de-bolso-desacelerar-07.jpg",
+        "/videos/frames/missao-yoga-de-bolso-desacelerar/missao-yoga-de-bolso-desacelerar-08.jpg"
+      ],
+      "missing_frame_count": 0,
+      "frame_targets": []
+    }
+  ]
+}

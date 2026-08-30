@@ -1,0 +1,1732 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum MediaLifecycleStatus {
+  DRAFT
+  TECHNICAL_REVIEW
+  EDITORIAL_REVIEW
+  HEALTH_REVIEW
+  RIGHTS_REVIEW
+  LOCALIZATION_REVIEW
+  APPROVED
+  PUBLISHED
+  SUSPENDED
+  ARCHIVED
+  EXPIRED
+  REJECTED
+}
+
+model User {
+  id                          String                       @id @default(cuid())
+  name                        String
+  email                       String                       @unique
+  passwordHash                String
+  role                        String                       @default("USER")
+  plan                        String                       @default("FREE")
+  companyId                   String?
+  department                  String?
+  companyRole                 String?
+  level                       Int                          @default(1)
+  xp                          Int                          @default(0)
+  lastLevelUpAt               DateTime?
+  onboardingCompleted         Boolean                      @default(false)
+  sessionVersion              Int                          @default(1)
+  createdAt                   DateTime                     @default(now())
+  updatedAt                   DateTime                     @updatedAt
+  profile                     Profile?
+  checkins                    Checkin[]
+  missionCompletions          MissionCompletion[]
+  workoutSessions             WorkoutSession[]
+  exerciseProgresses          ExerciseProgress[]
+  exerciseSessions            ExerciseSession[]
+  exerciseInstructionSessions ExerciseInstructionSession[]
+  partnerInterests            PartnerInterest[]
+  passwordResetTokens         PasswordResetToken[]
+  routineReminders            RoutineReminder[]
+  routineTasks                RoutineTask[]
+  socialDowntime              SocialDowntime?
+  agendaEvents                AgendaEvent[]
+  agendaTasks                 AgendaTask[]
+  agendaReminders             AgendaReminder[]
+  agendaHabits                AgendaHabit[]
+  calendarConnections         CalendarConnection[]
+  syncQueueItems              SyncQueue[]
+  inboxItems                  InboxItem[]
+  yogaPracticeSessions        YogaPracticeSession[]
+  achievements                UserAchievement[]
+  focusSessions               FocusSession[]
+  weeklyPlans                 WeeklyPlan[]
+  healthMetricSnapshots       HealthMetricSnapshot[]
+  walkingSessions             WalkingSession[]
+  walkingGoals                WalkingGoal[]
+  walkingFavoriteRoutes       WalkingFavoriteRoute[]
+  activityCompletions         ActivityCompletion[]
+  userRoles                   UserRole[]                   @relation("UserRoleUser")
+  roleAssignmentsMade         UserRole[]                   @relation("UserRoleAssignedBy")
+  auditLogs                   AuditLog[]                   @relation("AuditActor")
+  featureFlagAudits           FeatureFlagAudit[]           @relation("FeatureFlagAuditActor")
+  platformPermissions         PlatformPermissionRecord[]
+  scheduleReservations        ScheduleReservation[]
+  scheduleMutexes             ScheduleMutex[]
+  notificationPolicy          NotificationPolicy?
+  recommendationDecisions     RecommendationDecision[]
+  sessionFeedback             SessionFeedback[]
+  notificationPlans           NotificationPlan[]
+  pausaActivities             PausaActivity[]
+  healthProfileEntries        HealthProfileEntry[]
+  dataConsents                DataConsent[]
+  connectedDevices            ConnectedDevice[]
+  dataVaultEvents             DataVaultEvent[]
+  activityRoutes              ActivityRoute[]
+  shareCards                  ShareCard[]
+  company                     Company?                     @relation(fields: [companyId], references: [id], onDelete: SetNull)
+
+  @@index([companyId])
+}
+
+model Role {
+  id          String           @id @default(cuid())
+  key         String           @unique
+  name        String
+  description String
+  isSystem    Boolean          @default(true)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  users       UserRole[]
+  permissions RolePermission[]
+}
+
+model Permission {
+  id          String           @id @default(cuid())
+  key         String           @unique
+  name        String
+  description String
+  scope       String           @default("APPLICATION")
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  roles       RolePermission[]
+}
+
+model RolePermission {
+  roleId       String
+  permissionId String
+  granted      Boolean    @default(true)
+  createdAt    DateTime   @default(now())
+  role         Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([roleId, permissionId])
+  @@index([permissionId])
+}
+
+model UserRole {
+  id           String    @id @default(cuid())
+  userId       String
+  roleId       String
+  assignedById String?
+  reason       String?
+  expiresAt    DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  user         User      @relation("UserRoleUser", fields: [userId], references: [id], onDelete: Cascade)
+  role         Role      @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  assignedBy   User?     @relation("UserRoleAssignedBy", fields: [assignedById], references: [id], onDelete: SetNull)
+
+  @@unique([userId, roleId])
+  @@index([roleId])
+  @@index([assignedById])
+  @@index([expiresAt])
+}
+
+model AuditLog {
+  id            String   @id @default(cuid())
+  actorId       String?
+  action        String
+  targetType    String
+  targetId      String?
+  correlationId String
+  environment   String   @default("local")
+  metadataJson  String   @default("{}")
+  beforeHash    String?
+  afterHash     String?
+  ipHash        String?
+  userAgent     String?
+  createdAt     DateTime @default(now())
+  actor         User?    @relation("AuditActor", fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([actorId, createdAt])
+  @@index([targetType, targetId])
+  @@index([correlationId])
+  @@index([createdAt])
+}
+
+model FeatureFlag {
+  key               String             @id
+  description       String
+  owner             String
+  defaultValue      Boolean            @default(false)
+  enabledLocal      Boolean            @default(false)
+  enabledTest       Boolean            @default(false)
+  enabledStaging    Boolean            @default(false)
+  enabledProduction Boolean            @default(false)
+  platformsJson     String             @default("[]")
+  rolesJson         String             @default("[]")
+  segmentsJson      String             @default("[]")
+  reviewAt          DateTime?
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  audits            FeatureFlagAudit[]
+}
+
+model FeatureFlagAudit {
+  id             String      @id @default(cuid())
+  featureFlagKey String
+  actorId        String?
+  environment    String
+  previousValue  Boolean
+  nextValue      Boolean
+  correlationId  String
+  reason         String?
+  createdAt      DateTime    @default(now())
+  featureFlag    FeatureFlag @relation(fields: [featureFlagKey], references: [key], onDelete: Cascade)
+  actor          User?       @relation("FeatureFlagAuditActor", fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([featureFlagKey, createdAt])
+  @@index([actorId, createdAt])
+}
+
+model PlatformPermissionRecord {
+  id            String   @id @default(cuid())
+  userId        String
+  permissionKey String
+  platform      String
+  status        String
+  source        String   @default("CLIENT_REPORTED")
+  detailsJson   String   @default("{}")
+  lastCheckedAt DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, permissionKey, platform])
+  @@index([userId, lastCheckedAt])
+}
+
+model OutboxEvent {
+  id            String    @id @default(cuid())
+  dedupeKey     String    @unique
+  eventType     String
+  aggregateType String
+  aggregateId   String
+  payloadJson   String
+  status        String    @default("PENDING")
+  attempts      Int       @default(0)
+  availableAt   DateTime  @default(now())
+  processedAt   DateTime?
+  correlationId String
+  lastError     String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([status, availableAt])
+  @@index([aggregateType, aggregateId])
+  @@index([correlationId])
+}
+
+model RateLimitBucket {
+  keyHash      String   @id
+  scope        String
+  count        Int      @default(0)
+  windowEnd    DateTime
+  lastSeenAt   DateTime @default(now())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([scope, windowEnd])
+  @@index([lastSeenAt])
+}
+
+model ScheduleMutex {
+  userId    String
+  bucketKey String
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, bucketKey])
+}
+
+model ScheduleReservation {
+  id             String   @id @default(cuid())
+  userId         String
+  entityType     String
+  entityId       String
+  title          String
+  startDateTime  DateTime
+  endDateTime    DateTime
+  timezone       String   @default("America/Sao_Paulo")
+  recurrenceRule String?
+  status         String   @default("ACTIVE")
+  version        Int      @default(1)
+  dedupeKey      String   @unique
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([entityType, entityId])
+  @@index([userId, startDateTime, endDateTime])
+  @@index([userId, status])
+}
+
+model NotificationPolicy {
+  id                     String   @id @default(cuid())
+  userId                 String   @unique
+  maxPerDay              Int      @default(4)
+  minimumIntervalMinutes Int      @default(120)
+  quietHoursStart        String   @default("22:00")
+  quietHoursEnd          String   @default("07:00")
+  ignoredReductionAfter  Int      @default(3)
+  lockScreenPrivacy      String   @default("HIDE_SENSITIVE")
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+  user                   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Profile {
+  id                          String   @id @default(cuid())
+  userId                      String   @unique
+  mainGoal                    String
+  dailyTime                   String
+  preferredTime               String
+  stressLevel                 String
+  difficultyArea              String
+  workHours                   Int      @default(8)
+  freeHours                   Int      @default(2)
+  sleepHours                  Int      @default(7)
+  sleepAlarm                  String?
+  wakeAlarm                   String?
+  alarmsEnabled               Boolean  @default(false)
+  sleepAlarmEnabled           Boolean  @default(false)
+  wakeAlarmEnabled            Boolean  @default(false)
+  nativeSleepAlarmId          String?
+  nativeWakeAlarmId           String?
+  trainingIntensityPreference String   @default("manter")
+  movementPreferences         String?
+  theme                       String   @default("system")
+  language                    String   @default("pt-BR")
+  lastPreferenceUpdate        DateTime @default(now())
+  emailRecommendationsEnabled Boolean  @default(false)
+  pushNotificationsEnabled    Boolean  @default(false)
+  dailyRecommendationTime     String?
+  createdAt                   DateTime @default(now())
+  updatedAt                   DateTime @updatedAt
+  user                        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Checkin {
+  id                          String                       @id @default(cuid())
+  userId                      String
+  moodScore                   Int
+  focusScore                  Int                          @default(3)
+  stressScore                 Int
+  energyScore                 Int
+  sleepScore                  Int
+  dispositionScore            Int                          @default(3)
+  tirednessScore              Int                          @default(3)
+  anxietyScore                Int                          @default(3)
+  painScore                   Int                          @default(1)
+  painRegion                  String?
+  availableMinutes            Int                          @default(5)
+  journalText                 String?
+  riskDetected                Boolean                      @default(false)
+  aiSummary                   String
+  aiRecommendation            String
+  dailyMissionTitle           String
+  dailyMissionDescription     String
+  dailyMissionSteps           String
+  encouragement               String
+  profileState                String?
+  primaryArea                 String?
+  secondaryArea               String?
+  manualTags                  String?
+  detectedTags                String?
+  recommendationReason        String?
+  recommendedInstructionSlug  String?
+  recommendedExerciseId       String?
+  alternativeExerciseId       String?
+  createdAt                   DateTime                     @default(now())
+  user                        User                         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  missionCompletions          MissionCompletion[]
+  recommendedExercise         Exercise?                    @relation("RecommendedExercise", fields: [recommendedExerciseId], references: [id], onDelete: SetNull)
+  alternativeExercise         Exercise?                    @relation("AlternativeExercise", fields: [alternativeExerciseId], references: [id], onDelete: SetNull)
+  exerciseSessions            ExerciseSession[]
+  exerciseInstructionSessions ExerciseInstructionSession[]
+  activityCompletions         ActivityCompletion[]
+  recommendationDecision      RecommendationDecision?
+}
+
+model Mission {
+  id                 String              @id @default(cuid())
+  title              String              @unique
+  category           String
+  durationMinutes    Int
+  description        String
+  steps              String
+  unlockLevel        Int                 @default(1)
+  isPremium          Boolean             @default(false)
+  complexity         String              @default("Simples")
+  activityType       String              @default("Autocuidado")
+  intensity          String              @default("Leve")
+  safetyNote         String?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  missionCompletions MissionCompletion[]
+}
+
+model MissionCompletion {
+  id          String   @id @default(cuid())
+  userId      String
+  missionId   String?
+  checkinId   String?
+  xpAwarded   Int      @default(0)
+  levelAfter  Int      @default(1)
+  completedAt DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  mission     Mission? @relation(fields: [missionId], references: [id], onDelete: SetNull)
+  checkin     Checkin? @relation(fields: [checkinId], references: [id], onDelete: SetNull)
+}
+
+model WorkoutRoutine {
+  id              String           @id @default(cuid())
+  title           String           @unique
+  category        String
+  modality        String
+  minLevel        Int              @default(1)
+  description     String
+  intensity       String
+  paceMin         Int?
+  paceMax         Int?
+  rounds          Int
+  roundSeconds    Int
+  restSeconds     Int
+  warmupSteps     String
+  cooldownSteps   String
+  safetyNotes     String
+  alternative     String?
+  xpReward        Int              @default(15)
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  workoutSessions WorkoutSession[]
+}
+
+model WorkoutSession {
+  id              String         @id @default(cuid())
+  userId          String
+  routineId       String
+  roundsCompleted Int
+  durationSeconds Int
+  paceUsed        Int?
+  xpAwarded       Int            @default(0)
+  completedAt     DateTime       @default(now())
+  user            User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  routine         WorkoutRoutine @relation(fields: [routineId], references: [id], onDelete: Cascade)
+}
+
+model Exercise {
+  id                  String            @id
+  area                String
+  level               Int
+  title               String            @unique
+  shortDescription    String
+  durationMinutes     Int
+  difficultyLabel     String
+  objective           String
+  steps               String
+  contraindications   String
+  recommendedWhen     String
+  avoidWhen           String
+  xpReward            Int               @default(15)
+  imageKey            String
+  animationPromptKey  String
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+  recommendedCheckins Checkin[]         @relation("RecommendedExercise")
+  alternativeCheckins Checkin[]         @relation("AlternativeExercise")
+  sessions            ExerciseSession[]
+}
+
+model ExerciseProgress {
+  id               String   @id @default(cuid())
+  userId           String
+  area             String
+  completedCount   Int      @default(0)
+  currentAreaLevel Int      @default(1)
+  updatedAt        DateTime @updatedAt
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, area])
+}
+
+model ExerciseSession {
+  id          String    @id @default(cuid())
+  userId      String
+  exerciseId  String
+  checkinId   String?
+  startedAt   DateTime  @default(now())
+  completedAt DateTime?
+  xpAwarded   Int       @default(0)
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exercise    Exercise  @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  checkin     Checkin?  @relation(fields: [checkinId], references: [id], onDelete: SetNull)
+}
+
+model ExerciseInstruction {
+  id                 String                       @id @default(cuid())
+  slug               String                       @unique
+  title              String
+  area               String
+  category           String
+  categoryGroup      String                       @default("PHYSICAL")
+  level              Int
+  unlockLevel        Int                          @default(1)
+  instructionType    String
+  shortDescription   String
+  objective          String
+  durationSeconds    Int?
+  sets               Int?
+  reps               String?
+  restSeconds        Int?
+  intensity          String
+  equipment          String
+  imageKey           String
+  animationPromptKey String
+  recommendedWhen    String
+  avoidWhen          String
+  contraindications  String
+  howToSteps         String
+  postureTips        String
+  breathingTips      String
+  commonMistakes     String
+  safetyNotes        String
+  createdAt          DateTime                     @default(now())
+  updatedAt          DateTime                     @updatedAt
+  sessions           ExerciseInstructionSession[]
+}
+
+model ExerciseInstructionSession {
+  id             String              @id @default(cuid())
+  userId         String
+  instructionId  String
+  checkinId      String?
+  startedAt      DateTime            @default(now())
+  completedAt    DateTime?
+  xpAwarded      Int                 @default(10)
+  closingMessage String?
+  nextSuggestion String?
+  user           User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  instruction    ExerciseInstruction @relation(fields: [instructionId], references: [id], onDelete: Cascade)
+  checkin        Checkin?            @relation(fields: [checkinId], references: [id], onDelete: SetNull)
+}
+
+model InstructionalVideo {
+  id                String   @id @default(cuid())
+  slug              String   @unique
+  targetType        String
+  targetSlug        String
+  title             String
+  category          String
+  durationSeconds   Int
+  videoUrl          String
+  thumbnailUrl      String
+  tags              String
+  intensity         String
+  equipment         String
+  position          String
+  benefitPrimary    String
+  narrationScript   String
+  batchWave         Int
+  formatPrimary     String   @default("9:16")
+  formatSecondary   String   @default("1:1")
+  status            String   @default("PLANNED")
+  approvalChecklist String
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([targetType, targetSlug])
+  @@index([batchWave])
+  @@index([status])
+}
+
+model CatalogVisualAsset {
+  id                        String    @id @default(cuid())
+  identityKey               String    @unique
+  catalogSection            String
+  catalogArea               String
+  catalogIdOrSlug           String
+  catalogTitle              String
+  matchType                 String
+  matchedReferenceMovement  String
+  imageAction               String
+  visualAssetMode           String
+  pullFromReferenceMovement String
+  reusedFromReferenceId     String?
+  reusedFromReferenceIds    String    @default("[]")
+  reusedFromMovementId      String?
+  reusedFromMovementIds     String    @default("[]")
+  reusedFromAssetPattern    String
+  reusedFromAssetPatterns   String    @default("[]")
+  canonicalPoseId           String?
+  imageSourcePath           String?
+  resolvedImagePaths        String    @default("[]")
+  physicalFilesFound        String    @default("[]")
+  physicalFilesMissing      String    @default("[]")
+  requiredPhysicalFiles     String    @default("[]")
+  requiresCompleteAssetSet  Boolean   @default(true)
+  approvalRequirement       String    @default("NONE")
+  approvalStatus            String    @default("APPROVED")
+  dependencyMovementIds     String    @default("[]")
+  releasePolicy             String    @default("COMPLETE")
+  decisionDate              DateTime?
+  approvalDate              DateTime?
+  approvalNote              String?
+  blockReasonCode           String?
+  assetStatus               String    @default("PLANNED")
+  videoStatus               String    @default("PLANNED")
+  needsReview               Boolean   @default(false)
+  notes                     String?
+  createdAt                 DateTime  @default(now())
+  updatedAt                 DateTime  @updatedAt
+
+  @@index([catalogArea])
+  @@index([catalogSection, catalogIdOrSlug])
+  @@index([assetStatus])
+  @@index([visualAssetMode])
+}
+
+model CatalogReconciliation {
+  id                          String   @id @default(cuid())
+  identityKey                 String   @unique
+  catalogArea                 String
+  catalogIdOrSlug             String
+  catalogTitle                String
+  sourceCatalog               String
+  reconciliationStatus        String
+  imageStatus                 String
+  archiveReason               String?
+  mappingCount                Int      @default(0)
+  matchedReferenceMovementIds String   @default("[]")
+  resolvedImagePaths          String   @default("[]")
+  candidateImagePaths         String   @default("[]")
+  blockReasonCode             String?
+  needsReview                 Boolean  @default(false)
+  createdAt                   DateTime @default(now())
+  updatedAt                   DateTime @updatedAt
+
+  @@index([catalogArea, catalogIdOrSlug])
+  @@index([reconciliationStatus])
+  @@index([sourceCatalog])
+}
+
+model ActivityCompletion {
+  id               String   @id @default(cuid())
+  dedupeKey        String   @unique
+  userId           String
+  activityType     String
+  source           String
+  targetId         String
+  checkinId        String?
+  completionToken  String
+  domainRecordType String
+  domainRecordId   String?
+  xpAwarded        Int      @default(0)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  checkin          Checkin? @relation(fields: [checkinId], references: [id], onDelete: SetNull)
+
+  @@index([userId, activityType, targetId])
+  @@index([checkinId])
+  @@index([completionToken])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model RoutineReminder {
+  id                   String    @id @default(cuid())
+  userId               String
+  title                String
+  description          String?
+  category             String
+  time                 String
+  enabled              Boolean   @default(true)
+  days                 String    @default("1,2,3,4,5,6,0")
+  note                 String?
+  reminderType         String    @default("PAUSE")
+  scheduledAt          DateTime?
+  repeatRule           String    @default("DAILY")
+  snoozeEnabled        Boolean   @default(false)
+  snoozeMinutesOptions String    @default("[5,10,15]")
+  lastSnoozedAt        DateTime?
+  status               String    @default("ACTIVE")
+  nativeNotificationId String?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model RoutineTask {
+  id              String    @id @default(cuid())
+  userId          String
+  title           String
+  description     String?
+  category        String    @default("ROTINA")
+  notes           String?
+  dueDate         DateTime?
+  dueTime         String?
+  dueAt           DateTime?
+  calendarEventId String?
+  notificationId  String?
+  status          String    @default("PENDING")
+  priority        String    @default("MEDIUM")
+  completedAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model SocialDowntime {
+  id             String   @id @default(cuid())
+  userId         String   @unique
+  enabled        Boolean  @default(false)
+  startTime      String   @default("21:30")
+  endTime        String   @default("07:00")
+  apps           String   @default("Instagram,TikTok,YouTube,X")
+  days           String   @default("1,2,3,4,5,6,0")
+  note           String?
+  objective      String   @default("PROTECT_FOCUS")
+  categoriesJson String   @default("[]")
+  exceptionsJson String   @default("[]")
+  platformState  String   @default("MANUAL_CONFIGURATION")
+  lastReportJson String   @default("{}")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model AgendaEvent {
+  id                 String           @id @default(cuid())
+  userId             String
+  title              String
+  description        String?
+  startDateTime      DateTime
+  endDateTime        DateTime
+  allDay             Boolean          @default(false)
+  timezone           String           @default("America/Sao_Paulo")
+  category           String           @default("ROTINA")
+  priority           String           @default("MEDIUM")
+  energyLevel        String           @default("MODERATE")
+  source             String           @default("LOCAL")
+  externalCalendarId String?
+  externalEventId    String?
+  recurrenceRule     String?
+  reminderMinutes    String           @default("[30]")
+  status             String           @default("CONFIRMED")
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+  deletedAt          DateTime?
+  user               User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scheduledTasks     AgendaTask[]     @relation("AgendaTaskScheduledEvent")
+  linkedReminders    AgendaReminder[] @relation("AgendaReminderEvent")
+
+  @@index([userId, startDateTime])
+  @@index([userId, status])
+  @@index([externalCalendarId, externalEventId])
+}
+
+model AgendaTask {
+  id                String           @id @default(cuid())
+  userId            String
+  title             String
+  description       String?
+  dueDate           DateTime?
+  estimatedDuration Int?
+  category          String           @default("TAREFA")
+  priority          String           @default("MEDIUM")
+  energyLevel       String           @default("MODERATE")
+  status            String           @default("PENDING")
+  scheduledEventId  String?
+  reminders         String           @default("[]")
+  tags              String?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+  user              User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scheduledEvent    AgendaEvent?     @relation("AgendaTaskScheduledEvent", fields: [scheduledEventId], references: [id], onDelete: SetNull)
+  linkedReminders   AgendaReminder[] @relation("AgendaReminderTask")
+
+  @@index([userId, status])
+  @@index([userId, dueDate])
+}
+
+model AgendaReminder {
+  id              String       @id @default(cuid())
+  userId          String
+  title           String
+  message         String?
+  dateTime        DateTime
+  recurrenceRule  String?
+  priority        String       @default("MEDIUM")
+  notificationId  String?
+  linkedEventId   String?
+  linkedTaskId    String?
+  status          String       @default("ACTIVE")
+  escalationLevel Int          @default(0)
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  linkedEvent     AgendaEvent? @relation("AgendaReminderEvent", fields: [linkedEventId], references: [id], onDelete: Cascade)
+  linkedTask      AgendaTask?  @relation("AgendaReminderTask", fields: [linkedTaskId], references: [id], onDelete: Cascade)
+
+  @@index([userId, dateTime])
+  @@index([userId, status])
+}
+
+model AgendaHabit {
+  id             String   @id @default(cuid())
+  userId         String
+  title          String
+  category       String   @default("HABITO")
+  recurrenceRule String
+  target         String?
+  reminderTimes  String   @default("[]")
+  streak         Int      @default(0)
+  status         String   @default("ACTIVE")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+}
+
+model CalendarConnection {
+  id                    String   @id @default(cuid())
+  userId                String
+  provider              String
+  externalAccountId     String?
+  accessTokenEncrypted  String?
+  refreshTokenEncrypted String?
+  selectedCalendarIds   String   @default("[]")
+  syncEnabled           Boolean  @default(false)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, provider])
+}
+
+model SyncQueue {
+  id         String   @id @default(cuid())
+  userId     String
+  action     String
+  entityType String
+  entityId   String
+  provider   String   @default("LOCAL")
+  status     String   @default("PENDING")
+  retryCount Int      @default(0)
+  lastError  String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+  @@index([entityType, entityId])
+}
+
+model InboxItem {
+  id            String   @id @default(cuid())
+  userId        String
+  rawText       String?
+  rawImage      String?
+  rawAudio      String?
+  extractedText String?
+  suggestedType String?
+  status        String   @default("OPEN")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+  @@index([userId, createdAt])
+}
+
+model YogaPractice {
+  id                     String                @id @default(cuid())
+  slug                   String                @unique
+  title                  String
+  yogaType               String
+  area                   String
+  level                  Int
+  unlockLevel            Int                   @default(1)
+  context                String
+  shortDescription       String
+  objective              String
+  durationSeconds        Int
+  intensity              String
+  imageKey               String
+  imageSequenceKeys      String
+  animationPromptKey     String
+  imagePrompt            String
+  imageSequencePrompt    String
+  imageFrameDescriptions String
+  recommendedWhen        String
+  avoidWhen              String
+  contraindications      String
+  howToSteps             String
+  postureTips            String
+  breathingTips          String
+  commonMistakes         String
+  safetyNotes            String
+  progressionTips        String
+  createdAt              DateTime              @default(now())
+  updatedAt              DateTime              @updatedAt
+  sessions               YogaPracticeSession[]
+}
+
+model YogaSequence {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  title           String
+  description     String
+  level           Int
+  context         String
+  durationSeconds Int
+  goals           String
+  practiceSlugs   String
+  imageKey        String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model YogaPracticeSession {
+  id          String       @id @default(cuid())
+  userId      String
+  practiceId  String
+  checkinId   String?
+  startedAt   DateTime     @default(now())
+  completedAt DateTime?
+  xpAwarded   Int          @default(10)
+  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  practice    YogaPractice @relation(fields: [practiceId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([practiceId])
+}
+
+model Achievement {
+  id               String            @id @default(cuid())
+  slug             String            @unique
+  title            String
+  description      String
+  icon             String
+  triggerType      String
+  targetValue      Int               @default(1)
+  createdAt        DateTime          @default(now())
+  userAchievements UserAchievement[]
+}
+
+model UserAchievement {
+  id            String      @id @default(cuid())
+  userId        String
+  achievementId String
+  unlockedAt    DateTime    @default(now())
+  createdAt     DateTime    @default(now())
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, achievementId])
+  @@index([userId])
+}
+
+model FocusSession {
+  id                    String    @id @default(cuid())
+  userId                String
+  completionToken       String?   @unique
+  durationMinutes       Int
+  completedSeconds      Int       @default(0)
+  suggestedExerciseSlug String?
+  source                String    @default("ROUTINE")
+  status                String    @default("RUNNING")
+  startedAt             DateTime  @default(now())
+  pausedAt              DateTime?
+  cancelledAt           DateTime?
+  completedAt           DateTime?
+  updatedAt             DateTime? @updatedAt
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+}
+
+model WeeklyPlan {
+  id        String   @id @default(cuid())
+  userId    String
+  weekIso   String
+  itemsJson String
+  source    String   @default("LOCAL")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, weekIso])
+  @@index([userId])
+}
+
+model HealthMetricSnapshot {
+  id           String   @id @default(cuid())
+  userId       String
+  date         DateTime @default(now())
+  steps        Int?
+  sleepMinutes Int?
+  heartRateAvg Int?
+  source       String   @default("MANUAL")
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, date])
+}
+
+model WalkingSession {
+  id                String   @id @default(cuid())
+  userId            String
+  activityType      String   @default("walking")
+  walkingMode       String
+  goal              String   @default("free")
+  startedAt         DateTime
+  endedAt           DateTime
+  durationSeconds   Int
+  movingTimeSeconds Int
+  distanceMeters    Float    @default(0)
+  averagePace       String   @default("--")
+  averageSpeedKmh   Float    @default(0)
+  caloriesEstimated Float    @default(0)
+  gpsEnabled        Boolean  @default(false)
+  timerOnly         Boolean  @default(true)
+  routePoints       String   @default("[]")
+  privacy           String   @default("private")
+  hideRouteEdges    Boolean  @default(false)
+  moodBefore        Int?
+  moodAfter         Int?
+  stressBefore      Int?
+  stressAfter       Int?
+  anxietyBefore     Int?
+  anxietyAfter      Int?
+  notes             String?
+  completed         Boolean  @default(true)
+  xpAwarded         Int      @default(15)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, startedAt])
+  @@index([userId, walkingMode])
+}
+
+model WalkingGoal {
+  id                    String   @id @default(cuid())
+  userId                String
+  period                String
+  targetDistanceMeters  Float    @default(0)
+  targetDurationSeconds Int      @default(0)
+  targetSessions        Int      @default(0)
+  active                Boolean  @default(true)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, period])
+  @@index([userId, active])
+}
+
+model WalkingFavoriteRoute {
+  id             String    @id @default(cuid())
+  userId         String
+  title          String
+  walkingMode    String
+  distanceMeters Float     @default(0)
+  routePoints    String    @default("[]")
+  privacy        String    @default("private")
+  hideRouteEdges Boolean   @default(true)
+  lastUsedAt     DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, lastUsedAt])
+}
+
+model ContentCategory {
+  id          String           @id @default(cuid())
+  slug        String           @unique
+  pillar      String
+  title       String
+  description String
+  modality    String
+  locale      String           @default("pt-BR")
+  status      String           @default("DRAFT")
+  approvedAt  DateTime?
+  version     Int              @default(1)
+  sortOrder   Int              @default(0)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  circuits    ContentCircuit[]
+
+  @@index([pillar, status, sortOrder])
+  @@index([modality, status])
+}
+
+model ContentCircuit {
+  id              String            @id @default(cuid())
+  slug            String            @unique
+  categoryId      String
+  title           String
+  objective       String
+  difficulty      String
+  level           Int               @default(1)
+  durationSeconds Int?
+  locale          String            @default("pt-BR")
+  status          String            @default("DRAFT")
+  approvedAt      DateTime?
+  version         Int               @default(1)
+  sortOrder       Int               @default(0)
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  category        ContentCategory   @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  movements       ContentMovement[]
+
+  @@index([categoryId, status, sortOrder])
+}
+
+model ContentMovement {
+  id                String         @id @default(cuid())
+  slug              String         @unique
+  circuitId         String
+  sourceType        String
+  sourceKey         String
+  title             String
+  objective         String
+  level             Int            @default(1)
+  durationSeconds   Int?
+  difficulty        String
+  progression       String
+  thumbnailKey      String
+  relatedAssetsJson String         @default("[]")
+  contraindications String         @default("[]")
+  locale            String         @default("pt-BR")
+  status            String         @default("DRAFT")
+  approvedAt        DateTime?
+  version           Int            @default(1)
+  sortOrder         Int            @default(0)
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  circuit           ContentCircuit @relation(fields: [circuitId], references: [id], onDelete: Cascade)
+
+  @@unique([sourceType, sourceKey])
+  @@index([circuitId, status, sortOrder])
+}
+
+model EditorialCard {
+  id             String    @id @default(cuid())
+  slug           String    @unique
+  category       String
+  title          String
+  summary        String
+  sourceName     String
+  sourceUrl      String
+  equivalentText String
+  imagePath      String
+  locale         String    @default("pt-BR")
+  status         String    @default("DRAFT")
+  approvedAt     DateTime?
+  version        Int       @default(1)
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@index([category, status])
+}
+
+model RecommendationDecision {
+  id                   String             @id @default(cuid())
+  userId               String
+  checkinId            String             @unique
+  engineVersion        String
+  outcomeType          String
+  intensity            String
+  difficulty           String
+  durationMinutes      Int
+  modality             String
+  circuitSlug          String?
+  movementSourceKey    String?
+  movementCount        Int                @default(1)
+  pauseSeconds         Int                @default(30)
+  alternativeSourceKey String?
+  avoidedContentJson   String             @default("[]")
+  factorsJson          String
+  justification        String
+  alternativeReason    String
+  canIgnore            Boolean            @default(true)
+  safetyBlock          Boolean            @default(false)
+  createdAt            DateTime           @default(now())
+  user                 User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  checkin              Checkin            @relation(fields: [checkinId], references: [id], onDelete: Cascade)
+  notificationPlans    NotificationPlan[]
+
+  @@index([userId, createdAt])
+  @@index([engineVersion, outcomeType])
+}
+
+model SessionFeedback {
+  id              String   @id @default(cuid())
+  userId          String
+  sourceType      String
+  sourceId        String
+  completed       Boolean  @default(false)
+  abandoned       Boolean  @default(false)
+  responseScore   Int?
+  perceivedEffort Int?
+  notes           String?
+  createdAt       DateTime @default(now())
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([sourceType, sourceId])
+}
+
+model NotificationPlan {
+  id                       String                  @id @default(cuid())
+  userId                   String
+  recommendationDecisionId String?
+  subject                  String
+  scheduledFor             DateTime
+  frequency                String
+  endsAt                   DateTime?
+  privacy                  String                  @default("HIDE_SENSITIVE")
+  deepLink                 String
+  status                   String                  @default("PLANNED")
+  reason                   String
+  createdAt                DateTime                @default(now())
+  updatedAt                DateTime                @updatedAt
+  user                     User                    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  recommendationDecision   RecommendationDecision? @relation(fields: [recommendationDecisionId], references: [id], onDelete: SetNull)
+
+  @@index([userId, status, scheduledFor])
+  @@index([recommendationDecisionId])
+}
+
+model PausaActivity {
+  id                    String           @id @default(cuid())
+  userId                String
+  clientActivityId      String?
+  activityType          String
+  status                String           @default("ACTIVE")
+  startedAt             DateTime         @default(now())
+  pausedAt              DateTime?
+  resumedAt             DateTime?
+  endedAt               DateTime?
+  totalTimeSeconds      Int              @default(0)
+  movingTimeSeconds     Int              @default(0)
+  pausedTimeSeconds     Int              @default(0)
+  distanceMeters        Float            @default(0)
+  averagePaceSecondsKm  Float?
+  averageSpeedKmh       Float            @default(0)
+  pauseCount            Int              @default(0)
+  elevationGainMeters   Float            @default(0)
+  perceivedEffortBefore Int?
+  perceivedEffortAfter  Int?
+  responseBefore        Int?
+  responseAfter         Int?
+  privacy               String           @default("PRIVATE")
+  hideRouteEdges        Boolean          @default(true)
+  syncStatus            String           @default("SYNCED")
+  metricsVersion        String           @default("pausa-metrics-2026.07.25-v1")
+  notes                 String?
+  createdAt             DateTime         @default(now())
+  updatedAt             DateTime         @updatedAt
+  user                  User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  points                ActivityPoint[]
+  metrics               ActivityMetric[]
+  route                 ActivityRoute?
+
+  @@unique([userId, clientActivityId])
+  @@index([userId, startedAt])
+  @@index([userId, status])
+}
+
+model ActivityPoint {
+  id              String        @id @default(cuid())
+  activityId      String
+  capturedAt      DateTime
+  latitude        Float
+  longitude       Float
+  accuracyMeters  Float?
+  altitudeMeters  Float?
+  sequence        Int
+  accepted        Boolean       @default(true)
+  rejectionReason String?
+  createdAt       DateTime      @default(now())
+  activity        PausaActivity @relation(fields: [activityId], references: [id], onDelete: Cascade)
+
+  @@unique([activityId, sequence])
+  @@index([activityId, capturedAt])
+}
+
+model ActivityMetric {
+  id            String        @id @default(cuid())
+  activityId    String
+  metricType    String
+  numericValue  Float
+  unit          String
+  sourceKind    String
+  engineVersion String
+  createdAt     DateTime      @default(now())
+  activity      PausaActivity @relation(fields: [activityId], references: [id], onDelete: Cascade)
+
+  @@unique([activityId, metricType])
+  @@index([sourceKind, engineVersion])
+}
+
+model ActivityRoute {
+  id               String        @id @default(cuid())
+  userId           String
+  sourceActivityId String        @unique
+  title            String
+  photoPath        String?
+  privacy          String        @default("PRIVATE")
+  hideRouteEdges   Boolean       @default(true)
+  trimStartPoints  Int           @default(0)
+  trimEndPoints    Int           @default(0)
+  shareAllowed     Boolean       @default(false)
+  routePointsJson  String        @default("[]")
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  user             User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sourceActivity   PausaActivity @relation(fields: [sourceActivityId], references: [id], onDelete: Cascade)
+
+  @@index([userId, updatedAt])
+}
+
+model HealthProfileEntry {
+  id             String   @id @default(cuid())
+  userId         String
+  metricType     String
+  valueJson      String
+  recordedAt     DateTime @default(now())
+  sourceKind     String
+  consentId      String?
+  deviceId       String?
+  quality        String   @default("REPORTED")
+  correctionOfId String?
+  notes          String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, metricType, recordedAt])
+  @@index([sourceKind])
+}
+
+model DataConsent {
+  id            String    @id @default(cuid())
+  userId        String
+  scope         String
+  sourceKind    String
+  status        String    @default("GRANTED")
+  grantedAt     DateTime  @default(now())
+  revokedAt     DateTime?
+  retentionDays Int       @default(365)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, scope, sourceKind])
+  @@index([userId, status])
+}
+
+model ConnectedDevice {
+  id               String    @id @default(cuid())
+  userId           String
+  manufacturer     String
+  model            String
+  deviceType       String
+  appName          String?
+  connectionType   String
+  capabilitiesJson String    @default("[]")
+  status           String    @default("DECLARED")
+  lastTestedAt     DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+}
+
+model DataVaultEvent {
+  id           String   @id @default(cuid())
+  userId       String
+  recordType   String
+  recordId     String
+  action       String
+  sourceKind   String
+  consentId    String?
+  quality      String
+  metadataJson String   @default("{}")
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([recordType, recordId])
+}
+
+model MediaAsset {
+  id                     String               @id @default(cuid())
+  slug                   String               @unique
+  title                  String
+  assetType              String
+  hash                   String               @unique
+  sourcePath             String
+  mimeType               String
+  format                 String
+  width                  Int?
+  height                 Int?
+  durationSeconds        Float?
+  codec                  String?
+  language               String               @default("pt-BR")
+  status                 MediaLifecycleStatus @default(DRAFT)
+  rightsHolder           String
+  proofPath              String?
+  commercialUseAllowed   Boolean              @default(false)
+  transformationsAllowed Boolean              @default(false)
+  territoriesJson        String               @default("[]")
+  channelsJson           String               @default("[]")
+  requiredCredit         String?
+  licenseExpiresAt       DateTime?
+  withdrawnAt            DateTime?
+  createdAt              DateTime             @default(now())
+  updatedAt              DateTime             @updatedAt
+  versions               MediaVersion[]
+  localizations          MediaLocalization[]
+  licenses               MediaLicense[]
+  outgoingRelations      MediaRelation[]      @relation("MediaRelationSource")
+  approvals              MediaApproval[]
+  publications           MediaPublication[]
+  metrics                MediaMetric[]
+  videoProductions       VideoProduction[]
+  voiceScripts           VoiceScript[]
+
+  @@index([assetType, status])
+  @@index([licenseExpiresAt])
+}
+
+model MediaVersion {
+  id            String     @id @default(cuid())
+  assetId       String
+  version       Int
+  hash          String
+  sourcePath    String
+  changeSummary String
+  createdAt     DateTime   @default(now())
+  asset         MediaAsset @relation(fields: [assetId], references: [id], onDelete: Cascade)
+
+  @@unique([assetId, version])
+  @@index([hash])
+}
+
+model MediaLocalization {
+  id             String     @id @default(cuid())
+  assetId        String
+  language       String
+  localizedTitle String
+  alternateText  String
+  transcription  String?
+  captionsPath   String?
+  status         String     @default("PENDING")
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+  asset          MediaAsset @relation(fields: [assetId], references: [id], onDelete: Cascade)
+
+  @@unique([assetId, language])
+  @@index([language, status])
+}
+
+model MediaLicense {
+  id                     String     @id @default(cuid())
+  assetId                String
+  rightsHolder           String
+  proofPath              String
+  commercialUseAllowed   Boolean
+  transformationsAllowed Boolean
+  territoriesJson        String
+  channelsJson           String
+  requiredCredit         String?
+  validFrom              DateTime
+  expiresAt              DateTime?
+  status                 String     @default("ACTIVE")
+  createdAt              DateTime   @default(now())
+  updatedAt              DateTime   @updatedAt
+  asset                  MediaAsset @relation(fields: [assetId], references: [id], onDelete: Cascade)
+
+  @@index([assetId, status, expiresAt])
+}
+
+model MediaRelation {
+  id            String     @id @default(cuid())
+  sourceAssetId String
+  targetType    String
+  targetId      String
+  relationType  String
+  createdAt     DateTime   @default(now())
+  sourceAsset   MediaAsset @relation("MediaRelationSource", fields: [sourceAssetId], references: [id], onDelete: Cascade)
+
+  @@unique([sourceAssetId, targetType, targetId, relationType])
+  @@index([targetType, targetId])
+}
+
+model MediaApproval {
+  id         String     @id @default(cuid())
+  assetId    String
+  stage      String
+  decision   String     @default("PENDING")
+  reviewerId String?
+  notes      String?
+  decidedAt  DateTime?
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  asset      MediaAsset @relation(fields: [assetId], references: [id], onDelete: Cascade)
+
+  @@unique([assetId, stage])
+  @@index([decision, stage])
+}
+
+model MediaPublication {
+  id          String               @id @default(cuid())
+  assetId     String
+  channel     String
+  status      MediaLifecycleStatus @default(APPROVED)
+  publishedAt DateTime?
+  suspendedAt DateTime?
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @updatedAt
+  asset       MediaAsset           @relation(fields: [assetId], references: [id], onDelete: Cascade)
+  metrics     MediaMetric[]
+
+  @@unique([assetId, channel])
+  @@index([channel, status])
+}
+
+model MediaMetric {
+  id            String            @id @default(cuid())
+  assetId       String
+  publicationId String?
+  metricType    String
+  numericValue  Float
+  recordedAt    DateTime          @default(now())
+  source        String
+  asset         MediaAsset        @relation(fields: [assetId], references: [id], onDelete: Cascade)
+  publication   MediaPublication? @relation(fields: [publicationId], references: [id], onDelete: SetNull)
+
+  @@index([assetId, metricType, recordedAt])
+  @@index([publicationId])
+}
+
+model VoiceScript {
+  id               String      @id @default(cuid())
+  slug             String      @unique
+  title            String
+  language         String      @default("pt-BR")
+  templateKey      String
+  scriptText       String
+  variablesJson    String      @default("{}")
+  version          Int         @default(1)
+  voiceLicenseNote String
+  generatedAssetId String?
+  status           String      @default("DRAFT")
+  transcription    String
+  captionsText     String
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+  generatedAsset   MediaAsset? @relation(fields: [generatedAssetId], references: [id], onDelete: SetNull)
+
+  @@index([language, status])
+}
+
+model VideoProduction {
+  id                    String     @id @default(cuid())
+  slug                  String     @unique
+  sourceAssetId         String
+  ownershipConfirmed    Boolean    @default(false)
+  dubbingAuthorized     Boolean    @default(false)
+  biomechanicsApproved  Boolean    @default(false)
+  legalApproved         Boolean    @default(false)
+  editorialApproved     Boolean    @default(false)
+  accessibilityApproved Boolean    @default(false)
+  pipelineStatus        String     @default("PLANNED")
+  createdAt             DateTime   @default(now())
+  updatedAt             DateTime   @updatedAt
+  sourceAsset           MediaAsset @relation(fields: [sourceAssetId], references: [id], onDelete: Cascade)
+
+  @@index([pipelineStatus])
+}
+
+model MarketingCampaign {
+  id           String             @id @default(cuid())
+  slug         String             @unique
+  title        String
+  objective    String
+  audience     String
+  channel      String
+  format       String
+  callToAction String
+  deepLink     String
+  scheduledFor DateTime?
+  status       String             @default("DRAFT")
+  approvedAt   DateTime?
+  metricsJson  String             @default("{}")
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+  contents     MarketingContent[]
+
+  @@index([channel, status, scheduledFor])
+}
+
+model MarketingContent {
+  id         String            @id @default(cuid())
+  campaignId String
+  pillar     String
+  format     String
+  assetId    String?
+  copyText   String
+  sortOrder  Int               @default(0)
+  createdAt  DateTime          @default(now())
+  updatedAt  DateTime          @updatedAt
+  campaign   MarketingCampaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+
+  @@index([campaignId, sortOrder])
+}
+
+model ShareCard {
+  id                   String   @id @default(cuid())
+  userId               String
+  sourceType           String
+  sourceId             String
+  format               String
+  title                String
+  summary              String
+  previewPath          String?
+  fullNameVisible      Boolean  @default(false)
+  exactLocationVisible Boolean  @default(false)
+  sensitiveDataVisible Boolean  @default(false)
+  status               String   @default("DRAFT")
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([sourceType, sourceId])
+}
+
+model AudioProviderCapability {
+  id                 String    @id @default(cuid())
+  providerKey        String
+  capability         String
+  enabled            Boolean   @default(false)
+  credentialsPresent Boolean   @default(false)
+  testStatus         String    @default("NOT_TESTED")
+  lastTestedAt       DateTime?
+  configJson         String    @default("{}")
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  @@unique([providerKey, capability])
+  @@index([enabled, testStatus])
+}
+
+model B2BLead {
+  id            String    @id @default(cuid())
+  name          String
+  email         String
+  phone         String
+  company       String
+  role          String
+  employeeCount Int
+  interest      String
+  message       String?
+  status        String    @default("NOVO")
+  notes         String?
+  nextContactAt DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Partner {
+  id              String            @id @default(cuid())
+  name            String
+  type            String
+  benefitProvider String
+  websiteUrl      String?
+  instagramUrl    String?
+  bookingUrl      String?
+  status          String            @default("COMING_SOON")
+  description     String
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  interests       PartnerInterest[]
+}
+
+model PartnerInterest {
+  id           String   @id @default(cuid())
+  userId       String
+  partnerId    String
+  interestType String
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  partner      Partner  @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+}
+
+model Company {
+  id            String              @id @default(cuid())
+  name          String
+  plan          String
+  employeeLimit Int
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  metrics       CompanyMetricMock[]
+  users         User[]
+}
+
+model CompanyMetricMock {
+  id             String   @id @default(cuid())
+  companyId      String
+  date           DateTime
+  avgMood        Float
+  avgStress      Float
+  avgSleep       Float
+  avgEnergy      Float
+  engagementRate Float
+  company        Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}

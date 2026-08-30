@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-10T11:35:37.595Z",
+  "policy": "human photo based final assets; no stick-figure/vector placeholder art",
+  "include_video_frames": true,
+  "force": false,
+  "total_updated": 2460,
+  "rendered": {
+    "exercise": 624,
+    "walking": 36,
+    "yoga": 216,
+    "video-frame": 981
+  },
+  "skipped_existing_human_photo": {
+    "exercise": 460,
+    "video-frame": 143
+  },
+  "masters": {
+    "breathing": "public\\art-masters\\human-breathing.png",
+    "focus": "public\\art-masters\\human-focus.png",
+    "functional": "public\\art-masters\\human-functional.png",
+    "sleep": "public\\art-masters\\human-sleep.png",
+    "stretch": "public\\art-masters\\human-stretch.png",
+    "walking": "public\\art-masters\\human-walking.png",
+    "yogaEnergy": "public\\art-masters\\human-yoga-energy.png",
+    "yogaLight": "public\\art-masters\\human-yoga-light.png"
+  }
+}

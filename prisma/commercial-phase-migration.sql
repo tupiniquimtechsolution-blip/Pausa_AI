@@ -1,0 +1,3 @@
+ALTER TABLE "Profile" ADD COLUMN "movementPreferences" TEXT;
+ALTER TABLE "B2BLead" ADD COLUMN "notes" TEXT;
+ALTER TABLE "B2BLead" ADD COLUMN "nextContactAt" DATETIME;

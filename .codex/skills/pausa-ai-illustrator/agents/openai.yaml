@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pausa AI Illustrator"
+  short_description: "Batch visual assets for Pausa AI"
+  default_prompt: "Use $pausa-ai-illustrator to generate one Pausa AI movement batch from the supplied step prompts."

@@ -1,0 +1,109 @@
+{
+  "slug": "extensao-toracica-cadeira",
+  "title": "Extensao toracica na cadeira",
+  "content_type": "body_movement",
+  "app_instruction_slug": "extensao-toracica-cadeira",
+  "category": "STRETCHING",
+  "category_label": "Alongamentos Regionais",
+  "duration_seconds": 75,
+  "video_url": "/videos/extensao-toracica-cadeira.mp4",
+  "thumbnail_url": "/videos/thumbs/extensao-toracica-cadeira.jpg",
+  "visual_reference_url": "/exercises/gratidao-rapida.png",
+  "source_image_url": "/exercises/extensao-toracica-cadeira.png",
+  "source_image_role": "pose_reference",
+  "source_frame_urls": [
+    "/exercises/extensao-toracica-cadeira-1.png",
+    "/exercises/extensao-toracica-cadeira-2.png",
+    "/exercises/extensao-toracica-cadeira-3.png",
+    "/exercises/extensao-toracica-cadeira-4.png",
+    "/exercises/extensao-toracica-cadeira-5.png"
+  ],
+  "character_reference_urls": [
+    "/exercises/gratidao-rapida.png",
+    "/exercises/ritual-sono-sem-tela.png",
+    "/exercises/checkin-emocional-guiado.png"
+  ],
+  "tags": [
+    "pausa",
+    "stretching",
+    "muito",
+    "tempo",
+    "sentado",
+    "mobilidade",
+    "extensao",
+    "toracica",
+    "cadeira"
+  ],
+  "intensity": "muito_leve",
+  "equipment": "Nenhum ou apoio confortavel",
+  "position": [
+    "sentado"
+  ],
+  "benefit_primary": "Reduzir rigidez e melhorar conforto em coluna toracica.",
+  "batch_wave": 3,
+  "scene": "Sala clara, tapete claro, luz natural suave, fundo off-white ou verde-musgo muito suave.",
+  "camera_style": [
+    "plano medio ou plano americano",
+    "vista lateral para alinhamento",
+    "close em maos, pes ou coluna quando necessario",
+    "cortes suaves sem pressa"
+  ],
+  "narration_script": "[00:00 - 00:05] Que bom que voce parou um momento para Extensao toracica na cadeira. Pode ser agora, do jeito que voce esta.\n[00:06 - 00:15] Reduzir rigidez e melhorar conforto em coluna toracica.\n[00:16 - 00:25] Voce precisa de nenhum ou apoio confortavel. Nao precisa ser perfeito; so o que for confortavel hoje.\n[00:26 - 01:04] Entre na posicao devagar e com apoio se precisar. Ajuste ate sentir tensao confortavel, sem dor aguda. Movimente dentro da amplitude disponivel de forma lenta. Respire sem prender o ar e retorne com calma, sem pressa. Se precisar, diminua a amplitude ou pause por alguns segundos.\n[01:05 - 01:15] Isso. Voce acabou de fazer algo por voce. Fica dois segundos em silencio e deixa a tela clarear devagar.",
+  "shot_plan": [
+    "00:00-00:05: plano medio, titulo em tela e movimento minimo de chegada.",
+    "00:06-00:15: texto curto de beneficio com demonstracao suave ou gesto preparatorio.",
+    "00:16-00:25: close em apoio, cadeira, tapete ou objeto necessario; validacao emocional em voz.",
+    "00:26-01:04: execucao guiada com camera estatica, cortes suaves e close lateral quando houver alinhamento postural.",
+    "01:05-01:15: encerramento com frase de reconhecimento, 2s de silencio e fade para off-white."
+  ],
+  "subtitle_cues": [
+    {
+      "start": "00:00",
+      "end": "00:05",
+      "text": "Extensao toracica na cadeira"
+    },
+    {
+      "start": "00:06",
+      "end": "00:15",
+      "text": "Reduzir rigidez e melhorar conforto em coluna toracica."
+    },
+    {
+      "start": "00:16",
+      "end": "00:25",
+      "text": "Nao precisa ser perfeito. So o que for confortavel."
+    },
+    {
+      "start": "00:26",
+      "end": "01:04",
+      "text": "No seu ritmo, com respiracao tranquila."
+    },
+    {
+      "start": "01:05",
+      "end": "01:15",
+      "text": "Voce se cuidou hoje."
+    }
+  ],
+  "approval_status": "script_ready_needs_final_video",
+  "approval_checklist": {
+    "duracao_dentro_do_range": "done",
+    "abertura_com_nome_em_audio_e_texto": "pending",
+    "beneficio_claro_ate_10s": "done",
+    "narracao_gentil_sem_jargao": "done",
+    "legendas_presentes": "pending",
+    "imagem_1080p": "pending",
+    "audio_limpo": "pending",
+    "musica_sem_sobrepor_narracao": "pending",
+    "encerramento_com_reconhecimento": "done",
+    "fade_suave": "pending",
+    "metadados_json_salvos": "done",
+    "thumbnail_gerada": "done",
+    "mp4_h264_exportado": "blocked",
+    "catalogo_do_app_mapeado": "done"
+  },
+  "notes": [
+    "Criado a partir da ficha oficial do app.",
+    "Imagem simplificada da ficha deve servir apenas como referencia tecnica de pose; a personagem final deve vir das referencias premium.",
+    "MP4 final exige filmagem, animacao ou renderizador externo antes de publicacao."
+  ],
+  "production_prompt": "Crie um video vertical 9:16 em 1080x1920 para \"Extensao toracica na cadeira\". Use obrigatoriamente a mesma personagem recorrente das referencias aprovadas: /exercises/gratidao-rapida.png, /exercises/ritual-sono-sem-tela.png, /exercises/checkin-emocional-guiado.png. A imagem da ficha (/exercises/extensao-toracica-cadeira.png) e apenas referencia tecnica de pose/composicao; nao reproduza o visual simplificado como personagem final. Cenario: Sala clara, tapete claro, luz natural suave, fundo off-white ou verde-musgo muito suave. Tom: humano, acolhedor, sem julgamento, sem performance e sem estetica fitness agressiva. Personagem: mulher adulta com cabelo escuro preso em coque, expressao calma, blusa azul-marinho, estilo premium semi-realista/fotografico consistente com as referencias anteriores. Camera: plano medio ou plano americano; vista lateral para alinhamento; close em maos, pes ou coluna quando necessario; cortes suaves sem pressa. Duracao alvo: 75s. Conteudo: corpo e movimento instrucional. Narracao: use exatamente a estrutura com abertura, beneficio, preparacao, execucao guiada e encerramento presentes no campo narration_script. Legendas: sempre presentes, fonte limpa e contraste acessivel. Nao usar: \"Vamos la!\", \"Arrasa!\", \"Forca!\", \"Sente a queimacao\", \"Doi pra crescer\"."
+}

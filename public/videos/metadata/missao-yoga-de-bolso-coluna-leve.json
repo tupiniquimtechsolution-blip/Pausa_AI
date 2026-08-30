@@ -1,0 +1,108 @@
+{
+  "slug": "missao-yoga-de-bolso-coluna-leve",
+  "title": "Yoga de bolso: coluna leve",
+  "content_type": "classic_mission",
+  "app_instruction_slug": "yoga-bolso-coluna-leve",
+  "category": "CLASSIC_MISSION",
+  "category_label": "Missoes Classicas",
+  "duration_seconds": 240,
+  "video_url": "/videos/missao-yoga-de-bolso-coluna-leve.mp4",
+  "thumbnail_url": "/videos/thumbs/missao-yoga-de-bolso-coluna-leve.jpg",
+  "visual_reference_url": "/exercises/gratidao-rapida.png",
+  "source_image_url": "/exercises/yoga-bolso-coluna-leve.png",
+  "source_image_role": "pose_reference",
+  "source_frame_urls": [
+    "/exercises/yoga-bolso-coluna-leve-1.png",
+    "/exercises/yoga-bolso-coluna-leve-2.png",
+    "/exercises/yoga-bolso-coluna-leve-3.png",
+    "/exercises/yoga-bolso-coluna-leve-4.png",
+    "/exercises/yoga-bolso-coluna-leve-5.png"
+  ],
+  "character_reference_urls": [
+    "/exercises/gratidao-rapida.png",
+    "/exercises/checkin-emocional-guiado.png",
+    "/exercises/diario-3-linhas.png"
+  ],
+  "tags": [
+    "pausa",
+    "classic_mission",
+    "demonstracao-postural-suave",
+    "yoga",
+    "bolso",
+    "coluna"
+  ],
+  "intensity": "muito_leve",
+  "equipment": "Nenhum",
+  "position": [
+    "em pe",
+    "sentado"
+  ],
+  "benefit_primary": "Trazer movimento suave ao corpo sem virar treino intenso.",
+  "batch_wave": 1,
+  "scene": "Espaco aberto e claro, tapete discreto, planta ao fundo e luz difusa.",
+  "camera_style": [
+    "plano medio com presenca humana",
+    "close em gesto natural",
+    "camera estatica ou pan suave",
+    "fundo levemente fora de foco"
+  ],
+  "narration_script": "[00:00 - 00:05] Que bom que voce parou um momento para Yoga de bolso: coluna leve. Pode ser agora, do jeito que voce esta.\n[00:06 - 00:15] Trazer movimento suave ao corpo sem virar treino intenso.\n[00:16 - 00:25] Voce precisa de nenhum. Nao precisa ser perfeito; so o que for confortavel hoje.\n[00:26 - 03:49] Sente-se ou fique em pe com apoio. Cresca a coluna inspirando. Incline o tronco suavemente para um lado e depois para o outro. Gire ombros devagar. Finalize com tres respiracoes longas. Se precisar, diminua a amplitude ou pause por alguns segundos.\n[03:50 - 04:00] Isso. Voce acabou de fazer algo por voce. Fica dois segundos em silencio e deixa a tela clarear devagar.",
+  "shot_plan": [
+    "00:00-00:05: plano medio, titulo em tela e movimento minimo de chegada.",
+    "00:06-00:15: texto curto de beneficio com demonstracao suave ou gesto preparatorio.",
+    "00:16-00:25: close em apoio, cadeira, tapete ou objeto necessario; validacao emocional em voz.",
+    "00:26-03:49: execucao guiada com camera estatica, cortes suaves e close lateral quando houver alinhamento postural.",
+    "03:50-04:00: encerramento com frase de reconhecimento, 2s de silencio e fade para off-white."
+  ],
+  "subtitle_cues": [
+    {
+      "start": "00:00",
+      "end": "00:05",
+      "text": "Yoga de bolso: coluna leve"
+    },
+    {
+      "start": "00:06",
+      "end": "00:15",
+      "text": "Trazer movimento suave ao corpo sem virar treino intenso."
+    },
+    {
+      "start": "00:16",
+      "end": "00:25",
+      "text": "Nao precisa ser perfeito. So o que for confortavel."
+    },
+    {
+      "start": "00:26",
+      "end": "03:49",
+      "text": "No seu ritmo, com respiracao tranquila."
+    },
+    {
+      "start": "03:50",
+      "end": "04:00",
+      "text": "Voce se cuidou hoje."
+    }
+  ],
+  "approval_status": "script_ready_needs_final_video",
+  "approval_checklist": {
+    "duracao_dentro_do_range": "done",
+    "abertura_com_nome_em_audio_e_texto": "pending",
+    "beneficio_claro_ate_10s": "done",
+    "narracao_gentil_sem_jargao": "done",
+    "legendas_presentes": "pending",
+    "imagem_1080p": "pending",
+    "audio_limpo": "pending",
+    "musica_sem_sobrepor_narracao": "pending",
+    "encerramento_com_reconhecimento": "done",
+    "fade_suave": "pending",
+    "metadados_json_salvos": "done",
+    "thumbnail_gerada": "done",
+    "mp4_h264_exportado": "blocked",
+    "catalogo_do_app_mapeado": "done"
+  },
+  "notes": [
+    "Missao classica #12: Demonstracao postural suave.",
+    "Mapeada para ficha existente: yoga-bolso-coluna-leve.",
+    "Imagem simplificada da ficha deve servir apenas como referencia tecnica de pose; a personagem final deve vir das referencias premium.",
+    "MP4 final exige filmagem, animacao ou renderizador externo antes de publicacao."
+  ],
+  "production_prompt": "Crie um video vertical 9:16 em 1080x1920 para \"Yoga de bolso: coluna leve\". Use obrigatoriamente a mesma personagem recorrente das referencias aprovadas: /exercises/gratidao-rapida.png, /exercises/checkin-emocional-guiado.png, /exercises/diario-3-linhas.png. A imagem da ficha (/exercises/yoga-bolso-coluna-leve.png) e apenas referencia tecnica de pose/composicao; nao reproduza o visual simplificado como personagem final. Cenario: Espaco aberto e claro, tapete discreto, planta ao fundo e luz difusa. Tom: humano, acolhedor, sem julgamento, sem performance e sem estetica fitness agressiva. Personagem: mulher adulta com cabelo escuro preso em coque, expressao calma, blusa azul-marinho, estilo premium semi-realista/fotografico consistente com as referencias anteriores. Camera: plano medio com presenca humana; close em gesto natural; camera estatica ou pan suave; fundo levemente fora de foco. Duracao alvo: 240s. Conteudo: missao classica narrativa. Narracao: use exatamente a estrutura com abertura, beneficio, preparacao, execucao guiada e encerramento presentes no campo narration_script. Legendas: sempre presentes, fonte limpa e contraste acessivel. Nao usar: \"Vamos la!\", \"Arrasa!\", \"Forca!\", \"Sente a queimacao\", \"Doi pra crescer\"."
+}

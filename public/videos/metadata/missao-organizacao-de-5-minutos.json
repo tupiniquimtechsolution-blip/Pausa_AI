@@ -1,0 +1,105 @@
+{
+  "slug": "missao-organizacao-de-5-minutos",
+  "title": "Organizacao de 5 minutos",
+  "content_type": "classic_mission",
+  "app_instruction_slug": "organizacao-5-minutos",
+  "category": "CLASSIC_MISSION",
+  "category_label": "Missoes Classicas",
+  "duration_seconds": 90,
+  "video_url": "/videos/missao-organizacao-de-5-minutos.mp4",
+  "thumbnail_url": "/videos/thumbs/missao-organizacao-de-5-minutos.jpg",
+  "visual_reference_url": "/exercises/organizacao-5-minutos.png",
+  "source_image_url": "/exercises/organizacao-5-minutos.png",
+  "source_image_role": "character_reference",
+  "source_frame_urls": [
+    "/exercises/organizacao-5-minutos-1.png",
+    "/exercises/organizacao-5-minutos-2.png",
+    "/exercises/organizacao-5-minutos-3.png"
+  ],
+  "character_reference_urls": [
+    "/exercises/organizacao-5-minutos.png",
+    "/exercises/diario-descarrego-mental.png",
+    "/exercises/gratidao-rapida.png"
+  ],
+  "tags": [
+    "pausa",
+    "classic_mission",
+    "ambiente-de-trabalho-acao-rapida",
+    "organizacao",
+    "minutos"
+  ],
+  "intensity": "muito_leve",
+  "equipment": "Nenhum",
+  "position": [
+    "em pe",
+    "sentado"
+  ],
+  "benefit_primary": "Criar clareza organizando uma pequena area.",
+  "batch_wave": 4,
+  "scene": "Mesa de trabalho organizada, luz de janela, objetos minimos e cadeira estavel.",
+  "camera_style": [
+    "plano medio com presenca humana",
+    "close em gesto natural",
+    "camera estatica ou pan suave",
+    "fundo levemente fora de foco"
+  ],
+  "narration_script": "[00:00 - 00:05] Que bom que voce parou um momento para Organizacao de 5 minutos. Pode ser agora, do jeito que voce esta.\n[00:06 - 00:15] Criar clareza organizando uma pequena area.\n[00:16 - 00:25] Voce precisa de nenhum. Nao precisa ser perfeito; so o que for confortavel hoje.\n[00:26 - 01:19] Se quiser, prepare um espaco tranquilo. Pratique organizacao de 5 minutos pelo tempo sugerido. Se for confortavel, mantenha o ritmo confortavel. Finalize percebendo como o corpo esta agora. Se precisar, diminua a amplitude ou pause por alguns segundos.\n[01:20 - 01:30] Isso. Voce acabou de fazer algo por voce. Fica dois segundos em silencio e deixa a tela clarear devagar.",
+  "shot_plan": [
+    "00:00-00:05: plano medio, titulo em tela e movimento minimo de chegada.",
+    "00:06-00:15: texto curto de beneficio com demonstracao suave ou gesto preparatorio.",
+    "00:16-00:25: close em apoio, cadeira, tapete ou objeto necessario; validacao emocional em voz.",
+    "00:26-01:19: execucao guiada com camera estatica, cortes suaves e close lateral quando houver alinhamento postural.",
+    "01:20-01:30: encerramento com frase de reconhecimento, 2s de silencio e fade para off-white."
+  ],
+  "subtitle_cues": [
+    {
+      "start": "00:00",
+      "end": "00:05",
+      "text": "Organizacao de 5 minutos"
+    },
+    {
+      "start": "00:06",
+      "end": "00:15",
+      "text": "Criar clareza organizando uma pequena area."
+    },
+    {
+      "start": "00:16",
+      "end": "00:25",
+      "text": "Nao precisa ser perfeito. So o que for confortavel."
+    },
+    {
+      "start": "00:26",
+      "end": "01:19",
+      "text": "No seu ritmo, com respiracao tranquila."
+    },
+    {
+      "start": "01:20",
+      "end": "01:30",
+      "text": "Voce se cuidou hoje."
+    }
+  ],
+  "approval_status": "script_ready_needs_final_video",
+  "approval_checklist": {
+    "duracao_dentro_do_range": "done",
+    "abertura_com_nome_em_audio_e_texto": "pending",
+    "beneficio_claro_ate_10s": "done",
+    "narracao_gentil_sem_jargao": "done",
+    "legendas_presentes": "pending",
+    "imagem_1080p": "pending",
+    "audio_limpo": "pending",
+    "musica_sem_sobrepor_narracao": "pending",
+    "encerramento_com_reconhecimento": "done",
+    "fade_suave": "pending",
+    "metadados_json_salvos": "done",
+    "thumbnail_gerada": "done",
+    "mp4_h264_exportado": "blocked",
+    "catalogo_do_app_mapeado": "done"
+  },
+  "notes": [
+    "Missao classica #10: Ambiente de trabalho, acao rapida.",
+    "Mapeada para ficha existente: organizacao-5-minutos.",
+    "Imagem da ficha pode servir como referencia visual da personagem.",
+    "MP4 final exige filmagem, animacao ou renderizador externo antes de publicacao."
+  ],
+  "production_prompt": "Crie um video vertical 9:16 em 1080x1920 para \"Organizacao de 5 minutos\". Use obrigatoriamente a mesma personagem recorrente das referencias aprovadas: /exercises/organizacao-5-minutos.png, /exercises/diario-descarrego-mental.png, /exercises/gratidao-rapida.png. A imagem da ficha tambem pode ser usada como referencia de personagem: /exercises/organizacao-5-minutos.png. Cenario: Mesa de trabalho organizada, luz de janela, objetos minimos e cadeira estavel. Tom: humano, acolhedor, sem julgamento, sem performance e sem estetica fitness agressiva. Personagem: mulher adulta com cabelo escuro preso em coque, expressao calma, blusa azul-marinho, estilo premium semi-realista/fotografico consistente com as referencias anteriores. Camera: plano medio com presenca humana; close em gesto natural; camera estatica ou pan suave; fundo levemente fora de foco. Duracao alvo: 90s. Conteudo: missao classica narrativa. Narracao: use exatamente a estrutura com abertura, beneficio, preparacao, execucao guiada e encerramento presentes no campo narration_script. Legendas: sempre presentes, fonte limpa e contraste acessivel. Nao usar: \"Vamos la!\", \"Arrasa!\", \"Forca!\", \"Sente a queimacao\", \"Doi pra crescer\"."
+}

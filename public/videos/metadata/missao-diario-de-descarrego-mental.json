@@ -1,0 +1,105 @@
+{
+  "slug": "missao-diario-de-descarrego-mental",
+  "title": "Diario de descarrego mental",
+  "content_type": "classic_mission",
+  "app_instruction_slug": "diario-descarrego-mental",
+  "category": "CLASSIC_MISSION",
+  "category_label": "Missoes Classicas",
+  "duration_seconds": 90,
+  "video_url": "/videos/missao-diario-de-descarrego-mental.mp4",
+  "thumbnail_url": "/videos/thumbs/missao-diario-de-descarrego-mental.jpg",
+  "visual_reference_url": "/exercises/diario-descarrego-mental.png",
+  "source_image_url": "/exercises/diario-descarrego-mental.png",
+  "source_image_role": "character_reference",
+  "source_frame_urls": [
+    "/exercises/diario-descarrego-mental-1.png",
+    "/exercises/diario-descarrego-mental-2.png",
+    "/exercises/diario-descarrego-mental-3.png"
+  ],
+  "character_reference_urls": [
+    "/exercises/gratidao-rapida.png",
+    "/exercises/checkin-emocional-guiado.png",
+    "/exercises/diario-3-linhas.png"
+  ],
+  "tags": [
+    "pausa",
+    "classic_mission",
+    "narracao-close-de-caderno-escrita",
+    "diario",
+    "descarrego",
+    "mental"
+  ],
+  "intensity": "muito_leve",
+  "equipment": "Caderno, papel ou campo de anotacao",
+  "position": [
+    "sentado"
+  ],
+  "benefit_primary": "Tirar pensamentos da cabeca e coloca-los no papel de forma livre.",
+  "batch_wave": 4,
+  "scene": "Ambiente intimo, close de rosto, maos e caderno, fundo suave e sem distracoes.",
+  "camera_style": [
+    "plano medio com presenca humana",
+    "close em gesto natural",
+    "camera estatica ou pan suave",
+    "fundo levemente fora de foco"
+  ],
+  "narration_script": "[00:00 - 00:05] Que bom que voce parou um momento para Diario de descarrego mental. Pode ser agora, do jeito que voce esta.\n[00:06 - 00:15] Tirar pensamentos da cabeca e coloca-los no papel de forma livre.\n[00:16 - 00:25] Voce precisa de caderno, papel ou campo de anotacao. Nao precisa ser perfeito; so o que for confortavel hoje.\n[00:26 - 01:19] Pegue um caderno ou use o campo de anotacao. Escreva sem editar e sem julgar. Escolha uma coisa que pode ficar para depois. Finalize com uma frase de cuidado consigo. Se precisar, diminua a amplitude ou pause por alguns segundos.\n[01:20 - 01:30] Isso. Voce acabou de fazer algo por voce. Fica dois segundos em silencio e deixa a tela clarear devagar.",
+  "shot_plan": [
+    "00:00-00:05: plano medio, titulo em tela e movimento minimo de chegada.",
+    "00:06-00:15: texto curto de beneficio com demonstracao suave ou gesto preparatorio.",
+    "00:16-00:25: close em apoio, cadeira, tapete ou objeto necessario; validacao emocional em voz.",
+    "00:26-01:19: execucao guiada com camera estatica, cortes suaves e close lateral quando houver alinhamento postural.",
+    "01:20-01:30: encerramento com frase de reconhecimento, 2s de silencio e fade para off-white."
+  ],
+  "subtitle_cues": [
+    {
+      "start": "00:00",
+      "end": "00:05",
+      "text": "Diario de descarrego mental"
+    },
+    {
+      "start": "00:06",
+      "end": "00:15",
+      "text": "Tirar pensamentos da cabeca e coloca-los no papel de forma livre."
+    },
+    {
+      "start": "00:16",
+      "end": "00:25",
+      "text": "Nao precisa ser perfeito. So o que for confortavel."
+    },
+    {
+      "start": "00:26",
+      "end": "01:19",
+      "text": "No seu ritmo, com respiracao tranquila."
+    },
+    {
+      "start": "01:20",
+      "end": "01:30",
+      "text": "Voce se cuidou hoje."
+    }
+  ],
+  "approval_status": "script_ready_needs_final_video",
+  "approval_checklist": {
+    "duracao_dentro_do_range": "done",
+    "abertura_com_nome_em_audio_e_texto": "pending",
+    "beneficio_claro_ate_10s": "done",
+    "narracao_gentil_sem_jargao": "done",
+    "legendas_presentes": "pending",
+    "imagem_1080p": "pending",
+    "audio_limpo": "pending",
+    "musica_sem_sobrepor_narracao": "pending",
+    "encerramento_com_reconhecimento": "done",
+    "fade_suave": "pending",
+    "metadados_json_salvos": "done",
+    "thumbnail_gerada": "done",
+    "mp4_h264_exportado": "blocked",
+    "catalogo_do_app_mapeado": "done"
+  },
+  "notes": [
+    "Missao classica #6: Narracao + close de caderno/escrita.",
+    "Mapeada para ficha existente: diario-descarrego-mental.",
+    "Imagem da ficha pode servir como referencia visual da personagem.",
+    "MP4 final exige filmagem, animacao ou renderizador externo antes de publicacao."
+  ],
+  "production_prompt": "Crie um video vertical 9:16 em 1080x1920 para \"Diario de descarrego mental\". Use obrigatoriamente a mesma personagem recorrente das referencias aprovadas: /exercises/gratidao-rapida.png, /exercises/checkin-emocional-guiado.png, /exercises/diario-3-linhas.png. A imagem da ficha tambem pode ser usada como referencia de personagem: /exercises/diario-descarrego-mental.png. Cenario: Ambiente intimo, close de rosto, maos e caderno, fundo suave e sem distracoes. Tom: humano, acolhedor, sem julgamento, sem performance e sem estetica fitness agressiva. Personagem: mulher adulta com cabelo escuro preso em coque, expressao calma, blusa azul-marinho, estilo premium semi-realista/fotografico consistente com as referencias anteriores. Camera: plano medio com presenca humana; close em gesto natural; camera estatica ou pan suave; fundo levemente fora de foco. Duracao alvo: 90s. Conteudo: missao classica narrativa. Narracao: use exatamente a estrutura com abertura, beneficio, preparacao, execucao guiada e encerramento presentes no campo narration_script. Legendas: sempre presentes, fonte limpa e contraste acessivel. Nao usar: \"Vamos la!\", \"Arrasa!\", \"Forca!\", \"Sente a queimacao\", \"Doi pra crescer\"."
+}
