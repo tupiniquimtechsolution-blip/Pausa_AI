@@ -32,21 +32,25 @@ This audit does not automatically install external Toolbox references. External 
 
 `package.json` already exposes extensive typecheck, lint, smoke, auth, migration, privacy, catalog, hardening and release gates.
 
+`test:migration-integrity` is a specialized migration gate: it requires explicit `SOURCE_DB` and `TARGET_DB` candidates and must not be simulated in generic CI with two identical databases merely to produce a green result.
+
 ## Changes applied in this branch
 
 ### CI
 
 Added `.github/workflows/ci.yml` with:
 
-- `npm ci`;
+- deterministic root and `mobile/` installs from their lockfiles;
 - Prisma client generation;
 - Prisma schema validation;
 - isolated synthetic SQLite CI database;
-- typecheck;
+- root typecheck;
+- mobile typecheck;
 - lint;
-- migration-integrity check;
 - W8 hardening checks;
 - production build.
+
+The generic CI intentionally excludes `test:migration-integrity`; that command belongs to an authorized migration run supplied with real source/target databases.
 
 The workflow contains no production secrets.
 
@@ -61,6 +65,8 @@ Added `.github/dependabot.yml` for:
 - root npm dependencies;
 - `mobile/` npm dependencies;
 - GitHub Actions.
+
+The first CI install also exposed existing dependency-audit debt. A dedicated issue tracks triage rather than applying `npm audit fix --force` blindly.
 
 ### Ownership and review
 
@@ -117,6 +123,10 @@ Per existing production-readiness/LGPD documents:
 - validated account export/deletion;
 - safe APK/mobile release.
 
+### P1/P2 — Dependency audit debt
+
+The first root install in CI reported 11 vulnerabilities (1 moderate, 9 high, 1 critical). The mobile install reported 24 vulnerabilities (12 moderate, 12 high). These counts are evidence for triage, not proof that every advisory is runtime-exploitable. Issue #5 tracks package/advisory analysis and minimal compatible remediation.
+
 ### P2 — CSP hardening opportunity
 
 Current CSP intentionally contains `'unsafe-inline'` for scripts/styles and development adds `'unsafe-eval'`. Production removes `'unsafe-eval'` but nonce/hash-based CSP could be evaluated later.
@@ -133,9 +143,10 @@ No active penetration test was run as part of this migration. Toolbox rules requ
 
 ## Validation required before merge
 
-- GitHub Actions CI must pass on the PR.
+- GitHub Actions generic CI must pass on the PR.
 - CodeQL result must be reviewed.
 - Any failure must be fixed or explicitly documented; do not suppress security gates without evidence.
+- Migration-integrity checks remain mandatory for actual database migration work with explicit source/target candidates.
 - After merge, configure branch protection/ruleset and verify required checks against the actual workflow names.
 
 ## Status
