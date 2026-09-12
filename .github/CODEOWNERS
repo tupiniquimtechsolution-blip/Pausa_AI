@@ -1,0 +1,16 @@
+# Default ownership
+* @tupiniquimtechsolution-blip
+
+# Security, automation and agent governance
+/.github/ @tupiniquimtechsolution-blip
+/SECURITY.md @tupiniquimtechsolution-blip
+/AGENTS.md @tupiniquimtechsolution-blip
+/.agents/ @tupiniquimtechsolution-blip
+/.claude/ @tupiniquimtechsolution-blip
+/.codex/ @tupiniquimtechsolution-blip
+
+# Sensitive application areas
+/app/api/ @tupiniquimtechsolution-blip
+/lib/security/ @tupiniquimtechsolution-blip
+/lib/privacy/ @tupiniquimtechsolution-blip
+/prisma/ @tupiniquimtechsolution-blip
