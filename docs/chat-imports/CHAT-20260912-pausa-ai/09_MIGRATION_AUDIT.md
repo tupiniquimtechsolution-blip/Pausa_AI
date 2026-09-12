@@ -77,13 +77,14 @@ Quando o transcript exato ficar acessível:
 - áreas `_private/` de staging de migração foram adicionadas ao `.gitignore`;
 - política pública de segurança foi reforçada;
 - templates proíbem dados sensíveis em issues/PRs;
-- branch principal foi detectada como não protegida e isso permanece risco aberto até configuração manual de ruleset/protection.
+- branch principal foi detectada como não protegida e isso permanece risco aberto até configuração manual de ruleset/protection;
+- a instalação inicial de dependências revelou dívida de advisories e ela foi registrada na Issue #5 para triagem sem `--force` cego.
 
 ## AUTOMAÇÃO / TOOLBOX
 
 Nesta branch foram adicionados:
 
-- CI remoto com Prisma/typecheck/lint/migration-integrity/W8/build;
+- CI remoto com installs determinísticos da raiz e mobile, Prisma generate/validate, banco SQLite sintético, root/mobile typecheck, lint, W8 e build;
 - CodeQL;
 - Dependabot para root, mobile e GitHub Actions;
 - CODEOWNERS;
@@ -91,7 +92,14 @@ Nesta branch foram adicionados:
 - bug-report template seguro;
 - estrutura de conhecimento e prompt de migração reutilizável.
 
-Ainda é necessário observar os resultados reais do GitHub Actions antes de considerar esses gates validados.
+`npm run test:migration-integrity` permanece disponível como gate especializado para migrações reais e exige `SOURCE_DB` + `TARGET_DB`; não é simulado no CI genérico.
+
+## EVIDÊNCIA DOS CHECKS DURANTE ESTA MIGRAÇÃO
+
+- CodeQL executou com sucesso nas rodadas já concluídas.
+- Uma primeira rodada de CI revelou que o typecheck raiz alcançava `mobile/` sem as dependências mobile instaladas; o workflow foi corrigido para instalar ambos os lockfiles e root/mobile typecheck passaram na rodada seguinte.
+- Essa rodada seguinte revelou que `test:migration-integrity` exige dois bancos explícitos; o gate foi corretamente removido do CI genérico e mantido como gate específico de migração.
+- A rodada final após esse ajuste deve ser usada como evidência de merge readiness.
 
 ## STATUS FINAL
 
@@ -101,7 +109,8 @@ Ressalvas obrigatórias:
 
 1. a conversa antiga não está integralmente acessível;
 2. a migração permanece `PARTIAL`;
-3. os novos workflows ainda precisam passar no GitHub Actions;
-4. a proteção de `main` ainda precisa ser configurada no GitHub.
+3. o CI final após o último ajuste precisa concluir com sucesso antes do merge;
+4. a proteção de `main` ainda precisa ser configurada no GitHub;
+5. a dívida de advisories de dependências precisa ser triada na Issue #5.
 
 `MIGRATION_STATUS: PARTIAL`
