@@ -1,0 +1,43 @@
+name: Bug report
+description: Relate um defeito reproduzível sem incluir dados sensíveis.
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Não publique secrets, tokens, cookies, senhas, dados pessoais, textos de check-in, dados de saúde ou rotas GPS reais. Para vulnerabilidades de segurança, siga SECURITY.md em vez de abrir uma issue pública.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumo
+      description: O que aconteceu?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Passos para reproduzir
+      description: Use apenas dados sintéticos.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências sanitizadas
+      description: Logs, screenshots ou saídas sem PII/secrets.
+  - type: dropdown
+    id: privacy
+    attributes:
+      label: Envolve dados sensíveis?
+      options:
+        - Não
+        - Possivelmente — não anexei os dados
+    validations:
+      required: true
