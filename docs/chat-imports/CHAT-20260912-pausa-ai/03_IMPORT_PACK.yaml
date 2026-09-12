@@ -1,0 +1,329 @@
+metadata:
+  id: CHAT-20260912-PAUSA-AI
+  type: chat_migration
+  title: Pausa AI knowledge migration from ChatGPT
+  project_id: PROJ-PAUSA-AI
+  status: partial
+  source: authorized_current_context_and_repository
+  confidence: confirmed
+  tags: [pausa-ai, migration, knowledge-base, chatgpt]
+
+entities:
+  - id: PROJ-PAUSA-AI
+    type: project
+    title: Pausa AI
+    status: current
+    source: repository
+    confidence: confirmed
+    tags: [wellness, nextjs, mobile, b2c, b2b]
+
+projects:
+  - id: PROJ-PAUSA-AI
+    type: project
+    title: Pausa AI
+    content: Preventive wellness full-stack MVP with B2C/B2B surfaces and a mobile-oriented core.
+    status: current
+    source: README.md
+    confidence: confirmed
+    relationships: [REPO-PAUSA-AI]
+    tags: [wellbeing, preventive, nextjs, prisma, expo]
+
+decisions:
+  - id: DEC-PAUSA-0001
+    type: decision
+    title: Layered knowledge architecture
+    project_id: PROJ-PAUSA-AI
+    content: Use RAW -> extraction -> dossier -> import pack -> master KB -> prompt library -> project current state -> archive -> logs.
+    status: current
+    source: recovered_context_and_active_migration
+    confidence: confirmed
+    relationships: [RULE-PAUSA-0002]
+    tags: [knowledge, migration]
+  - id: DEC-PAUSA-0002
+    type: decision
+    title: Public repository sanitization takes precedence
+    project_id: PROJ-PAUSA-AI
+    content: Raw conversation preservation is allowed only after sanitization; secrets, PII and identifiable wellbeing/health content must not be committed.
+    status: current
+    source: SECURITY.md_and_active_migration
+    confidence: confirmed
+    relationships: [RULE-PAUSA-0003]
+    tags: [security, lgpd, privacy]
+  - id: DEC-PAUSA-0003
+    type: decision
+    title: Do not fabricate inaccessible old-chat content
+    project_id: PROJ-PAUSA-AI
+    content: Keep migration PARTIAL until the exact private conversation is accessible and audited.
+    status: current
+    source: active_migration
+    confidence: confirmed
+    relationships: [ISSUE-PAUSA-0001]
+    tags: [integrity, provenance]
+
+prompts:
+  - id: PROMPT-PAUSA-0001
+    type: prompt
+    title: ChatGPT Free to GitHub migration agent
+    project_id: PROJ-PAUSA-AI
+    content: Master prompt created in the active migration conversation for forensic extraction, canonical dossier, structured import, audit, checkpoint and PR workflow.
+    status: current
+    source: active_conversation
+    confidence: confirmed
+    relationships: [CHAT-20260912-PAUSA-AI]
+    tags: [prompt, migration, github]
+
+issues:
+  - id: ISSUE-PAUSA-0001
+    type: issue
+    title: Older private ChatGPT conversation inaccessible
+    project_id: PROJ-PAUSA-AI
+    content: The supplied /c/ URL cannot be externally fetched, so exact transcript coverage is not yet possible.
+    status: open
+    source: fetch_attempt
+    confidence: confirmed
+    relationships: [CHAT-20260912-PAUSA-AI]
+    tags: [migration, blocker]
+  - id: ISSUE-PAUSA-0002
+    type: issue
+    title: Main branch unprotected
+    project_id: PROJ-PAUSA-AI
+    content: GitHub reported main as unprotected at audit time.
+    status: open
+    source: github_branch_metadata
+    confidence: confirmed
+    relationships: [TASK-PAUSA-0002]
+    tags: [github, governance, security]
+  - id: ISSUE-PAUSA-0003
+    type: issue
+    title: Remote CI absent on audited main baseline
+    project_id: PROJ-PAUSA-AI
+    content: Prior Toolbox audit documented no GitHub Actions CI on main.
+    status: remediated_pending_merge
+    source: TOOLBOX_AUDIT_2026-09-08.md
+    confidence: confirmed
+    relationships: [SOLUTION-PAUSA-0001]
+    tags: [ci, quality]
+
+solutions:
+  - id: SOLUTION-PAUSA-0001
+    type: solution
+    title: Add repository automation hardening
+    project_id: PROJ-PAUSA-AI
+    content: Migration branch adds CI, CodeQL, Dependabot, CODEOWNERS, PR checklist and safe bug template.
+    status: implemented_in_branch
+    source: migration_branch
+    confidence: confirmed
+    relationships: [ISSUE-PAUSA-0003]
+    tags: [github-actions, security, automation]
+
+tasks:
+  - id: TASK-PAUSA-0001
+    type: task
+    title: Complete exact old-chat ingestion
+    project_id: PROJ-PAUSA-AI
+    content: Obtain accessible transcript/share/export, sanitize, reconcile stable IDs and rerun migration audit.
+    status: blocked
+    source: migration_checkpoint
+    confidence: confirmed
+    relationships: [ISSUE-PAUSA-0001]
+    tags: [migration]
+  - id: TASK-PAUSA-0002
+    type: task
+    title: Enable main branch protection or ruleset
+    project_id: PROJ-PAUSA-AI
+    content: Require pull requests and required CI checks before merge to main.
+    status: pending_repository_setting
+    source: github_branch_metadata
+    confidence: confirmed
+    relationships: [ISSUE-PAUSA-0002]
+    tags: [github, governance]
+
+rules:
+  - id: RULE-PAUSA-0001
+    type: rule
+    title: AGENTS.md is canonical
+    project_id: PROJ-PAUSA-AI
+    content: Agent work follows AGENTS.md first, then project planning/ADRs, then Tupiniquim Toolbox baseline.
+    status: current
+    source: AGENTS.md
+    confidence: confirmed
+    tags: [agents, governance]
+  - id: RULE-PAUSA-0002
+    type: rule
+    title: Preserve knowledge history and conflicts
+    project_id: PROJ-PAUSA-AI
+    content: Do not silently discard old versions or resolve conflicts without evidence.
+    status: current
+    source: recovered_context
+    confidence: confirmed
+    tags: [knowledge, provenance]
+  - id: RULE-PAUSA-0003
+    type: rule
+    title: Never commit sensitive content
+    project_id: PROJ-PAUSA-AI
+    content: No secrets, tokens, cookies, passwords, private dumps, unnecessary PII or identifiable wellbeing/health histories in the public repository.
+    status: current
+    source: SECURITY.md
+    confidence: confirmed
+    tags: [security, privacy, lgpd]
+
+preferences:
+  - id: PREF-PAUSA-0001
+    type: preference
+    title: GitHub as persistence bridge
+    project_id: PROJ-PAUSA-AI
+    content: Preserve migrated knowledge in GitHub so future ChatGPT/agent sessions can continue from versioned artifacts.
+    status: current
+    source: active_user_request
+    confidence: confirmed
+    tags: [github, continuity]
+
+technologies:
+  - id: TECH-PAUSA-NEXTJS
+    type: technology
+    title: Next.js 16
+    project_id: PROJ-PAUSA-AI
+    status: current
+    source: package.json
+    confidence: confirmed
+  - id: TECH-PAUSA-PRISMA
+    type: technology
+    title: Prisma 6
+    project_id: PROJ-PAUSA-AI
+    status: current
+    source: package.json
+    confidence: confirmed
+  - id: TECH-PAUSA-EXPO
+    type: technology
+    title: Expo/WebView companion
+    project_id: PROJ-PAUSA-AI
+    status: current
+    source: README.md
+    confidence: confirmed
+
+tools:
+  - id: TOOL-PAUSA-TOOLBOX
+    type: tool
+    title: Tupiniquim Toolbox
+    project_id: PROJ-PAUSA-AI
+    status: current
+    source: .agents/skills/tupiniquim-toolbox/SKILL.md
+    confidence: confirmed
+
+models: []
+agents:
+  - id: AGENT-PAUSA-MULTILLM
+    type: agent_contract
+    title: Tupiniquim Multi-LLM baseline
+    project_id: PROJ-PAUSA-AI
+    status: current
+    source: AGENTS.md
+    confidence: confirmed
+
+repositories:
+  - id: REPO-PAUSA-AI
+    type: repository
+    title: tupiniquimtechsolution-blip/Pausa_AI
+    project_id: PROJ-PAUSA-AI
+    status: current
+    source: github
+    confidence: confirmed
+
+files:
+  - id: FILE-PAUSA-AGENTS
+    type: file
+    title: AGENTS.md
+    project_id: PROJ-PAUSA-AI
+    status: current
+    source: repository
+    confidence: confirmed
+  - id: FILE-PAUSA-SECURITY
+    type: file
+    title: SECURITY.md
+    project_id: PROJ-PAUSA-AI
+    status: current
+    source: repository
+    confidence: confirmed
+
+links:
+  - id: LINK-PAUSA-OLDCHAT
+    type: link
+    title: Older private ChatGPT conversation
+    project_id: PROJ-PAUSA-AI
+    content: https://chatgpt.com/c/6a2c5f00-667c-83e9-9c41-7826ad8bdb7b
+    status: inaccessible_external_fetch
+    source: active_user_request
+    confidence: confirmed
+
+configurations:
+  - id: CONFIG-PAUSA-CI
+    type: configuration
+    title: Synthetic CI environment
+    project_id: PROJ-PAUSA-AI
+    content: CI uses an isolated SQLite database and test-only placeholders; no production secrets are committed.
+    status: implemented_in_branch
+    source: .github/workflows/ci.yml
+    confidence: confirmed
+
+commands:
+  - id: CMD-PAUSA-TYPECHECK
+    type: command
+    title: Typecheck
+    project_id: PROJ-PAUSA-AI
+    content: npm run typecheck
+    status: current
+    source: package.json
+    confidence: confirmed
+  - id: CMD-PAUSA-W8
+    type: command
+    title: W8 hardening checks
+    project_id: PROJ-PAUSA-AI
+    content: npm run test:w8
+    status: current
+    source: package.json
+    confidence: confirmed
+
+relationships:
+  - from: CHAT-20260912-PAUSA-AI
+    to: PROJ-PAUSA-AI
+    type: documents
+  - from: PROJ-PAUSA-AI
+    to: REPO-PAUSA-AI
+    type: implemented_in
+  - from: SOLUTION-PAUSA-0001
+    to: ISSUE-PAUSA-0003
+    type: remediates
+
+timeline:
+  - id: EVENT-PAUSA-0001
+    date: 2026-09-08
+    content: Toolbox audit documented a mature local baseline but no remote CI.
+    status: historical
+  - id: EVENT-PAUSA-0002
+    date: 2026-09-12
+    content: Migration/security branch created and layered knowledge plus repository automation hardening started.
+    status: current
+
+current_states:
+  - id: KB-PAUSA-CURRENT
+    type: current_state
+    project_id: PROJ-PAUSA-AI
+    content: Development MVP is functional but production readiness remains gated by infrastructure, operational security, privacy/legal and release requirements.
+    status: current
+    source: repository_docs
+    confidence: confirmed
+
+obsolete_information:
+  - id: KB-PAUSA-OBSOLETE-0001
+    type: obsolete_information
+    project_id: PROJ-PAUSA-AI
+    content: Statement that repository has no remote CI becomes superseded only after this branch is merged to main.
+    status: superseded_pending_merge
+    source: migration_branch
+    confidence: confirmed
+
+knowledge_units:
+  - KB-PAUSA-0001
+  - KB-PAUSA-0002
+  - KB-PAUSA-0003
+  - KB-PAUSA-0004
