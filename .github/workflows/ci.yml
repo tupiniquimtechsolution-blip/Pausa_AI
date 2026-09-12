@@ -39,8 +39,15 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            mobile/package-lock.json
 
-      - name: Install dependencies
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Install mobile dependencies
+        working-directory: mobile
         run: npm ci
 
       - name: Generate Prisma Client
@@ -52,7 +59,11 @@ jobs:
       - name: Create isolated CI database
         run: npx prisma db push --skip-generate
 
-      - name: Typecheck
+      - name: Root typecheck
+        run: npm run typecheck
+
+      - name: Mobile typecheck
+        working-directory: mobile
         run: npm run typecheck
 
       - name: Lint
