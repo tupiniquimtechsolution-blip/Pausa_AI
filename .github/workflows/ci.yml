@@ -69,11 +69,12 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Migration integrity
-        run: npm run test:migration-integrity
-
       - name: W8 hardening checks
         run: npm run test:w8
 
       - name: Production build
         run: npm run build
+
+# `npm run test:migration-integrity` is intentionally not a generic CI gate.
+# It compares an explicit SOURCE_DB and TARGET_DB and must run only in an
+# authorized migration workflow with two real migration candidates.
