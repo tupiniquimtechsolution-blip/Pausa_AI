@@ -1,0 +1,54 @@
+name: Release Green Baseline
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "chatgpt/release-green-2026-09-28"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      DATABASE_URL: file:./dev.db
+      JWT_SECRET: ci-release-green-jwt-secret-2026-09-28-long
+      RATE_LIMIT_PEPPER: ci-release-green-rate-pepper-2026-09-28
+      COOKIE_SECURE: "false"
+      APP_BASE_URL: http://127.0.0.1:3000
+      RELEASE_VERSION: ci
+      ADMIN_EMAIL: admin@pausaai.test
+      B2B_REAL_DASHBOARD_ENABLED: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx prisma generate
+      - run: npx prisma validate
+      - run: npx prisma migrate deploy
+      - run: npm run db:seed
+      - run: npm run typecheck
+      - run: npm run lint -- --quiet
+      - run: npm run build
+      - run: npm run test:w8
+      - run: npm run test:w8:database
+
+  cloudflare-compatibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Check vinext compatibility
+        run: npx --yes vinext check
