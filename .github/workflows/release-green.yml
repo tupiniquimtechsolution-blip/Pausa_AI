@@ -60,7 +60,7 @@ jobs:
           mkdir -p artifacts
           npx prisma migrate diff \
             --from-empty \
-            --to-schema prisma/schema.postgresql.prisma \
+            --to-schema-datamodel prisma/schema.postgresql.prisma \
             --script > artifacts/postgres-baseline.sql
           test -s artifacts/postgres-baseline.sql
       - uses: actions/upload-artifact@v4
