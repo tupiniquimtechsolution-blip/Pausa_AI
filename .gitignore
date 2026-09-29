@@ -30,6 +30,11 @@ tmp/
 public/instructional-images/
 .codex/asset-name-quarantine/
 
+# Private/sensitive knowledge-migration staging.
+# Only sanitized material may be moved out of these ignored folders.
+docs/knowledge/00_RAW_CHATS/_private/
+docs/chat-imports/**/_private/
+
 # Expo / React Native / Android local artifacts
 .expo/
 .expo-shared/
