@@ -20,13 +20,13 @@
     "expo-haptics": "^56.0.3",
     "expo-intent-launcher": "~56.0.4",
     "expo-notifications": "^56.0.15",
-    "react": "19.2.3",
+    "react": "19.3.0",
     "react-native": "0.85.3",
     "react-native-health-connect": "^3.5.3",
     "react-native-webview": "^13.16.1"
   },
   "devDependencies": {
-    "@types/react": "^19.2.7",
+    "@types/react": "^19.3.0",
     "typescript": "~6.0.3"
   }
 }
