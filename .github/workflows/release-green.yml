@@ -13,7 +13,7 @@ permissions:
 jobs:
   quality:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     env:
       DATABASE_URL: file:./dev.db
       JWT_SECRET: ci-release-green-jwt-secret-2026-09-28-long
@@ -30,6 +30,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm ci --prefix mobile
       - run: npx prisma generate
       - run: npx prisma validate
       - run: npx prisma migrate deploy
@@ -39,6 +40,34 @@ jobs:
       - run: npm run build
       - run: npm run test:w8
       - run: npm run test:w8:database
+
+  postgres-baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Validate PostgreSQL Prisma schema
+        env:
+          DATABASE_URL: postgresql://placeholder:placeholder@127.0.0.1:5432/pausa_ai
+        run: npx prisma validate --schema prisma/schema.postgresql.prisma
+      - name: Generate PostgreSQL baseline SQL
+        run: |
+          mkdir -p artifacts
+          npx prisma migrate diff \
+            --from-empty \
+            --to-schema prisma/schema.postgresql.prisma \
+            --script > artifacts/postgres-baseline.sql
+          test -s artifacts/postgres-baseline.sql
+      - uses: actions/upload-artifact@v4
+        with:
+          name: postgres-baseline
+          path: artifacts/postgres-baseline.sql
+          if-no-files-found: error
 
   cloudflare-compatibility:
     runs-on: ubuntu-latest
