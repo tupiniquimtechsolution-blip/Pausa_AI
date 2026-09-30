@@ -1,0 +1,62 @@
+name: Validate Prisma PostgreSQL Cloudflare
+
+on:
+  push:
+    branches: ["infra/prisma-cloudflare-postgres"]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: pausa
+          POSTGRES_PASSWORD: testpass
+          POSTGRES_DB: pausa_ai
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U pausa -d pausa_ai"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 20
+    env:
+      DATABASE_URL: postgresql://pausa:testpass@127.0.0.1:5432/pausa_ai
+      JWT_SECRET: ci-only-value-not-production
+      RATE_LIMIT_PEPPER: ci-only-rate-limit-value
+      COOKIE_SECURE: "false"
+      APP_BASE_URL: http://127.0.0.1:8787
+      RELEASE_VERSION: prisma-cloudflare-ci
+      ADMIN_EMAIL: admin@example.test
+      B2B_REAL_DASHBOARD_ENABLED: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Install adapter in runner only
+        run: npm install --no-save @prisma/adapter-pg@6.19.3
+      - name: Generate Prisma clients
+        run: |
+          npx prisma generate
+          npx prisma generate --schema prisma/schema.postgresql.prisma
+      - name: Create PostgreSQL schema
+        run: npx prisma db push --schema prisma/schema.postgresql.prisma --skip-generate
+      - name: Verify PostgreSQL adapter query
+        run: npx tsx scripts/verify-postgres-adapter.ts
+      - run: npm ci --prefix mobile
+      - run: npm run typecheck
+      - run: npm run lint -- --quiet
+      - run: npm run build
+      - run: npm run test:w8
+      - name: Initialize vinext
+        run: npx --yes vinext init --platform=cloudflare --skip-check --data-cache=kv --image-optimization=cloudflare-images
+      - name: Build Worker
+        run: npm run build:vinext
