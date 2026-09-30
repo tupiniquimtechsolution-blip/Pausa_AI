@@ -25,22 +25,30 @@ jobs:
             package-lock.json
             mobile/package-lock.json
       - run: npm ci
-      - name: Root audit report
+      - name: Root audit reports
         shell: bash
         run: |
           mkdir -p artifacts
           npm audit --json > artifacts/npm-audit-root.json || true
-      - name: Mobile audit report
+          npm audit --omit=dev --json > artifacts/npm-audit-root-production.json || true
+      - name: Mobile audit reports
         shell: bash
         run: |
           npm ci --prefix mobile
           (cd mobile && npm audit --json > ../artifacts/npm-audit-mobile.json) || true
+          (cd mobile && npm audit --omit=dev --json > ../artifacts/npm-audit-mobile-production.json) || true
       - name: Print concise audit summary
         shell: bash
         run: |
           node <<'NODE'
           const fs = require("fs");
-          for (const [label, path] of [["root","artifacts/npm-audit-root.json"],["mobile","artifacts/npm-audit-mobile.json"]]) {
+          const reports = [
+            ["root-all","artifacts/npm-audit-root.json"],
+            ["root-production","artifacts/npm-audit-root-production.json"],
+            ["mobile-all","artifacts/npm-audit-mobile.json"],
+            ["mobile-production","artifacts/npm-audit-mobile-production.json"]
+          ];
+          for (const [label, path] of reports) {
             const data = JSON.parse(fs.readFileSync(path, "utf8"));
             const meta = data.metadata?.vulnerabilities || {};
             console.log("\n=== " + label.toUpperCase() + " AUDIT ===");
