@@ -71,6 +71,7 @@
     "deploy:vinext": "vinext-cloudflare deploy"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "6.19.3",
     "@prisma/client": "^6.19.3",
     "@react-pdf/renderer": "^4.5.1",
     "@vinext/cloudflare": "^1.0.0",
