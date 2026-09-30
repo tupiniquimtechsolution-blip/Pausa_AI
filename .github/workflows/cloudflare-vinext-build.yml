@@ -3,11 +3,13 @@ name: Cloudflare Vinext Build Evidence
 on:
   push:
     branches:
-      - "chatgpt/release-green-2026-09-28"
+      - "chatgpt/release-green-finalization-2026-09-30"
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   vinext-build:
@@ -24,6 +26,8 @@ jobs:
       B2B_REAL_DASHBOARD_ENABLED: "false"
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -32,23 +36,27 @@ jobs:
       - run: npx prisma generate
       - run: npx prisma migrate deploy
       - run: npm run db:seed
-      - name: Initialize vinext for Cloudflare in CI workspace
+      - name: Initialize vinext for Cloudflare
         run: npx --yes vinext init --platform=cloudflare --skip-check --data-cache=kv --image-optimization=cloudflare-images
       - name: Build Cloudflare Worker output
         run: npm run build:vinext
-      - name: Capture generated migration files
+      - name: Validate generated source configuration
         shell: bash
         run: |
-          mkdir -p artifacts
-          git diff -- . ':!.github/workflows/cloudflare-vinext-build.yml' > artifacts/vinext-init.patch
-          cp package.json artifacts/package.json
-          cp package-lock.json artifacts/package-lock.json
-          test -f vite.config.ts && cp vite.config.ts artifacts/vite.config.ts
-          test -f cloudflare.config.ts && cp cloudflare.config.ts artifacts/cloudflare.config.ts
-          test -f wrangler.jsonc && cp wrangler.jsonc artifacts/wrangler.jsonc || true
-          git status --short > artifacts/git-status.txt
-      - uses: actions/upload-artifact@v4
-        with:
-          name: vinext-cloudflare-config
-          path: artifacts/
-          if-no-files-found: error
+          test -f vite.config.ts
+          test -f cloudflare.config.ts
+          grep -q '"build:vinext"' package.json
+      - name: Persist generated source configuration on finalization branch
+        if: github.event_name == 'push' && github.actor != 'github-actions[bot]'
+        shell: bash
+        run: |
+          git config user.name "pausa-ai-release-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add package.json package-lock.json vite.config.ts cloudflare.config.ts tsconfig.json .gitignore
+          if [ -f wrangler.jsonc ]; then git add wrangler.jsonc; fi
+          if git diff --cached --quiet; then
+            echo "Vinext source configuration already current."
+          else
+            git commit -m "infra: persist Cloudflare vinext configuration"
+            git push origin HEAD:chatgpt/release-green-finalization-2026-09-30
+          fi
