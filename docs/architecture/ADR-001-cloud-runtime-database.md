@@ -1,6 +1,6 @@
 # ADR-001 — Cloud runtime e banco de staging
 
-Status: PROPOSTO / EM VALIDAÇÃO
+Status: ACEITO PARA STAGING / IMPLEMENTAÇÃO PARCIAL
 Data: 2026-09-28
 
 ## Contexto
@@ -25,11 +25,11 @@ O Pausa AI é uma aplicação Next.js full-stack com Route Handlers, autenticaç
 
 ## Pontos a validar
 
-- conversão do schema SQLite para PostgreSQL;
+- conversão do schema SQLite para PostgreSQL — validada e aplicada no staging;
 - compatibilidade das 9 migrations existentes;
 - estratégia Prisma driver/adapter no Worker;
 - limites de TCP/pooling no Cloudflare;
-- compatibilidade vinext com os recursos Next usados;
+- compatibilidade vinext com os recursos Next usados — check aprovado;
 - cookies, headers e runtime nodejs_compat;
 - jobs/cron;
 - e-mail transacional.
