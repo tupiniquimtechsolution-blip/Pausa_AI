@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-09-30T12:08:43.395Z",
+  "totalRows": 1682,
+  "tables": [
+    {
+      "table": "Exercise",
+      "delegate": "exercise",
+      "rows": 150,
+      "file": "01_Exercise.sql"
+    },
+    {
+      "table": "ExerciseInstruction",
+      "delegate": "exerciseInstruction",
+      "rows": 328,
+      "file": "02_ExerciseInstruction.sql"
+    },
+    {
+      "table": "Partner",
+      "delegate": "partner",
+      "rows": 4,
+      "file": "03_Partner.sql"
+    },
+    {
+      "table": "YogaPractice",
+      "delegate": "yogaPractice",
+      "rows": 30,
+      "file": "04_YogaPractice.sql"
+    },
+    {
+      "table": "YogaSequence",
+      "delegate": "yogaSequence",
+      "rows": 6,
+      "file": "05_YogaSequence.sql"
+    },
+    {
+      "table": "Achievement",
+      "delegate": "achievement",
+      "rows": 18,
+      "file": "06_Achievement.sql"
+    },
+    {
+      "table": "Mission",
+      "delegate": "mission",
+      "rows": 19,
+      "file": "07_Mission.sql"
+    },
+    {
+      "table": "CatalogVisualAsset",
+      "delegate": "catalogVisualAsset",
+      "rows": 189,
+      "file": "08_CatalogVisualAsset.sql"
+    },
+    {
+      "table": "CatalogReconciliation",
+      "delegate": "catalogReconciliation",
+      "rows": 354,
+      "file": "09_CatalogReconciliation.sql"
+    },
+    {
+      "table": "InstructionalVideo",
+      "delegate": "instructionalVideo",
+      "rows": 286,
+      "file": "10_InstructionalVideo.sql"
+    },
+    {
+      "table": "ContentCategory",
+      "delegate": "contentCategory",
+      "rows": 21,
+      "file": "11_ContentCategory.sql"
+    },
+    {
+      "table": "ContentCircuit",
+      "delegate": "contentCircuit",
+      "rows": 21,
+      "file": "12_ContentCircuit.sql"
+    },
+    {
+      "table": "ContentMovement",
+      "delegate": "contentMovement",
+      "rows": 227,
+      "file": "13_ContentMovement.sql"
+    },
+    {
+      "table": "EditorialCard",
+      "delegate": "editorialCard",
+      "rows": 0
+    },
+    {
+      "table": "WorkoutRoutine",
+      "delegate": "workoutRoutine",
+      "rows": 29,
+      "file": "15_WorkoutRoutine.sql"
+    }
+  ]
+}

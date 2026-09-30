@@ -1,0 +1,27 @@
+-- Generated from the canonical Pausa AI seed using a synthetic SQLite database.
+-- Static/reference data only. No users, profiles, credentials, check-ins, GPS or health records.
+-- Table: ContentCategory
+
+INSERT INTO "public"."ContentCategory" ("id", "slug", "pillar", "title", "description", "modality", "locale", "status", "approvedAt", "version", "sortOrder", "createdAt", "updatedAt") VALUES
+('cmuo2akz200yn1o0lyd5771l9', 'mind-respiracao', 'MIND', 'Respiração', 'Práticas respiratórias guiadas.', 'BREATHING', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 20, '2026-09-30T12:08:41.391Z', '2026-09-30T12:08:41.391Z'),
+('cmuo2akzf00yw1o0lx0ni9xcf', 'mind-energia', 'MIND', 'Energia', 'Ativações breves para baixa disposição.', 'ENERGY', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 70, '2026-09-30T12:08:41.403Z', '2026-09-30T12:08:41.403Z'),
+('cmuo2akzr00z91o0lrhdjc8k1', 'mind-estresse-e-irritacao', 'MIND', 'Estresse e irritação', 'Descarga segura de tensão e irritação.', 'STRESS', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 60, '2026-09-30T12:08:41.415Z', '2026-09-30T12:08:41.415Z'),
+('cmuo2al0300zm1o0lti7ii4v7', 'mind-foco', 'MIND', 'Foco', 'Treinos de atenção e Modo Foco.', 'FOCUS_MODE', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 10, '2026-09-30T12:08:41.428Z', '2026-09-30T12:08:41.428Z'),
+('cmuo2al1a010p1o0lshaj2qfw', 'mind-autoconhecimento', 'MIND', 'Autoconhecimento', 'Práticas de percepção e registro.', 'MEDITATION', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 110, '2026-09-30T12:08:41.470Z', '2026-09-30T12:08:41.470Z'),
+('cmuo2al1h010w1o0l0o2fubhk', 'mind-conexao', 'MIND', 'Conexão', 'Ações leves de vínculo e presença.', 'MEDITATION', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 120, '2026-09-30T12:08:41.478Z', '2026-09-30T12:08:41.478Z'),
+('cmuo2al1x01151o0likyyrwf2', 'mind-presenca', 'MIND', 'Presença', 'Contato com corpo e ambiente.', 'MEDITATION', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 130, '2026-09-30T12:08:41.494Z', '2026-09-30T12:08:41.494Z'),
+('cmuo2al27011e1o0l2580027m', 'mind-criatividade', 'MIND', 'Criatividade', 'Pausas criativas sem cobrança.', 'MEDITATION', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 140, '2026-09-30T12:08:41.503Z', '2026-09-30T12:08:41.503Z'),
+('cmuo2al2m011r1o0lsfmtk1lb', 'mind-bem-estar', 'MIND', 'Bem-estar', 'Hábitos simples de bem-estar.', 'MEDITATION', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 150, '2026-09-30T12:08:41.518Z', '2026-09-30T12:08:41.518Z'),
+('cmuo2al2w01201o0lcop8r9x6', 'mind-mentalidade', 'MIND', 'Mentalidade', 'Reflexões para uma rotina mais gentil.', 'MEDITATION', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 160, '2026-09-30T12:08:41.528Z', '2026-09-30T12:08:41.528Z'),
+('cmuo2al3e01291o0l6de77fd3', 'mind-organizacao', 'MIND', 'Organização', 'Organização gentil e clareza mental.', 'FOCUS_MODE', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 90, '2026-09-30T12:08:41.546Z', '2026-09-30T12:08:41.546Z'),
+('cmuo2al3p012k1o0lkuxyoz6i', 'mind-relaxamento', 'MIND', 'Relaxamento', 'Pausas para reduzir carga e recuperar.', 'RELAXATION', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 30, '2026-09-30T12:08:41.557Z', '2026-09-30T12:08:41.557Z'),
+('cmuo2al4k01371o0lhjki4h90', 'mind-sono-desacelerar', 'MIND', 'Sono', 'Rotinas de desaceleração antes de dormir.', 'SLEEP', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 40, '2026-09-30T12:08:41.588Z', '2026-09-30T12:08:41.588Z'),
+('cmuo2al4y013m1o0lkj5tz7xw', 'mind-sono-despertar', 'MIND', 'Despertar', 'Ativações leves para sonolência diurna.', 'SLEEP', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 50, '2026-09-30T12:08:41.602Z', '2026-09-30T12:08:41.602Z'),
+('cmuo2al5u014b1o0lvf02zv7w', 'mind-pausa-mental', 'MIND', 'Pausa mental', 'Recuperação curta durante o trabalho.', 'MEDITATION', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 100, '2026-09-30T12:08:41.634Z', '2026-09-30T12:08:41.634Z'),
+('cmuo2al68014q1o0lz9a6kjy3', 'mind-ansiedade', 'MIND', 'Ansiedade', 'Escritas e pausas de aterramento.', 'ANXIETY', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 80, '2026-09-30T12:08:41.649Z', '2026-09-30T12:08:41.649Z'),
+('cmuo2al6x015d1o0lz40do7kf', 'body-fitness-em-casa', 'BODY', 'Fitness em casa', 'Força e condicionamento sem equipamento obrigatório.', 'FITNESS', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 40, '2026-09-30T12:08:41.673Z', '2026-09-30T12:08:41.673Z'),
+('cmuo2al85016g1o0l45hklwss', 'body-mobilidade', 'BODY', 'Mobilidade', 'Movimentos para amplitude e conforto corporal.', 'MOBILITY', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 20, '2026-09-30T12:08:41.717Z', '2026-09-30T12:08:41.717Z'),
+('cmuo2ala201811o0lpl43frs8', 'body-apoio-ao-sono', 'BODY', 'Apoio ao sono', 'Posições de descanso e conforto.', 'PILATES', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 100, '2026-09-30T12:08:41.786Z', '2026-09-30T12:08:41.786Z'),
+('cmuo2alal018k1o0l7n0fo102', 'body-alongamento', 'BODY', 'Alongamento', 'Alongamentos progressivos por região.', 'STRETCHING', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 30, '2026-09-30T12:08:41.805Z', '2026-09-30T12:08:41.805Z'),
+('cmuo2alc2019v1o0lbimhtwu4', 'body-yoga', 'BODY', 'Yoga', 'Posturas e sequências guiadas por nível.', 'YOGA', 'pt-BR', 'APPROVED', '2026-07-25T12:00:00.000Z', 1, 10, '2026-09-30T12:08:41.858Z', '2026-09-30T12:08:41.858Z')
+ON CONFLICT DO NOTHING;
