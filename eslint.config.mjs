@@ -29,6 +29,7 @@ const eslintConfig = [
   ...nextCoreWebVitals,
   ...nextTypescript,
   {
+    files: ["**/*.{jsx,tsx}"],
     rules: {
       "react-hooks/purity": "warn",
       "react-hooks/set-state-in-effect": "warn",
