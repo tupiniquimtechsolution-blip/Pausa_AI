@@ -1,34 +1,40 @@
 # Pausa AI — Release Status
 
-Atualizado em: 2026-09-28
+Atualizado em: 2026-09-30
 
 | Gate | Área | Status | Evidência atual | Bloqueador |
 |---|---|---|---|---|
-| G0 | Inventário/Baseline | 🟢 GREEN | árvore, stack, páginas, APIs, models e migrations inventariados | — |
-| G1 | Documentação | 🟡 IN PROGRESS | CURRENT_STATE e RELEASE_STATUS criados | README/arquitetura/runbooks ainda a reconciliar |
-| G2 | Repositório | 🟡 IN PROGRESS | branch isolada criada | CI e estrutura documental em implantação |
-| G3 | Código | 🟡 PENDING CI | gates históricos existem | reexecução contemporânea necessária |
-| G4 | Dados | 🔴 BLOCKED | Prisma/SQLite local existem | Supabase Pausa AI ainda não provisionado |
-| G5 | Segurança | 🟡 PENDING AUDIT | hardening histórico W8 | auditoria atual necessária |
-| G6 | Testes | 🟡 PENDING CI | test:w9 e suites existem | reexecução contemporânea necessária |
-| G7 | Cloud | 🔴 BLOCKED | alvo Cloudflare Workers definido | runtime/adaptador e credenciais Cloudflare ausentes |
-| G8 | Staging | 🔴 BLOCKED | plano conhecido | Supabase + Cloudflare staging ausentes |
-| G9 | Release Candidate | 🔴 NO-GO | RC histórica não vale como RC atual | depende de G3–G8 |
-| G10 | Release Green | 🔴 NO-GO | — | depende de todos os gates anteriores |
+| G0 | Inventário/Baseline | 🟢 GREEN | stack, páginas, APIs, 85 models e 9 migrations locais inventariados | — |
+| G1 | Documentação | 🟢 GREEN | README, CURRENT_STATE, RELEASE_STATUS e ADR atualizados | — |
+| G2 | Repositório | 🟢 GREEN | CI, CodeQL, Dependabot, CODEOWNERS, templates e política de segurança integrados | ruleset de main ainda merece configuração administrativa |
+| G3 | Código | 🟢 GREEN | CI contemporâneo passou no commit 37517f5 | — |
+| G4 | Dados | 🟡 PARTIAL | PostgreSQL 17 saudável; 85 tabelas aplicadas; Data API endurecida; teste transacional+rollback aprovado | seed PostgreSQL, backup/restore drill e smoke da aplicação |
+| G5 | Segurança | 🟡 PARTIAL | CodeQL green; Supabase security advisors sem lints; acesso Data API removido | dívida de dependências rastreada na Issue #5; revisão LGPD final externa |
+| G6 | Testes | 🟢 GREEN | CI + W8 + database drill local + Release Green Baseline aprovados | QA físico/mobile/a11y permanece externo |
+| G7 | Cloud | 🟡 PARTIAL | vinext check aprovado e Cloudflare Workers definido como alvo | falta configuração/deploy real em conta Cloudflare |
+| G8 | Staging | 🔴 BLOCKED | banco staging existe | falta aplicação HTTPS publicada e conectada ao banco |
+| G9 | Release Candidate | 🔴 NO-GO | baseline técnica pronta para RC | depende de G4/G5/G7/G8 |
+| G10 | Release Green | 🔴 NO-GO | — | depende de staging real, auditoria final, backup/restore e bloqueadores acima |
+
+## Evidências contemporâneas
+
+- GitHub CI: success no commit `37517f5477ee568a7689aadae92ecd94daf7ab67`.
+- GitHub CodeQL: success no mesmo commit.
+- Release Green Baseline: success no push e no pull request.
+- PostgreSQL Prisma schema: validado e DDL gerado pelo Prisma em CI.
+- Supabase: 85 tabelas `public`, migrations de baseline aplicadas e security advisors sem lints após endurecimento da Data API.
+- Teste de integridade: inserção sintética com FK em transação funcionou; rollback confirmou 0 resíduos.
 
 ## Definição de Green
 
-Release Green exige, no mínimo:
+Release Green exige documentação atualizada, CI green, build green, schema/migrations green, autenticação e autorização validadas, testes críticos green, banco staging persistente, deploy Cloudflare green, smoke HTTPS, backup/restore, rollback e auditoria final sem bloqueadores críticos.
 
-- documentação atualizada;
-- CI green;
-- typecheck, lint e build green;
-- schema/migrations green;
-- autenticação/RBAC/rate limit green;
-- testes críticos green;
-- banco staging persistente green;
-- Cloudflare build/deploy green;
-- smoke HTTPS green;
-- backup/restore green;
-- rollback documentado/testado;
-- auditoria final sem bloqueadores críticos conhecidos.
+## Pendências de maior prioridade
+
+1. resolver/triagear dependências vulneráveis sem upgrades major cegos;
+2. configurar a conexão server-side da aplicação ao PostgreSQL;
+3. aplicar seed canônico em PostgreSQL staging;
+4. configurar e publicar Cloudflare Workers via vinext;
+5. executar smoke HTTPS autenticado;
+6. executar backup/restore drill;
+7. auditoria final e promoção G9 → G10 somente com evidência.
