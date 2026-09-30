@@ -3,8 +3,12 @@ import { mkdir, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const prisma = new PrismaClient();
+const outputDir = join(process.cwd(), "prisma", "staging-seed");
 
-const sources = [
+type Row = Record<string, unknown>;
+type ManifestItem = { table: string; rows: number; file?: string; strategy: string };
+
+const genericSources = [
   ["Exercise", "exercise"],
   ["ExerciseInstruction", "exerciseInstruction"],
   ["Partner", "partner"],
@@ -16,8 +20,6 @@ const sources = [
   ["CatalogReconciliation", "catalogReconciliation"],
   ["InstructionalVideo", "instructionalVideo"],
   ["ContentCategory", "contentCategory"],
-  ["ContentCircuit", "contentCircuit"],
-  ["ContentMovement", "contentMovement"],
   ["EditorialCard", "editorialCard"],
   ["WorkoutRoutine", "workoutRoutine"]
 ] as const;
@@ -40,49 +42,104 @@ function literal(value: unknown): string {
   return "'" + text.replaceAll("'", "''") + "'";
 }
 
+async function writeGeneric(table: string, rows: Row[], index: number, manifest: ManifestItem[]) {
+  if (!rows.length) {
+    manifest.push({ table, rows: 0, strategy: "generic-natural-conflict" });
+    return;
+  }
+  const columns = Object.keys(rows[0]);
+  const statements = [
+    "-- Generated from the canonical Pausa AI seed using a synthetic SQLite database.",
+    "-- Static/reference data only. No users, profiles, credentials, check-ins, GPS or health records.",
+    "-- Generic import uses ON CONFLICT DO NOTHING so existing natural-key rows are preserved.",
+    "-- Table: " + table,
+    ""
+  ];
+  for (let offset = 0; offset < rows.length; offset += 50) {
+    const chunk = rows.slice(offset, offset + 50);
+    statements.push(
+      "INSERT INTO " + ident("public") + "." + ident(table) +
+        " (" + columns.map(ident).join(", ") + ") VALUES\n" +
+        chunk.map((row) => "(" + columns.map((column) => literal(row[column])).join(", ") + ")").join(",\n") +
+        "\nON CONFLICT DO NOTHING;\n"
+    );
+  }
+  const file = String(index).padStart(2, "0") + "_" + table + ".sql";
+  await writeFile(join(outputDir, file), statements.join("\n"), "utf8");
+  manifest.push({ table, rows: rows.length, file, strategy: "generic-natural-conflict" });
+}
+
+async function writeContentCircuits(index: number, manifest: ManifestItem[]) {
+  const [categories, circuits] = await Promise.all([
+    prisma.contentCategory.findMany({ select: { id: true, slug: true } }),
+    prisma.contentCircuit.findMany()
+  ]);
+  const categorySlug = new Map(categories.map((row) => [row.id, row.slug]));
+  const statements = [
+    "-- FK-safe import: categoryId is resolved from ContentCategory.slug in the target database.",
+    ""
+  ];
+  for (const row of circuits) {
+    const slug = categorySlug.get(row.categoryId);
+    if (!slug) throw new Error("Missing category mapping for circuit " + row.slug);
+    const { categoryId: _categoryId, ...rest } = row;
+    const columns = Object.keys(rest);
+    statements.push(
+      "INSERT INTO \"public\".\"ContentCircuit\" (" +
+        columns.map(ident).join(", ") + ', "categoryId")\n' +
+        "SELECT " + columns.map((column) => literal((rest as Row)[column])).join(", ") + ', c."id"\n' +
+        'FROM "public"."ContentCategory" c WHERE c."slug" = ' + literal(slug) + "\n" +
+        "ON CONFLICT DO NOTHING;\n"
+    );
+  }
+  const file = String(index).padStart(2, "0") + "_ContentCircuit.sql";
+  await writeFile(join(outputDir, file), statements.join("\n"), "utf8");
+  manifest.push({ table: "ContentCircuit", rows: circuits.length, file, strategy: "resolve-category-by-slug" });
+}
+
+async function writeContentMovements(index: number, manifest: ManifestItem[]) {
+  const [circuits, movements] = await Promise.all([
+    prisma.contentCircuit.findMany({ select: { id: true, slug: true } }),
+    prisma.contentMovement.findMany()
+  ]);
+  const circuitSlug = new Map(circuits.map((row) => [row.id, row.slug]));
+  const statements = [
+    "-- FK-safe import: circuitId is resolved from ContentCircuit.slug in the target database.",
+    ""
+  ];
+  for (const row of movements) {
+    const slug = circuitSlug.get(row.circuitId);
+    if (!slug) throw new Error("Missing circuit mapping for movement " + row.slug);
+    const { circuitId: _circuitId, ...rest } = row;
+    const columns = Object.keys(rest);
+    statements.push(
+      "INSERT INTO \"public\".\"ContentMovement\" (" +
+        columns.map(ident).join(", ") + ', "circuitId")\n' +
+        "SELECT " + columns.map((column) => literal((rest as Row)[column])).join(", ") + ', c."id"\n' +
+        'FROM "public"."ContentCircuit" c WHERE c."slug" = ' + literal(slug) + "\n" +
+        "ON CONFLICT DO NOTHING;\n"
+    );
+  }
+  const file = String(index).padStart(2, "0") + "_ContentMovement.sql";
+  await writeFile(join(outputDir, file), statements.join("\n"), "utf8");
+  manifest.push({ table: "ContentMovement", rows: movements.length, file, strategy: "resolve-circuit-by-slug" });
+}
+
 async function main() {
-  const outputDir = join(process.cwd(), "prisma", "staging-seed");
   await rm(outputDir, { recursive: true, force: true });
   await mkdir(outputDir, { recursive: true });
 
-  const manifest: Array<{ table: string; delegate: string; rows: number; file?: string }> = [];
+  const manifest: ManifestItem[] = [];
+  let index = 1;
 
-  for (const [table, delegate] of sources) {
-    const model = (prisma as unknown as Record<string, { findMany: () => Promise<Record<string, unknown>[]> }>)[delegate];
+  for (const [table, delegate] of genericSources) {
+    const model = (prisma as unknown as Record<string, { findMany: () => Promise<Row[]> }>)[delegate];
     if (!model?.findMany) throw new Error("Unknown Prisma delegate: " + delegate);
-    const rows = await model.findMany();
-
-    if (!rows.length) {
-      manifest.push({ table, delegate, rows: 0 });
-      continue;
-    }
-
-    const columns = Object.keys(rows[0]);
-    const statements: string[] = [
-      "-- Generated from the canonical Pausa AI seed using a synthetic SQLite database.",
-      "-- Static/reference data only. No users, profiles, credentials, check-ins, GPS or health records.",
-      "-- Table: " + table,
-      ""
-    ];
-
-    const chunkSize = 50;
-    for (let offset = 0; offset < rows.length; offset += chunkSize) {
-      const chunk = rows.slice(offset, offset + chunkSize);
-      const values = chunk
-        .map((row) => "(" + columns.map((column) => literal(row[column])).join(", ") + ")")
-        .join(",\n");
-      statements.push(
-        "INSERT INTO " + ident("public") + "." + ident(table) +
-          " (" + columns.map(ident).join(", ") + ") VALUES\n" +
-          values + "\nON CONFLICT DO NOTHING;\n"
-      );
-    }
-
-    const index = String(manifest.length + 1).padStart(2, "0");
-    const file = index + "_" + table + ".sql";
-    await writeFile(join(outputDir, file), statements.join("\n"), "utf8");
-    manifest.push({ table, delegate, rows: rows.length, file });
+    await writeGeneric(table, await model.findMany(), index++, manifest);
   }
+
+  await writeContentCircuits(index++, manifest);
+  await writeContentMovements(index++, manifest);
 
   const totalRows = manifest.reduce((sum, item) => sum + item.rows, 0);
   await writeFile(
@@ -90,7 +147,6 @@ async function main() {
     JSON.stringify({ generatedAt: new Date().toISOString(), totalRows, tables: manifest }, null, 2) + "\n",
     "utf8"
   );
-
   console.info(JSON.stringify({ event: "static_seed_export_complete", totalRows, tables: manifest }));
 }
 
