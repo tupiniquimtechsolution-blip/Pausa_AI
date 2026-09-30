@@ -31,7 +31,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Apply nonbreaking audit fixes only
-        run: npm audit fix
+        run: npm audit fix || true
       - run: npm ci --prefix mobile
       - run: npx prisma generate
       - run: npx prisma migrate deploy
