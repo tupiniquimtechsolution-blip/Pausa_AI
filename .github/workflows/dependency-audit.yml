@@ -1,0 +1,42 @@
+name: Dependency Audit Evidence
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches:
+      - "chatgpt/release-green-2026-09-28"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  npm-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            mobile/package-lock.json
+      - run: npm ci
+      - name: Root audit report
+        shell: bash
+        run: |
+          mkdir -p artifacts
+          npm audit --json > artifacts/npm-audit-root.json || true
+      - name: Mobile audit report
+        shell: bash
+        run: |
+          npm ci --prefix mobile
+          (cd mobile && npm audit --json > ../artifacts/npm-audit-mobile.json) || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dependency-audit
+          path: artifacts/*.json
+          if-no-files-found: error
