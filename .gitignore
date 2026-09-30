@@ -49,3 +49,5 @@ mobile/android/app/build/
 
 # Local APK distribution artifacts
 public/apk/*.apk
+.vinext/
+.cloudflare/
