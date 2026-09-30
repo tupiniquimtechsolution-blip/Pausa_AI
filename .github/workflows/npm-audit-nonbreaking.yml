@@ -1,0 +1,64 @@
+name: Nonbreaking npm audit fix
+
+on:
+  push:
+    branches: ["security/npm-audit-nonbreaking-2026-09-30"]
+    paths: [".github/workflows/npm-audit-nonbreaking.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  fix-and-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      DATABASE_URL: file:./dev.db
+      JWT_SECRET: ci-only-value-not-production
+      RATE_LIMIT_PEPPER: ci-only-rate-limit-value
+      COOKIE_SECURE: "false"
+      APP_BASE_URL: http://127.0.0.1:3000
+      RELEASE_VERSION: npm-audit-fix-ci
+      ADMIN_EMAIL: admin@example.test
+      B2B_REAL_DASHBOARD_ENABLED: "false"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: security/npm-audit-nonbreaking-2026-09-30
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Apply nonbreaking audit fixes only
+        run: npm audit fix
+      - run: npm ci --prefix mobile
+      - run: npx prisma generate
+      - run: npx prisma migrate deploy
+      - run: npm run db:seed
+      - run: npm run typecheck
+      - run: npm run lint -- --quiet
+      - run: npm run build
+      - run: npm run test:w8
+      - name: Report remaining audit findings
+        shell: bash
+        run: |
+          npm audit --json > /tmp/npm-audit-after-fix.json || true
+          node -e '
+          const fs=require("fs");
+          const r=JSON.parse(fs.readFileSync("/tmp/npm-audit-after-fix.json","utf8"));
+          console.log(JSON.stringify({metadata:r.metadata?.vulnerabilities ?? null,vulnerabilities:Object.fromEntries(Object.entries(r.vulnerabilities||{}).map(([k,v])=>[k,{severity:v.severity,isDirect:v.isDirect,fixAvailable:v.fixAvailable}]))},null,2));
+          '
+      - name: Commit validated nonbreaking dependency changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/npm-audit-nonbreaking.yml
+          git add package.json package-lock.json
+          if git diff --cached --quiet; then
+            echo "No dependency changes to commit"
+          else
+            git commit -m "fix(security): apply nonbreaking npm audit fixes"
+            git push origin HEAD:security/npm-audit-nonbreaking-2026-09-30
+          fi
