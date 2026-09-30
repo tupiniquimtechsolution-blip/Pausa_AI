@@ -1,9 +1,6 @@
 name: Static PostgreSQL Seed Export
 
 on:
-  push:
-    branches:
-      - "chatgpt/release-green-finalization-2026-09-30"
   workflow_dispatch:
 
 permissions:
