@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches:
-      - "chatgpt/release-green-2026-09-28"
+      - "chatgpt/release-green-2026-09-30"
   workflow_dispatch:
 
 permissions:
@@ -68,6 +68,13 @@ jobs:
           name: postgres-baseline
           path: artifacts/postgres-baseline.sql
           if-no-files-found: error
+      - name: Emit PostgreSQL baseline for staging automation
+        if: github.event_name == 'push'
+        run: |
+          echo "PAUSA_PG_BASELINE_B64_BEGIN"
+          base64 -w0 artifacts/postgres-baseline.sql
+          echo
+          echo "PAUSA_PG_BASELINE_B64_END"
 
   cloudflare-compatibility:
     runs-on: ubuntu-latest
