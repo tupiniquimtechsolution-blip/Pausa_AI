@@ -1,8 +1,8 @@
 # Pausa AI — Current State
 
-Data de baseline: 2026-09-28
+Data de baseline: 2026-09-30
 Branch de trabalho: `chatgpt/release-green-2026-09-28`
-Base: `main@79a98c3840a8c0257c232fd036c8a1bd47447d50`
+Base reconciliada com `main@8418aa5ad43e405a4d9a55c3f24ea3676cd655ca`
 
 ## Produto
 
@@ -12,13 +12,12 @@ Fluxo principal:
 
 `estado → interpretação → recomendação → ação → registro → histórico → nova recomendação`
 
-Não é apenas uma biblioteca de exercícios, agenda, cronômetro ou chatbot.
-
-## Arquitetura observada
+## Arquitetura confirmada
 
 - Next.js 16 / App Router / React 19 / TypeScript
 - Prisma 6.19.3
 - SQLite em desenvolvimento
+- PostgreSQL 17 no Supabase para staging de dados
 - autenticação própria com JWT + bcrypt + cookie httpOnly
 - RBAC persistido
 - rate limiting persistente
@@ -28,44 +27,60 @@ Não é apenas uma biblioteca de exercícios, agenda, cronômetro ou chatbot.
 - 54 páginas
 - 81 rotas de API
 - 85 models Prisma
-- 9 migrations
-- mais de 3.300 arquivos no repositório
+- 9 migrations SQLite do fluxo local
+- schema PostgreSQL equivalente validado em CI e aplicado no Supabase
 
-## Estado funcional confirmado no código
+## Qualidade contemporânea
 
-Existem implementações para autenticação, onboarding, check-in, recomendações, Corpo/Mente, caminhada, atividade, yoga, foco, agenda, rotina, histórico, progresso, notificações, saúde, dispositivos, Data Vault, mídia governada, B2B/admin e mobile.
+No commit `37517f5477ee568a7689aadae92ecd94daf7ab67`:
 
-## Histórico relevante
+- CI: success
+- CodeQL: success
+- Release Green Baseline: success
+- Prisma SQLite validate/migrate/seed: success em CI
+- Prisma PostgreSQL schema validation: success
+- `vinext check`: success
 
-Os documentos W0–W9 registram evolução por ondas, chegando a uma RC local em julho de 2026. Esses resultados são evidência histórica; todos os gates devem ser reexecutados para a release atual.
+## Supabase staging
+
+Executado:
+
+- hardening de default privileges
+- baseline PostgreSQL completo
+- 85 tabelas confirmadas
+- acesso direto da Data API removido nas tabelas da aplicação
+- security advisors sem lints
+- teste transacional sintético com FK e rollback bem-sucedido
+
+Ainda não executado:
+
+- seed completo de catálogo/foundations no PostgreSQL
+- conexão da aplicação publicada ao banco
+- backup/restore drill
+
+## Cloud
+
+Cloudflare Workers permanece o runtime web alvo. A compatibilidade via `vinext check` passou.
+
+Ainda faltam configuração vinext persistida, Worker real, configuração de ambiente, URL HTTPS e smoke de staging.
 
 ## Produção
 
 Produção não está declarada pronta.
 
-Bloqueadores atuais conhecidos:
+Bloqueadores atuais:
 
-1. banco de produção/staging ainda não provisionado para Pausa AI;
-2. runtime Cloudflare ainda não configurado no repositório;
-3. secrets de staging/produção não configurados;
-4. staging HTTPS real ainda não validado;
-5. e-mail transacional real ainda não validado;
-6. auditoria contemporânea de dependências e segurança ainda deve ser executada;
-7. QA real mobile/a11y ainda precisa de evidência;
-8. revisão jurídica/LGPD final continua externa ao código.
-
-## Estratégia de infraestrutura
-
-Direção atual:
-
-`Cloudflare Workers → Next.js (vinext se compatível) → Prisma → PostgreSQL gerenciado (Supabase candidato preferencial)`
-
-A decisão final do banco/runtime deve ser registrada em ADR e validada por teste real.
+1. dívida de dependências rastreada na Issue #5
+2. seed/backup/restore do PostgreSQL staging
+3. Cloudflare Worker real
+4. staging HTTPS e smoke autenticado
+5. QA físico/mobile/a11y
+6. revisão jurídica/LGPD final
 
 ## Regras de continuidade
 
-- código atual prevalece sobre snapshots históricos para estado de implementação;
-- planejamento não equivale a implementação;
-- não executar migrações destrutivas sem rollback e evidência;
-- não declarar Release Green sem gates contemporâneos;
-- integrações externas são opcionais ao Pausa AI Core.
+- código atual prevalece sobre snapshots históricos para estado de implementação
+- planejamento não equivale a implementação
+- não executar migrações destrutivas sem rollback e evidência
+- não declarar Release Green sem gates contemporâneos
+- integrações externas são opcionais ao Pausa AI Core
