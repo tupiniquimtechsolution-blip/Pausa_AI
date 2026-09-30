@@ -368,6 +368,9 @@ model Checkin {
   exerciseInstructionSessions ExerciseInstructionSession[]
   activityCompletions         ActivityCompletion[]
   recommendationDecision      RecommendationDecision?
+  @@index([alternativeExerciseId])
+  @@index([recommendedExerciseId])
+  @@index([userId])
 }
 
 model Mission {
@@ -399,6 +402,9 @@ model MissionCompletion {
   user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   mission     Mission? @relation(fields: [missionId], references: [id], onDelete: SetNull)
   checkin     Checkin? @relation(fields: [checkinId], references: [id], onDelete: SetNull)
+  @@index([checkinId])
+  @@index([missionId])
+  @@index([userId])
 }
 
 model WorkoutRoutine {
@@ -435,6 +441,8 @@ model WorkoutSession {
   completedAt     DateTime       @default(now())
   user            User           @relation(fields: [userId], references: [id], onDelete: Cascade)
   routine         WorkoutRoutine @relation(fields: [routineId], references: [id], onDelete: Cascade)
+  @@index([routineId])
+  @@index([userId])
 }
 
 model Exercise {
@@ -483,6 +491,9 @@ model ExerciseSession {
   user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   exercise    Exercise  @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
   checkin     Checkin?  @relation(fields: [checkinId], references: [id], onDelete: SetNull)
+  @@index([checkinId])
+  @@index([exerciseId])
+  @@index([userId])
 }
 
 model ExerciseInstruction {
@@ -531,6 +542,9 @@ model ExerciseInstructionSession {
   user           User                @relation(fields: [userId], references: [id], onDelete: Cascade)
   instruction    ExerciseInstruction @relation(fields: [instructionId], references: [id], onDelete: Cascade)
   checkin        Checkin?            @relation(fields: [checkinId], references: [id], onDelete: SetNull)
+  @@index([checkinId])
+  @@index([instructionId])
+  @@index([userId])
 }
 
 model InstructionalVideo {
@@ -784,6 +798,7 @@ model AgendaTask {
 
   @@index([userId, status])
   @@index([userId, dueDate])
+  @@index([scheduledEventId])
 }
 
 model AgendaReminder {
@@ -807,6 +822,8 @@ model AgendaReminder {
 
   @@index([userId, dateTime])
   @@index([userId, status])
+  @@index([linkedEventId])
+  @@index([linkedTaskId])
 }
 
 model AgendaHabit {
@@ -963,6 +980,7 @@ model UserAchievement {
 
   @@unique([userId, achievementId])
   @@index([userId])
+  @@index([achievementId])
 }
 
 model FocusSession {
@@ -1573,6 +1591,7 @@ model VoiceScript {
   generatedAsset   MediaAsset? @relation(fields: [generatedAssetId], references: [id], onDelete: SetNull)
 
   @@index([language, status])
+  @@index([generatedAssetId])
 }
 
 model VideoProduction {
@@ -1591,6 +1610,7 @@ model VideoProduction {
   sourceAsset           MediaAsset @relation(fields: [sourceAssetId], references: [id], onDelete: Cascade)
 
   @@index([pipelineStatus])
+  @@index([sourceAssetId])
 }
 
 model MarketingCampaign {
@@ -1706,6 +1726,8 @@ model PartnerInterest {
   createdAt    DateTime @default(now())
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   partner      Partner  @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  @@index([partnerId])
+  @@index([userId])
 }
 
 model Company {
@@ -1729,4 +1751,5 @@ model CompanyMetricMock {
   avgEnergy      Float
   engagementRate Float
   company        Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  @@index([companyId])
 }
