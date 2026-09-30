@@ -3,7 +3,7 @@ name: Cloudflare Vinext Build Evidence
 on:
   push:
     branches:
-      - "chatgpt/release-green-finalization-2026-09-30"
+      - "chatgpt/vinext-config-2026-09-30"
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -58,5 +58,5 @@ jobs:
             echo "Vinext source configuration already current."
           else
             git commit -m "infra: persist Cloudflare vinext configuration"
-            git push origin HEAD:chatgpt/release-green-finalization-2026-09-30
+            git push origin HEAD:chatgpt/vinext-config-2026-09-30
           fi
