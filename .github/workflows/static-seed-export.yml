@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   generate-static-seed:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
