@@ -66,7 +66,7 @@
     "privacy:retention:apply": "tsx scripts/retention-maintenance.ts --apply",
     "typecheck": "tsc --noEmit",
     "dev:vinext": "vite dev --port 3001",
-    "build:vinext": "vite build",
+    "build:vinext": "prisma generate --schema prisma/schema.postgresql.prisma && vite build",
     "start:vinext": "vite preview",
     "deploy:vinext": "vinext-cloudflare deploy"
   },
