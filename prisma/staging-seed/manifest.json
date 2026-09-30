@@ -1,95 +1,95 @@
 {
-  "generatedAt": "2026-09-30T12:15:56.116Z",
+  "generatedAt": "2026-09-30T12:20:33.885Z",
   "totalRows": 1682,
   "tables": [
     {
       "table": "Exercise",
-      "delegate": "exercise",
       "rows": 150,
-      "file": "01_Exercise.sql"
+      "file": "01_Exercise.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "ExerciseInstruction",
-      "delegate": "exerciseInstruction",
       "rows": 328,
-      "file": "02_ExerciseInstruction.sql"
+      "file": "02_ExerciseInstruction.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "Partner",
-      "delegate": "partner",
       "rows": 4,
-      "file": "03_Partner.sql"
+      "file": "03_Partner.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "YogaPractice",
-      "delegate": "yogaPractice",
       "rows": 30,
-      "file": "04_YogaPractice.sql"
+      "file": "04_YogaPractice.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "YogaSequence",
-      "delegate": "yogaSequence",
       "rows": 6,
-      "file": "05_YogaSequence.sql"
+      "file": "05_YogaSequence.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "Achievement",
-      "delegate": "achievement",
       "rows": 18,
-      "file": "06_Achievement.sql"
+      "file": "06_Achievement.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "Mission",
-      "delegate": "mission",
       "rows": 19,
-      "file": "07_Mission.sql"
+      "file": "07_Mission.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "CatalogVisualAsset",
-      "delegate": "catalogVisualAsset",
       "rows": 189,
-      "file": "08_CatalogVisualAsset.sql"
+      "file": "08_CatalogVisualAsset.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "CatalogReconciliation",
-      "delegate": "catalogReconciliation",
       "rows": 354,
-      "file": "09_CatalogReconciliation.sql"
+      "file": "09_CatalogReconciliation.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "InstructionalVideo",
-      "delegate": "instructionalVideo",
       "rows": 286,
-      "file": "10_InstructionalVideo.sql"
+      "file": "10_InstructionalVideo.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "ContentCategory",
-      "delegate": "contentCategory",
       "rows": 21,
-      "file": "11_ContentCategory.sql"
-    },
-    {
-      "table": "ContentCircuit",
-      "delegate": "contentCircuit",
-      "rows": 21,
-      "file": "12_ContentCircuit.sql"
-    },
-    {
-      "table": "ContentMovement",
-      "delegate": "contentMovement",
-      "rows": 227,
-      "file": "13_ContentMovement.sql"
+      "file": "11_ContentCategory.sql",
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "EditorialCard",
-      "delegate": "editorialCard",
-      "rows": 0
+      "rows": 0,
+      "strategy": "generic-natural-conflict"
     },
     {
       "table": "WorkoutRoutine",
-      "delegate": "workoutRoutine",
       "rows": 29,
-      "file": "15_WorkoutRoutine.sql"
+      "file": "13_WorkoutRoutine.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "ContentCircuit",
+      "rows": 21,
+      "file": "14_ContentCircuit.sql",
+      "strategy": "resolve-category-by-slug"
+    },
+    {
+      "table": "ContentMovement",
+      "rows": 227,
+      "file": "15_ContentMovement.sql",
+      "strategy": "resolve-circuit-by-slug"
     }
   ]
 }
