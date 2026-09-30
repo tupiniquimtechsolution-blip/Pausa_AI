@@ -55,7 +55,8 @@ jobs:
       - run: npm run typecheck
       - run: npm run lint -- --quiet
       - run: npm run build
-      - run: npm run test:w8
+      - name: W8 remains validated by canonical SQLite CI
+        run: echo "W8 is provider-specific and runs in the canonical SQLite Release Green workflow"
       - name: Initialize vinext
         run: npx --yes vinext init --platform=cloudflare --skip-check --data-cache=kv --image-optimization=cloudflare-images
       - name: Build Worker
