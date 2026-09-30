@@ -5,7 +5,7 @@ on:
     branches: [main]
   push:
     branches:
-      - "chatgpt/release-green-2026-09-28"
+      - "chatgpt/release-green-finalization-2026-09-30"
   workflow_dispatch:
 
 permissions:
@@ -14,7 +14,7 @@ permissions:
 jobs:
   npm-audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,16 +25,47 @@ jobs:
             package-lock.json
             mobile/package-lock.json
       - run: npm ci
-      - name: Root audit report
+      - name: Root audit reports
         shell: bash
         run: |
           mkdir -p artifacts
           npm audit --json > artifacts/npm-audit-root.json || true
-      - name: Mobile audit report
+          npm audit --omit=dev --json > artifacts/npm-audit-root-production.json || true
+      - name: Mobile audit reports
         shell: bash
         run: |
           npm ci --prefix mobile
           (cd mobile && npm audit --json > ../artifacts/npm-audit-mobile.json) || true
+          (cd mobile && npm audit --omit=dev --json > ../artifacts/npm-audit-mobile-production.json) || true
+      - name: Print concise audit summary
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+          const reports = [
+            ["root-all","artifacts/npm-audit-root.json"],
+            ["root-production","artifacts/npm-audit-root-production.json"],
+            ["mobile-all","artifacts/npm-audit-mobile.json"],
+            ["mobile-production","artifacts/npm-audit-mobile-production.json"]
+          ];
+          for (const [label, path] of reports) {
+            const data = JSON.parse(fs.readFileSync(path, "utf8"));
+            const meta = data.metadata?.vulnerabilities || {};
+            console.log("\n=== " + label.toUpperCase() + " AUDIT ===");
+            console.log("counts:", JSON.stringify(meta));
+            const vulns = Object.entries(data.vulnerabilities || {}).map(([name, v]) => ({
+              name,
+              severity: v.severity,
+              direct: Boolean(v.isDirect),
+              range: v.range,
+              fix: v.fixAvailable === false ? "none" : (v.fixAvailable === true ? "available" : JSON.stringify(v.fixAvailable)),
+              via: (v.via || []).map((x) => typeof x === "string" ? x : (x.title || x.name || x.url || "advisory")).slice(0, 4)
+            }));
+            const rank = { critical: 0, high: 1, moderate: 2, low: 3, info: 4 };
+            vulns.sort((a,b) => (rank[a.severity] ?? 9) - (rank[b.severity] ?? 9) || a.name.localeCompare(b.name));
+            for (const v of vulns) console.log(JSON.stringify(v));
+          }
+          NODE
       - uses: actions/upload-artifact@v4
         with:
           name: dependency-audit

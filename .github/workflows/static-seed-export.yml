@@ -1,0 +1,46 @@
+name: Static PostgreSQL Seed Export
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-static-seed:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      DATABASE_URL: file:./seed-export.db
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: "chatgpt/release-green-finalization-2026-09-30"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx prisma generate
+      - run: npx prisma migrate deploy
+      - run: npm run db:seed
+      - name: Export static reference seed as PostgreSQL SQL
+        run: npx tsx scripts/export-static-seed-sql.ts
+      - name: Safety check exported tables
+        shell: bash
+        run: |
+          ! grep -R -E 'INSERT INTO "public"\."(User|Profile|Checkin|HealthProfileEntry|PausaActivity|ActivityPoint|PasswordResetToken)"' prisma/staging-seed
+          cat prisma/staging-seed/manifest.json
+      - name: Commit generated static seed
+        shell: bash
+        run: |
+          git config user.name "pausa-ai-release-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add prisma/staging-seed
+          if git diff --cached --quiet; then
+            echo "Static seed is already current."
+          else
+            git commit -m "data: generate PostgreSQL static staging seed"
+            git push origin HEAD:chatgpt/release-green-finalization-2026-09-30
+          fi

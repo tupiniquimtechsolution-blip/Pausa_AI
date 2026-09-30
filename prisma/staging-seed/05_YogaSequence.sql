@@ -1,0 +1,13 @@
+-- Generated from the canonical Pausa AI seed using a synthetic SQLite database.
+-- Static/reference data only. No users, profiles, credentials, check-ins, GPS or health records.
+-- Generic import uses ON CONFLICT DO NOTHING so existing natural-key rows are preserved.
+-- Table: YogaSequence
+
+INSERT INTO "public"."YogaSequence" ("id", "slug", "title", "description", "level", "context", "durationSeconds", "goals", "practiceSlugs", "imageKey", "createdAt", "updatedAt") VALUES
+('cmuo32bbc00af2gv06qwml0p0', 'yoga-leve-comecar-dia', 'Yoga leve para comecar o dia', 'Respiracao, montanha e alongamento lateral para iniciar com energia tranquila.', 2, 'HOME', 600, '["ENERGY","FOCUS"]', '["respiracao-sentada-tranquila","postura-da-montanha","alongamento-lateral-em-pe"]', 'yoga-leve-comecar-dia', '2026-09-30T12:30:15.241Z', '2026-09-30T12:30:15.241Z'),
+('cmuo32bbd00ag2gv04ylx5ywl', 'yoga-restaurativa-desacelerar', 'Yoga restaurativa para desacelerar', 'Praticas restaurativas para baixar ritmo sem prometer tratamento.', 2, 'HOME', 720, '["STRESS","SLEEP"]', '["respiracao-para-desacelerar-yoga","postura-da-crianca","pernas-na-parede-adaptada"]', 'yoga-restaurativa-desacelerar', '2026-09-30T12:30:15.242Z', '2026-09-30T12:30:15.242Z'),
+('cmuo32bbi00ah2gv045jitye6', 'yoga-foco-trabalho', 'Yoga para foco no trabalho', 'Sequencia de cadeira e respiracao para reduzir dispersao no expediente.', 3, 'WORK', 600, '["FOCUS","WORK_BREAK"]', '["postura-facil-atencao-corpo","torcao-em-cadeira","yoga-funcional-foco-trabalho"]', 'yoga-foco-trabalho', '2026-09-30T12:30:15.246Z', '2026-09-30T12:30:15.246Z'),
+('cmuo32bbl00ai2gv0wwu0a3to', 'yoga-depois-horas-sentado', 'Yoga leve para depois de muitas horas sentado', 'Mobilidade de ombros, torcao leve e abertura do corpo.', 3, 'WORK', 720, '["MOBILITY","WORK_BREAK"]', '["mobilidade-de-ombros-yoga","torcao-sentada-suave","sequencia-longas-horas-sentado"]', 'yoga-depois-horas-sentado', '2026-09-30T12:30:15.250Z', '2026-09-30T12:30:15.250Z'),
+('cmuo32bbm00aj2gv0ildc9ls7', 'yoga-fim-de-noite', 'Yoga para fim de noite', 'Ritual leve com apoio, respiracao e transicao sem tela.', 4, 'HOME', 900, '["SLEEP","STRESS"]', '["sequencia-fim-de-dia","flexao-frente-restaurativa","escaneamento-corporal-postura-confortavel"]', 'yoga-fim-de-noite', '2026-09-30T12:30:15.251Z', '2026-09-30T12:30:15.251Z'),
+('cmuo32bbn00ak2gv00713w71a', 'yoga-energia-baixa', 'Yoga leve para energia baixa', 'Movimentos muito leves para dias de pouca disposicao.', 1, 'BOTH', 480, '["ENERGY","MOBILITY"]', '["respiracao-sentada-tranquila","montanha-com-respiracao","alongamento-coluna-em-pe"]', 'yoga-energia-baixa', '2026-09-30T12:30:15.252Z', '2026-09-30T12:30:15.252Z')
+ON CONFLICT DO NOTHING;

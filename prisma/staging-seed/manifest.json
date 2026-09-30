@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-09-30T12:30:17.888Z",
+  "totalRows": 1682,
+  "tables": [
+    {
+      "table": "Exercise",
+      "rows": 150,
+      "file": "01_Exercise.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "ExerciseInstruction",
+      "rows": 328,
+      "file": "02_ExerciseInstruction.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "Partner",
+      "rows": 4,
+      "file": "03_Partner.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "YogaPractice",
+      "rows": 30,
+      "file": "04_YogaPractice.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "YogaSequence",
+      "rows": 6,
+      "file": "05_YogaSequence.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "Achievement",
+      "rows": 18,
+      "file": "06_Achievement.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "Mission",
+      "rows": 19,
+      "file": "07_Mission.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "CatalogVisualAsset",
+      "rows": 189,
+      "file": "08_CatalogVisualAsset.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "CatalogReconciliation",
+      "rows": 354,
+      "file": "09_CatalogReconciliation.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "InstructionalVideo",
+      "rows": 286,
+      "file": "10_InstructionalVideo.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "ContentCategory",
+      "rows": 21,
+      "file": "11_ContentCategory.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "EditorialCard",
+      "rows": 0,
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "WorkoutRoutine",
+      "rows": 29,
+      "file": "13_WorkoutRoutine.sql",
+      "strategy": "generic-natural-conflict"
+    },
+    {
+      "table": "ContentCircuit",
+      "rows": 21,
+      "file": "14_ContentCircuit.sql",
+      "strategy": "resolve-category-by-slug"
+    },
+    {
+      "table": "ContentMovement",
+      "rows": 227,
+      "file": "15_ContentMovement.sql",
+      "strategy": "resolve-circuit-by-slug"
+    }
+  ]
+}
