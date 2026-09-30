@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches:
-      - "chatgpt/release-green-2026-09-28"
+      - "chatgpt/release-green-2026-09-30"
   workflow_dispatch:
 
 permissions:
