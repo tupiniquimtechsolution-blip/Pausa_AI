@@ -23,7 +23,8 @@ const eslintConfig = [
       "docs/**/*.pdf",
       "*.log",
       "**/*.log",
-      "next-env.d.ts"
+      "next-env.d.ts",
+      "generated/**"
     ]
   },
   ...nextCoreWebVitals,
