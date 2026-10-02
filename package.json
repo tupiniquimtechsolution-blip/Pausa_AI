@@ -69,7 +69,8 @@
     "build:vinext": "prisma generate --schema prisma/schema.postgresql.prisma && vite build",
     "start:vinext": "vite preview",
     "deploy:vinext": "vinext-cloudflare deploy",
-    "test:postgres-adapter": "tsx scripts/verify-postgres-adapter.ts"
+    "test:postgres-adapter": "tsx scripts/verify-postgres-adapter.ts",
+    "db:seed:staging-admin": "tsx scripts/seed-staging-admin.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",
