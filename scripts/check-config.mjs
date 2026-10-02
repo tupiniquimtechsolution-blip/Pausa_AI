@@ -65,6 +65,7 @@ if (value("AUDIT_LOG_RETENTION_DAYS") && !/^\d+$/.test(value("AUDIT_LOG_RETENTIO
 }
 
 if (isReleaseMode) {
+  if (!/^postgres(?:ql)?:\/\//i.test(value("DATABASE_URL"))) fail("DATABASE_URL de staging/producao precisa apontar para PostgreSQL.");
   if (value("DATABASE_URL").startsWith("file:")) fail("DATABASE_URL de staging/producao nao deve usar SQLite local.");
   if (value("COOKIE_SECURE") !== "true") fail("COOKIE_SECURE precisa ser true em staging/producao.");
   if (!value("APP_BASE_URL").startsWith("https://")) fail("APP_BASE_URL precisa ser HTTPS em staging/producao.");
