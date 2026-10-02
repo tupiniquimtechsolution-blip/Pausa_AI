@@ -1,0 +1,54 @@
+name: Generate vinext Cloudflare migration
+
+on:
+  push:
+    branches:
+      - "chatgpt/cloudflare-vinext-init"
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    if: ${{ !contains(github.event.head_commit.message, '[vinext-generated]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CI: "true"
+      DATABASE_URL: "file:./dev.db"
+      JWT_SECRET: "ci-vinext-jwt-secret-placeholder-long-enough"
+      RATE_LIMIT_PEPPER: "ci-vinext-rate-limit-placeholder"
+      COOKIE_SECURE: "false"
+      APP_BASE_URL: "http://127.0.0.1:3000"
+      RELEASE_VERSION: "ci-vinext"
+      ADMIN_EMAIL: "admin@pausaai.test"
+      B2B_REAL_DASHBOARD_ENABLED: "false"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: "chatgpt/cloudflare-vinext-init"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Initialize vinext for Cloudflare Workers
+        run: npx --yes vinext init --platform=cloudflare --skip-check
+      - name: Verify generated scripts
+        run: |
+          npm run | grep 'build:vinext'
+          test -f vite.config.ts
+          test -f cloudflare.config.ts
+      - name: Build with vinext
+        run: npm run build:vinext
+      - name: Commit generated migration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No migration changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: initialize vinext for Cloudflare Workers [vinext-generated]"
+          git push origin HEAD:"chatgpt/cloudflare-vinext-init"
