@@ -13,7 +13,13 @@ on:
       - "scripts/check-config.mjs"
       - "scripts/verify-postgres-adapter.ts"
       - "app/api/health/route.ts"
+      - "mobile/app.json"
+      - "scripts/seed-staging-admin.ts"
       - ".github/workflows/staging-runtime-gate.yml"
+
+concurrency:
+  group: staging-runtime-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
