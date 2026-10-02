@@ -5,6 +5,7 @@ node_modules/
 .next-*/
 out/
 dist/
+generated/prisma-pg/
 build/
 *.tsbuildinfo
 
