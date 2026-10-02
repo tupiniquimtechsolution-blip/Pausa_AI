@@ -1,6 +1,6 @@
 # Pausa AI — Release Status
 
-Atualizado em: 2026-09-30
+Atualizado em: 2026-10-02
 
 | Gate | Área | Status | Evidência atual | Bloqueador |
 |---|---|---|---|---|
@@ -11,8 +11,8 @@ Atualizado em: 2026-09-30
 | G4 | Dados | 🟡 PARTIAL | PostgreSQL 17 saudável; 85 tabelas aplicadas; Data API endurecida; teste transacional+rollback aprovado | seed PostgreSQL, backup/restore drill e smoke da aplicação |
 | G5 | Segurança | 🟡 PARTIAL | CodeQL green; Supabase security advisors sem lints; acesso Data API removido | dívida de dependências rastreada na Issue #5; revisão LGPD final externa |
 | G6 | Testes | 🟢 GREEN | CI + W8 + database drill local + Release Green Baseline aprovados | QA físico/mobile/a11y permanece externo |
-| G7 | Cloud | 🟡 PARTIAL | vinext check aprovado e Cloudflare Workers definido como alvo | falta configuração/deploy real em conta Cloudflare |
-| G8 | Staging | 🔴 BLOCKED | banco staging existe | falta aplicação HTTPS publicada e conectada ao banco |
+| G7 | Cloud | 🟡 PARTIAL | Worker HTTPS publicado e correção Prisma/Workers + bindings em validação | secrets reais ainda precisam ser provisionados no Cloudflare e redeploy validado |
+| G8 | Staging | 🔴 BLOCKED | PostgreSQL staging saudável e Worker HTTPS publicado | falta conexão runtime comprovada, usuário de staging e smoke autenticado |
 | G9 | Release Candidate | 🔴 NO-GO | baseline técnica pronta para RC | depende de G4/G5/G7/G8 |
 | G10 | Release Green | 🔴 NO-GO | — | depende de staging real, auditoria final, backup/restore e bloqueadores acima |
 
@@ -32,9 +32,9 @@ Release Green exige documentação atualizada, CI green, build green, schema/mig
 ## Pendências de maior prioridade
 
 1. resolver/triagear dependências vulneráveis sem upgrades major cegos;
-2. configurar a conexão server-side da aplicação ao PostgreSQL;
-3. aplicar seed canônico em PostgreSQL staging;
-4. configurar e publicar Cloudflare Workers via vinext;
-5. executar smoke HTTPS autenticado;
+2. provisionar secrets do Worker e comprovar conexão server-side ao PostgreSQL;
+3. criar usuário de staging por cadastro/seed controlado;
+4. redeployar o Worker com bindings e Prisma edge-compatible;
+5. executar /api/health e smoke HTTPS autenticado;
 6. executar backup/restore drill;
 7. auditoria final e promoção G9 → G10 somente com evidência.
