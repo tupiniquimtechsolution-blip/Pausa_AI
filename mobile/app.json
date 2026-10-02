@@ -7,8 +7,12 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "scheme": "pausaai",
-    "plugins": ["./plugins/with-android-cleartext"],
-    "assetBundlePatterns": ["**/*"],
+    "plugins": [
+      "./plugins/with-android-cleartext"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -49,7 +53,7 @@
       ]
     },
     "extra": {
-      "defaultWebBaseUrl": "http://localhost:3000"
+      "defaultWebBaseUrl": "https://pausa-ai-staging.tupiniquim-techsolution.workers.dev"
     }
   }
 }
