@@ -66,7 +66,7 @@ jobs:
             --to-schema-datamodel prisma/schema.postgresql.prisma \
             --script > artifacts/postgres-baseline.sql
           test -s artifacts/postgres-baseline.sql
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: postgres-baseline
           path: artifacts/postgres-baseline.sql
