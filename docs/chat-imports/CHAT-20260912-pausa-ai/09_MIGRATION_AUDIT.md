@@ -114,3 +114,9 @@ Ressalvas obrigatórias:
 5. a dívida de advisories de dependências precisa ser triada na Issue #5.
 
 `MIGRATION_STATUS: PARTIAL`
+
+## Revalidação de cobertura — 2026-10-08
+
+O manifesto, dossiê, extração e audit desta importação continuam marcados PARTIAL. A conversa de continuidade acessível nesta auditoria tem conteúdo limitado e não entrega a conversa original completa nem seus anexos. Ela permite reconciliar pendências recentes de staging, mas não comprova cobertura de prompts, comandos, decisões, arquivos e conflitos do histórico antigo.
+
+`MIGRATION_STATUS: PARTIAL` mantido; issue #3 permanece aberta. Nenhum URL privado, dump, secret ou dado de bem-estar foi importado. Para COMPLETE, obter fonte original acessível/sanitizada e demonstrar cobertura item a item, preservando lifecycle e conflitos. Estado operacional atual: [auditoria](../../project/OPERATIONAL_AUDIT_2026-10-08.md).

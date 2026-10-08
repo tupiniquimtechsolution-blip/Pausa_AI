@@ -1,6 +1,15 @@
 # LGPD_RELEASE_CHECKLIST
 
-Data: 2026-06-30
+Data histórica: 2026-06-30
+
+## Revalidação operacional — 2026-10-08
+
+As seções de junho abaixo são históricas e não representam o estado atual. Exportação/exclusão de conta e auditoria existem em `app/api/data-vault/subject-request/route.ts`, `lib/privacy/data-subject.ts` e `lib/observability.ts`. Login/reset usam RateLimitBucket persistido, mas cadastro ainda não aplica o limiter e concorrência PostgreSQL requer validação.
+
+A exportação do titular usa `= ? ORDER BY rowid`, específico de SQLite: homologação PostgreSQL está bloqueada. Exclusão/cascatas/anonimização também precisam de teste PostgreSQL, isolamento por usuário, consentimento e evidência HTTPS. Não declarar conformidade jurídica nem funcional por existência das rotas ou testes SQLite. Revisar mensagens de erro/PII antes de habilitar logs Cloudflare.
+
+Veja [auditoria operacional](project/OPERATIONAL_AUDIT_2026-10-08.md) e [gates](project/RELEASE_STATUS.md). G9/G10 permanecem NO-GO.
+
 
 Este documento e um checklist tecnico de privacidade. Nao substitui revisao juridica.
 
