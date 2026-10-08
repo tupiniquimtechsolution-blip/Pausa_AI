@@ -15,6 +15,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      // Directory imports select the Node loader; the Worker needs the bundled WASM entry.
+      "@/generated/prisma-pg": path.resolve(__dirname, "generated/prisma-pg/wasm.js"),
       "sharp": path.resolve(__dirname, "empty-stub.js"),
     },
   },
