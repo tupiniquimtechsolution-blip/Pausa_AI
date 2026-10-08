@@ -1,24 +1,27 @@
-# Cloudflare Prisma WASM — 2026-10-08
+# Cloudflare Prisma runtime — 2026-10-08
 
-## Failure observed
+## WASM compiler
 
-A temporary live-log capture for staging version 41f0219d-e2d9-4aac-9449-b97621aeb3a0 identified `no such file or directory, readAll '/bundle/generated/prisma-pg/query_compiler_bg.wasm'` during SELECT 1. The error occurs before the database query. No credentials or request metadata are reproduced here.
+Staging version 41f0219d-e2d9-4aac-9449-b97621aeb3a0 failed before SELECT 1 because the Node loader attempted to read /bundle/generated/prisma-pg/query_compiler_bg.wasm. Vite resolves the PostgreSQL client to generated/prisma-pg/wasm.js. Node scripts retain their normal entry.
 
-## Correction and validation
+## Preview publication
 
-Vite resolves the generated PostgreSQL client to `generated/prisma-pg/wasm.js`. Node-based scripts retain the regular generated client import. No schema or dependencies change.
+Build command: npm run build:vinext. Preview command: npx cf previews deploy fix/cloudflare-prisma-wasm-loader. The CLI rebuilds in Preview mode; --prebuilt rejected the previous production-mode output. Existing previews have their own build configuration. Build f7234eee succeeded on bdde1e5. HTTPS health became 200/database=ready after the user provisioned secrets in this preview.
 
-Local `build:vinext` passed. The worker.config.json manifest declares `_next/static/media/query_compiler_bg.ldwV2G9w.wasm` as type wasm; the emitted Worker loader imports this module. An isolated Miniflare/workerd run of the actual bundle with fictional credentials and a deliberately unreachable local database advanced to `proxy request failed, cannot connect to the specified address`, without the missing WASM error. Its health response remained 503 as expected for that fictitious target. This proves loading, not a real staging database connection.
+## Intermittent request failure
 
-## Cloudflare preview configuration
+On 08/10 an actual registration reached /app/onboarding, then the Worker returned Error 1101. Read-only database verification found one user and no completed onboarding. Reloads alternated between the authenticated onboarding screen and Error 1101. A public health sequence returned 200,200,500. No password or user record is reproduced here.
 
-The initial PR preview used `npm run build` and `npx wrangler preview`; it failed because the Next build did not generate the PostgreSQL client. Preview build settings were changed to:
+The actual Worker bundle was tested in Miniflare/workerd with a disposable local PostgreSQL protocol fixture. Its global Prisma/pg pool alternated 200,500,200,500: requests 2 and 4 reused prior-request connections and workerd canceled the request as hung. This is a controlled reproduction of connection lifecycle failure; the original remote exception text has not yet been captured.
 
-- Build: `npm run build:vinext`
-- Preview: `npx @vinext/cloudflare deploy --no-promote --skip-build`
+The Worker entry now creates an AsyncLocalStorage database scope per request. The Vite-only Prisma proxy lazily creates one PostgreSQL client inside that scope. Response streaming retains the context and disconnects the client when the stream ends, fails or is canceled. Node/SQLite scripts keep lib/prisma.ts. No real database data, schema, credentials or dependencies are changed.
 
-The CLI help confirms --no-promote uploads a version without promoting it to 100% traffic. Retrying an old Cloudflare build reuses its original command snapshot; a fresh branch commit is required to validate new settings.
+Validation: typecheck and build:vinext passed. The same actual-bundle fixture now returns four consecutive 200 responses and six concurrent 200 responses, with ten distinct connections and ten closed connections. The regression test is scripts/worker-request-db-check.mjs and runs after build in Cloudflare Vinext Build Evidence.
+
+Cloudflare application-error collection is enabled on this candidate, without invocation logs, with query-string redaction. The Worker Prisma client omits query error logging because it can include sensitive parameters.
+
+References: https://developers.cloudflare.com/hyperdrive/observability/troubleshooting/ recommends clients inside each request; https://developers.cloudflare.com/workers/previews/test-and-debug/ documents separate preview observability and lack of wrangler tail preview support.
 
 ## Acceptance
 
-All checks must pass on the final PR SHA. After a successful candidate build, merge only within authorized staging scope, verify the actual main deployment, and repeat HTTPS /api/health. A response 200 with database=ready is required before authenticated smoke. G9/G10 remain NO-GO pending the remaining operational audit evidence.
+Checks must pass on the final candidate SHA. Verify the deployed preview through repeated HTTPS health and authenticated onboarding reloads before integration. Registration success and one healthy response do not prove stable auth, full RBAC, backup/restore, rollback or QA. G9/G10 remain NO-GO.
