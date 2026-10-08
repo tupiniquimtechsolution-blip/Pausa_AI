@@ -74,3 +74,9 @@ Execução 270aeafa ainda usava comandos antigos e foi cancelada para substitui�
 ## Alinhamento de publicação do preview
 
 A51d48da concluiu build:vinext, mas falhou na publicação: o upload de versões em modo production foi rejeitado pelo destino de preview por divergência de nome. A CLI cf instalada foi consultada: `cf previews deploy [preview-name] --prebuilt` é o comando específico para publicar Preview Build Output. Configuração do preview fix/cloudflare-prisma-wasm-loader atualizada para `npx cf previews deploy fix-cloudflare-prisma-wasm-loader --prebuilt`, mantendo o build npm run build:vinext. Não se renomeou o Worker principal nem se copiou secrets para o preview. Nova publicação ainda precisa de verificação.
+
+## Preview publicado e HTTPS verificado — 08/10/2026
+
+Build f402f104 falhou porque --prebuilt recebeu um Build Output de produção. O comando foi corrigido para `npx cf previews deploy fix/cloudflare-prisma-wasm-loader`, que gera o artefato no modo Preview antes de publicar.
+
+[Build f7234eee](https://dash.cloudflare.com/4b7b61dd588c9f0754dfacc0023f38e5/workers/services/view/pausa-ai-staging/production/builds/f7234eee-3927-4bb6-90fc-86bd5b36bfb3), SHA `bdde1e5c56f1eb36df275849159c556916f69db4`: todas as fases exibem sucesso no painel, duração 12m03s. Verificação HTTPS direta: [preview](https://fix-cloudflare-prisma-wasm-loader-pausa-ai-staging.tupiniquim-techsolution.workers.dev/) retorna 200; `/api/health` retorna 503 com database=unknown e missingConfig=[DATABASE_URL,JWT_SECRET,RATE_LIMIT_PEPPER]. A publicação está comprovada; conexão PostgreSQL, carregamento WASM em consulta real e auth continuam não homologados, pois este preview não tem os secrets necessários. Os secrets cadastrados no Worker principal não comprovam configuração deste preview. Nenhum valor foi copiado ou exposto. PR #36 permanece candidato; G8 BLOCKED e G9/G10 NO-GO.
