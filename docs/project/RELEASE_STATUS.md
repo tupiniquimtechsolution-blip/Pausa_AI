@@ -54,3 +54,9 @@ Release Green exige evidência contemporânea do artefato efetivamente implantad
 - HTTPS após publicação: health 503 com configurações obrigatórias presentes; system/health 503. Supabase ACTIVE_HEALTHY e SELECT 1 pelo conector passaram. Falha específica da conexão utilizada pelo Worker ainda sem causa comprovada.
 - TASK-123: integração concluída. TASK-124: presença parcial verificada, validade ainda bloqueada. TASK-129/134: não concluídas. Nenhuma migração, seed ou restore real executado nesta integração.
 - O GitHub passou a apontar também um build Cloudflare `b4bfca0b-3a7a-4620-858b-514e2bf6562a` em andamento no mesmo SHA; o sucesso acima refere-se ao build 0fa79ddb efetivamente verificado no painel.
+
+## Diagnóstico do 503 — 08/10/2026
+
+Captura temporária de live logs do Worker, em versão `41f0219d-e2d9-4aac-9449-b97621aeb3a0`, identificou falha anterior à consulta: `no such file or directory, readAll '/bundle/generated/prisma-pg/query_compiler_bg.wasm'`. Portanto o healthcheck não comprova erro de senha/conexão PostgreSQL. Captura pausada após coleta; sem inclusão de headers, IPs ou secrets nesta evidência.
+
+[PR #36](https://github.com/tupiniquimtechsolution-blip/Pausa_AI/pull/36), SHA `9fbe865b63262cdf99ff6d7a22491465a2771f6f`, direciona o build ao entry WASM do cliente PostgreSQL. Build local passou; worker.config.json registra o query compiler como módulo wasm no manifest, e o loader importa o arquivo emitido. Gates CI e smoke do artefato implantado ainda necessários. G9/G10 permanecem NO-GO.
