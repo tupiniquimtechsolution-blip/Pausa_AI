@@ -1,86 +1,43 @@
 # Pausa AI — Current State
 
-Data de baseline: 2026-09-30
-Branch de trabalho: `chatgpt/release-green-2026-09-28`
-Base reconciliada com `main@8418aa5ad43e405a4d9a55c3f24ea3676cd655ca`
+Atualizado em: 2026-10-08 (America/Sao_Paulo).
+Baseline: `main@7392441c4785634cf1cfb92b0f8f0e4446d4c3a2`.
+Estado canônico de gates: [RELEASE_STATUS.md](RELEASE_STATUS.md).
+Evidências e TASK-123–134: [OPERATIONAL_AUDIT_2026-10-08.md](OPERATIONAL_AUDIT_2026-10-08.md).
 
-## Produto
+## Produto e arquitetura
 
-O Pausa AI é uma plataforma de bem-estar preventivo que transforma o estado e o contexto atual do usuário em pequenas ações viáveis naquele momento, registra o resultado e utiliza o histórico para tornar as próximas recomendações mais contextuais.
+Pausa AI transforma estado/contexto de bem-estar em recomendações e ações, registra resultados e usa histórico para contextualização.
+Next.js/App Router/React/TypeScript, Prisma 6.19.3, SQLite local, PostgreSQL Supabase para staging, auth própria JWT/bcrypt/cookie httpOnly, RBAC, rate limit persistido, audit log/outbox, Expo/WebView.
+Nenhuma migração para Supabase Auth foi realizada.
+Inventário do candidato #28: 54 páginas, 82 APIs (inclui nova /api/health), 85 models, 9 migrations SQLite. Main possui 81 APIs.
 
-Fluxo principal:
+## Código e CI
 
-`estado → interpretação → recomendação → ação → registro → histórico → nova recomendação`
+Main permanece no merge #25 de 30/09. PR #28 ainda draft; adapter PostgreSQL, bindings e seed controlado estão no candidato, não em main.
+Nesta auditoria foram corrigidos CI/Release Green Baseline para gerar os clientes SQLite e PostgreSQL antes do typecheck. Todos os seis workflows passaram no candidato `633d1684803b35512529cdbeede1f2ef3006a072`.
+PR #22 conflita com main; #29/#30 falham por incompatibilidade Prisma 6/7; #31 tem checks green, sem review submetido.
+Main continua sem proteção/rulesets. Não houve merge nesta auditoria.
 
-## Arquitetura confirmada
+## Ambientes
 
-- Next.js 16 / App Router / React 19 / TypeScript
-- Prisma 6.19.3
-- SQLite em desenvolvimento
-- PostgreSQL 17 no Supabase para staging de dados
-- autenticação própria com JWT + bcrypt + cookie httpOnly
-- RBAC persistido
-- rate limiting persistente
-- feature flags, audit log e outbox
-- motor de recomendação determinístico/versionado
-- Expo + React Native + WebView com ponte nativa
-- 54 páginas
-- 81 rotas de API
-- 85 models Prisma
-- 9 migrations SQLite do fluxo local
-- schema PostgreSQL equivalente validado em CI e aplicado no Supabase
+- Supabase Pausa AI: **INACTIVE** em listagem/detalhe atuais; consulta SQL falhou por timeout. Saúde, 85 tabelas, grants e User=0 de setembro são históricos, não reconfirmados.
+- Advisors: lints=[] com banco inacessível; resultado inconclusivo.
+- Cloudflare pausa-ai-staging: versão 118c4f96 ativa, build main@7392441; HTTPS responde. Branch main, build:vinext e deploy vinext confirmados.
+- DATABASE_URL configurada somente como secret de build na inspeção; runtime secrets vazio. APP_BASE_URL de build corrigida de placeholder para URL real. Logs/traces/issues OFF.
+- Smoke real: / 200; /api/health 404; /api/system/health 503 database unreachable. Nenhuma homologação autenticada.
 
-## Qualidade contemporânea
+## Bloqueadores
 
-No commit `37517f5477ee568a7689aadae92ecd94daf7ab67`:
+1. Proteção de main e review do candidato.
+2. Banco staging ativo, secrets de runtime e deploy verificável.
+3. Seed PostgreSQL idempotente/integridade e seed admin atômico.
+4. Exportação LGPD com SQL compatível PostgreSQL, cadastro com rate limit e limite seguro sob concorrência.
+5. Dependências: raiz 31 achados; mobile 35, com 1 critical. Triage de alcance/patches pendente.
+6. Smoke HTTPS completo, auth/RBAC/cookies/privacidade/isolates e QA real mobile/a11y.
+7. Backup/restore PostgreSQL e rollback Worker. Drill SQLite de CI passou; não substitui ensaio Supabase.
+8. Minimização de logs e revisão final jurídica/privacidade.
+9. Migração histórica #3 permanece PARTIAL; fontes originais completas não disponíveis nesta auditoria.
 
-- CI: success
-- CodeQL: success
-- Release Green Baseline: success
-- Prisma SQLite validate/migrate/seed: success em CI
-- Prisma PostgreSQL schema validation: success
-- `vinext check`: success
-
-## Supabase staging
-
-Executado:
-
-- hardening de default privileges
-- baseline PostgreSQL completo
-- 85 tabelas confirmadas
-- acesso direto da Data API removido nas tabelas da aplicação
-- security advisors sem lints
-- teste transacional sintético com FK e rollback bem-sucedido
-
-Ainda não executado:
-
-- seed completo de catálogo/foundations no PostgreSQL
-- conexão da aplicação publicada ao banco
-- backup/restore drill
-
-## Cloud
-
-Cloudflare Workers permanece o runtime web alvo. A compatibilidade via `vinext check` passou.
-
-Ainda faltam configuração vinext persistida, Worker real, configuração de ambiente, URL HTTPS e smoke de staging.
-
-## Produção
-
-Produção não está declarada pronta.
-
-Bloqueadores atuais:
-
-1. dívida de dependências rastreada na Issue #5
-2. seed/backup/restore do PostgreSQL staging
-3. Cloudflare Worker real
-4. staging HTTPS e smoke autenticado
-5. QA físico/mobile/a11y
-6. revisão jurídica/LGPD final
-
-## Regras de continuidade
-
-- código atual prevalece sobre snapshots históricos para estado de implementação
-- planejamento não equivale a implementação
-- não executar migrações destrutivas sem rollback e evidência
-- não declarar Release Green sem gates contemporâneos
-- integrações externas são opcionais ao Pausa AI Core
+**G9 NO-GO / G10 NO-GO. Produção e RC não homologadas.**
+Histórico/planejamento/CI não substituem evidência do ambiente efetivamente publicado.
