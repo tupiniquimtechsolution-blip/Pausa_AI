@@ -19,7 +19,7 @@ Esta avaliação substitui as afirmações de saúde/prontidão de 30/09 e 02/10
 | G5 | Segurança | BLOCKED | CodeQL #28 passou; auth/RBAC revisados em código; auditoria online obtida | raiz: 24 high; mobile: 25 high e 1 critical; cadastro sem rate limit; concorrência do limiter; LGPD/logs |
 | G6 | Testes | PARTIAL | CI/W8 e drill SQLite sintético contemporâneos passaram; adapter SELECT 1 passou em PostgreSQL 17 de CI | auth/RBAC/privacidade em PostgreSQL staging, WebView/aparelhos/a11y e persistência entre isolates não homologados |
 | G7 | Cloud | PARTIAL | PR #28 integrado em main@741d2c6; deploy Cloudflare concluído, versão 48ea9e87 | observabilidade e rollback ainda pendentes; presença das configurações não prova validade dos secrets |
-| G8 | Staging | PARTIAL | preview do PR #36 com secrets restaurados: /api/health 200 em 10 consultas, /api/system/health 200; rotas sem sessão redirecionam para login | smoke autenticado completo, preservação de secrets em deploy, cadastro/onboarding, cookies, RBAC, persistência entre isolates e principal ainda não homologados |
+| G8 | Staging | PARTIAL | preview do PR #36 com secrets restaurados: /api/health 200 em 10 consultas, /api/system/health 200; rotas sem sessão redirecionam para login | smoke autenticado completo, imagens de Corpo/Movimento ausentes (#37), preservação de secrets em deploy, cadastro/onboarding, cookies, RBAC, persistência entre isolates e principal ainda não homologados |
 | G9 | Release Candidate | NO-GO | nenhuma RC publicada nesta auditoria | G2/G3/G4/G5/G6/G7/G8 e homologação/rollback |
 | G10 | Release Green | NO-GO | issue #8 aberta; há bloqueadores reais | smoke HTTPS completo, backup/restore PostgreSQL, QA e auditoria final |
 
@@ -110,3 +110,15 @@ Após novo salvamento pelo usuário, reload do painel do preview confirmou as ci
 Verificação HTTPS: seis consultas sequenciais e quatro simultâneas a /api/health retornaram 200/ok=true/database=ready; /api/system/health retornou 200/database=reachable. Sem cookies, /app/onboarding e GET /api/admin/feature-flags retornaram 307 para login; nenhum conteúdo autenticado foi coletado. Isso comprova conexão PostgreSQL e bloqueio básico sem sessão, mas não comprova autorização por perfil, envio de e-mail nem persistência garantida entre isolates.
 
 A aba existente do onboarding continha uma sessão antiga; após reload foi redirecionada a /login?session=expired, sem Error 1101 nessa navegação. Solicitado ao usuário novo login com a conta existente, sem enviar senha ao chat. Recarregamentos autenticados e cadastro/onboarding permanecem pendentes. Preservação de secrets no próximo deploy continua bloqueadora; nenhum dado/schema foi alterado, nenhum seed/restore executado. PR #36 permanece draft, sem merge. G8 passa a PARTIAL; G9/G10 permanecem NO-GO.
+
+## Corpo/Movimento: imagens ausentes e carregamento — 08/10/2026
+
+O usuário informou login bem-sucedido e aplicativo funcionando, com imagens ausentes em Corpo/Movimento e demora ocasional. A sessão autenticada utilizada pelo usuário não está disponível na aba acessível ao agente; login, onboarding e lentidão permanecem relatos do usuário, sem homologação completa independente.
+
+Causa comprovada para parte das imagens: a árvore Git completa, não truncada, do candidato 64387b6 contém 2.863 arquivos public, mas zero em public/instructional-images/. Essa pasta está em .gitignore. Os 168 mapeamentos READY de lib/catalog-visual-assets-data.json apontam para capas ausentes na árvore; não há imagem com o mesmo catalogIdOrSlug em exercises/ ou yoga/ para essas capas. A consulta ao histórico GitHub da pasta não retornou commits.
+
+HTTPS no preview: /instructional-images/yoga/hormonal-balance/yoga_hormonal_013_paschimottanasana_step_01_seated.png retornou 404/text/html; /exercises/soltar-tensao-pescoco-ombros.png retornou 200/image/png/1.217.061 bytes e /exercises/yoga-bolso-coluna-leve.png retornou 200/image/png/2.172.820 bytes. Isto distingue arquivo inexistente de imagem que apenas precisa carregar; não comprova que todos os cartões afetados usam o mesmo caminho.
+
+Achado registrado em [issue #37](https://github.com/tupiniquimtechsolution-blip/Pausa_AI/issues/37), com critérios de recuperação das imagens originais aprovadas, publicação verificável e smoke visual. Solicitados nome de uma prática afetada e caminho local da pasta original. Não foram geradas novas ilustrações nem substituídas por imagens de outro movimento.
+
+Melhoria local preparada para app/app/movimento/page.tsx: executar quatro consultas independentes em Promise.all em vez de sequencialmente; typecheck, ESLint do arquivo e build:vinext passaram. Patch disponibilizado no workspace como outputs/movimento-carregamento.patch. Não publicado nem integrado: ganho real ainda precisa ser medido na sessão autenticada, e preservação de secrets no deploy segue bloqueadora. Não foram alterados dados/schema ou a versão ativa funcional. G8 PARTIAL; G9/G10 NO-GO.
