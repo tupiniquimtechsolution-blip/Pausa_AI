@@ -131,6 +131,8 @@ Para fechar TASK-130: banco ativo → confirmar plano/backups → snapshot sint�
 | 133 — migração histórica | PARTIAL | manifesto/auditoria canônicos mantêm PARTIAL; conversa de continuidade é preview limitado, sem fontes antigas completas/anexos |
 | 134 — auditoria/RC/Green | AUDITORIA REGISTRADA; RELEASE BLOCKED | G0–G10 reavaliados; #8 aberta; G9/G10 NO-GO |
 
+Novos bloqueadores de privacidade PostgreSQL, rate limiting, seed e logs: [issue #32](https://github.com/tupiniquimtechsolution-blip/Pausa_AI/issues/32).
+
 ## Critérios para próxima reavaliação
 
 Nenhuma task operacional bloqueada é marcada concluída por existir código ou CI verde.
