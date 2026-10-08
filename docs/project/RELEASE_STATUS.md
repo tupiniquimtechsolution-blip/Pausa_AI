@@ -70,3 +70,7 @@ Cloudflare preview inicial falhou usando npm run build/Next sem gerar o cliente 
 Execução 270aeafa ainda usava comandos antigos e foi cancelada para substituição. Nenhum secret foi copiado para o preview. Integração e healthcheck real permanecem pendentes; G9/G10 NO-GO.
 
 Última execução de validação: [Cloudflare a51d48da](https://dash.cloudflare.com/4b7b61dd588c9f0754dfacc0023f38e5/workers/services/view/pausa-ai-staging/production/previews/fix-cloudflare-prisma-wasm-loader/builds/a51d48da-6b7f-4c7e-b372-016800128704), SHA bdde1e5, comandos npm run build:vinext e npx @vinext/cloudflare deploy --no-promote --skip-build confirmados. Ainda em Initializing na última inspeção. PR #36 permanece draft e não integrado enquanto o gate Cloudflare e o smoke real não forem resolvidos.
+
+## Alinhamento de publicação do preview
+
+A51d48da concluiu build:vinext, mas falhou na publicação: o upload de versões em modo production foi rejeitado pelo destino de preview por divergência de nome. A CLI cf instalada foi consultada: `cf previews deploy [preview-name] --prebuilt` é o comando específico para publicar Preview Build Output. Configuração do preview fix/cloudflare-prisma-wasm-loader atualizada para `npx cf previews deploy fix-cloudflare-prisma-wasm-loader --prebuilt`, mantendo o build npm run build:vinext. Não se renomeou o Worker principal nem se copiou secrets para o preview. Nova publicação ainda precisa de verificação.
