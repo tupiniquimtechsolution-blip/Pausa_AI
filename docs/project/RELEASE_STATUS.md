@@ -60,3 +60,11 @@ Release Green exige evidência contemporânea do artefato efetivamente implantad
 Captura temporária de live logs do Worker, em versão `41f0219d-e2d9-4aac-9449-b97621aeb3a0`, identificou falha anterior à consulta: `no such file or directory, readAll '/bundle/generated/prisma-pg/query_compiler_bg.wasm'`. Portanto o healthcheck não comprova erro de senha/conexão PostgreSQL. Captura pausada após coleta; sem inclusão de headers, IPs ou secrets nesta evidência.
 
 [PR #36](https://github.com/tupiniquimtechsolution-blip/Pausa_AI/pull/36), SHA `9fbe865b63262cdf99ff6d7a22491465a2771f6f`, direciona o build ao entry WASM do cliente PostgreSQL. Build local passou; worker.config.json registra o query compiler como módulo wasm no manifest, e o loader importa o arquivo emitido. Gates CI e smoke do artefato implantado ainda necessários. G9/G10 permanecem NO-GO.
+
+## Gates do candidato WASM e configuração de preview
+
+PR #36, head `bdde1e5c56f1eb36df275849159c556916f69db4`: todos os checks GitHub presentes passaram (CI, CodeQL, Vinext, quality, cloudflare-compatibility, postgres-baseline e audit evidence). Teste local em Worker isolado carregou o compilador WASM e avançou até a conexão fictícia deliberadamente indisponível.
+
+Cloudflare preview inicial falhou usando npm run build/Next sem gerar o cliente PostgreSQL. A configuração Previews Base foi corrigida, porém o preview existente mantinha uma cópia própria dos comandos antigos. Sua configuração também foi atualizada para npm run build:vinext e npx @vinext/cloudflare deploy --no-promote --skip-build. Não se concluiu que Retry congela comandos: a divergência constatada era a configuração do preview existente.
+
+Execução 270aeafa ainda usava comandos antigos e foi cancelada para substituição. Nenhum secret foi copiado para o preview. Integração e healthcheck real permanecem pendentes; G9/G10 NO-GO.
