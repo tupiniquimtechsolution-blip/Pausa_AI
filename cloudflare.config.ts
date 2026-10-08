@@ -7,6 +7,12 @@ export default defineConfig({
     compatibilityDate: "2026-09-30",
     compatibilityFlags: ["nodejs_compat"],
     assets: { notFoundHandling: "none" },
+    // Capture application exceptions; omit invocation logs and redact query strings.
+    observability: {
+      enabled: true,
+      redactQueryString: true,
+      logs: { enabled: true, invocationLogs: false, persist: true },
+    },
     env: {
       ASSETS: bindings.assets(),
 
