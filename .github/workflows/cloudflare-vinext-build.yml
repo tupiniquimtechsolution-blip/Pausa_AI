@@ -36,3 +36,5 @@ jobs:
         run: npx prisma validate --schema prisma/schema.postgresql.prisma
       - name: Build Cloudflare Worker output
         run: npm run build:vinext
+      - name: Verify Worker database request isolation
+        run: node scripts/worker-request-db-check.mjs
