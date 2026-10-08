@@ -31,7 +31,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm ci --prefix mobile
-      - run: npx prisma generate
+      - run: |
+          npx prisma generate
+          npx prisma generate --schema prisma/schema.postgresql.prisma
       - run: npx prisma validate
       - run: npx prisma migrate deploy
       - run: npm run db:seed

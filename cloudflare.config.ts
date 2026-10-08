@@ -9,6 +9,22 @@ export default defineConfig({
     assets: { notFoundHandling: "none" },
     env: {
       ASSETS: bindings.assets(),
+
+      // Runtime secrets: values are provisioned separately in Cloudflare.
+      DATABASE_URL: bindings.secret(),
+      JWT_SECRET: bindings.secret(),
+      RATE_LIMIT_PEPPER: bindings.secret(),
+      CRON_SECRET: bindings.secret(),
+      RESEND_API_KEY: bindings.secret(),
+
+      // Non-sensitive staging configuration.
+      COOKIE_SECURE: bindings.text("true"),
+      APP_BASE_URL: bindings.text("https://pausa-ai-staging.tupiniquim-techsolution.workers.dev"),
+      ADMIN_EMAIL: bindings.text("admin@pausaai.com"),
+      RESEND_FROM_EMAIL: bindings.text("Pausa AI <onboarding@resend.dev>"),
+      AUDIT_LOG_RETENTION_DAYS: bindings.text("180"),
+      RELEASE_VERSION: bindings.text("staging"),
+      B2B_REAL_DASHBOARD_ENABLED: bindings.text("false"),
     },
   }),
 });
