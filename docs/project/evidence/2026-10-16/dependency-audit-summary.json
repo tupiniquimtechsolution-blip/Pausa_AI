@@ -1,0 +1,529 @@
+{
+  "root": {
+    "counts": {
+      "info": 0,
+      "low": 0,
+      "moderate": 6,
+      "high": 14,
+      "critical": 0,
+      "total": 20
+    },
+    "highOrCritical": [
+      {
+        "name": "@next/eslint-plugin-next",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "eslint-config-next",
+          "version": "14.2.35",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "@prisma/config",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "prisma",
+          "version": "7.10.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "braces",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "tailwindcss",
+          "version": "4.3.3",
+          "isSemVerMajor": true
+        },
+        "advisories": [
+          {
+            "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+            "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+            "range": "<=3.0.3"
+          }
+        ]
+      },
+      {
+        "name": "chokidar",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "tailwindcss",
+          "version": "4.3.3",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "deepmerge-ts",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "prisma",
+          "version": "7.10.1",
+          "isSemVerMajor": true
+        },
+        "advisories": [
+          {
+            "title": "DeepmergeTS has stack exhaustion when merging recursive object graphs",
+            "url": "https://github.com/advisories/GHSA-ggr8-5vv4-36mx",
+            "range": "<8.0.0"
+          }
+        ]
+      },
+      {
+        "name": "eslint-config-next",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "eslint-config-next",
+          "version": "14.2.35",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "fast-glob",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "eslint-config-next",
+          "version": "14.2.35",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "micromatch",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "tailwindcss",
+          "version": "4.3.3",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "prisma",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "prisma",
+          "version": "7.10.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "sharp",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "sharp",
+          "version": "0.35.5",
+          "isSemVerMajor": true
+        },
+        "advisories": [
+          {
+            "title": "sharp inherited vulnerabilities in libvips: CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591",
+            "url": "https://github.com/advisories/GHSA-f88m-g3jw-g9cj",
+            "range": "<0.35.0"
+          },
+          {
+            "title": "sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545",
+            "url": "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+            "range": "<0.35.4"
+          },
+          {
+            "title": "sharp : Vulnerability in librsvg dependency CVE-2026-96889",
+            "url": "https://github.com/advisories/GHSA-wq5f-xc86-pv6w",
+            "range": "<0.35.5"
+          }
+        ]
+      },
+      {
+        "name": "tailwindcss",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "tailwindcss",
+          "version": "4.3.3",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "vinext",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "vite-plugin-commonjs",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "vite-plugin-dynamic-import",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      }
+    ]
+  },
+  "runtime": {
+    "counts": {
+      "info": 0,
+      "low": 0,
+      "moderate": 4,
+      "high": 9,
+      "critical": 0,
+      "total": 13
+    },
+    "highOrCritical": [
+      {
+        "name": "@prisma/config",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "prisma",
+          "version": "7.10.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "braces",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": [
+          {
+            "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+            "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+            "range": "<=3.0.3"
+          }
+        ]
+      },
+      {
+        "name": "deepmerge-ts",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "prisma",
+          "version": "7.10.1",
+          "isSemVerMajor": true
+        },
+        "advisories": [
+          {
+            "title": "DeepmergeTS has stack exhaustion when merging recursive object graphs",
+            "url": "https://github.com/advisories/GHSA-ggr8-5vv4-36mx",
+            "range": "<8.0.0"
+          }
+        ]
+      },
+      {
+        "name": "fast-glob",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "micromatch",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "prisma",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "prisma",
+          "version": "7.10.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "vinext",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "vite-plugin-commonjs",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "vite-plugin-dynamic-import",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "vinext",
+          "version": "0.2.1",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      }
+    ]
+  },
+  "mobile": {
+    "counts": {
+      "info": 0,
+      "low": 0,
+      "moderate": 8,
+      "high": 17,
+      "critical": 0,
+      "total": 25
+    },
+    "highOrCritical": [
+      {
+        "name": "@expo/cli",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "@expo/code-signing-certificates",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": true,
+        "advisories": []
+      },
+      {
+        "name": "@expo/metro",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "@expo/metro-config",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "@expo/metro-file-map",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "@react-native/community-cli-plugin",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "react-native",
+          "version": "0.72.17",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "@react-native/virtualized-lists",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "react-native",
+          "version": "0.72.17",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "braces",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": [
+          {
+            "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+            "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+            "range": "<=3.0.3"
+          }
+        ]
+      },
+      {
+        "name": "expo",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "image-size",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": true,
+        "advisories": [
+          {
+            "title": "image-size: JXL and HEIF parsers allow denial of service through infinite loops",
+            "url": "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq",
+            "range": ">=1.2.0 <=2.0.2"
+          },
+          {
+            "title": "image-size: ICNS parser allows denial of service through an infinite loop",
+            "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr",
+            "range": ">=0.6.3 <=2.0.2"
+          }
+        ]
+      },
+      {
+        "name": "metro",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "react-native",
+          "version": "0.72.17",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "metro-config",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "react-native",
+          "version": "0.72.17",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "metro-file-map",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "metro-transform-worker",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": true,
+        "advisories": []
+      },
+      {
+        "name": "micromatch",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      },
+      {
+        "name": "node-forge",
+        "severity": "high",
+        "direct": false,
+        "fixAvailable": {
+          "name": "expo",
+          "version": "44.0.6",
+          "isSemVerMajor": true
+        },
+        "advisories": [
+          {
+            "title": "node-forge RSA PKCS#1 v1.5 signature verification accepts extra nested DigestAlgorithm elements",
+            "url": "https://github.com/advisories/GHSA-86w9-cpqp-85rv",
+            "range": "<=1.4.0"
+          }
+        ]
+      },
+      {
+        "name": "react-native",
+        "severity": "high",
+        "direct": true,
+        "fixAvailable": {
+          "name": "react-native",
+          "version": "0.72.17",
+          "isSemVerMajor": true
+        },
+        "advisories": []
+      }
+    ]
+  }
+}

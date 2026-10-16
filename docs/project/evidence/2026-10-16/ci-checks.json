@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-16T15:20:31.618Z",
+  "sourceSha": "5fd7649ec70dd25a7ac1ccbcddd33aafcca9c79f",
+  "checks": [
+    {
+      "name": "Workers Builds: pausa-ai-staging",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://dash.cloudflare.com/4b7b61dd588c9f0754dfacc0023f38e5/workers/services/view/pausa-ai-staging/production/builds/d4be2285-c7a7-4e9a-a4f6-5a8ac3930331"
+    },
+    {
+      "name": "CodeQL",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/runs/117038432891"
+    },
+    {
+      "name": "Analyze JavaScript/TypeScript",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/38920185691/job/117037818219"
+    },
+    {
+      "name": "npm-audit",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/38920185794/job/117037817766"
+    },
+    {
+      "name": "Quality and security gates",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/38920185475/job/117037817388"
+    },
+    {
+      "name": "quality",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/38920185749/job/117037817194"
+    },
+    {
+      "name": "postgres-baseline",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/38920185749/job/117037817141"
+    },
+    {
+      "name": "validate",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/38920185679/job/117037816919"
+    },
+    {
+      "name": "cloudflare-compatibility",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/38920185749/job/117037816754"
+    },
+    {
+      "name": "vinext-build",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/38920185623/job/117037815598"
+    }
+  ],
+  "releaseGreen": false,
+  "fullHttpsSmokePassed": false,
+  "paidPlanChange": false,
+  "mainPromoted": false
+}

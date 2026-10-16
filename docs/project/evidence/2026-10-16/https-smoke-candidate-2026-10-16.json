@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-16T14:58:59.707Z",
+  "base": "https://fix-cloudflare-prisma-wasm-loader-pausa-ai-staging.tupiniquim-techsolution.workers.dev",
+  "ok": false,
+  "failure": "Ownership check inconclusive or failed (HTTP 500).",
+  "syntheticAccountsCreated": 2,
+  "syntheticAccountsCleaned": 2,
+  "credentialsRecorded": false,
+  "results": [
+    {
+      "path": "/api/health",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e6af7c9f3f2d-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 1686
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e6b9699a3f2d-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 4365
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e6d4ab8a3f2d-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 4123
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e6ee88873f2d-GRU"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "ms": 7643
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e71e38a83f2d-GRU"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "ms": 7209
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e74b59da3f2d-GRU"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "ms": 7811
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e77c2fbb3f2d-GRU"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "ms": 7583
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e7ab8ca13f2d-GRU"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "ms": 7897
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e7abcd14d28b-GRU"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "ms": 8613
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e7abf9bce8d6-GRU"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "ms": 8739
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e7abee15ff14-GRU"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "ms": 8970
+    },
+    {
+      "path": "/api/onboarding",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e7e39e723f2d-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 2882
+    },
+    {
+      "path": "/api/checkins",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e7f59faf3f2d-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 16152
+    },
+    {
+      "path": "/api/recommendations/current",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e85a8a5e3f2d-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 3729
+    },
+    {
+      "path": "/api/recommendations/current?checkin=[synthetic]",
+      "method": "GET",
+      "status": 500,
+      "attempts": [
+        {
+          "status": 500,
+          "server": "cloudflare",
+          "cfRay": "a4b7e871da0b3f2d-GRU"
+        }
+      ],
+      "contentType": null,
+      "ms": 5627
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e8952e49031b-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 3539
+    },
+    {
+      "path": "/api/data-vault/subject-request",
+      "method": "DELETE",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e8ab39303f2d-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 5378
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e8ccf958ac02-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 2727
+    },
+    {
+      "path": "/api/data-vault/subject-request",
+      "method": "DELETE",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4b7e8ddefe6ac02-GRU"
+        }
+      ],
+      "contentType": "application/json",
+      "ms": 4914
+    }
+  ]
+}

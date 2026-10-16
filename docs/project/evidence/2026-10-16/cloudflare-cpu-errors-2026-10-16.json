@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-16T15:16:34.196Z",
+  "deployment": "e7f76d50-5197-4190-99ca-5ec72494e034",
+  "source": "Cloudflare Workers observability; matched preview name",
+  "events": [
+    {
+      "timestamp": 1792163526466,
+      "rayId": "a4b7fff8282c1047",
+      "trigger": "DELETE /api/data-vault/subject-request",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    },
+    {
+      "timestamp": 1792163525318,
+      "rayId": "a4b7fff10c4af46b",
+      "trigger": "DELETE /api/data-vault/subject-request",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    },
+    {
+      "timestamp": 1792163522220,
+      "rayId": "a4b7ffddc8d7f46b",
+      "trigger": "GET /app/onboarding",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    },
+    {
+      "timestamp": 1792163521091,
+      "rayId": "a4b7ffd6bd0ef46b",
+      "trigger": "GET /app/onboarding",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    },
+    {
+      "timestamp": 1792163322614,
+      "rayId": "a4b7fafdcacfa52b",
+      "trigger": "POST /api/auth/login",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    },
+    {
+      "timestamp": 1792163321484,
+      "rayId": "a4b7faf68d12a52b",
+      "trigger": "POST /api/auth/login",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    },
+    {
+      "timestamp": 1792163320313,
+      "rayId": "a4b7faef3fb1a52b",
+      "trigger": "POST /api/auth/login",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    },
+    {
+      "timestamp": 1792163318797,
+      "rayId": "a4b7fae648e7a52b",
+      "trigger": "GET /app/onboarding",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    },
+    {
+      "timestamp": 1792163316613,
+      "rayId": "a4b7fab6cbada52b",
+      "trigger": "GET /app/onboarding",
+      "error": "Worker exceeded CPU time limit.",
+      "scriptVersion": "e7f76d50-5197-4190-99ca-5ec72494e034"
+    }
+  ]
+}

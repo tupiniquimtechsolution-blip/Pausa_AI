@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-16T15:10:22.838Z",
+  "deploymentId": "e7f76d50-5197-4190-99ca-5ec72494e034",
+  "created": "2026-10-16T15:06:30.165846Z",
+  "annotations": {
+    "workers/message": "fix: return controlled 404 for foreign recommendation check-ins",
+    "workers/repository_url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI",
+    "workers/tag": "5fd7649",
+    "workers/triggered_by": "create_preview_deployment_api"
+  },
+  "secretNames": [
+    "CRON_SECRET",
+    "DATABASE_URL",
+    "JWT_SECRET",
+    "RATE_LIMIT_PEPPER",
+    "RESEND_API_KEY"
+  ],
+  "secretValuesRead": false
+}

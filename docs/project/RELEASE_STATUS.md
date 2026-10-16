@@ -1,44 +1,52 @@
 # Pausa AI — Release Status
 
 Atualizado em: 2026-10-16 (America/Sao_Paulo).
-Decisão operacional: **G9 NO-GO / G10 NO-GO. Nenhuma RC ou Release Green homologada.**
+**G8 BLOCKED · G9 NO-GO · G10 NO-GO. Nenhuma RC/Release Green homologada.**
 
-Main verificada: `741d2c624c998a57e5d98e2929c95a7047e5fea0`.
-Base de runtime: PR #36 / `64387b69074ee33f573728c218ea49ade80811dc`.
-Execução atual: [OPERATIONAL_EXECUTION_2026-10-16.md](OPERATIONAL_EXECUTION_2026-10-16.md).
-Esta atualização substitui o status operacional de 02/10; os fatos antigos permanecem no histórico Git e na auditoria PR #33.
+Main na auditoria: 741d2c624c998a57e5d98e2929c95a7047e5fea0.
+Correções: [PR #39](https://github.com/tupiniquimtechsolution-blip/Pausa_AI/pull/39), mantido draft; sem integração à main ou promoção do principal.
+Código validado em CI/publicado: **5fd7649ec70dd25a7ac1ccbcddd33aafcca9c79f**.
+Deployment preview: **e7f76d50-5197-4190-99ca-5ec72494e034**; build d4be2285-c7a7-4e9a-a4f6-5a8ac3930331.
+[Execução e limites](OPERATIONAL_EXECUTION_2026-10-16.md) · [Evidências sanitizadas](evidence/2026-10-16/).
 
-| Gate | Área | Status | Evidência e pendência |
+| Gate | Área | Estado | Evidência e pendência |
 |---|---|---|---|
-| G0 | Inventário/Baseline | GREEN | main/candidato identificados; 85 models/tabelas; árvore public igual à baseline versionada |
-| G1 | Documentação | PARTIAL | status e execução contemporâneos; migração histórica ainda incompleta |
-| G2 | Repositório | BLOCKED | main protected=false/rulesets=[]; proposta administrativa pronta, ainda não aplicada |
-| G3 | Código | PARTIAL | LGPD, limiter atômico, cadastro, logs, seed e carregamento corrigidos nesta proposta; integração/gates finais pendentes |
-| G4 | Dados | PARTIAL | Supabase reativado/ACTIVE_HEALTHY; 85 tabelas; sem grants anon/authenticated; validação de schema/seed e backup real ainda pendentes |
-| G5 | Segurança | BLOCKED | código de privacidade/rate limit testado; raiz ainda 14 high/6 moderate, mobile 17 high/8 moderate, zero critical nesta auditoria |
-| G6 | Testes | PARTIAL | testes de segurança em SQLite/PostgreSQL e restore isolado passaram; QA físico/mobile/a11y e gates do SHA final pendentes |
-| G7 | Cloud | PARTIAL | teste remoto descartável comprovou preservação de secret sintético e rollback; principal ainda com health 503 |
-| G8 | Staging | PARTIAL | preview health 200 e fluxo autenticado parcial; 503 intermitente impediu homologação de estabilidade/ownership |
-| G9 | Release Candidate | NO-GO | segurança, governança, smoke completo, backup real/rollback e QA pendentes |
-| G10 | Release Green | NO-GO | issue #8 permanece aberta; CI/fixture isolados não satisfazem homologação real |
+| G0 | Inventário/Baseline | GREEN | main/candidato identificados; 85 models/tabelas; assets versionados preservados |
+| G1 | Documentação | PARTIAL | status, relatório, evidências e Notion atualizados; migração histórica incompleta |
+| G2 | Repositório | BLOCKED | main sem proteção/rulesets; proposta administrativa pronta, não aplicada |
+| G3 | Código | PARTIAL | privacidade, limiter, cadastro, logs, seed, Movimento e ownership corrigidos no PR; integração bloqueada pelo smoke |
+| G4 | Dados | PARTIAL | Supabase saudável; 85 tabelas/colunas escalares presentes, 86 FKs; sem grants anon/authenticated; backup real/seed controlado pendentes |
+| G5 | Segurança | BLOCKED | testes de segurança passaram; raiz 14 high/6 moderate, mobile 17 high/8 moderate; rotação e validação residual pendentes |
+| G6 | Testes | PARTIAL | nove checks GitHub e build Cloudflare passaram no SHA do código; smoke real falhou; QA físico/mobile/a11y pendente |
+| G7 | Cloud | PARTIAL | deploy e preservação de cinco secrets comprovados; rollback de fixture passou; principal permanece health 503 |
+| G8 | Staging | BLOCKED | HTTP 503/Error 1102; logs confirmam Worker exceeded CPU time limit em onboarding/login/exclusão |
+| G9 | Release Candidate | NO-GO | smoke estável, segurança, governança, backup real e QA pendentes |
+| G10 | Release Green | NO-GO | issue #8 aberta; CI e fixtures não satisfazem homologação real |
 
-## Executado em 16/10
+## Executado
 
-- Corrigidos parâmetros de exportação LGPD em PostgreSQL e removidos campos de credenciais; limiter persistente atômico e cadastro com 429/Retry-After; seed ADMIN transacional, confirmação de ambiente e logs minimizados.
-- Quatro consultas independentes de Movimento em paralelo. Medição do ganho no artefato publicado ainda pendente.
-- `cf@1.0.0-beta.17`, Next/eslint-config-next 16.4.2 e lockfiles com upgrades compatíveis; nenhuma migração estrutural de Prisma/Expo/Tailwind.
-- Por provider, 128 hits concorrentes verificaram contagem/limite/expiração; testes comprovaram isolamento de exportação, binding de parâmetros, rollback/idempotência do seed e sanitização de log.
-- Restore PostgreSQL 17 em destino local vazio: 85 tabelas, 87 registros sintéticos, FK ativas, contagens e leitura Prisma verificadas. Snapshot SHA-256 `e371f412738a50cc20483331f523511003c96248f5e49e19a76e45e05bbdbb28`. Não equivale a restaurar backup real do Supabase.
-- Fixture remota descartável no Worker existente: deploy `70aa9652`, rollback `b7d46c82`, valor sintético preservado e fixture removida. Nenhum secret real lido/copiado; nenhum recurso pago contratado/provisionado.
-- Smoke real do preview anterior comprovou cadastro/cookies/onboarding/check-in/recomendação e reloads, mas retornou 503 em ownership e numa repetição autenticada. Sem conclusão de IDOR ou estabilidade a partir desses erros. Contas sintéticas removidas.
+- Exportação LGPD usa parâmetros por provider e exclui credenciais. Limiter persistente atômico; cadastro limitado com 429/Retry-After. Seed ADMIN transacional com confirmação explícita. Logs sem erro bruto do banco.
+- Movimento consulta quatro fontes independentes em paralelo. Ganho remoto não homologado.
+- Correção adicional de ownership: check-in inexistente ou de outro titular recebe 404 antes da tentativa de gerar recomendação. CI passou; verificação HTTP desse caso permanece inconclusiva por CPU.
+- cf fixado em 1.0.0-beta.17, Next/eslint-config-next 16.4.2 e lockfiles compatíveis. Duas entradas opcionais WASM ausentes no Linux foram corrigidas; npm ci/CI passaram.
+- Por provider, 128 hits concorrentes verificaram contagem/limite/expiração; testes cobriram isolamento de exportação, binding de SQL, rollback/idempotência do seed e logs.
+- Restore PostgreSQL 17 local/CI em destino vazio: 85 tabelas, 87 registros sintéticos, FKs/contagens/leitura Prisma. Não equivale a backup real do Supabase.
+- Fixture remota de preservação/rollback por republicação passou e foi removida. Cinco secrets reais sobreviveram aos dois deploys do app; valores não foram lidos/copiados.
+- Configuração do preview corrigida para build de Preview e publicador nativo. O comando anterior tentava criar versão do principal e falhava por nome incompatível.
 
-## Pendências e restrições
+## Bloqueio de runtime
 
-1. Finalizar gates no SHA a integrar, publicar candidato e repetir smoke/medição de performance com evidência do deployment efetivo.
-2. Aplicar proteção administrativa proposta em `main-ruleset.proposed.json`; sem simular review humano independente.
-3. Resolver vulnerabilidades residuais e validar auth/RBAC/ownership, LGPD e limiter no app publicado.
-4. Validar backup real Supabase/restore em alvo seguro e rollback do app, com RPO/RTO; seed real e auditoria de grants/advisors ainda pendentes.
+Os smokes reais tiveram sucesso parcial em cadastro, cookies seguros, reloads, onboarding, check-in e recomendação, mas falharam de modo intermitente com HTTP 503. No último deployment, o corpo retornou Error 1102 e o serviço de observabilidade confirmou **Worker exceeded CPU time limit** nas mesmas requisições. [Evidência](evidence/2026-10-16/cloudflare-cpu-errors-2026-10-16.json).
+
+Não há evidência de que uma variável ausente cause esse erro: os cinco secrets estão presentes. Não recadastrar secrets como correção de CPU. Não foi reduzido o custo do hash de senhas, habilitado cache de dados privados, aumentado plano ou contratado capacidade paga. A promoção está bloqueada até perfil/otimização e smoke completo estável.
+
+## Próximas ações
+
+1. Medir e reduzir CPU no runtime existente, incluindo inicialização Prisma/WASM, renderização e hashing; validar por perfil antes de escolher alteração estrutural. Repetir smoke integral por SHA/deployment.
+2. Aplicar proteção administrativa proposta em main-ruleset.proposed.json; obter revisão independente real.
+3. Tratar vulnerabilidades residuais e validar RBAC/ownership, exportação LGPD e 429 no deployment estável.
+4. Executar backup real Supabase e restore apenas em destino isolado, medir RPO/RTO e ensaiar rollback completo do app. No plano gratuito, usar exportação local, sem ativar PITR/upgrade.
 5. Validar mobile/WebView/a11y em dispositivo e completar a migração histórica.
-6. Recuperação das imagens originais (TASK-135/#37) adiada explicitamente até acesso ao disco removível; não bloqueia estas correções independentes.
+6. TASK-135/imagens originais está adiada pelo usuário até acesso ao disco removível.
 
-A execução está limitada a recursos existentes/testes locais e ações sem contratação paga. Nenhuma operação que exija cobrança está autorizada. Release Green exige evidência real contemporânea, além dos testes isolados e CI.
+**Restrição permanente desta execução: nenhuma compra, assinatura, mudança de plano ou provisionamento pago.** Isso não representa uma garantia sobre a medição de uso normal dos serviços existentes.
