@@ -11,12 +11,14 @@ const accounts = [];
 async function request(path, { account, method = "GET", body } = {}) {
   const start = performance.now();
   let r;
+  const attempts = [];
   for (let attempt = 0; attempt < 3; attempt++) {
     r = await fetch(base + path, {
     method, redirect: "manual", signal: AbortSignal.timeout(60000),
     headers: { ...(body ? { "Content-Type": "application/json" } : {}), ...(account?.cookie ? { Cookie: account.cookie } : {}) },
     body: body ? JSON.stringify(body) : undefined,
     });
+    attempts.push({ status: r.status, server: r.headers.get("server"), cfRay: r.headers.get("cf-ray") });
     if (r.status !== 503 || attempt === 2) break;
     await r.arrayBuffer();
     // A brief 503 must be recorded as availability uncertainty, not an IDOR.
@@ -25,7 +27,8 @@ async function request(path, { account, method = "GET", body } = {}) {
   const text = await r.text();
   let data;
   try { data = JSON.parse(text); } catch { data = null; }
-  results.push({ path: path.replace(/checkin=[^&]+/, "checkin=[synthetic]"), method, status: r.status, ms: Math.round(performance.now() - start) });
+  results.push({ path: path.replace(/checkin=[^&]+/, "checkin=[synthetic]"), method, status: r.status, attempts, ms: Math.round(performance.now() - start) });
+  console.error(JSON.stringify(results.at(-1)));
   const cookies = r.headers.getSetCookie();
   if (account && cookies.some(c => c.startsWith("pausa_session="))) {
     const session = cookies.find(c => c.startsWith("pausa_session="));
@@ -58,8 +61,28 @@ try {
   assert.equal((await request("/api/recommendations/current", { account: a })).r.status, 200);
   const otherSubject = await request(`/api/recommendations/current?checkin=${encodeURIComponent(checkin.data.sessionId)}`, { account: b });
   assert.ok([403, 404].includes(otherSubject.r.status) || (otherSubject.r.status === 200 && otherSubject.data?.decision === null), `Ownership check inconclusive or failed (HTTP ${otherSubject.r.status}).`);
+  assert.equal((await request(`/api/recommendations/current?checkin=${encodeURIComponent(checkin.data.sessionId)}`, { account: a })).r.status, 200);
+  assert.equal((await request(`/api/recommendations/current?checkin=${randomUUID()}`, { account: a })).r.status, 404);
   assert.equal((await request("/api/admin/feature-flags", { account: a })).r.status, 403);
+  assert.equal((await request("/api/cron/daily-recommendations", { method: "POST" })).r.status, 401);
+  const exported = await request("/api/data-vault/subject-request", { account: a });
+  assert.equal(exported.r.status, 200);
+  assert.equal(exported.r.headers.get("cache-control"), "no-store");
+  assert.equal(exported.data.identity.email, a.email);
+  assert.equal(JSON.stringify(exported.data).includes(b.email), false);
+  assert.equal(JSON.stringify(exported.data).includes("passwordHash"), false);
+  const exportedCheckins = exported.data.categories.profileAndWellbeing.Checkin;
+  assert.ok(exportedCheckins.length > 0);
+  assert.ok(exportedCheckins.every(row => row.userId === exported.data.identity.id));
   assert.equal((await request("/app/historico", { account: a })).r.status, 200);
+  let limited;
+  for (let i = 0; i < 6; i++) {
+    const invalid = await request("/api/auth/register", { method: "POST", body: {} });
+    assert.ok([400, 429].includes(invalid.r.status));
+    if (invalid.r.status === 429) { limited = invalid.r; break; }
+  }
+  assert.ok(limited, "Registration limiter did not block the invalid attempts.");
+  assert.ok(Number(limited.headers.get("retry-after")) > 0);
   const movement = await Promise.all(Array.from({ length: 3 }, () => request("/app/movimento", { account: a })));
   assert.ok(movement.every(x => x.r.status === 200));
   assert.ok([303, 307].includes((await request("/api/auth/logout", { method: "POST", account: a })).r.status));
