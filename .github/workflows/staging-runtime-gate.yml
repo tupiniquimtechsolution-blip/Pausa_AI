@@ -4,18 +4,6 @@ on:
   push:
     branches: ["fix/staging-auth-runtime-2026-10-02"]
   pull_request:
-    paths:
-      - "package.json"
-      - "package-lock.json"
-      - "cloudflare.config.ts"
-      - "lib/prisma.ts"
-      - "prisma/schema.postgresql.prisma"
-      - "scripts/check-config.mjs"
-      - "scripts/verify-postgres-adapter.ts"
-      - "app/api/health/route.ts"
-      - "mobile/app.json"
-      - "scripts/seed-staging-admin.ts"
-      - ".github/workflows/staging-runtime-gate.yml"
 
 concurrency:
   group: staging-runtime-${{ github.ref }}
@@ -57,6 +45,8 @@ jobs:
       AUDIT_LOG_RETENTION_DAYS: "180"
       RELEASE_VERSION: staging-runtime-ci
       B2B_REAL_DASHBOARD_ENABLED: "false"
+      OPERATIONAL_TEST_DB: isolated
+      POSTGRES_DRILL_TARGET_URL: postgresql://pausa:testpass@127.0.0.1:5432/pausa_ops_restore
 
     steps:
       - uses: actions/checkout@v4
@@ -82,6 +72,19 @@ jobs:
 
       - name: Verify PostgreSQL adapter
         run: npm run test:postgres-adapter
+
+      - name: Verify PostgreSQL privacy, concurrent rate limiting and atomic seed
+        run: npx tsx scripts/operational-security-checks.ts
+
+      - name: Verify Preview secret preservation contract
+        run: node scripts/preview-secret-preservation-check.mjs
+
+      - name: Create isolated restore target
+        run: |
+          node --input-type=module -e 'import pg from "pg"; const client=new pg.Client({connectionString:process.env.DATABASE_URL}); await client.connect(); await client.query("CREATE DATABASE pausa_ops_restore"); await client.end();'
+
+      - name: Verify PostgreSQL logical backup and isolated restore
+        run: node scripts/postgres-backup-drill.mjs
 
       - name: Typecheck
         run: npm run typecheck

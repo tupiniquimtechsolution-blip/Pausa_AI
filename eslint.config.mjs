@@ -6,6 +6,9 @@ const eslintConfig = [
     ignores: [
       ".next/**",
       ".next*/**",
+      ".cloudflare/**",
+      ".vinext/**",
+      "tmp/**",
       "node_modules/**",
       "mobile/node_modules/**",
       "mobile/.expo/**",

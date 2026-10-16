@@ -76,12 +76,12 @@ export async function writeAuditLog(input: {
         userAgent: input.userAgent?.slice(0, 500) || null
       }
     });
-  } catch (error) {
+  } catch {
     structuredLog("error", "audit", "audit_log_write_failed", {
       correlationId: input.correlationId,
       action: input.action,
       targetType: input.targetType,
-      error: error instanceof Error ? error.message : "unknown"
+      error: "AUDIT_WRITE_FAILED"
     });
     return null;
   }

@@ -1,40 +1,44 @@
 # Pausa AI — Release Status
 
-Atualizado em: 2026-10-02
+Atualizado em: 2026-10-16 (America/Sao_Paulo).
+Decisão operacional: **G9 NO-GO / G10 NO-GO. Nenhuma RC ou Release Green homologada.**
 
-| Gate | Área | Status | Evidência atual | Bloqueador |
-|---|---|---|---|---|
-| G0 | Inventário/Baseline | 🟢 GREEN | stack, páginas, APIs, 85 models e 9 migrations locais inventariados | — |
-| G1 | Documentação | 🟢 GREEN | README, CURRENT_STATE, RELEASE_STATUS e ADR atualizados | — |
-| G2 | Repositório | 🟢 GREEN | CI, CodeQL, Dependabot, CODEOWNERS, templates e política de segurança integrados | ruleset de main ainda merece configuração administrativa |
-| G3 | Código | 🟢 GREEN | CI contemporâneo passou no commit 37517f5 | — |
-| G4 | Dados | 🟡 PARTIAL | PostgreSQL 17 saudável; 85 tabelas aplicadas; Data API endurecida; teste transacional+rollback aprovado | seed PostgreSQL, backup/restore drill e smoke da aplicação |
-| G5 | Segurança | 🟡 PARTIAL | CodeQL green; Supabase security advisors sem lints; acesso Data API removido | dívida de dependências rastreada na Issue #5; revisão LGPD final externa |
-| G6 | Testes | 🟢 GREEN | CI + W8 + database drill local + Release Green Baseline aprovados | QA físico/mobile/a11y permanece externo |
-| G7 | Cloud | 🟡 PARTIAL | Worker HTTPS publicado e correção Prisma/Workers + bindings em validação | secrets reais ainda precisam ser provisionados no Cloudflare e redeploy validado |
-| G8 | Staging | 🔴 BLOCKED | PostgreSQL staging saudável e Worker HTTPS publicado | falta conexão runtime comprovada, usuário de staging e smoke autenticado |
-| G9 | Release Candidate | 🔴 NO-GO | baseline técnica pronta para RC | depende de G4/G5/G7/G8 |
-| G10 | Release Green | 🔴 NO-GO | — | depende de staging real, auditoria final, backup/restore e bloqueadores acima |
+Main verificada: `741d2c624c998a57e5d98e2929c95a7047e5fea0`.
+Base de runtime: PR #36 / `64387b69074ee33f573728c218ea49ade80811dc`.
+Execução atual: [OPERATIONAL_EXECUTION_2026-10-16.md](OPERATIONAL_EXECUTION_2026-10-16.md).
+Esta atualização substitui o status operacional de 02/10; os fatos antigos permanecem no histórico Git e na auditoria PR #33.
 
-## Evidências contemporâneas
+| Gate | Área | Status | Evidência e pendência |
+|---|---|---|---|
+| G0 | Inventário/Baseline | GREEN | main/candidato identificados; 85 models/tabelas; árvore public igual à baseline versionada |
+| G1 | Documentação | PARTIAL | status e execução contemporâneos; migração histórica ainda incompleta |
+| G2 | Repositório | BLOCKED | main protected=false/rulesets=[]; proposta administrativa pronta, ainda não aplicada |
+| G3 | Código | PARTIAL | LGPD, limiter atômico, cadastro, logs, seed e carregamento corrigidos nesta proposta; integração/gates finais pendentes |
+| G4 | Dados | PARTIAL | Supabase reativado/ACTIVE_HEALTHY; 85 tabelas; sem grants anon/authenticated; validação de schema/seed e backup real ainda pendentes |
+| G5 | Segurança | BLOCKED | código de privacidade/rate limit testado; raiz ainda 14 high/6 moderate, mobile 17 high/8 moderate, zero critical nesta auditoria |
+| G6 | Testes | PARTIAL | testes de segurança em SQLite/PostgreSQL e restore isolado passaram; QA físico/mobile/a11y e gates do SHA final pendentes |
+| G7 | Cloud | PARTIAL | teste remoto descartável comprovou preservação de secret sintético e rollback; principal ainda com health 503 |
+| G8 | Staging | PARTIAL | preview health 200 e fluxo autenticado parcial; 503 intermitente impediu homologação de estabilidade/ownership |
+| G9 | Release Candidate | NO-GO | segurança, governança, smoke completo, backup real/rollback e QA pendentes |
+| G10 | Release Green | NO-GO | issue #8 permanece aberta; CI/fixture isolados não satisfazem homologação real |
 
-- GitHub CI: success no commit `37517f5477ee568a7689aadae92ecd94daf7ab67`.
-- GitHub CodeQL: success no mesmo commit.
-- Release Green Baseline: success no push e no pull request.
-- PostgreSQL Prisma schema: validado e DDL gerado pelo Prisma em CI.
-- Supabase: 85 tabelas `public`, migrations de baseline aplicadas e security advisors sem lints após endurecimento da Data API.
-- Teste de integridade: inserção sintética com FK em transação funcionou; rollback confirmou 0 resíduos.
+## Executado em 16/10
 
-## Definição de Green
+- Corrigidos parâmetros de exportação LGPD em PostgreSQL e removidos campos de credenciais; limiter persistente atômico e cadastro com 429/Retry-After; seed ADMIN transacional, confirmação de ambiente e logs minimizados.
+- Quatro consultas independentes de Movimento em paralelo. Medição do ganho no artefato publicado ainda pendente.
+- `cf@1.0.0-beta.17`, Next/eslint-config-next 16.4.2 e lockfiles com upgrades compatíveis; nenhuma migração estrutural de Prisma/Expo/Tailwind.
+- Por provider, 128 hits concorrentes verificaram contagem/limite/expiração; testes comprovaram isolamento de exportação, binding de parâmetros, rollback/idempotência do seed e sanitização de log.
+- Restore PostgreSQL 17 em destino local vazio: 85 tabelas, 87 registros sintéticos, FK ativas, contagens e leitura Prisma verificadas. Snapshot SHA-256 `e371f412738a50cc20483331f523511003c96248f5e49e19a76e45e05bbdbb28`. Não equivale a restaurar backup real do Supabase.
+- Fixture remota descartável no Worker existente: deploy `70aa9652`, rollback `b7d46c82`, valor sintético preservado e fixture removida. Nenhum secret real lido/copiado; nenhum recurso pago contratado/provisionado.
+- Smoke real do preview anterior comprovou cadastro/cookies/onboarding/check-in/recomendação e reloads, mas retornou 503 em ownership e numa repetição autenticada. Sem conclusão de IDOR ou estabilidade a partir desses erros. Contas sintéticas removidas.
 
-Release Green exige documentação atualizada, CI green, build green, schema/migrations green, autenticação e autorização validadas, testes críticos green, banco staging persistente, deploy Cloudflare green, smoke HTTPS, backup/restore, rollback e auditoria final sem bloqueadores críticos.
+## Pendências e restrições
 
-## Pendências de maior prioridade
+1. Finalizar gates no SHA a integrar, publicar candidato e repetir smoke/medição de performance com evidência do deployment efetivo.
+2. Aplicar proteção administrativa proposta em `main-ruleset.proposed.json`; sem simular review humano independente.
+3. Resolver vulnerabilidades residuais e validar auth/RBAC/ownership, LGPD e limiter no app publicado.
+4. Validar backup real Supabase/restore em alvo seguro e rollback do app, com RPO/RTO; seed real e auditoria de grants/advisors ainda pendentes.
+5. Validar mobile/WebView/a11y em dispositivo e completar a migração histórica.
+6. Recuperação das imagens originais (TASK-135/#37) adiada explicitamente até acesso ao disco removível; não bloqueia estas correções independentes.
 
-1. resolver/triagear dependências vulneráveis sem upgrades major cegos;
-2. provisionar secrets do Worker e comprovar conexão server-side ao PostgreSQL;
-3. criar usuário de staging por cadastro/seed controlado;
-4. redeployar o Worker com bindings e Prisma edge-compatible;
-5. executar /api/health e smoke HTTPS autenticado;
-6. executar backup/restore drill;
-7. auditoria final e promoção G9 → G10 somente com evidência.
+A execução está limitada a recursos existentes/testes locais e ações sem contratação paga. Nenhuma operação que exija cobrança está autorizada. Release Green exige evidência real contemporânea, além dos testes isolados e CI.

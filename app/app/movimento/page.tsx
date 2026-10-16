@@ -302,10 +302,27 @@ export default async function MovementPage({
   const activeTrack = yogaMode ? movementTracks[1] : (movementTracks.find((track) => track.id === params.trilha) || movementTracks[0]);
   const stretchingMode = !yogaMode && activeTrack.id === "alongamentos";
   const walkingMode = !yogaMode && activeTrack.id === "caminhada";
-  const instructions = await prisma.exerciseInstruction.findMany({
-    where: { categoryGroup: "PHYSICAL", slug: { in: activeCatalogIds("EXERCISE_INSTRUCTION") } },
-    orderBy: [{ unlockLevel: "asc" }, { category: "asc" }, { title: "asc" }]
-  });
+  const [instructions, yogaPractices, yogaSequences, recentCheckin] = await Promise.all([
+    prisma.exerciseInstruction.findMany({
+      where: { categoryGroup: "PHYSICAL", slug: { in: activeCatalogIds("EXERCISE_INSTRUCTION") } },
+      orderBy: [{ unlockLevel: "asc" }, { category: "asc" }, { title: "asc" }]
+    }),
+    prisma.yogaPractice.findMany({
+      where: {
+        ...(params.tipo ? { yogaType: params.tipo } : {}),
+        ...(params.contexto ? { OR: [{ context: params.contexto }, { context: "BOTH" }] } : {}),
+        ...(params.objetivo ? { area: params.objetivo } : {}),
+        ...(params.nivel ? { level: { lte: Number(params.nivel) || 5 } } : {}),
+        slug: { in: activeCatalogIds("YOGA_PRACTICE") }
+      },
+      orderBy: [{ level: "asc" }, { yogaType: "asc" }, { title: "asc" }]
+    }),
+    prisma.yogaSequence.findMany({
+      where: { slug: { in: activeCatalogIds("YOGA_SEQUENCE") } },
+      orderBy: [{ level: "asc" }, { title: "asc" }]
+    }),
+    prisma.checkin.findFirst({ where: { userId: user.id, riskDetected: false }, orderBy: { createdAt: "desc" } }),
+  ]);
   const instructionBySlug = new Map(instructions.map((item) => [item.slug, item]));
   const safeToday = instructions.find((item) => item.slug === "yoga-bolso-coluna-leve") || instructions[0];
   const searchQuery = normalizeSearch(params.busca || "");
@@ -313,21 +330,6 @@ export default async function MovementPage({
     ? instructions.filter((item) => instructionInTrack(item, activeTrack))
     : instructions.filter((item) => ["YOGA", "MOBILITY", "STRETCHING", "SLEEP_SUPPORT", "WALKING", "WORK_BREAK", "HOME_FUNCTIONAL", "LOW_IMPACT_CARDIO"].includes(item.category));
   const visible = baseVisible.filter((item) => instructionMatchesSearch(item, searchQuery));
-  const yogaPractices = await prisma.yogaPractice.findMany({
-    where: {
-      ...(params.tipo ? { yogaType: params.tipo } : {}),
-      ...(params.contexto ? { OR: [{ context: params.contexto }, { context: "BOTH" }] } : {}),
-      ...(params.objetivo ? { area: params.objetivo } : {}),
-      ...(params.nivel ? { level: { lte: Number(params.nivel) || 5 } } : {}),
-      slug: { in: activeCatalogIds("YOGA_PRACTICE") }
-    },
-    orderBy: [{ level: "asc" }, { yogaType: "asc" }, { title: "asc" }]
-  });
-  const yogaSequences = await prisma.yogaSequence.findMany({
-    where: { slug: { in: activeCatalogIds("YOGA_SEQUENCE") } },
-    orderBy: [{ level: "asc" }, { title: "asc" }]
-  });
-  const recentCheckin = await prisma.checkin.findFirst({ where: { userId: user.id, riskDetected: false }, orderBy: { createdAt: "desc" } });
   const recommendedYoga = recentCheckin && yogaPractices.length ? getRecommendedYogaPractice(recentCheckin, yogaPractices, user.level) : null;
   const checkinTags = recentCheckin ? [...parseJsonList(recentCheckin.manualTags), ...parseJsonList(recentCheckin.detectedTags)] : [];
   const recommendedStretches = recommendStretchExercises(checkinTags)
