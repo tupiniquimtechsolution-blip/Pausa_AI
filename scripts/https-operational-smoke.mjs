@@ -12,14 +12,16 @@ async function request(path, { account, method = "GET", body } = {}) {
   const start = performance.now();
   let r;
   const attempts = [];
-  for (let attempt = 0; attempt < 3; attempt++) {
+  // A failed response can follow a committed write. Never replay POST/DELETE.
+  const maxAttempts = method === "GET" ? 3 : 1;
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
     r = await fetch(base + path, {
     method, redirect: "manual", signal: AbortSignal.timeout(60000),
     headers: { ...(body ? { "Content-Type": "application/json" } : {}), ...(account?.cookie ? { Cookie: account.cookie } : {}) },
     body: body ? JSON.stringify(body) : undefined,
     });
     attempts.push({ status: r.status, server: r.headers.get("server"), cfRay: r.headers.get("cf-ray") });
-    if (r.status !== 503 || attempt === 2) break;
+    if (r.status !== 503 || attempt === maxAttempts - 1) break;
     await r.arrayBuffer();
     // A brief 503 must be recorded as availability uncertainty, not an IDOR.
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -60,7 +62,7 @@ try {
   assert.ok(checkin.data.sessionId);
   assert.equal((await request("/api/recommendations/current", { account: a })).r.status, 200);
   const otherSubject = await request(`/api/recommendations/current?checkin=${encodeURIComponent(checkin.data.sessionId)}`, { account: b });
-  assert.ok([403, 404].includes(otherSubject.r.status) || (otherSubject.r.status === 200 && otherSubject.data?.decision === null), `Ownership check inconclusive or failed (HTTP ${otherSubject.r.status}).`);
+  assert.equal(otherSubject.r.status, 404, "Foreign check-in must return the same controlled 404 as a missing check-in.");
   assert.equal((await request(`/api/recommendations/current?checkin=${encodeURIComponent(checkin.data.sessionId)}`, { account: a })).r.status, 200);
   assert.equal((await request(`/api/recommendations/current?checkin=${randomUUID()}`, { account: a })).r.status, 404);
   assert.equal((await request("/api/admin/feature-flags", { account: a })).r.status, 403);
@@ -92,16 +94,21 @@ try {
   assert.equal((await request("/app/historico", { account: a })).r.status, 200);
 } catch (error) { failure = error.message; }
 finally {
-  for (const account of accounts.filter(a => a.created)) {
+  // Include ambiguous registrations: HTTP 503 can occur after the user commits.
+  for (const account of accounts) {
     try {
-      const login = await request("/api/auth/login", { method: "POST", account, body: { email: account.email, password: account.password } });
-      assert.equal(login.r.status, 200);
+      if (!account.cookie) {
+        const login = await request("/api/auth/login", { method: "POST", account, body: { email: account.email, password: account.password } });
+        assert.equal(login.r.status, 200);
+        account.created = true;
+      }
       const cleanup = await request("/api/data-vault/subject-request", { method: "DELETE", account, body: { confirmation: "EXCLUIR MINHA CONTA", reason: "SYNTHETIC_OPERATIONAL_SMOKE_CLEANUP" } });
       assert.equal(cleanup.r.status, 200);
       account.cleaned = true;
     } catch { account.cleaned = false; }
   }
-  const report = { date: new Date().toISOString(), base, ok: !failure && accounts.every(a => !a.created || a.cleaned), failure, syntheticAccountsCreated: accounts.filter(a => a.created).length, syntheticAccountsCleaned: accounts.filter(a => a.cleaned).length, credentialsRecorded: false, results };
+  const serverErrorsObserved = results.some(result => result.attempts.some(attempt => attempt.status >= 500));
+  const report = { date: new Date().toISOString(), base, ok: !failure && !serverErrorsObserved && accounts.every(a => a.cleaned), failure, serverErrorsObserved, syntheticAccountsAttempted: accounts.length, syntheticAccountsCreated: accounts.filter(a => a.created).length, syntheticAccountsCleaned: accounts.filter(a => a.cleaned).length, syntheticCleanupUnverified: accounts.filter(a => !a.cleaned).length, credentialsRecorded: false, results };
   if (process.env.SMOKE_REPORT_PATH) writeFileSync(process.env.SMOKE_REPORT_PATH, JSON.stringify(report, null, 2));
   console.log(JSON.stringify(report));
   if (!report.ok) process.exitCode = 1;

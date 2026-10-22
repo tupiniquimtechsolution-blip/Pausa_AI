@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-22T10:14:25.562Z",
+  "deployment": "101b85d7-304f-4c12-9127-dccd1da46101",
+  "created": "2026-10-22T10:11:30.947301Z",
+  "codeTag": "7538400",
+  "secretNames": [
+    "CRON_SECRET",
+    "DATABASE_URL",
+    "JWT_SECRET",
+    "RATE_LIMIT_PEPPER",
+    "RESEND_API_KEY"
+  ],
+  "expectedSecretsPresent": true,
+  "valuesRead": false
+}

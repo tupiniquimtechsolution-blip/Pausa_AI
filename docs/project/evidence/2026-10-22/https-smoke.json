@@ -1,0 +1,455 @@
+{
+  "date": "2026-10-22T10:16:57.590Z",
+  "base": "https://fix-cloudflare-prisma-wasm-loader-pausa-ai-staging.tupiniquim-techsolution.workers.dev",
+  "ok": true,
+  "serverErrorsObserved": false,
+  "syntheticAccountsAttempted": 2,
+  "syntheticAccountsCreated": 2,
+  "syntheticAccountsCleaned": 2,
+  "syntheticCleanupUnverified": 0,
+  "credentialsRecorded": false,
+  "results": [
+    {
+      "path": "/api/health",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b8b1bdb00176-GRU"
+        }
+      ],
+      "ms": 1838
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b8bc9e800176-GRU"
+        }
+      ],
+      "ms": 4430
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b8d85cf00176-GRU"
+        }
+      ],
+      "ms": 4300
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b8f3281a0176-GRU"
+        }
+      ],
+      "ms": 7103
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b91faa8a0176-GRU"
+        }
+      ],
+      "ms": 6910
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b94aca600176-GRU"
+        }
+      ],
+      "ms": 6978
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b9766e550176-GRU"
+        }
+      ],
+      "ms": 6171
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b99cf8ac0176-GRU"
+        }
+      ],
+      "ms": 6284
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b99d18d09423-GRU"
+        }
+      ],
+      "ms": 6533
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b99d1add0174-GRU"
+        }
+      ],
+      "ms": 6969
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b99d2be5d79f-GRU"
+        }
+      ],
+      "ms": 7803
+    },
+    {
+      "path": "/api/onboarding",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b9cdbaae0176-GRU"
+        }
+      ],
+      "ms": 3023
+    },
+    {
+      "path": "/api/checkins",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7b9e0bfff0176-GRU"
+        }
+      ],
+      "ms": 15966
+    },
+    {
+      "path": "/api/recommendations/current",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7ba447cd40176-GRU"
+        }
+      ],
+      "ms": 3733
+    },
+    {
+      "path": "/api/recommendations/current?checkin=[synthetic]",
+      "method": "GET",
+      "status": 404,
+      "attempts": [
+        {
+          "status": 404,
+          "server": "cloudflare",
+          "cfRay": "a4e7ba5bcdca0176-GRU"
+        }
+      ],
+      "ms": 2508
+    },
+    {
+      "path": "/api/recommendations/current?checkin=[synthetic]",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7ba6b6ebc0176-GRU"
+        }
+      ],
+      "ms": 4187
+    },
+    {
+      "path": "/api/recommendations/current?checkin=[synthetic]",
+      "method": "GET",
+      "status": 404,
+      "attempts": [
+        {
+          "status": 404,
+          "server": "cloudflare",
+          "cfRay": "a4e7ba859a520176-GRU"
+        }
+      ],
+      "ms": 2477
+    },
+    {
+      "path": "/api/admin/feature-flags",
+      "method": "GET",
+      "status": 403,
+      "attempts": [
+        {
+          "status": 403,
+          "server": "cloudflare",
+          "cfRay": "a4e7ba950d060176-GRU"
+        }
+      ],
+      "ms": 2033
+    },
+    {
+      "path": "/api/cron/daily-recommendations",
+      "method": "POST",
+      "status": 401,
+      "attempts": [
+        {
+          "status": 401,
+          "server": "cloudflare",
+          "cfRay": "a4e7baa1da2b0176-GRU"
+        }
+      ],
+      "ms": 41
+    },
+    {
+      "path": "/api/data-vault/subject-request",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7baa23d51f25a-GRU"
+        }
+      ],
+      "ms": 8771
+    },
+    {
+      "path": "/app/historico",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7bad8ff3395ee-GRU"
+        }
+      ],
+      "ms": 9959
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 400,
+      "attempts": [
+        {
+          "status": 400,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb173a5595ee-GRU"
+        }
+      ],
+      "ms": 1264
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 400,
+      "attempts": [
+        {
+          "status": 400,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb1f3d2a02e6-GRU"
+        }
+      ],
+      "ms": 1920
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 400,
+      "attempts": [
+        {
+          "status": 400,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb2aff4595ee-GRU"
+        }
+      ],
+      "ms": 1205
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 429,
+      "attempts": [
+        {
+          "status": 429,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb328d4102e6-GRU"
+        }
+      ],
+      "ms": 1250
+    },
+    {
+      "path": "/app/movimento",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb3a697495ee-GRU"
+        }
+      ],
+      "ms": 9683
+    },
+    {
+      "path": "/app/movimento",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb3a8e63861f-GRU"
+        }
+      ],
+      "ms": 9972
+    },
+    {
+      "path": "/app/movimento",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb3a79da8bf6-GRU"
+        }
+      ],
+      "ms": 9971
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 307,
+      "attempts": [
+        {
+          "status": 307,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb78bc5d95ee-GRU"
+        }
+      ],
+      "ms": 81
+    },
+    {
+      "path": "/app/onboarding",
+      "method": "GET",
+      "status": 307,
+      "attempts": [
+        {
+          "status": 307,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb797c7e623c-GRU"
+        }
+      ],
+      "ms": 94
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb79de8695ee-GRU"
+        }
+      ],
+      "ms": 2416
+    },
+    {
+      "path": "/app/historico",
+      "method": "GET",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7bb88e8fc95ee-GRU"
+        }
+      ],
+      "ms": 9834
+    },
+    {
+      "path": "/api/data-vault/subject-request",
+      "method": "DELETE",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7bbc668ba95ee-GRU"
+        }
+      ],
+      "ms": 4959
+    },
+    {
+      "path": "/api/data-vault/subject-request",
+      "method": "DELETE",
+      "status": 200,
+      "attempts": [
+        {
+          "status": 200,
+          "server": "cloudflare",
+          "cfRay": "a4e7bbe58d44f183-GRU"
+        }
+      ],
+      "ms": 5596
+    }
+  ]
+}
