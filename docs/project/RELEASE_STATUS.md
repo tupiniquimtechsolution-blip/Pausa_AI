@@ -11,7 +11,7 @@ Deployment preview: **101b85d7-304f-4c12-9127-dccd1da46101**; build 54179066-27d
 
 ## Revisão de segurança em 22/10
 
-COMMENT 5613984650 confirmou P1 de fallback ADMIN legado e P2 de seed sem revogar sessões, preexistentes. Correções propostas: apenas UserRole ativo autoriza privilégios; seeds não inferem privilégios de User.role e invalidam sessões em atualizações administrativas. Regressões SQLite/PostgreSQL/workerd passaram localmente. **Ainda não publicadas; o smoke anterior do preview não valida estas alterações.** Main agora tem ruleset ativo, mas continua sem aprovação independente: o COMMENT foi publicado pela mesma identidade autora. Auditoria nova: raiz 21 (15 high/6 moderate), omit=dev 14 (10 high/4 moderate), mobile 20 (17 high/3 moderate), zero critical. Nenhuma exceção de risco aprovada. [Tratamento e evidências](SECURITY_REVIEW_FOLLOWUP_2026-10-22.md).
+COMMENT 5613984650 confirmou P1 de fallback ADMIN legado e P2 de seed sem revogar sessões, preexistentes. Correções no commit **0e930881b754a3ee5fbb09d3070b735b94785b40**: apenas UserRole ativo autoriza privilégios; seeds não inferem privilégios de User.role e invalidam sessões em atualizações administrativas. Regressões SQLite/PostgreSQL/workerd passaram localmente; **nove checks do novo código passaram no GitHub**, incluindo os testes no bundle completo. **Ainda sem implantação no preview; o smoke anterior não valida estas alterações.** Main agora tem ruleset ativo, mas continua sem aprovação independente: o COMMENT foi publicado pela mesma identidade autora. Auditoria nova, confirmada também no CI: raiz 21 (15 high/6 moderate), omit=dev 14 (10 high/4 moderate), mobile 20 (17 high/3 moderate), zero critical. Nenhuma exceção de risco aprovada. [Tratamento e evidências](SECURITY_REVIEW_FOLLOWUP_2026-10-22.md) · [CI do código](evidence/2026-10-22/security-followup-ci.json).
 
 ## Retomada em 22/10
 
@@ -24,7 +24,7 @@ Preview health 200; principal health 503; Supabase ACTIVE_HEALTHY. Novo deployme
 | G2 | Repositório | PARTIAL | ruleset 25636151 active, main protected=true e sem bypass; revisão independente e comprovação final do fluxo de aprovação pendentes |
 | G3 | Código | PARTIAL | correções no PR e preview; novo smoke aprovado; integração depende de revisão independente/governança e gates restantes |
 | G4 | Dados | PARTIAL | Supabase saudável; 85 tabelas/colunas escalares presentes, 86 FKs; sem grants anon/authenticated; backup real/seed controlado pendentes |
-| G5 | Segurança | BLOCKED | P1/P2 tratados na proposta, ainda sem publicação; auditoria atual raiz 15 high/6 moderate, omit=dev 10 high/4 moderate, mobile 17 high/3 moderate; revisão, rotação e risco residual pendentes |
+| G5 | Segurança | BLOCKED | P1/P2 corrigidos no PR com CI aprovado, ainda sem implantação; auditoria atual raiz 15 high/6 moderate, omit=dev 10 high/4 moderate, mobile 17 high/3 moderate; revisão, rotação e risco residual pendentes |
 | G6 | Testes | PARTIAL | nove checks, build Cloudflare e um ciclo de smoke HTTPS passaram no SHA 7538400; estabilidade prolongada, distintos isolates e QA físico/mobile/a11y pendentes |
 | G7 | Cloud | PARTIAL | deploy e preservação de cinco secrets comprovados; rollback de fixture passou; principal permanece health 503 |
 | G8 | Staging | BLOCKED | preview 101b85d7 passou um ciclo sem 5xx; principal ainda health 503 e não promovido; latência e estabilidade prolongada pendentes; CPU falhou em 16/10, não reproduziu neste ciclo |

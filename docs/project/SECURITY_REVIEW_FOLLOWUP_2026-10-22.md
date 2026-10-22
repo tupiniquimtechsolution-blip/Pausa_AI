@@ -59,6 +59,8 @@ As contagens históricas de 16/10 (raiz 20/mobile 25) foram preservadas como sna
 
 Ruleset `25636151` active em `refs/heads/main`, sem bypass, com uma aprovação, revisão após último push, resolução de conversas e quatro checks obrigatórios. `main.protected=true`; nenhuma regra foi modificada nesta correção. [Evidência atual](evidence/2026-10-22/governance-review.json). A configuração ativa não é uma aprovação do PR.
 
-Próximos gates: CI do novo head, revisão por outra identidade habilitada e inventário de permissões antes de publicar estas mudanças. Continuam pendentes segurança residual, estabilidade/isolates, backup real/restore, rollback integral e QA mobile/a11y. O 503 do principal é a última medição registrada; não foi revalidado neste follow-up.
+O código **0e930881b754a3ee5fbb09d3070b735b94785b40** passou nove checks no GitHub. O job validate executou as regressões PostgreSQL e do bundle workerd, incluindo expiração/remoção de ADMIN e cookies antigos negados após seed/reseed. O job de auditoria confirmou raiz 21, omit=dev 14 e mobile 20; seu sucesso valida coleta, não libera segurança. [Registro dos checks e jobs](evidence/2026-10-22/security-followup-ci.json). O checkout sintético de integração usado pelos workflows não representa merge na main.
+
+Próximos gates: revisão por outra identidade habilitada e inventário de permissões antes de implantar estas mudanças. Continuam pendentes segurança residual, estabilidade/isolates, backup real/restore, rollback integral e QA mobile/a11y. O 503 do principal é a última medição registrada; não foi revalidado neste follow-up.
 
 Sem alteração de banco real, envio de credenciais, contratação ou mudança de plano.
