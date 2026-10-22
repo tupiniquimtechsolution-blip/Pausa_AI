@@ -1,0 +1,36 @@
+name: Mobile dependency validation
+
+on:
+  pull_request:
+    paths:
+      - "mobile/**"
+      - ".github/workflows/mobile-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  mobile-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CI: "1"
+      EXPO_NO_TELEMETRY: "1"
+      EXPO_NO_CACHE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+      - name: Install locked mobile dependencies without lifecycle scripts
+        run: npm ci --prefix mobile --ignore-scripts --no-audit --no-fund
+      - name: Typecheck mobile
+        run: npm run typecheck --prefix mobile
+      - name: Check Expo SDK dependency alignment
+        working-directory: mobile
+        run: node node_modules/expo/bin/cli install --check
+      - name: Compile Android JavaScript locally without publishing
+        working-directory: mobile
+        run: node node_modules/expo/bin/cli export --platform android --no-bytecode --max-workers 2 --output-dir .tmp/ci-android
