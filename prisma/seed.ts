@@ -15,8 +15,7 @@ import {
   APP_ROLES,
   PERMISSIONS,
   ROLE_DEFINITIONS,
-  ROLE_PERMISSION_MATRIX,
-  normalizeLegacyRole
+  ROLE_PERMISSION_MATRIX
 } from "../lib/rbac/roles";
 import { seedW4ContentLibrary } from "../scripts/seed-w4-content-library";
 import { seedW7MediaGovernance } from "../scripts/seed-w7-media-governance";
@@ -80,18 +79,16 @@ async function seedFoundationRegistry() {
   }
 }
 
-async function seedPersistedUserRoles() {
-  const roles = await prisma.role.findMany({ where: { key: { in: [...APP_ROLES] } } });
-  const rolesByKey = new Map(roles.map((role) => [role.key, role]));
-  const users = await prisma.user.findMany({ select: { id: true, role: true } });
+async function seedBasicUserRoles() {
+  const role = await prisma.role.findUniqueOrThrow({ where: { key: "USER" } });
+  const users = await prisma.user.findMany({ where: { userRoles: { none: {} } }, select: { id: true } });
   for (const user of users) {
-    const roleKey = normalizeLegacyRole(user.role);
-    const role = rolesByKey.get(roleKey);
-    if (!role) continue;
+    // Elevated assignments are created only by explicit provisioning above.
+    // Never infer them from a potentially stale User.role value.
     await prisma.userRole.upsert({
       where: { userId_roleId: { userId: user.id, roleId: role.id } },
-      update: { reason: "LEGACY_ROLE_MIGRATION" },
-      create: { userId: user.id, roleId: role.id, reason: "LEGACY_ROLE_MIGRATION" }
+      update: {},
+      create: { userId: user.id, roleId: role.id, reason: "BASIC_USER_BOOTSTRAP" }
     });
   }
 }
@@ -1024,7 +1021,7 @@ async function main() {
   const passwordHash = await bcrypt.hash(adminPassword, 12);
   const admin = await prisma.user.upsert({
     where: { email: adminEmail },
-    update: { role: "ADMIN" },
+    update: { role: "ADMIN", sessionVersion: { increment: 1 } },
     create: {
       name: "Admin Pausa AI",
       email: adminEmail,
@@ -1052,7 +1049,7 @@ async function main() {
   const masterPassword = process.env.MASTER_SEED_PASSWORD || randomUUID();
   const master = await prisma.user.upsert({
     where: { email: masterEmail },
-    update: { role: "MASTER" },
+    update: { role: "MASTER", sessionVersion: { increment: 1 } },
     create: {
       name: "Master Pausa AI",
       email: masterEmail,
@@ -1075,7 +1072,7 @@ async function main() {
     }
   });
   await ensureSeededRole(master.id, "MASTER", "CONTROLLED_MASTER_SEED");
-  await seedPersistedUserRoles();
+  await seedBasicUserRoles();
 
   const company = await prisma.company.upsert({
     where: { id: "demo-company" },

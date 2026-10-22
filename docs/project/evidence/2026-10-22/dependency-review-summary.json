@@ -1,0 +1,131 @@
+{
+  "capturedAt": "2026-10-22T12:34:51.661Z",
+  "inputCommit": "b7671615f29f211a96fcce817b38ab3e16265044",
+  "node": "v24.19.0",
+  "npm": "11.6.2",
+  "platform": "win32",
+  "commands": [
+    "npm audit --json --package-lock-only",
+    "npm audit --json --package-lock-only --omit=dev",
+    "npm audit --json --package-lock-only --prefix mobile"
+  ],
+  "exitCodes": {
+    "root": 1,
+    "runtime": 1,
+    "mobile": 1
+  },
+  "lockSha256": {
+    "package-lock.json": "a8a560ccbd164331ec645dccd93136ccf388f5aa5e77579c8b543fe3ccbe9bad",
+    "mobile/package-lock.json": "4d25a5b2afb10280f606359039428ff1734c7400513af1f598f02b310ea1ed61"
+  },
+  "scopes": {
+    "root": {
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 6,
+        "high": 15,
+        "critical": 0,
+        "total": 21
+      },
+      "affectedPackages": [
+        "@next/eslint-plugin-next",
+        "@prisma/config",
+        "@vercel/og",
+        "@vinext/cloudflare",
+        "braces",
+        "chokidar",
+        "deepmerge-ts",
+        "eslint-config-next",
+        "fast-glob",
+        "fflate",
+        "micromatch",
+        "postcss-nested",
+        "postcss-selector-parser",
+        "prisma",
+        "satori",
+        "sharp",
+        "tailwindcss",
+        "vinext",
+        "vite",
+        "vite-plugin-commonjs",
+        "vite-plugin-dynamic-import"
+      ]
+    },
+    "runtime": {
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 4,
+        "high": 10,
+        "critical": 0,
+        "total": 14
+      },
+      "affectedPackages": [
+        "@prisma/config",
+        "@vercel/og",
+        "@vinext/cloudflare",
+        "braces",
+        "deepmerge-ts",
+        "fast-glob",
+        "fflate",
+        "micromatch",
+        "prisma",
+        "satori",
+        "vinext",
+        "vite",
+        "vite-plugin-commonjs",
+        "vite-plugin-dynamic-import"
+      ]
+    },
+    "mobile": {
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 3,
+        "high": 17,
+        "critical": 0,
+        "total": 20
+      },
+      "affectedPackages": [
+        "@expo/cli",
+        "@expo/code-signing-certificates",
+        "@expo/config-plugins",
+        "@expo/metro",
+        "@expo/metro-config",
+        "@expo/metro-file-map",
+        "@react-native/community-cli-plugin",
+        "@react-native/virtualized-lists",
+        "braces",
+        "expo",
+        "image-size",
+        "metro",
+        "metro-config",
+        "metro-file-map",
+        "metro-transform-worker",
+        "micromatch",
+        "node-forge",
+        "react-native",
+        "uuid",
+        "xcode"
+      ]
+    }
+  },
+  "comparedCi": {
+    "run": 39762151776,
+    "job": 119768691597,
+    "artifact": 12418078479,
+    "root": {
+      "high": 15,
+      "moderate": 6,
+      "total": 21
+    },
+    "mobile": {
+      "high": 17,
+      "moderate": 3,
+      "total": 20
+    },
+    "note": "Install summaries from the existing CI log agree with the fresh JSON counts. CI artifact was not downloaded."
+  },
+  "riskAcceptance": "None. Residual findings remain open; evidence-only check success is not a security pass."
+}

@@ -2,6 +2,8 @@
 
 **G8 BLOCKED; G9/G10 NO-GO. Nenhuma RC homologada.**
 
+Atualização posterior à execução abaixo: [tratamento da revisão de segurança](SECURITY_REVIEW_FOLLOWUP_2026-10-22.md). Main agora protegida por ruleset; P1/P2 corrigidos na proposta, sem nova publicação. Números atuais de auditoria: raiz 21, omit=dev 14, mobile 20. As referências a ausência de proteção e medições abaixo são snapshots do momento do smoke.
+
 ## Estado remoto conferido
 
 - Main: `741d2c624c998a57e5d98e2929c95a7047e5fea0`.

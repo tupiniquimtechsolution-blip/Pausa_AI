@@ -9,6 +9,10 @@ Código validado em CI/publicado: **753840058850d9430785533299b743917551a0c6**.
 Deployment preview: **101b85d7-304f-4c12-9127-dccd1da46101**; build 54179066-27d2-4085-99a8-5b1432b31207.
 [Execução e limites](OPERATIONAL_EXECUTION_2026-10-16.md) · [Evidências sanitizadas](evidence/2026-10-16/).
 
+## Revisão de segurança em 22/10
+
+COMMENT 5613984650 confirmou P1 de fallback ADMIN legado e P2 de seed sem revogar sessões, preexistentes. Correções propostas: apenas UserRole ativo autoriza privilégios; seeds não inferem privilégios de User.role e invalidam sessões em atualizações administrativas. Regressões SQLite/PostgreSQL/workerd passaram localmente. **Ainda não publicadas; o smoke anterior do preview não valida estas alterações.** Main agora tem ruleset ativo, mas continua sem aprovação independente: o COMMENT foi publicado pela mesma identidade autora. Auditoria nova: raiz 21 (15 high/6 moderate), omit=dev 14 (10 high/4 moderate), mobile 20 (17 high/3 moderate), zero critical. Nenhuma exceção de risco aprovada. [Tratamento e evidências](SECURITY_REVIEW_FOLLOWUP_2026-10-22.md).
+
 ## Retomada em 22/10
 
 Preview health 200; principal health 503; Supabase ACTIVE_HEALTHY. Novo deployment 101b85d7 publicado após nove checks aprovados; cinco secrets preservados. Perfil local do bundle identificou repetição de consultas de sessão: correção com React.cache limitado à renderização e campos mínimos reduziu o onboarding de 16–21 para 13 statements. Testes de isolamento simultâneo, revogação de sessão e RBAC passaram localmente e em CI. **Smoke HTTPS automatizado passou em um ciclo, sem 5xx, com duas contas sintéticas removidas e contagem final de usuários confirmada.** Hash cost 12 preservado. Isso não demonstra eliminação definitiva do erro de CPU, estabilidade prolongada, QA físico ou promoção do principal. [Execução de 22/10](OPERATIONAL_EXECUTION_2026-10-22.md).
@@ -17,10 +21,10 @@ Preview health 200; principal health 503; Supabase ACTIVE_HEALTHY. Novo deployme
 |---|---|---|---|
 | G0 | Inventário/Baseline | GREEN | main/candidato identificados; 85 models/tabelas; assets versionados preservados |
 | G1 | Documentação | PARTIAL | status, relatório, evidências e Notion atualizados; migração histórica incompleta |
-| G2 | Repositório | BLOCKED | main sem proteção/rulesets; proposta administrativa pronta, não aplicada |
+| G2 | Repositório | PARTIAL | ruleset 25636151 active, main protected=true e sem bypass; revisão independente e comprovação final do fluxo de aprovação pendentes |
 | G3 | Código | PARTIAL | correções no PR e preview; novo smoke aprovado; integração depende de revisão independente/governança e gates restantes |
 | G4 | Dados | PARTIAL | Supabase saudável; 85 tabelas/colunas escalares presentes, 86 FKs; sem grants anon/authenticated; backup real/seed controlado pendentes |
-| G5 | Segurança | BLOCKED | testes de segurança passaram; raiz 14 high/6 moderate, mobile 17 high/8 moderate; rotação e validação residual pendentes |
+| G5 | Segurança | BLOCKED | P1/P2 tratados na proposta, ainda sem publicação; auditoria atual raiz 15 high/6 moderate, omit=dev 10 high/4 moderate, mobile 17 high/3 moderate; revisão, rotação e risco residual pendentes |
 | G6 | Testes | PARTIAL | nove checks, build Cloudflare e um ciclo de smoke HTTPS passaram no SHA 7538400; estabilidade prolongada, distintos isolates e QA físico/mobile/a11y pendentes |
 | G7 | Cloud | PARTIAL | deploy e preservação de cinco secrets comprovados; rollback de fixture passou; principal permanece health 503 |
 | G8 | Staging | BLOCKED | preview 101b85d7 passou um ciclo sem 5xx; principal ainda health 503 e não promovido; latência e estabilidade prolongada pendentes; CPU falhou em 16/10, não reproduziu neste ciclo |
@@ -47,7 +51,7 @@ Os cinco secrets estão presentes. Não recadastrar secrets como correção de C
 ## Próximas ações
 
 1. Continuar a análise de CPU/latência e estabilidade prolongada no runtime existente. Neste ciclo, onboarding levou 6,2–7,8 s, Movimento 9,7–10,0 s e check-in 16 s; são tempos HTTP deste teste, sem benchmark remoto antes/depois. Validar em mais condições e dispositivos antes de promover.
-2. Aplicar proteção administrativa proposta em main-ruleset.proposed.json; obter revisão independente real.
+2. Preservar a proteção ativa da main; obter revisão independente do novo head e validar o fluxo de aprovação. COMMENT da mesma identidade não encerra o gate.
 3. Tratar vulnerabilidades residuais e validar RBAC/ownership, exportação LGPD e 429 no deployment estável.
 4. Executar backup real Supabase e restore apenas em destino isolado, medir RPO/RTO e ensaiar rollback completo do app. No plano gratuito, usar exportação local, sem ativar PITR/upgrade.
 5. Validar mobile/WebView/a11y em dispositivo e completar a migração histórica.

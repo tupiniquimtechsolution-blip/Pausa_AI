@@ -9,6 +9,9 @@ import { Miniflare, convertV4MiniflareOptions } from "miniflare";
 import WebSocket from "ws";
 import pg from "pg";
 import { SignJWT } from "jose";
+import { PrismaPg } from "@prisma/adapter-pg";
+import { PrismaClient } from "../generated/prisma-pg/index.js";
+import { seedStagingAdmin } from "../lib/security/staging-admin-seed.ts";
 
 // This diagnostic never reads runtime secrets or contacts staging. The fixture
 // must already have the PostgreSQL Prisma schema; all credentials are synthetic.
@@ -16,6 +19,7 @@ const fixtureUrl = new URL(process.env.CPU_FIXTURE_DATABASE_URL || "http://inval
 assert.equal(fixtureUrl.protocol, "postgresql:");
 assert.ok(["127.0.0.1", "localhost", "[::1]"].includes(fixtureUrl.hostname));
 assert.equal(fixtureUrl.pathname, "/pausa_cpu");
+assert.equal(fixtureUrl.search, "", "Fixture URL options must not override the loopback destination.");
 const output = path.resolve(process.env.CPU_PROFILE_OUTPUT || "tmp/worker-cpu");
 await mkdir(output, { recursive: true });
 const timeout = setTimeout(() => { console.error("Local CPU diagnostic timed out."); process.exit(2); }, 90000);
@@ -24,6 +28,10 @@ const userId = `cpu-fixture-${randomUUID()}`;
 const email = `${userId}@example.test`;
 const otherId = `cpu-fixture-${randomUUID()}`;
 const db = new pg.Client({ connectionString: fixtureUrl.toString() });
+const fixturePrisma = new PrismaClient({ adapter: new PrismaPg({ connectionString: fixtureUrl.toString() }), log: [] });
+const seedPassword = randomUUID() + "aA1!";
+const reseedPassword = randomUUID() + "bB2!";
+let loginCookie = "", seededRoleId = "", createdRole = false;
 const reports = [];
 let queries = 0, userQueries = 0, credentialQueries = 0;
 const sockets = new Set();
@@ -97,12 +105,12 @@ async function measureWorker(name, options, requests, verifyConcurrent) {
     });
     await post("Profiler.enable");
     await post("Profiler.setSamplingInterval", { interval: 100 });
-    for (const { label, pathname, init, expected, before, contains, excludes } of requests) {
+    for (const { label, pathname, init, expected, before, after, contains, excludes, allowCredentialRead } of requests) {
       if (before) await before();
       const queryStart = queries, userQueryStart = userQueries, credentialStart = credentialQueries;
       await post("Profiler.start");
       const start = performance.now();
-      const response = await mf.dispatchFetch(`http://localhost${pathname}`, { ...init, signal: AbortSignal.timeout(20000) });
+      const response = await mf.dispatchFetch(`http://localhost${pathname}`, { ...(typeof init === "function" ? init() : init), signal: AbortSignal.timeout(20000) });
       const body = await response.text();
       const wallMs = Math.round(performance.now() - start);
       const { profile } = await post("Profiler.stop");
@@ -113,7 +121,8 @@ async function measureWorker(name, options, requests, verifyConcurrent) {
       assert.equal(response.status, expected, label);
       if (contains) assert.ok(body.includes(contains), `${label}: expected synthetic identity`);
       if (excludes) assert.ok(!body.includes(excludes), `${label}: cross-request identity leak`);
-      if (process.env.CPU_ASSERT_MINIMAL_SESSION === "true" && name === "app-cpu") assert.equal(report.credentialStatements, 0, `${label}: session must not fetch password hashes`);
+      if (process.env.CPU_ASSERT_MINIMAL_SESSION === "true" && name === "app-cpu" && !allowCredentialRead) assert.equal(report.credentialStatements, 0, `${label}: session must not fetch password hashes`);
+      if (after) await after(response);
     }
     if (verifyConcurrent) await verifyConcurrent(mf);
   } finally {
@@ -126,6 +135,7 @@ try {
   await db.connect();
   await db.query('INSERT INTO "User" (id,name,email,"passwordHash","updatedAt") VALUES ($1,$2,$3,$4,NOW())',
     [userId, "Synthetic CPU Fixture", email, "unused-synthetic-hash"]);
+  await db.query('UPDATE "User" SET role=$2 WHERE id=$1', [userId, "ADMIN"]);
   await db.query('INSERT INTO "User" (id,name,email,"passwordHash","updatedAt") VALUES ($1,$2,$3,$4,NOW())',
     [otherId, "Synthetic CPU Other", `${otherId}@example.test`, "unused-synthetic-hash"]);
   const token = await new SignJWT({ userId, sessionVersion: 1 })
@@ -134,6 +144,16 @@ try {
   const otherToken = await new SignJWT({ userId: otherId, sessionVersion: 1 })
     .setProtectedHeader({ alg: "HS256" }).setIssuer("pausa-ai").setAudience("pausa-ai-web")
     .setIssuedAt().setExpirationTime("5m").sign(new TextEncoder().encode(jwtSecret));
+  createdRole = !await fixturePrisma.role.findUnique({ where: { key: "ADMIN" } });
+  const role = await fixturePrisma.role.upsert({ where: { key: "ADMIN" }, update: {}, create: { key: "ADMIN", name: "Synthetic CPU Admin", description: "Local authorization regression" } });
+  seededRoleId = role.id;
+  const grant = () => fixturePrisma.userRole.upsert({ where: { userId_roleId: { userId, roleId: role.id } }, update: { expiresAt: null }, create: { userId, roleId: role.id, reason: "SYNTHETIC_CPU_REGRESSION" } });
+  const captureLogin = response => {
+    const cookie = response.headers.getSetCookie().find(value => value.startsWith("pausa_session="));
+    assert.ok(cookie, "Fresh login must set a session cookie");
+    loginCookie = cookie.split(";")[0];
+  };
+  const loginInit = password => ({ method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, password }) });
   const root = path.resolve(".cloudflare/output/v0/workers/default/bundle");
   const modules = await Promise.all((await readdir(root, { recursive: true }))
     .filter(p => p.endsWith(".js") || p.endsWith(".wasm"))
@@ -148,19 +168,33 @@ try {
     ...[1, 2, 3].map(n => ({ label: `onboarding-${n}`, pathname: "/app/onboarding", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 200 })),
     { label: "other-user", pathname: "/app/onboarding", init: { headers: { Cookie: `pausa_session=${otherToken}` } }, expected: 200, contains: "Synthetic CPU Other", excludes: "Synthetic CPU Fixture" },
     { label: "first-user-again", pathname: "/app/onboarding", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 200, contains: "Synthetic CPU Fixture", excludes: "Synthetic CPU Other" },
-    { label: "rbac-user", pathname: "/api/admin/feature-flags", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 403 },
-    { label: "rbac-admin", pathname: "/api/admin/feature-flags", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 200,
-      before: () => db.query('UPDATE "User" SET role=$2 WHERE id=$1', [userId, "ADMIN"]) },
-    { label: "rbac-admin-revoked", pathname: "/api/admin/feature-flags", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 403,
-      before: () => db.query('UPDATE "User" SET role=$2 WHERE id=$1', [userId, "USER"]) },
-    { label: "session-revoked", pathname: "/app/onboarding", init: { redirect: "manual", headers: { Cookie: `pausa_session=${token}` } },
+    { label: "rbac-legacy-admin-no-assignment", pathname: "/api/admin/feature-flags", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 403 },
+    { label: "rbac-active-assignment", pathname: "/api/admin/feature-flags", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 200, before: grant },
+    { label: "rbac-last-assignment-expired", pathname: "/api/admin/feature-flags", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 403,
+      before: () => fixturePrisma.userRole.update({ where: { userId_roleId: { userId, roleId: role.id } }, data: { expiresAt: new Date(Date.now() - 1000) } }) },
+    { label: "rbac-assignment-restored", pathname: "/api/admin/feature-flags", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 200, before: grant },
+    { label: "rbac-last-assignment-removed", pathname: "/api/admin/feature-flags", init: { headers: { Cookie: `pausa_session=${token}` } }, expected: 403,
+      before: () => fixturePrisma.userRole.delete({ where: { userId_roleId: { userId, roleId: role.id } } }) },
+    { label: "seed-old-session-denied", pathname: "/api/admin/feature-flags", init: { redirect: "manual", headers: { Cookie: `pausa_session=${token}` } }, expected: 307,
+      before: () => seedStagingAdmin(fixturePrisma, { email, password: seedPassword }) },
+    { label: "seed-new-login", pathname: "/api/auth/login", init: () => loginInit(seedPassword), expected: 200, after: captureLogin, allowCredentialRead: true },
+    { label: "seed-new-session-admin", pathname: "/api/admin/feature-flags", init: () => ({ headers: { Cookie: loginCookie } }), expected: 200 },
+    { label: "reseed-old-session-denied", pathname: "/api/admin/feature-flags", init: () => ({ redirect: "manual", headers: { Cookie: loginCookie } }), expected: 307,
+      before: () => seedStagingAdmin(fixturePrisma, { email, password: reseedPassword }) },
+    { label: "reseed-new-login", pathname: "/api/auth/login", init: () => loginInit(reseedPassword), expected: 200, after: captureLogin, allowCredentialRead: true },
+    { label: "reseed-new-session-admin", pathname: "/api/admin/feature-flags", init: () => ({ headers: { Cookie: loginCookie } }), expected: 200 },
+    { label: "session-revoked", pathname: "/api/admin/feature-flags", init: () => ({ redirect: "manual", headers: { Cookie: loginCookie } }),
       before: () => db.query('UPDATE "User" SET "sessionVersion"="sessionVersion"+1 WHERE id=$1', [userId]), expected: 307 },
     { label: "other-user-after-revocation", pathname: "/app/onboarding", init: { headers: { Cookie: `pausa_session=${otherToken}` } }, expected: 200, contains: "Synthetic CPU Other", excludes: "Synthetic CPU Fixture" },
   ], async mf => {
-    await db.query('UPDATE "User" SET "sessionVersion"=1 WHERE id=$1', [userId]);
+    await db.query('UPDATE "User" SET "onboardingCompleted"=false WHERE id=$1', [userId]);
+    const current = await fixturePrisma.user.findUniqueOrThrow({ where: { id: userId }, select: { sessionVersion: true } });
+    const concurrentToken = await new SignJWT({ userId, sessionVersion: current.sessionVersion })
+      .setProtectedHeader({ alg: "HS256" }).setIssuer("pausa-ai").setAudience("pausa-ai-web")
+      .setIssuedAt().setExpirationTime("5m").sign(new TextEncoder().encode(jwtSecret));
     await Promise.all(Array.from({ length: 6 }, async (_, index) => {
       const other = index % 2 === 1;
-      const response = await mf.dispatchFetch("http://localhost/app/onboarding", { headers: { Cookie: `pausa_session=${other ? otherToken : token}` } });
+      const response = await mf.dispatchFetch("http://localhost/app/onboarding", { headers: { Cookie: `pausa_session=${other ? otherToken : concurrentToken}` } });
       const body = await response.text();
       assert.equal(response.status, 200);
       assert.ok(body.includes(other ? "Synthetic CPU Other" : "Synthetic CPU Fixture"));
@@ -180,6 +214,8 @@ try {
     ]));
 } finally {
   await db.query('DELETE FROM "User" WHERE id=ANY($1::text[]) AND name LIKE $2', [[userId, otherId], "Synthetic CPU %"]).catch(() => {});
+  if (createdRole) await fixturePrisma.role.deleteMany({ where: { id: seededRoleId } });
+  await fixturePrisma.$disconnect();
   await db.end();
   for (const socket of sockets) socket.destroy();
   await new Promise(resolve => proxy.close(resolve));

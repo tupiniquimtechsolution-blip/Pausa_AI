@@ -1,0 +1,60 @@
+{
+  "capturedAt": "2026-10-22T12:34:54.673Z",
+  "branch": "main",
+  "protected": true,
+  "mainSha": "741d2c624c998a57e5d98e2929c95a7047e5fea0",
+  "ruleset": {
+    "id": 25636151,
+    "name": "main-reviewed-and-validated",
+    "enforcement": "active",
+    "target": {
+      "exclude": [],
+      "include": [
+        "refs/heads/main"
+      ]
+    },
+    "checks": {
+      "strict_required_status_checks_policy": true,
+      "do_not_enforce_on_create": false,
+      "required_status_checks": [
+        {
+          "context": "Quality and security gates"
+        },
+        {
+          "context": "vinext-build"
+        },
+        {
+          "context": "validate"
+        },
+        {
+          "context": "CodeQL"
+        }
+      ]
+    },
+    "review": {
+      "required_approving_review_count": 1,
+      "dismiss_stale_reviews_on_push": true,
+      "required_reviewers": [],
+      "require_code_owner_review": false,
+      "require_last_push_approval": true,
+      "required_review_thread_resolution": true,
+      "require_extra_approval_for_unattributed_changes": true,
+      "allowed_merge_methods": [
+        "merge",
+        "squash",
+        "rebase"
+      ]
+    },
+    "blocksDeletion": true,
+    "blocksForcePush": true,
+    "bypassActors": []
+  },
+  "preliminaryReview": {
+    "id": 5613984650,
+    "state": "COMMENTED",
+    "author": "tupiniquimtechsolution-blip",
+    "sameAsPrAuthor": true,
+    "satisfiesIndependentApproval": false
+  },
+  "note": "Configuration verified by GitHub API; no destructive push or merge attempt. Same-identity COMMENT does not satisfy required independent approval."
+}

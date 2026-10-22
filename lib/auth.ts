@@ -4,7 +4,7 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { SignJWT, jwtVerify } from "jose";
 import { prisma } from "@/lib/prisma";
-import { APP_ROLES, normalizeLegacyRole, type AppRole } from "@/lib/rbac/roles";
+import { APP_ROLES, resolveActiveRoles, type AppRole } from "@/lib/rbac/roles";
 
 const SESSION_COOKIE = "pausa_session";
 const secureCookie = process.env.COOKIE_SECURE === "true" || process.env.VERCEL === "1";
@@ -85,7 +85,6 @@ export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
         id: true,
         email: true,
         name: true,
-        role: true,
         companyId: true,
         companyRole: true,
         level: true,
@@ -99,10 +98,7 @@ export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
       }
     });
     if (!user || user.sessionVersion !== sessionVersion) return null;
-    const persistedRoles = user.userRoles
-      .map((assignment) => assignment.role.key)
-      .filter((role): role is AppRole => APP_ROLES.includes(role as AppRole));
-    const roles = persistedRoles.length ? Array.from(new Set(persistedRoles)) : [normalizeLegacyRole(user.role)];
+    const roles = resolveActiveRoles(user.userRoles.map((assignment) => assignment.role.key));
     const role = APP_ROLES.find((candidate) => roles.includes(candidate)) || "USER";
     return {
       id: user.id,

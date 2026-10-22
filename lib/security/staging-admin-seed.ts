@@ -23,7 +23,8 @@ export async function seedStagingAdmin(db: PrismaClient, input: { email: string;
     if (!adminRole) throw new Error("STAGING_SEED_ADMIN_ROLE_MISSING");
     const admin = await tx.user.upsert({
       where: { email: input.email },
-      update: { passwordHash, role: "ADMIN", onboardingCompleted: true },
+      // Existing cookies must not inherit the new password/ADMIN grant.
+      update: { passwordHash, role: "ADMIN", onboardingCompleted: true, sessionVersion: { increment: 1 } },
       create: {
         name: "Admin Pausa AI Staging", email: input.email, passwordHash,
         role: "ADMIN", onboardingCompleted: true
