@@ -1,6 +1,6 @@
 # Pausa AI — Release Status
 
-Atualizado em: 2026-10-16 (America/Sao_Paulo).
+Atualizado em: 2026-10-22 (America/Sao_Paulo).
 **G8 BLOCKED · G9 NO-GO · G10 NO-GO. Nenhuma RC/Release Green homologada.**
 
 Main na auditoria: 741d2c624c998a57e5d98e2929c95a7047e5fea0.
@@ -8,6 +8,10 @@ Correções: [PR #39](https://github.com/tupiniquimtechsolution-blip/Pausa_AI/pu
 Código validado em CI/publicado: **5fd7649ec70dd25a7ac1ccbcddd33aafcca9c79f**.
 Deployment preview: **e7f76d50-5197-4190-99ca-5ec72494e034**; build d4be2285-c7a7-4e9a-a4f6-5a8ac3930331.
 [Execução e limites](OPERATIONAL_EXECUTION_2026-10-16.md) · [Evidências sanitizadas](evidence/2026-10-16/).
+
+## Retomada em 22/10
+
+Preview health 200; principal health 503; Supabase ACTIVE_HEALTHY. Deployment e cinco secrets preservados; nenhum novo deploy ainda. Perfil local do bundle identificou repetição de consultas de sessão: correção com React.cache limitado à renderização e campos mínimos reduziu o onboarding de 16–21 para 13 statements. Testes de isolamento simultâneo, revogação de sessão e RBAC passaram localmente. Novo gate adicionado ao PR. Hash de senha permanece cost 12 e requer tratamento adicional de CPU. Isso não encerra G8 nem comprova estabilidade remota. [Execução de 22/10](OPERATIONAL_EXECUTION_2026-10-22.md).
 
 | Gate | Área | Estado | Evidência e pendência |
 |---|---|---|---|

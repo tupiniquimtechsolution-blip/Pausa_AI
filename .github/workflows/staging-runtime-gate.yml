@@ -94,3 +94,14 @@ jobs:
 
       - name: Build Vinext Worker
         run: npm run build:vinext
+
+      - name: Create isolated session profiling database
+        run: |
+          node --input-type=module -e 'import pg from "pg"; const client=new pg.Client({connectionString:process.env.DATABASE_URL}); await client.connect(); await client.query("CREATE DATABASE pausa_cpu"); await client.end();'
+          DATABASE_URL=postgresql://pausa:testpass@127.0.0.1:5432/pausa_cpu npx prisma db push --schema prisma/schema.postgresql.prisma --skip-generate
+
+      - name: Verify session isolation, revocation and local Worker CPU profile
+        env:
+          CPU_FIXTURE_DATABASE_URL: postgresql://pausa:testpass@127.0.0.1:5432/pausa_cpu
+          CPU_ASSERT_MINIMAL_SESSION: "true"
+        run: node scripts/profile-worker-cpu.mjs

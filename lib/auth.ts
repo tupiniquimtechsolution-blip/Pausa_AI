@@ -1,4 +1,5 @@
 import { randomUUID } from "node:crypto";
+import { cache } from "react";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { SignJWT, jwtVerify } from "jose";
@@ -62,7 +63,10 @@ export async function clearSession() {
   cookieStore.delete(SESSION_COOKIE);
 }
 
-export async function getSessionUser(): Promise<SessionUser | null> {
+// React shares this snapshot only within one Server Component render. A new
+// request rechecks the token, session version and current role assignments.
+// Route handlers outside that render continue to execute the function normally.
+export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
   const cookieStore = await cookies();
   const token = cookieStore.get(SESSION_COOKIE)?.value;
   if (!token) return null;
@@ -77,7 +81,17 @@ export async function getSessionUser(): Promise<SessionUser | null> {
     if (!userId || !Number.isInteger(sessionVersion)) return null;
     const user = await prisma.user.findUnique({
       where: { id: userId },
-      include: {
+      select: {
+        id: true,
+        email: true,
+        name: true,
+        role: true,
+        companyId: true,
+        companyRole: true,
+        level: true,
+        xp: true,
+        onboardingCompleted: true,
+        sessionVersion: true,
         userRoles: {
           where: { OR: [{ expiresAt: null }, { expiresAt: { gt: new Date() } }] },
           select: { role: { select: { key: true } } }
@@ -105,7 +119,7 @@ export async function getSessionUser(): Promise<SessionUser | null> {
   } catch {
     return null;
   }
-}
+});
 
 export async function requireUser() {
   const cookieStore = await cookies();
