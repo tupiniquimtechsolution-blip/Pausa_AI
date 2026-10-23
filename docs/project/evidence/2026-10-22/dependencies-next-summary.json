@@ -1,0 +1,64 @@
+{
+  "capturedAt": "2026-10-22T18:11:58.486Z",
+  "codeHead": "64739f4b9fe6b2b0c0906df4eec934d262b6927d",
+  "commands": [
+    "npm audit --package-lock-only --json",
+    "npm audit --package-lock-only --omit=dev --json",
+    "npm audit --prefix mobile --package-lock-only --json"
+  ],
+  "exitCodes": [
+    1,
+    1,
+    1
+  ],
+  "node": "v24.19.0",
+  "platform": "win32",
+  "npm": "11.6.2",
+  "reports": [
+    {
+      "scope": "root",
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 6,
+        "high": 14,
+        "critical": 0,
+        "total": 20
+      }
+    },
+    {
+      "scope": "runtime",
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 4,
+        "high": 9,
+        "critical": 0,
+        "total": 13
+      }
+    },
+    {
+      "scope": "mobile",
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 16,
+        "critical": 0,
+        "total": 16
+      }
+    }
+  ],
+  "lockfileSha256": {
+    "package-lock.json": "5b951de8a9c30ba017e57d853ca038f33a8af500c0082a4c58eb51a9499080d8",
+    "mobile/package-lock.json": "30f64eeb6523b8ee8bdf4c29ec2190801b26a74b9151a97784248cd075aa7974"
+  },
+  "acceptedRisk": false,
+  "liveDeploymentUpdated": false,
+  "localValidation": {
+    "rootTypecheck": "passed",
+    "vinextBuild": "passed",
+    "focusedMobileInstall": "Windows EPERM; Linux CI required",
+    "broadMobileCandidate": "rejected; nested SDK58 drift and failed Android export; not included"
+  }
+}

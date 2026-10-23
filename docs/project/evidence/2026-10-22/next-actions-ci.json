@@ -1,0 +1,97 @@
+{
+  "capturedAt": "2026-10-22T18:14:45.735Z",
+  "codeHead": "64739f4b9fe6b2b0c0906df4eec934d262b6927d",
+  "checks": [
+    {
+      "name": "CodeQL",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/runs/119999213821"
+    },
+    {
+      "name": "npm-audit",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656074/job/119998613182"
+    },
+    {
+      "name": "validate",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656157/job/119998613089"
+    },
+    {
+      "name": "postgres-baseline",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656095/job/119998613057"
+    },
+    {
+      "name": "cloudflare-compatibility",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656095/job/119998612999"
+    },
+    {
+      "name": "Analyze JavaScript/TypeScript",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656162/job/119998612935"
+    },
+    {
+      "name": "Quality and security gates",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656088/job/119998612845"
+    },
+    {
+      "name": "vinext-build",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656102/job/119998612788"
+    },
+    {
+      "name": "quality",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656095/job/119998612630"
+    },
+    {
+      "name": "mobile-validation",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39828656144/job/119998612468"
+    }
+  ],
+  "mobile": {
+    "job": 119998612468,
+    "cleanInstall": true,
+    "typecheck": true,
+    "onlineSdkCheck": true,
+    "androidJsExport": {
+      "passed": true,
+      "modules": 658,
+      "nativeApkBuilt": false,
+      "published": false
+    }
+  },
+  "audit": {
+    "job": 119998613182,
+    "counts": {
+      "root": {
+        "high": 14,
+        "moderate": 6,
+        "total": 20
+      },
+      "omitDevGraph": {
+        "high": 9,
+        "moderate": 4,
+        "total": 13
+      },
+      "mobile": {
+        "high": 16,
+        "moderate": 0,
+        "total": 16
+      }
+    },
+    "critical": 0,
+    "artifact": 12447227883,
+    "artifactDownloaded": false,
+    "countsConfirmedFromJobLog": true,
+    "riskAccepted": false
+  },
+  "newDeploy": false,
+  "realBackup": false,
+  "realRestore": false,
+  "independentReview": false
+}

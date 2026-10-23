@@ -1,0 +1,64 @@
+{
+  "capturedAt": "2026-10-22T18:07:03.186Z",
+  "project": "bccdypogqyrzmflimlom",
+  "mode": "READ_ONLY_AGGREGATE",
+  "piiSelected": false,
+  "credentialsSelected": false,
+  "realDataOrSchemaModified": false,
+  "inventory": {
+    "checked_at": "2026-10-22 17:52:02.647887+00",
+    "users_total": 2,
+    "legacy_elevated_users": 0,
+    "legacy_elevated_without_active_elevated_grant": 0,
+    "legacy_elevated_without_any_active_grant": 0,
+    "users_with_active_elevated_grant": 0,
+    "users_without_any_assignment": 0
+  },
+  "preflight": {
+    "checked_at": "2026-10-22 17:56:57.438579+00",
+    "postgres_version": "17.6",
+    "public_tables": 85,
+    "public_foreign_keys": 86,
+    "public_ltree_columns": 0,
+    "public_operators_with_estimators": 0,
+    "public_rls_tables": 0,
+    "public_tables_with_effective_client_grants": 0,
+    "storage_objects": 0,
+    "extensions": [
+      {
+        "name": "pg_stat_statements",
+        "version": "1.11"
+      },
+      {
+        "name": "pgcrypto",
+        "version": "1.3"
+      },
+      {
+        "name": "plpgsql",
+        "version": "1.0"
+      },
+      {
+        "name": "supabase_vault",
+        "version": "0.3.1"
+      },
+      {
+        "name": "uuid-ossp",
+        "version": "1.1"
+      }
+    ]
+  },
+  "securityAdvisors": {
+    "lints": []
+  },
+  "limits": {
+    "postgresPatched": false,
+    "rlsEnabled": false,
+    "backupExported": false,
+    "restorePerformed": false,
+    "storageContentBackedUp": false
+  },
+  "sources": [
+    "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
+    "https://supabase.com/docs/guides/platform/backups"
+  ]
+}
