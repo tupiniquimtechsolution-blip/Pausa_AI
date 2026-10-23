@@ -1,9 +1,10 @@
 import { randomUUID } from "node:crypto";
+import { cache } from "react";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { SignJWT, jwtVerify } from "jose";
 import { prisma } from "@/lib/prisma";
-import { APP_ROLES, normalizeLegacyRole, type AppRole } from "@/lib/rbac/roles";
+import { APP_ROLES, resolveActiveRoles, type AppRole } from "@/lib/rbac/roles";
 
 const SESSION_COOKIE = "pausa_session";
 const secureCookie = process.env.COOKIE_SECURE === "true" || process.env.VERCEL === "1";
@@ -62,7 +63,10 @@ export async function clearSession() {
   cookieStore.delete(SESSION_COOKIE);
 }
 
-export async function getSessionUser(): Promise<SessionUser | null> {
+// React shares this snapshot only within one Server Component render. A new
+// request rechecks the token, session version and current role assignments.
+// Route handlers outside that render continue to execute the function normally.
+export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
   const cookieStore = await cookies();
   const token = cookieStore.get(SESSION_COOKIE)?.value;
   if (!token) return null;
@@ -77,7 +81,16 @@ export async function getSessionUser(): Promise<SessionUser | null> {
     if (!userId || !Number.isInteger(sessionVersion)) return null;
     const user = await prisma.user.findUnique({
       where: { id: userId },
-      include: {
+      select: {
+        id: true,
+        email: true,
+        name: true,
+        companyId: true,
+        companyRole: true,
+        level: true,
+        xp: true,
+        onboardingCompleted: true,
+        sessionVersion: true,
         userRoles: {
           where: { OR: [{ expiresAt: null }, { expiresAt: { gt: new Date() } }] },
           select: { role: { select: { key: true } } }
@@ -85,10 +98,7 @@ export async function getSessionUser(): Promise<SessionUser | null> {
       }
     });
     if (!user || user.sessionVersion !== sessionVersion) return null;
-    const persistedRoles = user.userRoles
-      .map((assignment) => assignment.role.key)
-      .filter((role): role is AppRole => APP_ROLES.includes(role as AppRole));
-    const roles = persistedRoles.length ? Array.from(new Set(persistedRoles)) : [normalizeLegacyRole(user.role)];
+    const roles = resolveActiveRoles(user.userRoles.map((assignment) => assignment.role.key));
     const role = APP_ROLES.find((candidate) => roles.includes(candidate)) || "USER";
     return {
       id: user.id,
@@ -105,7 +115,7 @@ export async function getSessionUser(): Promise<SessionUser | null> {
   } catch {
     return null;
   }
-}
+});
 
 export async function requireUser() {
   const cookieStore = await cookies();

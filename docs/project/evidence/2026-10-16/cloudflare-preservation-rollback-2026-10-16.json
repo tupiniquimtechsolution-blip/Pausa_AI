@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "date": "2026-10-16T10:19:41.367Z",
+  "fixture": "ops-preservation-2026-10-16",
+  "publisher": "cf@1.0.0-beta.17",
+  "initialDeploymentId": "98eacf55-4369-4d20-a329-31144100a870",
+  "publishedDeploymentId": "70aa9652-2d88-4821-a041-1397c0e5f774",
+  "rollbackDeploymentId": "b7d46c82-49c2-48c9-b2b9-4f986928e656",
+  "secretValuePreservedAfterDeploy": true,
+  "secretValuePreservedAfterRollback": true,
+  "rollbackMethod": "republish-original-fixture-module",
+  "propagationObserved": true,
+  "fixtureDeleted": true,
+  "realSecretsReadOrCopied": false,
+  "paidResourcesCreated": false,
+  "principalModified": false
+}

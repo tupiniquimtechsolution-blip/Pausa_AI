@@ -7,7 +7,6 @@ import {
   PERMISSIONS,
   ROLE_DEFINITIONS,
   ROLE_PERMISSION_MATRIX,
-  normalizeLegacyRole,
   type AppRole
 } from "../lib/rbac/roles";
 
@@ -89,6 +88,7 @@ async function seedMaster() {
     where: { email },
     update: {
       role: "MASTER",
+      sessionVersion: { increment: 1 },
       ...(resetSeedPassword ? { passwordHash } : {})
     },
     create: {
@@ -115,18 +115,14 @@ async function seedMaster() {
   await ensureUserRole(master.id, "MASTER", "CONTROLLED_MASTER_SEED");
 }
 
-async function migrateLegacyAssignments() {
-  const roles = await prisma.role.findMany({ where: { key: { in: [...APP_ROLES] } } });
-  const rolesByKey = new Map(roles.map((role) => [role.key, role]));
-  const users = await prisma.user.findMany({ select: { id: true, role: true } });
+async function seedBasicUserAssignments() {
+  const role = await prisma.role.findUniqueOrThrow({ where: { key: "USER" } });
+  const users = await prisma.user.findMany({ where: { userRoles: { none: {} } }, select: { id: true } });
   for (const user of users) {
-    const roleKey = normalizeLegacyRole(user.role);
-    const role = rolesByKey.get(roleKey);
-    if (!role) continue;
     await prisma.userRole.upsert({
       where: { userId_roleId: { userId: user.id, roleId: role.id } },
-      update: { reason: "LEGACY_ROLE_MIGRATION" },
-      create: { userId: user.id, roleId: role.id, reason: "LEGACY_ROLE_MIGRATION" }
+      update: {},
+      create: { userId: user.id, roleId: role.id, reason: "BASIC_USER_BOOTSTRAP" }
     });
   }
 }
@@ -134,7 +130,7 @@ async function migrateLegacyAssignments() {
 async function main() {
   await seedRegistry();
   await seedMaster();
-  await migrateLegacyAssignments();
+  await seedBasicUserAssignments();
   console.info(JSON.stringify({
     event: "foundation_seed_complete",
     roles: APP_ROLES.length,

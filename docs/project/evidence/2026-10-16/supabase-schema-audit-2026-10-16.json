@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-16T15:08:34.377Z",
+  "project": "bccdypogqyrzmflimlom",
+  "prismaModels": 85,
+  "actualPublicTables": 85,
+  "missingTablesOrColumns": [],
+  "foreignKeys": 86,
+  "rlsEnabledTables": 0,
+  "anonGrants": 0,
+  "authenticatedGrants": 0,
+  "scope": "model table and scalar column presence; does not prove type/default/index equality or backup recoverability",
+  "schemaModified": false
+}

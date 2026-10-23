@@ -1,4 +1,4 @@
-import type { Prisma } from "@prisma/client";
+import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { correlationIdFrom } from "@/lib/observability";
 
@@ -53,10 +53,17 @@ function quoteIdentifier(value: string) {
 
 async function rowsForUser(table: string, userId: string) {
   const column = table === "AuditLog" ? "actorId" : "userId";
-  return prisma.$queryRawUnsafe<Record<string, unknown>[]>(
-    `SELECT * FROM ${quoteIdentifier(table)} WHERE ${quoteIdentifier(column)} = ? ORDER BY rowid`,
-    userId
-  );
+  // Identifiers come only from SUBJECT_TABLES; Prisma binds the subject value
+  // using the active provider's placeholder format (SQLite or PostgreSQL).
+  const rows = await prisma.$queryRaw<Record<string, unknown>[]>(Prisma.sql`
+    SELECT * FROM ${Prisma.raw(quoteIdentifier(table))}
+    WHERE ${Prisma.raw(quoteIdentifier(column))} = ${userId}
+    ORDER BY ${Prisma.raw(quoteIdentifier(table === "ScheduleMutex" ? "bucketKey" : "id"))}
+  `);
+  // Connection credentials are internal authentication material, not portable
+  // profile data, even when encrypted at rest.
+  return rows.map(row => Object.fromEntries(Object.entries(row)
+    .filter(([key]) => !/(password|token|secret)/i.test(key))));
 }
 
 export async function exportDataSubject(userId: string, correlationId = correlationIdFrom()) {

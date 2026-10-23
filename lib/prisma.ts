@@ -10,7 +10,7 @@ function createPrismaClient(): AppPrismaClient {
   const databaseUrl = process.env.DATABASE_URL || "";
   const log = process.env.NODE_ENV === "development"
     ? (["error", "warn"] as const)
-    : (["error"] as const);
+    : ([] as const);
 
   if (/^postgres(?:ql)?:\/\//i.test(databaseUrl)) {
     const adapter = new PrismaPg({ connectionString: databaseUrl });

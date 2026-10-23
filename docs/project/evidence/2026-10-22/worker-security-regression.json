@@ -1,0 +1,1487 @@
+{
+  "scope": "Local workerd CPU samples, synthetic loopback PostgreSQL; excludes idle samples; hardware and overhead differ from Cloudflare. Not a remote CPU budget measurement or release gate.",
+  "node": "v24.19.0",
+  "reports": [
+    {
+      "label": "health-1",
+      "status": 200,
+      "wallMs": 383,
+      "statements": 1,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 667,
+      "activeSampledMs": 377,
+      "topFunctions": [
+        {
+          "name": "(idle)",
+          "sampledMs": 289
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 119
+        },
+        {
+          "name": "_listen",
+          "sampledMs": 74
+        },
+        {
+          "name": "callback",
+          "sampledMs": 23
+        },
+        {
+          "name": "toString",
+          "sampledMs": 19
+        },
+        {
+          "name": "js-to-wasm",
+          "sampledMs": 11
+        },
+        {
+          "name": "wasm-function[3686]",
+          "sampledMs": 10
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 8
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 4
+        },
+        {
+          "name": "Th",
+          "sampledMs": 3
+        },
+        {
+          "name": "connect",
+          "sampledMs": 3
+        },
+        {
+          "name": "$disconnect",
+          "sampledMs": 3
+        }
+      ]
+    },
+    {
+      "label": "health-2",
+      "status": 200,
+      "wallMs": 119,
+      "statements": 1,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 153,
+      "activeSampledMs": 118,
+      "topFunctions": [
+        {
+          "name": "int32",
+          "sampledMs": 84
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 35
+        },
+        {
+          "name": "Request",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 4
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 2
+        },
+        {
+          "name": "Jh",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[3861]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 1
+        },
+        {
+          "name": "get Buffer",
+          "sampledMs": 1
+        },
+        {
+          "name": "a",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[506]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[3989]",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "health-3",
+      "status": 200,
+      "wallMs": 134,
+      "statements": 1,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 159,
+      "activeSampledMs": 133,
+      "topFunctions": [
+        {
+          "name": "n",
+          "sampledMs": 96
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 27
+        },
+        {
+          "name": "wasm-function[2993]",
+          "sampledMs": 3
+        },
+        {
+          "name": "enterSpan",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[1304]",
+          "sampledMs": 3
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[4622]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[71]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 1
+        },
+        {
+          "name": "connect",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[252]",
+          "sampledMs": 1
+        },
+        {
+          "name": "getGlobalTracingHelper",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "onboarding-1",
+      "status": 200,
+      "wallMs": 351,
+      "statements": 13,
+      "userStatements": 3,
+      "credentialStatements": 0,
+      "sampledMs": 384,
+      "activeSampledMs": 347,
+      "topFunctions": [
+        {
+          "name": "(program)",
+          "sampledMs": 74
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 43
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 37
+        },
+        {
+          "name": "submit",
+          "sampledMs": 18
+        },
+        {
+          "name": "addFields",
+          "sampledMs": 6
+        },
+        {
+          "name": "Request",
+          "sampledMs": 5
+        },
+        {
+          "name": "enabled",
+          "sampledMs": 5
+        },
+        {
+          "name": "wasm-function[4170]",
+          "sampledMs": 5
+        },
+        {
+          "name": "get",
+          "sampledMs": 4
+        },
+        {
+          "name": "ba",
+          "sampledMs": 4
+        },
+        {
+          "name": "read",
+          "sampledMs": 4
+        },
+        {
+          "name": "toString",
+          "sampledMs": 4
+        }
+      ]
+    },
+    {
+      "label": "onboarding-2",
+      "status": 200,
+      "wallMs": 193,
+      "statements": 13,
+      "userStatements": 3,
+      "credentialStatements": 0,
+      "sampledMs": 236,
+      "activeSampledMs": 193,
+      "topFunctions": [
+        {
+          "name": "fromArrayLike",
+          "sampledMs": 86
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 43
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 19
+        },
+        {
+          "name": "write",
+          "sampledMs": 8
+        },
+        {
+          "name": "F",
+          "sampledMs": 6
+        },
+        {
+          "name": "(garbage collector)",
+          "sampledMs": 6
+        },
+        {
+          "name": "wasm-function[1240]",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 3
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 3
+        },
+        {
+          "name": "s",
+          "sampledMs": 3
+        },
+        {
+          "name": "setTimeout",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[4711]",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "onboarding-3",
+      "status": 200,
+      "wallMs": 180,
+      "statements": 13,
+      "userStatements": 3,
+      "credentialStatements": 0,
+      "sampledMs": 213,
+      "activeSampledMs": 178,
+      "topFunctions": [
+        {
+          "name": "(anonymous)",
+          "sampledMs": 97
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 35
+        },
+        {
+          "name": "write",
+          "sampledMs": 9
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 8
+        },
+        {
+          "name": "submit",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[82]",
+          "sampledMs": 3
+        },
+        {
+          "name": "te",
+          "sampledMs": 3
+        },
+        {
+          "name": "Ce",
+          "sampledMs": 3
+        },
+        {
+          "name": "read",
+          "sampledMs": 2
+        },
+        {
+          "name": "addFields",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[212]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[492]",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "other-user",
+      "status": 200,
+      "wallMs": 231,
+      "statements": 13,
+      "userStatements": 3,
+      "credentialStatements": 0,
+      "sampledMs": 291,
+      "activeSampledMs": 226,
+      "topFunctions": [
+        {
+          "name": "emit",
+          "sampledMs": 131
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 65
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 13
+        },
+        {
+          "name": "setTimeout",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[212]",
+          "sampledMs": 4
+        },
+        {
+          "name": "write",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 3
+        },
+        {
+          "name": "from",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[4629]",
+          "sampledMs": 3
+        },
+        {
+          "name": "N",
+          "sampledMs": 3
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 3
+        },
+        {
+          "name": "getGlobalTracingHelper",
+          "sampledMs": 3
+        }
+      ]
+    },
+    {
+      "label": "first-user-again",
+      "status": 200,
+      "wallMs": 204,
+      "statements": 13,
+      "userStatements": 3,
+      "credentialStatements": 0,
+      "sampledMs": 257,
+      "activeSampledMs": 203,
+      "topFunctions": [
+        {
+          "name": "getEncodingOps",
+          "sampledMs": 88
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 54
+        },
+        {
+          "name": "ae",
+          "sampledMs": 17
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 5
+        },
+        {
+          "name": "write",
+          "sampledMs": 5
+        },
+        {
+          "name": "F",
+          "sampledMs": 4
+        },
+        {
+          "name": "getGlobalTracingHelper",
+          "sampledMs": 3
+        },
+        {
+          "name": "Ln",
+          "sampledMs": 3
+        },
+        {
+          "name": "queueMicrotask",
+          "sampledMs": 3
+        },
+        {
+          "name": "M",
+          "sampledMs": 3
+        },
+        {
+          "name": "_addListener",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "rbac-legacy-admin-no-assignment",
+      "status": 403,
+      "wallMs": 130,
+      "statements": 3,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 192,
+      "activeSampledMs": 128,
+      "topFunctions": [
+        {
+          "name": "write",
+          "sampledMs": 80
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 64
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 5
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 4
+        },
+        {
+          "name": "M",
+          "sampledMs": 3
+        },
+        {
+          "name": "queryRaw",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[3686]",
+          "sampledMs": 2
+        },
+        {
+          "name": "read",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[95]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[753]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[2170]",
+          "sampledMs": 1
+        },
+        {
+          "name": "get",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "rbac-active-assignment",
+      "status": 200,
+      "wallMs": 254,
+      "statements": 5,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 320,
+      "activeSampledMs": 187,
+      "topFunctions": [
+        {
+          "name": "(idle)",
+          "sampledMs": 133
+        },
+        {
+          "name": "_send",
+          "sampledMs": 94
+        },
+        {
+          "name": "emit",
+          "sampledMs": 15
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 10
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 7
+        },
+        {
+          "name": "u",
+          "sampledMs": 4
+        },
+        {
+          "name": "_listen",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 3
+        },
+        {
+          "name": "addFields",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[261]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[2490]",
+          "sampledMs": 2
+        },
+        {
+          "name": "connect",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "rbac-last-assignment-expired",
+      "status": 403,
+      "wallMs": 132,
+      "statements": 3,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 198,
+      "activeSampledMs": 131,
+      "topFunctions": [
+        {
+          "name": "a",
+          "sampledMs": 73
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 67
+        },
+        {
+          "name": "fromArrayBuffer",
+          "sampledMs": 18
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 6
+        },
+        {
+          "name": "wasm-function[71]",
+          "sampledMs": 4
+        },
+        {
+          "name": "Ln.cacheComponents",
+          "sampledMs": 2
+        },
+        {
+          "name": "setTimeout",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[1304]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[2170]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 1
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[1240]",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "rbac-assignment-restored",
+      "status": 200,
+      "wallMs": 206,
+      "statements": 5,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 279,
+      "activeSampledMs": 201,
+      "topFunctions": [
+        {
+          "name": "(idle)",
+          "sampledMs": 78
+        },
+        {
+          "name": "password",
+          "sampledMs": 59
+        },
+        {
+          "name": "ensure",
+          "sampledMs": 58
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 17
+        },
+        {
+          "name": "get Buffer",
+          "sampledMs": 14
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 9
+        },
+        {
+          "name": "wasm-function[506]",
+          "sampledMs": 4
+        },
+        {
+          "name": "Nd",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 3
+        },
+        {
+          "name": "request",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[4065]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "rbac-last-assignment-removed",
+      "status": 403,
+      "wallMs": 123,
+      "statements": 3,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 184,
+      "activeSampledMs": 121,
+      "topFunctions": [
+        {
+          "name": "write",
+          "sampledMs": 63
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 63
+        },
+        {
+          "name": "read",
+          "sampledMs": 17
+        },
+        {
+          "name": "run",
+          "sampledMs": 3
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[506]",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[144]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[1039]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[1304]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[656]",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "seed-old-session-denied",
+      "status": 307,
+      "wallMs": 131,
+      "statements": 3,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 199,
+      "activeSampledMs": 129,
+      "topFunctions": [
+        {
+          "name": "write",
+          "sampledMs": 88
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 70
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 4
+        },
+        {
+          "name": "j",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[1240]",
+          "sampledMs": 4
+        },
+        {
+          "name": "parse",
+          "sampledMs": 3
+        },
+        {
+          "name": "read",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 2
+        },
+        {
+          "name": "qe",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[2170]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[95]",
+          "sampledMs": 1
+        },
+        {
+          "name": "Dg",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "seed-new-login",
+      "status": 200,
+      "wallMs": 616,
+      "statements": 3,
+      "userStatements": 2,
+      "credentialStatements": 1,
+      "sampledMs": 693,
+      "activeSampledMs": 602,
+      "topFunctions": [
+        {
+          "name": "x",
+          "sampledMs": 391
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 91
+        },
+        {
+          "name": "submit",
+          "sampledMs": 78
+        },
+        {
+          "name": "C",
+          "sampledMs": 34
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 18
+        },
+        {
+          "name": "p",
+          "sampledMs": 8
+        },
+        {
+          "name": "S",
+          "sampledMs": 6
+        },
+        {
+          "name": "wasm-function[280]",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[506]",
+          "sampledMs": 2
+        },
+        {
+          "name": "_listen",
+          "sampledMs": 2
+        },
+        {
+          "name": "h",
+          "sampledMs": 2
+        },
+        {
+          "name": "stat",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "seed-new-session-admin",
+      "status": 200,
+      "wallMs": 205,
+      "statements": 5,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 294,
+      "activeSampledMs": 203,
+      "topFunctions": [
+        {
+          "name": "write",
+          "sampledMs": 133
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 91
+        },
+        {
+          "name": "_listen",
+          "sampledMs": 14
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 7
+        },
+        {
+          "name": "clearTimeout",
+          "sampledMs": 6
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 5
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 3
+        },
+        {
+          "name": "setAttribute",
+          "sampledMs": 3
+        },
+        {
+          "name": "queueMicrotask",
+          "sampledMs": 2
+        },
+        {
+          "name": "(garbage collector)",
+          "sampledMs": 2
+        },
+        {
+          "name": "createBuffer",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "reseed-old-session-denied",
+      "status": 307,
+      "wallMs": 116,
+      "statements": 3,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 182,
+      "activeSampledMs": 114,
+      "topFunctions": [
+        {
+          "name": "(idle)",
+          "sampledMs": 68
+        },
+        {
+          "name": "_listen",
+          "sampledMs": 63
+        },
+        {
+          "name": "toString",
+          "sampledMs": 14
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 3
+        },
+        {
+          "name": "M",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[248]",
+          "sampledMs": 3
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 2
+        },
+        {
+          "name": "get Buffer",
+          "sampledMs": 2
+        },
+        {
+          "name": "_handleRowDescription",
+          "sampledMs": 2
+        },
+        {
+          "name": "enterSpan",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[2170]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[71]",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "reseed-new-login",
+      "status": 200,
+      "wallMs": 543,
+      "statements": 3,
+      "userStatements": 2,
+      "credentialStatements": 1,
+      "sampledMs": 609,
+      "activeSampledMs": 540,
+      "topFunctions": [
+        {
+          "name": "x",
+          "sampledMs": 386
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 69
+        },
+        {
+          "name": "read",
+          "sampledMs": 59
+        },
+        {
+          "name": "C",
+          "sampledMs": 33
+        },
+        {
+          "name": "handlePacket",
+          "sampledMs": 14
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 6
+        },
+        {
+          "name": "S",
+          "sampledMs": 3
+        },
+        {
+          "name": "append",
+          "sampledMs": 3
+        },
+        {
+          "name": "submit",
+          "sampledMs": 3
+        },
+        {
+          "name": "setTimeout",
+          "sampledMs": 3
+        },
+        {
+          "name": "au",
+          "sampledMs": 3
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "reseed-new-session-admin",
+      "status": 200,
+      "wallMs": 205,
+      "statements": 5,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 277,
+      "activeSampledMs": 203,
+      "topFunctions": [
+        {
+          "name": "write",
+          "sampledMs": 158
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 74
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[1304]",
+          "sampledMs": 4
+        },
+        {
+          "name": "Ln.cacheComponents",
+          "sampledMs": 4
+        },
+        {
+          "name": "jd",
+          "sampledMs": 3
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 3
+        },
+        {
+          "name": "queryRaw",
+          "sampledMs": 2
+        },
+        {
+          "name": "handlePacket",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[2170]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[880]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[95]",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "session-revoked",
+      "status": 307,
+      "wallMs": 122,
+      "statements": 3,
+      "userStatements": 1,
+      "credentialStatements": 0,
+      "sampledMs": 197,
+      "activeSampledMs": 118,
+      "topFunctions": [
+        {
+          "name": "(idle)",
+          "sampledMs": 79
+        },
+        {
+          "name": "write",
+          "sampledMs": 63
+        },
+        {
+          "name": "c",
+          "sampledMs": 20
+        },
+        {
+          "name": "withPropagatedContext",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 3
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 2
+        },
+        {
+          "name": "ru",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[2170]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[1304]",
+          "sampledMs": 2
+        },
+        {
+          "name": "importKey",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[2993]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[3686]",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "other-user-after-revocation",
+      "status": 200,
+      "wallMs": 198,
+      "statements": 13,
+      "userStatements": 3,
+      "credentialStatements": 0,
+      "sampledMs": 283,
+      "activeSampledMs": 195,
+      "topFunctions": [
+        {
+          "name": "(idle)",
+          "sampledMs": 88
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 83
+        },
+        {
+          "name": "write",
+          "sampledMs": 24
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 6
+        },
+        {
+          "name": "E",
+          "sampledMs": 5
+        },
+        {
+          "name": "run",
+          "sampledMs": 5
+        },
+        {
+          "name": "Nd",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[1617]",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[3260]",
+          "sampledMs": 3
+        },
+        {
+          "name": "read",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[502]",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[91]",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "concurrent-user-isolation",
+      "requests": 6,
+      "passed": true
+    },
+    {
+      "label": "bcrypt-hash-1",
+      "status": 200,
+      "wallMs": 411,
+      "statements": 0,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 433,
+      "activeSampledMs": 409,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 363
+        },
+        {
+          "name": "_key",
+          "sampledMs": 32
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 23
+        },
+        {
+          "name": "utfx2.encodeUTF16toUTF8",
+          "sampledMs": 7
+        },
+        {
+          "name": "next",
+          "sampledMs": 2
+        },
+        {
+          "name": "_ekskey",
+          "sampledMs": 1
+        },
+        {
+          "name": "(garbage collector)",
+          "sampledMs": 1
+        },
+        {
+          "name": "_crypt",
+          "sampledMs": 1
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-compare-1",
+      "status": 200,
+      "wallMs": 355,
+      "statements": 0,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 360,
+      "activeSampledMs": 352,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 326
+        },
+        {
+          "name": "_key",
+          "sampledMs": 21
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 7
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 3
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 1
+        },
+        {
+          "name": "_crypt",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-hash-2",
+      "status": 200,
+      "wallMs": 382,
+      "statements": 0,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 389,
+      "activeSampledMs": 379,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 346
+        },
+        {
+          "name": "_key",
+          "sampledMs": 29
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 9
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 2
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 1
+        },
+        {
+          "name": "(garbage collector)",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-compare-2",
+      "status": 200,
+      "wallMs": 366,
+      "statements": 0,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 373,
+      "activeSampledMs": 364,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 336
+        },
+        {
+          "name": "_key",
+          "sampledMs": 28
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 8
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-hash-3",
+      "status": 200,
+      "wallMs": 377,
+      "statements": 0,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 382,
+      "activeSampledMs": 373,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 341
+        },
+        {
+          "name": "_key",
+          "sampledMs": 28
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 9
+        },
+        {
+          "name": "next",
+          "sampledMs": 3
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-compare-3",
+      "status": 200,
+      "wallMs": 385,
+      "statements": 0,
+      "userStatements": 0,
+      "credentialStatements": 0,
+      "sampledMs": 391,
+      "activeSampledMs": 383,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 345
+        },
+        {
+          "name": "_key",
+          "sampledMs": 29
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 8
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 3
+        },
+        {
+          "name": "_crypt",
+          "sampledMs": 3
+        },
+        {
+          "name": "next",
+          "sampledMs": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-22T10:16:57.590Z",
+  "codeSha": "753840058850d9430785533299b743917551a0c6",
+  "deployment": "101b85d7-304f-4c12-9127-dccd1da46101",
+  "build": "54179066-27d2-4085-99a8-5b1432b31207",
+  "buildOutcome": "success",
+  "githubChecksPassed": 9,
+  "smokeRequests": 34,
+  "smokePassed": true,
+  "serverErrorsObserved": false,
+  "realUsersBefore": 2,
+  "realUsersAfter": 2,
+  "syntheticUsersBefore": 0,
+  "syntheticUsersAfter": 0,
+  "supabaseStatus": "ACTIVE_HEALTHY",
+  "securityAdvisors": [],
+  "principalHealth": 503,
+  "independentReviewCount": 0,
+  "mainProtected": false,
+  "notes": "Single bounded preview smoke; no device QA, sustained soak or proof of distinct isolates. Principal not promoted. No paid provisioning or plan change.",
+  "systemHealth": {
+    "status": 200,
+    "ok": true,
+    "service": "pausa-ai-web",
+    "database": "reachable",
+    "release": "staging",
+    "responseTimeMs": 1049,
+    "cacheControl": "no-store"
+  },
+  "observabilityQuery": {
+    "from": "2026-10-22T09:55:48.480Z",
+    "to": "2026-10-22T10:20:48.480Z",
+    "returnedErrors": [],
+    "limit": 20,
+    "notes": "No returned events is not proof of sustained stability or complete log coverage."
+  }
+}

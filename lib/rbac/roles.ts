@@ -68,8 +68,11 @@ export function isAppRole(value: string): value is AppRole {
   return APP_ROLES.includes(value as AppRole);
 }
 
-export function normalizeLegacyRole(value: string): AppRole {
-  return isAppRole(value) ? value : "USER";
+// Authorization uses active UserRole assignments only. User.role is legacy
+// provisioning metadata: it must never restore expired or revoked privileges.
+export function resolveActiveRoles(roleKeys: readonly string[]): AppRole[] {
+  const roles = Array.from(new Set(roleKeys.filter(isAppRole)));
+  return roles.length ? roles : ["USER"];
 }
 
 export function roleHasPermission(role: AppRole, permission: AppPermission) {

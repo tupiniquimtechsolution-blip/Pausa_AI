@@ -1,0 +1,109 @@
+{
+  "capturedAt": "2026-10-22T17:41:40.371Z",
+  "codeHead": "0e930881b754a3ee5fbb09d3070b735b94785b40",
+  "pr": 39,
+  "checks": [
+    {
+      "name": "CodeQL",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/runs/119983070234"
+    },
+    {
+      "name": "Quality and security gates",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017926/job/119982387626"
+    },
+    {
+      "name": "cloudflare-compatibility",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017673/job/119982387294"
+    },
+    {
+      "name": "postgres-baseline",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017673/job/119982386994"
+    },
+    {
+      "name": "npm-audit",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017742/job/119982386974"
+    },
+    {
+      "name": "validate",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017603/job/119982386929"
+    },
+    {
+      "name": "Analyze JavaScript/TypeScript",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017730/job/119982386868"
+    },
+    {
+      "name": "quality",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017673/job/119982386852"
+    },
+    {
+      "name": "vinext-build",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017648/job/119982386440"
+    }
+  ],
+  "workflowIntegrationCheckout": "bce7a5692293e082251c41f1e12dc5bd6599c628",
+  "mainMerged": false,
+  "deployedSecurityFollowup": false,
+  "runtimeRegression": {
+    "jobUrl": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017603/job/119982386929",
+    "jobConclusion": "success",
+    "logRead": true,
+    "logTruncated": true,
+    "observedResults": {
+      "legacyAdminWithoutGrant": 403,
+      "activeGrant": 200,
+      "expiredLastGrant": 403,
+      "restoredGrant": 200,
+      "removedLastGrant": 403,
+      "seedOldCookie": 307,
+      "seedNewLogin": 200,
+      "seedNewAdmin": 200,
+      "reseedOldCookie": 307,
+      "reseedNewLogin": 200,
+      "reseedNewAdmin": 200
+    }
+  },
+  "dependencyEvidence": {
+    "jobUrl": "https://github.com/tupiniquimtechsolution-blip/Pausa_AI/actions/runs/39824017742/job/119982386974",
+    "artifactId": 12445912558,
+    "artifactDownloaded": false,
+    "source": "Job log report-dependency-audit.mjs summary",
+    "counts": {
+      "root": {
+        "high": 15,
+        "moderate": 6,
+        "total": 21
+      },
+      "omitDevGraph": {
+        "high": 10,
+        "moderate": 4,
+        "total": 14
+      },
+      "mobile": {
+        "high": 17,
+        "moderate": 3,
+        "total": 20
+      }
+    },
+    "allCritical": 0
+  },
+  "independentReviewApproved": false,
+  "releaseGreen": false
+}

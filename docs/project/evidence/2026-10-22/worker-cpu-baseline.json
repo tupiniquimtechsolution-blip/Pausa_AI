@@ -1,0 +1,605 @@
+{
+  "scope": "Local workerd CPU samples, synthetic loopback PostgreSQL; excludes idle samples; hardware and overhead differ from Cloudflare. Not a remote CPU budget measurement or release gate.",
+  "node": "v24.19.0",
+  "reports": [
+    {
+      "label": "health-1",
+      "status": 200,
+      "wallMs": 216,
+      "statements": 1,
+      "userStatements": 0,
+      "sampledMs": 390,
+      "activeSampledMs": 203,
+      "topFunctions": [
+        {
+          "name": "(idle)",
+          "sampledMs": 187
+        },
+        {
+          "name": "fromArrayLike",
+          "sampledMs": 56
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 49
+        },
+        {
+          "name": "_listen",
+          "sampledMs": 15
+        },
+        {
+          "name": "wasm-function[3686]",
+          "sampledMs": 7
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 5
+        },
+        {
+          "name": "js-to-wasm",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[71]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[156]",
+          "sampledMs": 2
+        },
+        {
+          "name": "Ln.cacheComponents",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[136]",
+          "sampledMs": 1
+        },
+        {
+          "name": "emit",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "health-2",
+      "status": 200,
+      "wallMs": 83,
+      "statements": 1,
+      "userStatements": 0,
+      "sampledMs": 105,
+      "activeSampledMs": 83,
+      "topFunctions": [
+        {
+          "name": "(program)",
+          "sampledMs": 46
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 22
+        },
+        {
+          "name": "join",
+          "sampledMs": 11
+        },
+        {
+          "name": "enterSpan",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[1304]",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[4698]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[1023]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[506]",
+          "sampledMs": 1
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[469]",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "health-3",
+      "status": 200,
+      "wallMs": 121,
+      "statements": 1,
+      "userStatements": 0,
+      "sampledMs": 138,
+      "activeSampledMs": 121,
+      "topFunctions": [
+        {
+          "name": "fromArrayBuffer",
+          "sampledMs": 101
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 17
+        },
+        {
+          "name": "oc",
+          "sampledMs": 2
+        },
+        {
+          "name": "connect",
+          "sampledMs": 1
+        },
+        {
+          "name": "_release",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[1032]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[1240]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[95]",
+          "sampledMs": 1
+        },
+        {
+          "name": "pull",
+          "sampledMs": 1
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "onboarding-1",
+      "status": 200,
+      "wallMs": 279,
+      "statements": 21,
+      "userStatements": 5,
+      "sampledMs": 302,
+      "activeSampledMs": 277,
+      "topFunctions": [
+        {
+          "name": "b",
+          "sampledMs": 60
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 32
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 25
+        },
+        {
+          "name": "Tg",
+          "sampledMs": 7
+        },
+        {
+          "name": "write",
+          "sampledMs": 6
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 6
+        },
+        {
+          "name": "Jp",
+          "sampledMs": 5
+        },
+        {
+          "name": "H",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[1023]",
+          "sampledMs": 3
+        },
+        {
+          "name": "js-to-wasm::",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[371]",
+          "sampledMs": 3
+        }
+      ]
+    },
+    {
+      "label": "onboarding-2",
+      "status": 200,
+      "wallMs": 170,
+      "statements": 21,
+      "userStatements": 5,
+      "sampledMs": 198,
+      "activeSampledMs": 169,
+      "topFunctions": [
+        {
+          "name": "(anonymous)",
+          "sampledMs": 56
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 30
+        },
+        {
+          "name": "write",
+          "sampledMs": 20
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 10
+        },
+        {
+          "name": "wasm-function[460]",
+          "sampledMs": 5
+        },
+        {
+          "name": "wasm-function[436]",
+          "sampledMs": 5
+        },
+        {
+          "name": "setTimeout",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[4681]",
+          "sampledMs": 3
+        },
+        {
+          "name": "(garbage collector)",
+          "sampledMs": 3
+        },
+        {
+          "name": "_from",
+          "sampledMs": 3
+        },
+        {
+          "name": "k",
+          "sampledMs": 2
+        },
+        {
+          "name": "z",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "onboarding-3",
+      "status": 200,
+      "wallMs": 141,
+      "statements": 16,
+      "userStatements": 4,
+      "sampledMs": 168,
+      "activeSampledMs": 139,
+      "topFunctions": [
+        {
+          "name": "fromArrayLike",
+          "sampledMs": 60
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 29
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 8
+        },
+        {
+          "name": "(program)",
+          "sampledMs": 6
+        },
+        {
+          "name": "write",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[83]",
+          "sampledMs": 4
+        },
+        {
+          "name": "hu",
+          "sampledMs": 4
+        },
+        {
+          "name": "wasm-function[647]",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[139]",
+          "sampledMs": 3
+        },
+        {
+          "name": "Ie",
+          "sampledMs": 3
+        },
+        {
+          "name": "z",
+          "sampledMs": 3
+        },
+        {
+          "name": "wasm-function[460]",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "session-revoked",
+      "status": 307,
+      "wallMs": 87,
+      "statements": 3,
+      "userStatements": 1,
+      "sampledMs": 130,
+      "activeSampledMs": 85,
+      "topFunctions": [
+        {
+          "name": "ensure",
+          "sampledMs": 64
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 45
+        },
+        {
+          "name": "read",
+          "sampledMs": 3
+        },
+        {
+          "name": "(anonymous)",
+          "sampledMs": 2
+        },
+        {
+          "name": "M",
+          "sampledMs": 2
+        },
+        {
+          "name": "wasm-function[492]",
+          "sampledMs": 2
+        },
+        {
+          "name": "onLayoutError",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[968]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[2170]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[102]",
+          "sampledMs": 1
+        },
+        {
+          "name": "wasm-function[144]",
+          "sampledMs": 1
+        },
+        {
+          "name": "gp",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-hash-1",
+      "status": 200,
+      "wallMs": 275,
+      "statements": 0,
+      "userStatements": 0,
+      "sampledMs": 287,
+      "activeSampledMs": 273,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 247
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 14
+        },
+        {
+          "name": "_key",
+          "sampledMs": 13
+        },
+        {
+          "name": "_hash",
+          "sampledMs": 7
+        },
+        {
+          "name": "(garbage collector)",
+          "sampledMs": 3
+        },
+        {
+          "name": "next",
+          "sampledMs": 2
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 1
+        },
+        {
+          "name": "_ekskey",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-compare-1",
+      "status": 200,
+      "wallMs": 250,
+      "statements": 0,
+      "userStatements": 0,
+      "sampledMs": 253,
+      "activeSampledMs": 248,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 232
+        },
+        {
+          "name": "_key",
+          "sampledMs": 11
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 5
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 3
+        },
+        {
+          "name": "_crypt",
+          "sampledMs": 2
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-hash-2",
+      "status": 200,
+      "wallMs": 248,
+      "statements": 0,
+      "userStatements": 0,
+      "sampledMs": 252,
+      "activeSampledMs": 245,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 228
+        },
+        {
+          "name": "_key",
+          "sampledMs": 16
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 7
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-compare-2",
+      "status": 200,
+      "wallMs": 244,
+      "statements": 0,
+      "userStatements": 0,
+      "sampledMs": 247,
+      "activeSampledMs": 242,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 223
+        },
+        {
+          "name": "_key",
+          "sampledMs": 17
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 5
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-hash-3",
+      "status": 200,
+      "wallMs": 246,
+      "statements": 0,
+      "userStatements": 0,
+      "sampledMs": 250,
+      "activeSampledMs": 244,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 224
+        },
+        {
+          "name": "_key",
+          "sampledMs": 19
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 6
+        },
+        {
+          "name": "setImmediate",
+          "sampledMs": 1
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 1
+        }
+      ]
+    },
+    {
+      "label": "bcrypt-compare-3",
+      "status": 200,
+      "wallMs": 246,
+      "statements": 0,
+      "userStatements": 0,
+      "sampledMs": 249,
+      "activeSampledMs": 244,
+      "topFunctions": [
+        {
+          "name": "_encipher",
+          "sampledMs": 222
+        },
+        {
+          "name": "_key",
+          "sampledMs": 18
+        },
+        {
+          "name": "(idle)",
+          "sampledMs": 6
+        },
+        {
+          "name": "_streamtoword",
+          "sampledMs": 3
+        }
+      ]
+    }
+  ]
+}

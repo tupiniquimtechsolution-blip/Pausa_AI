@@ -30,11 +30,14 @@ jobs:
         run: |
           mkdir -p artifacts
           npm audit --json > artifacts/npm-audit-root.json || true
+          npm audit --omit=dev --json > artifacts/npm-audit-runtime.json || true
       - name: Mobile audit report
         shell: bash
         run: |
           npm ci --prefix mobile
           (cd mobile && npm audit --json > ../artifacts/npm-audit-mobile.json) || true
+      - name: Validate reports and summarize residual findings
+        run: node scripts/report-dependency-audit.mjs
       - uses: actions/upload-artifact@v4
         with:
           name: dependency-audit

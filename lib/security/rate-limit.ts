@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 
 export type RateLimitResult = {
@@ -14,7 +15,10 @@ function hashKey(scope: string, key: string) {
 }
 
 export function clientAddress(request: Request) {
-  return request.headers.get("x-forwarded-for")?.split(",")[0]?.trim()
+  // Cloudflare replaces this header at the edge; forwarded headers may be
+  // supplied by the caller and must not take precedence on Workers.
+  return request.headers.get("cf-connecting-ip")?.trim()
+    || request.headers.get("x-forwarded-for")?.split(",")[0]?.trim()
     || request.headers.get("x-real-ip")?.trim()
     || "local";
 }
@@ -29,26 +33,29 @@ export async function consumeRateLimit(input: {
   const now = input.now || new Date();
   const keyHash = hashKey(input.scope, input.key);
 
-  return prisma.$transaction(async (tx) => {
-    const current = await tx.rateLimitBucket.findUnique({ where: { keyHash } });
-    const expired = !current || current.windowEnd <= now;
-    const nextCount = expired ? 1 : current.count + 1;
-    const windowEnd = expired ? new Date(now.getTime() + input.windowMs) : current.windowEnd;
-
-    await tx.rateLimitBucket.upsert({
-      where: { keyHash },
-      update: { count: nextCount, windowEnd, lastSeenAt: now, scope: input.scope },
-      create: { keyHash, scope: input.scope, count: nextCount, windowEnd, lastSeenAt: now }
-    });
-
-    const allowed = nextCount <= input.limit;
-    return {
-      allowed,
-      limit: input.limit,
-      remaining: Math.max(0, input.limit - nextCount),
-      retryAfterSeconds: allowed ? 0 : Math.max(1, Math.ceil((windowEnd.getTime() - now.getTime()) / 1000))
-    };
-  });
+  const newWindowEnd = new Date(now.getTime() + input.windowMs);
+  // One atomic statement serializes contenders on the same key, including the
+  // first hit and window rollover. No read/compute/write race between isolates.
+  const [bucket] = await prisma.$queryRaw<{ count: number; windowEnd: Date }[]>(Prisma.sql`
+    INSERT INTO "RateLimitBucket"
+      ("keyHash", "scope", "count", "windowEnd", "lastSeenAt", "createdAt", "updatedAt")
+    VALUES (${keyHash}, ${input.scope}, 1, ${newWindowEnd}, ${now}, ${now}, ${now})
+    ON CONFLICT ("keyHash") DO UPDATE SET
+      "count" = CASE WHEN "RateLimitBucket"."windowEnd" <= ${now}
+        THEN 1 ELSE "RateLimitBucket"."count" + 1 END,
+      "windowEnd" = CASE WHEN "RateLimitBucket"."windowEnd" <= ${now}
+        THEN ${newWindowEnd} ELSE "RateLimitBucket"."windowEnd" END,
+      "lastSeenAt" = ${now}, "updatedAt" = ${now}
+    RETURNING "count", "windowEnd"
+  `);
+  if (!bucket) throw new Error("RATE_LIMIT_UNAVAILABLE");
+  const allowed = bucket.count <= input.limit;
+  return {
+    allowed,
+    limit: input.limit,
+    remaining: Math.max(0, input.limit - bucket.count),
+    retryAfterSeconds: allowed ? 0 : Math.max(1, Math.ceil((bucket.windowEnd.getTime() - now.getTime()) / 1000))
+  };
 }
 
 export function rateLimitHeaders(result: RateLimitResult) {
